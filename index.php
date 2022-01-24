@@ -15,6 +15,12 @@
 
     <body>
 
+        <?php
+
+            if($_SESSION['verif'] == 1){
+
+                ?>
+
         <form method="post" enctype="multipart/form-data" action="php/upload.php">
 
             <input type="file" name="image" accept="image/png, image/jpeg">
@@ -23,6 +29,8 @@
         </form>
 
         <?php
+
+            }
 
             $n = 0;
 
@@ -57,9 +65,25 @@
 
             }
 
-        ?>
+        if($_SESSION['verif'] == 1){
+
+            ?>
 
         <a href="php/deconexion_back.php">Deconexion</a>
+
+        <?php
+
+        }else{
+
+            ?>
+
+        <a href="php/connexion.php">Connexion</a>
+
+            <?php
+            
+        }
+
+        ?>
 
     </body>
 

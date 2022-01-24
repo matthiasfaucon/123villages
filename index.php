@@ -1,6 +1,6 @@
 <?php
 
-    include 'verif_script.php';
+    include 'php/verif_script.php';
 
 ?>
 
@@ -15,7 +15,7 @@
 
     <body>
 
-        <form method="post" enctype="multipart/form-data" action="upload.php">
+        <form method="post" enctype="multipart/form-data" action="php/upload.php">
 
             <input type="file" name="image" accept="image/png, image/jpeg">
             <input type="submit" value="Envoyer !">
@@ -42,10 +42,10 @@
 
                 $n = $n+1;
                 
-                echo "<img src='image/".$donnees['nom']."' alt='image' id='photo_cool'><br>";
+                echo "<img src='php/image/".$donnees['nom']."' alt='image' id='photo_cool'><br>";
                 ?>
 
-                <form method="post" enctype="multipart/form-data" action="supp.php">
+                <form method="post" enctype="multipart/form-data" action="php/supp.php">
 
                     <input type="submit" value="Supprimer">
 
@@ -59,7 +59,7 @@
 
         ?>
 
-        <a href="deconexion_back.php">Deconexion</a>
+        <a href="php/deconexion_back.php">Deconexion</a>
 
     </body>
 

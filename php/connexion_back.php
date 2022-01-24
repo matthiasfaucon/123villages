@@ -48,7 +48,7 @@
     $reponse->closeCursor();
 
     if($_SESSION['email_verif'] == 1 && $_SESSION['mdp_verif'] == 1){
-        header('Location: index.php');
+        header('Location: ../index.php');
     }else{
         header('Location: connexion.php');
     }

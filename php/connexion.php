@@ -19,6 +19,14 @@
         $_SESSION['no_email'] = '';
     }
 
+    if(!isset($_SESSION['verif'])){
+        $_SESSION['verif'] = 0;
+    }
+
+    if($_SESSION['verif'] == 1){
+        header('Location: ../index.php');
+    }
+
 ?>
 
 <!DOCTYPE html>

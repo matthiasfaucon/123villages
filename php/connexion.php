@@ -83,7 +83,7 @@ if($_SESSION['email_exist'] == 0){
 
     <!-- DEBUT - FaceBook Login API -->
 
-    <script>
+    <!--<script>
 
         window.fbAsyncInit = function() {
 

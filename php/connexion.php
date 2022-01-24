@@ -77,7 +77,7 @@
 
     <!-- DEBUT - FaceBook Login API -->
 
-    <script>
+    <!--<script>
 
         window.fbAsyncInit = function() {
 

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
     session_start();
 
@@ -19,7 +19,7 @@
         $_SESSION['no_email'] = '';
     }
 
-?>
+?> -->
 
 <!DOCTYPE html>
 
@@ -27,53 +27,59 @@
     
     <title>Connexion</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
 
-    <h1>Connexion</h1>
+<div id="blocConnexion">
+<div id="boxGauche"></div>
+<div id="boxDroite">
+<div id="titleLien">
+<h1>Connexion</h1>
+<a href="inscription.php">Cliquer ici pour s'inscrire</a>
+</div>
+<div id="coordonnees">
+<form method="get" action="connexion_back.php">
 
-    <br><br>
+Entrez votre adresse e-mail : <br>
+<input type="text" name="email" required><br>
 
-    <form method="get" action="connexion_back.php">
+<br>
 
-        Entrez votre adresse e-mail : <br>
-        <input type="text" name="email" required><br>
+Entrez votre MdP : <br>
+<input type="text" name="mdp" required><br>
 
-        <br>
+<?php
+    if($_SESSION['email_verif'] == 0 || $_SESSION['mdp_verif'] == 0){
+        echo 'adresse e-mail ou mot de passe incorrect<br>';
+    }
 
-        Entrez votre MdP : <br>
-        <input type="text" name="mdp" required><br>
+    if($_SESSION['no_email'] == 1){
+        echo 'Veuillez entrer une adresse email valide<br>';
+    }
+?>
 
-        <?php
-            if($_SESSION['email_verif'] == 0 || $_SESSION['mdp_verif'] == 0){
-                echo 'adresse e-mail ou mot de passe incorrect<br>';
-            }
+<br>
 
-            if($_SESSION['no_email'] == 1){
-                echo 'Veuillez entrer une adresse email valide<br>';
-            }
-        ?>
+<input type="submit" value="continuer">
+</div>
 
-        <br>
+</form>
 
-        <input type="submit" value="continuer">
+<?php
 
-        <br><br>
+if($_SESSION['email_exist'] == 0){
+    echo 'Inscription réussite !<br><br>';
+}
 
-    </form>
+?>
+</div>
+</div>
 
-    <?php
-
-        if($_SESSION['email_exist'] == 0){
-            echo 'Inscription réussite !<br><br>';
-        }
-
-    ?>
-
-    <a href="inscription.php">Cliquer ici pour s'inscrire</a>
+   
+   
 
     <!-- DEBUT - FaceBook Login API -->
 
@@ -111,3 +117,4 @@
     <!-- FIN - FaceBook Login API -->
 
 </body>
+</html>

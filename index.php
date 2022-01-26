@@ -77,7 +77,7 @@
 
             ?>
 
-        <a href="php/connexion.php">Connexion</a>
+        <a href="php/connexion.php">Connexion</a>/<a href="php/inscription.php">Inscription</a>
 
             <?php
             

@@ -4,10 +4,10 @@
 
     $_SESSION['email_exist'] = 0;
 
-    $prenom = htmlentities($_GET['prenom'], ENT_QUOTES);
-    $nom = htmlentities($_GET['nom'], ENT_QUOTES);
+    $prenom = ucwords(strtolower(htmlentities($_GET['prenom'], ENT_QUOTES)));
+    $nom = ucwords(strtolower(htmlentities($_GET['nom'], ENT_QUOTES)));
     $mdp = password_hash($_GET['mdp'], PASSWORD_DEFAULT);
-    $email = htmlentities($_GET['email'], ENT_QUOTES);
+    $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
 
     if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
     }else{

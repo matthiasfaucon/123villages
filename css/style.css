@@ -2,3 +2,154 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    background-color:#f4f4f9;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+
+a{
+    color: #4062BB;
+}
+
+#logoTypo{
+    top: 2%;
+    left: 1%;
+    position: absolute;
+    font-size: 50px;
+    color: #f4f4f9;
+}
+#banner img{
+    width: 100vw;
+}
+
+h1{
+    font: 36px "Open Sans";
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-self: center;
+    align-self:center;
+}
+
+#searchBarre{
+    display: flex;
+    top: 2%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 50px;
+}
+
+#searchBarre p{
+    padding-right: 35%;
+    color: #f4f4f9;
+}
+
+#research{
+    right: 0;
+    width: 3vw;
+    height: 5vh;
+    border-radius: 0px 50px 50px 0px;
+    border: 2px solid #f4f4f9;
+}
+
+
+
+.positionPresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxinfo{
+      width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width:200px;
+    height:200px;
+    background: #4062BB;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.info p{
+    font: 18px "Montserrat light";
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 3%;
+}
+
+hr{
+    border: 1px solid #4062BB;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 80vw;
+}
+
+/* #trouverLieux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+#recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 5vh 0 5vh 0;
+}
+
+#boutonRecherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#boutonRecherche p{
+    text-align: center;
+    color: #f4f4f9;
+}
+
+#maCarte{
+    border-radius: 30px;
+position: relative;
+display: flex;
+width: 50vw;
+height: 50vh;
+margin-left: 10%;
+}

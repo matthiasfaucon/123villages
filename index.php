@@ -16,6 +16,12 @@
   <!-- <script src="script.js"></script> -->
 </head>
 <body>
+
+<header>
+    <p id="logoTypo">MonVillageNormand.fr</p>
+    <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.html"><div id="research"></div></a></div>
+    <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
+</header>
 </body>
 
 </html>

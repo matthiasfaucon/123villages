@@ -35,6 +35,14 @@
       </div>
     <hr> 
   </section>
+
+  <section id="activites">
+    <div id="menuSecondaireHorizontal">
+   <span>Services</span> <span>Patrimoine</span> <span>Commerces</span> <span>Découvrir</span>
+    </div>
+    <hr>
+  </section>
+  
 </body>
 
 </html>

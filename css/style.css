@@ -264,3 +264,26 @@ footer{
     width: 150px;
     border-radius: 100%;
 }
+
+#boutonCodePostal p{
+    color: white;
+}
+
+#infoDepartement{
+    margin: 0 0 0 10%;
+    width: 60%;
+}
+
+#menuSecondaireHorizontal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 8vh;
+    border-radius: 30px;
+    background: #4062BB;
+}
+
+#menuSecondaireHorizontal span{
+   color: white;
+}

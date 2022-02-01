@@ -1,6 +1,6 @@
 <?php
 
-    session_start();
+    session_start();//Bonjour je test
 
     if(!isset($_SESSION['email_exist'])){
         $_SESSION['email_exist'] = '';

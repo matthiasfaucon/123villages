@@ -27,6 +27,10 @@ a{
     color: #4062BB;
 }
 
+section div p{
+    font-family: "Montserrat";
+}
+
 #logoTypo{
     top: 2%;
     left: 1%;

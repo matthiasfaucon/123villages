@@ -22,6 +22,19 @@
     <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.html"><div id="research"></div></a></div>
     <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
 </header>
+
+<section id="presentation">
+    <h1>L'office du tourisme des villages</h1>
+    <div id="boxinfo">
+    <div class="info"><p>Envie de connaître le passé de votre village et des hommes qui l'ont habité ?</p></div>
+    <div class="info"><p>Passionné de vieilles pierres, vous voulez découvrir des endroits insolites, apprendre leur histoire et les localiser ?</p></div>
+    <div class="info"><p>Vous ne vous rappelez plus du résultat des dernières élections ?</p></div>
+    <div class="info"><p>Organisateur d'un séjour dans notre belle région, vous recherchez les meilleures adresses ?</p></div>
+    <div class="info"><p>Quels sont les horaires d'ouverture de la bibliothèque ?</p></div>
+    </div> 
+    <hr> 
+  </section>
+  
 </body>
 
 </html>

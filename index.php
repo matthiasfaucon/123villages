@@ -171,10 +171,10 @@
       </div>
 </div>
         
-  </section>
+</section>
 
 
-
+<footer>Mentions légales</footer>
 </body>
 
 </html>

@@ -27,6 +27,10 @@ a{
     color: #4062BB;
 }
 
+section div p{
+    font-family: "Montserrat";
+}
+
 #logoTypo{
     top: 2%;
     left: 1%;
@@ -203,6 +207,23 @@ margin-left: 10%;
         transition: .2s;
       }
 
+::-webkit-scrollbar {
+    width: 100px;
+        background-color: #b46868;
+  } /* the new scrollbar will have a flat appearance with the set background color */
+
+  ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2); 
+  } /* this will style the thumb, ignoring the track */
+
+  ::-webkit-scrollbar-button {
+        background-color: #7c2929;
+  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+  ::-webkit-scrollbar-corner {
+        background-color: black;
+  }
+
 .card .ville {
     position: relative;
   padding: 3vh 0 0 1vw;
@@ -234,80 +255,35 @@ footer{
     background: #4062BB;
 }
 
-/* PAGE SERVICES.PHP -------------------------------------------------*/
-
-#banniere-image{
-    width: 100%;
+#boutonCodePostal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
 }
 
-#titre-du-site a{
-    position: absolute;
-    top: 0%;
-    left: 1em;
+#boutonCodePostal p{
     color: white;
-    text-decoration: none;
-    font-size: 50px;
 }
 
-#barre-de-recherche{
-    margin-left: 10em;
-    position: absolute;
-    top: 1em;
-    
+#infoDepartement{
+    margin: 0 0 0 10%;
+    width: 60%;
 }
 
-#loupe-de-recherche{
-    width: 5%;
-    vertical-align: middle;
+#menuSecondaireHorizontal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 8vh;
+    border-radius: 30px;
+    background: #4062BB;
 }
 
-#zone-de-recherche{
-    width: 30em;
-    height: 3em;
-}
-
-#connexion{
-    position: absolute;
-    top: 1em;
-    right: 1em;
-}
-
-#fil-ariane{
-    background-color: #4062BB;
-    padding: 3em 0em;
-    left: 0%;
-    width: 30%;
-}
-
-#fil-ariane li{
-    display: inline;
-    padding: 0em 3em;
-}
-
-#fil-ariane-historique{
-    color: #f4f4f9;
-    
-}
-
-.div-principal{
-    margin: auto;
-    width: 70%;
-    padding: 2em;
-}
-
-.titre-div-principal{
-    font-weight: bold;
-}
-
-.h2-principaux{
-    text-align: center;
-}
-
-#categorie{
-    text-align: center;
-    font-weight: bold;
-    padding: 3em 0em;
-    left: 0%;
-    width: 20%;
-    background-color: #fdc758;
+#menuSecondaireHorizontal span{
+   color: white;
 }

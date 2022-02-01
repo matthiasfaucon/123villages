@@ -33,8 +33,18 @@
     <div class="info"><p>Quels sont les horaires d'ouverture de la bibliothèque ?</p></div>
     </div> 
     <hr> 
-  </section>
-  
+</section>
+
+<section id="trouverLieux">
+    <h1>Vous ne savez pas où aller ?</h1>
+    <div id="recherche">
+    <div id="boutonRecherche"><p>Trouver un village avec notre sélection</p></div>
+      
+    </div>
+    <hr>
+</section>
+
+
 </body>
 
 </html>

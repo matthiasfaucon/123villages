@@ -23,7 +23,18 @@
     <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
 </header>
 
-
+<section id="presentation">
+    <h1>Présentation</h1>
+    <div class="positionPresentation">
+    <div id="boutonCodePostal"><p>Trouver votre village</p></div>
+    <div id="infoDepartement"><p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>
+      Mais le département de Seine-Maritime, c'est 745 communes !!!</br>
+      Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n'oublions pas le petit patrimoine.</br>
+      Qu'il s'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>
+      Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p></div>
+      </div>
+    <hr> 
+  </section>
 </body>
 
 </html>

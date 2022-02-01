@@ -254,3 +254,13 @@ footer{
     height: 10vh;
     background: #4062BB;
 }
+
+#boutonCodePostal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}

@@ -15,7 +15,7 @@
   <header>
     <p id="logoTypo">MonVillageNormand.fr</p>
     <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.html"><div id="research"></div></a></div>
-    <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
+    <div id="banner"><img src="../images/banniere_deskstop.jpg"></div>
   </header> 
   <div id="div_title_lieu"> 
         <h1 id="title_lieu">Château d'Harcourt (Eure)</h1>

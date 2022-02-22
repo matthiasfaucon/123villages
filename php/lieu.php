@@ -163,4 +163,5 @@
 
 		</figure>
 
-  </div>  
+  </div>   
+  <footer>Mentions légales</footer>

@@ -33,6 +33,6 @@
   </div>
 </section>  
 <br><br><br><br><br><br><br><br>
-
+<footer>Mentions légales</footer> 
 </body>
 </html>

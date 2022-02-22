@@ -158,6 +158,15 @@ height: 50vh;
 margin-left: 10%;
 }
 
+#maCarteDepartement{
+    border-radius: 30px;
+position: relative;
+display: flex;
+width: 50vw;
+height: 50vh;
+margin-top: 5%;
+}
+
 
 .contenerCard{
     display: flex;
@@ -278,8 +287,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50vw;
-    height: 8vh;
+    width: 70vw;
+    height: 7vh;
     border-radius: 30px;
     background: #4062BB;
 }

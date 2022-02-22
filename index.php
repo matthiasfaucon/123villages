@@ -19,7 +19,7 @@
 
 <header>
     <p id="logoTypo">MonVillageNormand.fr</p>
-    <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.html"><div id="research"></div></a></div>
+    <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.php"><div id="research"></div></a></div>
     <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
 </header>
 

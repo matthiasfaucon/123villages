@@ -95,7 +95,93 @@
     
     <hr>
   </section>
-  
+
+  <section id="presentationCarte">
+    <h2>Églises</h2>
+    <div class="contenerCard">
+    <div class="cards">
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+
+      <div class="card">
+        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+          <div class="ville">
+            <h3>Rouen</h3>
+          </div>
+          <div class="monument">
+            <p>Eglise de barentin</p>
+          </div>
+      </div>
+</div>
+        
+</section> 
 </body>
 
 </html>

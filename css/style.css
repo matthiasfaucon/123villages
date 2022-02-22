@@ -313,3 +313,16 @@ justify-content: space-between;
     height:70px;
     border-radius:30px;
 }
+
+#presentationCarte{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentationCarte h2{
+    display: flex;
+    justify-self: self-start;
+    align-self: self-start;
+}

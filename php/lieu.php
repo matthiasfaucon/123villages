@@ -86,4 +86,23 @@
 </script>
 
 </div> 
+</div> 
+<section id="journee-patrimoine">  
+<ul>
+  <li class="date">2013</li>
+  <li class="date">2014</li>
+  <li class="date">2015</li>
+  <li class="date">2018</li>
+  <li class="date">2019</li>  
+  <li class="date">2020</li>
+  <li class="date">2021</li>
+</ul>
+<div id="txt-journee-patrimoine">
+  <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2013</h2> 
+  
+  <p id="p-txt-journee-patrimoine">4817 Chasse aux papillons nocturnes </br>
+4818 La conférence des oiseaux, théâtre d'Illusia </br>
+4819 visite guidée </br>
+4820 Visite libre </br></p>
 </div>
+</section>  

@@ -13,7 +13,11 @@ URL du projet :
     https://github.com/matthiasfaucon/123villages.git
 
 Fonctionnalités mises en place : 
-    - Ajout d'API 
+    - Ajout d'une API affichant un map sur laquelle on peut se diriger 
+    - AJout d'un menu de connexion avec identifiant et mot de passe
+    - Ajout Création du CSS
+    - Structure HTMl de 2 pages
+    - Ajout d'une API Google
     - 
 
 Techniques choisies :

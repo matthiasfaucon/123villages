@@ -164,4 +164,30 @@
 		</figure>
 
   </div>   
-  <footer>Mentions légales</footer>
+  <footer>Mentions légales</footer> 
+  <script>  
+ 
+ let date=document.getElementsByClassName("date"); 
+ let kl=document.getElementsByClassName("date").value;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ date[0].addEventListener("click", function(){
+   document.getElementById("titre-txt-journee-patrimoine").innerHTML="Journée du patrimoine 2013";
+   document.getElementById("p-txt-journee-patrimoine").innerHTML = "4817 Chasse aux papillons nocturnes </br> 4818 La conférence des oiseaux, théâtre d'Illusia </br> 4819 visite guidée </br> 4820 Visite libre </br>"; 
+   console.log(kl); 
+  }); 
+ 
+ date[1].addEventListener("click", function(){
+   document.getElementById("titre-txt-journee-patrimoine").innerHTML="Journée du patrimoine 2014";
+   document.getElementById("p-txt-journee-patrimoine").innerHTML = "4760 Exposition Les arbres remarquables de France </br>4761 Présentation des recherches archéologiques récentes</br>4762 visite guidée </br>4763 Visite guidée A la découverte des arbres remarquables de l'arboretum </br>4764 Visite libre";
+  }); 
+  </script>
+
+</body>
+</html>

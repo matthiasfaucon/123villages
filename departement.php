@@ -81,6 +81,18 @@
 
     xmlhttp.send(null);
 </script>
+<div id="icone">
+  <div class="hotel"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+  <div class="magasin"><p>magasin</p></div>
+</div>
+
+    
     <hr>
   </section>
   

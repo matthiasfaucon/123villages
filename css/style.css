@@ -296,3 +296,20 @@ footer{
 #menuSecondaireHorizontal span{
    color: white;
 }
+
+#icone{
+display: flex;
+width: 50vw;
+justify-content: space-between;
+}
+
+.hotel, .magasin{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4062BB;
+    width: 66px;
+    height:70px;
+    border-radius:30px;
+}

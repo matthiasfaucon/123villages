@@ -27,3 +27,12 @@
     <h1>Présentation</h1>  
   <div id="txt-card">
     <p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un complet de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>
+    <div id="carte-ville"> 
+    <!-- <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> -->
+    </div> 
+  </div>
+</section>  
+<br><br><br><br><br><br><br><br>
+
+</body>
+</html>

@@ -16,4 +16,10 @@
     <p id="logoTypo">MonVillageNormand.fr</p>
     <div id="searchBarre"><p>Rechercher un village...</p><a href="departement.html"><div id="research"></div></a></div>
     <div id="banner"><img src="images/banniere_deskstop.jpg"></div>
-</header> 
+</header>  
+<section id="nom-ville"> 
+<div id="txt-nom-ville">
+    <p>Elbeuf</p> 
+    <p>76500</p>
+</div>
+</section> 

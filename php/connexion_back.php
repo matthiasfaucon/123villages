@@ -40,6 +40,12 @@
             $mp = 1;
         }
 
+        if($donnees['Mail']==$_POST["mail"]) {
+            $mail=1;
+            $mp=1;
+            echo json_encode(["location"=>"../index.php"]);
+        }
+
     }
 
     $_SESSION['email_verif'] = $mail;

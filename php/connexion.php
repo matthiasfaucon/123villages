@@ -35,6 +35,7 @@
     
     <title>Connexion</title>
     <meta charset="utf-8">
+    <meta name="google-signin-client_id" content="718317717615-mr54b4299rq92c4c3oldcvth9e58amau.apps.googleusercontent.com">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -58,7 +59,9 @@ Entrez votre adresse e-mail : <br>
 
 Entrez votre MdP : <br>
 <input type="text" name="mdp" required><br>
-
+<br/>
+<div class="g-signin2" data-onsuccess="onSignIn"></div>
+<br/>
 <?php
     if($_SESSION['email_verif'] == 0 || $_SESSION['mdp_verif'] == 0){
         echo 'adresse e-mail ou mot de passe incorrect<br>';
@@ -88,7 +91,8 @@ if($_SESSION['email_exist'] == 0){
 
    
    
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
     <!-- DEBUT - FaceBook Login API -->
 
     <script>
@@ -111,6 +115,27 @@ if($_SESSION['email_exist'] == 0){
     </script>
 
     <!-- FIN - FaceBook Login API -->
+    
+    <!-- DEBUT - Google Login API -->
 
+    <script>
+    function onSignIn(googleUser) {
+        var profile=googleUser.getBasicProfile();
+        console.log(profile.getEmail());
+        $.ajax({
+            type:"POST",
+            url:"connexion_back_ajax.php",
+            data:"mail="+profile.getEmail(),
+            success:traitementReponse
+        })
+    }
+    function traitementReponse(response) {
+        console.log(response);
+        var ans=JSON.parse(response);
+        window.location.replace(ans.location);
+    }
+    </script>
+
+<!-- FIN - Google Login API -->
 </body>
 </html>

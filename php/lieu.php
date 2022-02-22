@@ -25,4 +25,20 @@
         <p>
             Au cœur d'une forêt de 95 hectares, le château des XIIe-XIVe siècles remanié au XVIIe siècle est entouré d'une partie du mur d'enceinte et bordé d'un double fossé. Une exposition permanente présente aux visiteurs l'histoire du château, l'évolution de son architecture et l'histoire de la famille d'Harcourt. Véritable patrimoine végétal faisant pendant aux qualités architecturales du bâtiment, l'arboretum comprend 470 espèces d'arbres réparties sur 11 hectares. Créé au début du XIXe siècle, il fût l'un des premiers arboretums de France à introduire certaines espèces encore inconnues alors, comme les cèdres du Liban ou les séquoias
         </p>
+    </div>  
+    <div id="cont-img-infos">
+    <div id="img-lieu">
     </div> 
+
+    <div id="infolocal">  
+        <div>
+        <p>Type :Château fort</p>
+        <p>Mail :harcourt@cg27.fr</p>
+        <p>Site Internet: http://www.harcourt-normandie.fr</p>
+        <p>Téléphone :+33 2 32 46 29 70</p>
+        <p>Fax :+33 2 32 46 53 38</p>
+        <p>Adresse: 13 rue du Château 27800 Harcourt</p>
+        <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
+        
+    </div>
+ </div>

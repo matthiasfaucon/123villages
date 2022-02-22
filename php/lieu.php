@@ -106,3 +106,61 @@
 4820 Visite libre </br></p>
 </div>
 </section>  
+<div id="GroupeDeMiniatures"> 
+  <figure class="ImageMiniature"> 
+  <a href="illustration.php?NumImage=327000356">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
+			</a> 
+      </figure>
+      <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000357">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
+			</a>
+			
+
+			
+		 </figure>
+     <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000359">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
+			</a>
+			
+		</figure>
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000362">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
+			</a> 
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000370">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+			</a>
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000371">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+			</a>
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000372">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
+			</a>
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000373">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+			</a>
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000374">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+			</a>
+
+		</figure>
+
+  </div>  

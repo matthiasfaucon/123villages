@@ -18,8 +18,13 @@
     
     <title>Inscription</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="google-signin-client_id" content="718317717615-mr54b4299rq92c4c3oldcvth9e58amau.apps.googleusercontent.com">
+    <link rel="stylesheet" href="../css/style.css">
+<style>
+.efface {
+    display:none;
+}
+</style>
 </head>
 
 <body>
@@ -64,7 +69,18 @@
         <input type="submit" value="continuer">
 
     </form>
-
+    <br/>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <br/>
     <a href="connexion.php">Cliquer ici pour vous connectez</a>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script>
+function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        $("input[name='email']").attr("value",profile.getEmail());
+        $(".g-signin2").addClass("efface");
+    }
+</script>
 </body>

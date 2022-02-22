@@ -444,7 +444,7 @@ hr{
     color: #f4f4f9;
 }
 
-#maCarte,{
+#maCarte{
     border-radius: 30px;
 position: relative;
 display: flex;
@@ -664,7 +664,7 @@ height: 400px;
 #journee-patrimoine li 
 {
     border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    @extend %boxshadow;
+    /* @extend %boxshadow; */
     counter-increment: gradient-counter;
     margin-top: 1rem;
     min-height: 3rem;
@@ -739,3 +739,4 @@ flex-wrap: wrap;
     background-image: url("https://76.monvillagenormand.fr/images/300/176000077.webp");
    
 } 
+

@@ -325,4 +325,418 @@ justify-content: space-between;
     display: flex;
     justify-self: self-start;
     align-self: self-start;
+} 
+#logoTypo{
+    top: 2%;
+    left: 1%;
+    position: absolute;
+    font-size: 50px;
+    color: #f4f4f9;
 }
+#banner img{
+    width: 100vw;
+}
+
+h1{
+    font: 36px "Open Sans";
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    display: flex;
+    justify-self: center;
+    align-self:center;
+}
+
+#searchBarre{
+    display: flex;
+    top: 2%;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 50px;
+}
+
+#searchBarre p{
+    padding-right: 35%;
+    color: #f4f4f9;
+}
+
+#research{
+    right: 0;
+    width: 3vw;
+    height: 5vh;
+    border-radius: 0px 50px 50px 0px;
+    border: 2px solid #f4f4f9;
+}
+
+
+
+.positionPresentation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#boxinfo{
+      width: 60vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    width:200px;
+    height:200px;
+    background: #4062BB;
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.info p{
+    font: 18px "Montserrat light";
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    padding: 3%;
+}
+
+hr{
+    border: 1px solid #4062BB;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    width: 80vw;
+}
+
+/* #trouverLieux{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+#recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 5vh 0 5vh 0;
+}
+
+#boutonRecherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#boutonRecherche p{
+    text-align: center;
+    color: #f4f4f9;
+}
+
+#maCarte{
+    border-radius: 30px;
+position: relative;
+display: flex;
+width: 50vw;
+height: 50vh;
+margin-left: 10%;
+}
+
+
+.contenerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1% 0 1% 0;
+    /* scroll-snap-type: x mandatory; */
+    width: 80vw;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 40px;
+  /* margin: 0 1vw 3vh 1vw; */
+  flex: 1 0 auto;
+    margin-left: 2%;
+    /* scroll-snap-align: start; */
+        position: relative;
+        
+}
+.card:hover .card-background {
+    transform: scale(1.02) translateZ(0);
+  }
+  
+  
+  .cards:hover > .card:not(:hover) .card-background {
+    filter: brightness(0.7) saturate(0) contrast(1.2) blur(5px);
+  }
+
+    .card-background {
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+        filter: brightness(0.7) saturate(1.5) contrast(0.9); /* A MODIFIER!!!!!! */ 
+        position: absolute; /* image de fond prend toute la place de la cards (avec les 4 lignes du dessous)*/
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transform-origin: center;
+        transition: .2s;
+      }
+
+/* ::-webkit-scrollbar {
+    width: 100px;
+        background-color: #b46868;
+  } /* the new scrollbar will have a flat appearance with the set background color */
+
+  /* ::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);  */
+  /* } this will style the thumb, ignoring the track */
+
+  /* ::-webkit-scrollbar-button {
+        background-color: #7c2929; */
+  /* } optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+  /* ::-webkit-scrollbar-corner {
+        background-color: black; */
+  /* } */ 
+
+.card .ville {
+    position: relative;
+  padding: 3vh 0 0 1vw;
+  color: white;
+  z-index: 5;
+}
+
+.card:hover .ville {
+  color: white;
+}
+    
+.card .monument {
+    position: relative;
+    padding: 1vh 0 0 1vw;
+    color: black;
+    z-index: 100;
+  }
+
+  .card:hover .monument {
+    color: white;
+  }
+   
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    height: 10vh;
+    background: #4062BB;
+}
+
+#boutonCodePostal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#boutonCodePostal p{
+    color: white;
+}
+
+#infoDepartement{
+    margin: 0 0 0 10%;
+    width: 60%;
+}
+
+#menuSecondaireHorizontal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50vw;
+    height: 8vh;
+    border-radius: 30px;
+    background: #4062BB;
+}
+
+#menuSecondaireHorizontal span{
+   color: white;
+} 
+
+#div_title_lieu 
+{
+  margin-left: 50px;
+}
+
+#title_lieu
+{ 
+font-style: normal;
+font-weight: 300;
+text-align: center;
+color: #000000;
+}  
+
+#txt-img-lieu 
+{
+    display: flex;
+}
+
+#txt-infos-lieu
+{
+    margin-left: 50px;   
+}
+
+
+#txt-infos-lieu p 
+{
+
+width: 65%;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+line-height: 1.5em;
+color: #000000; 
+} 
+
+#cont-img-infos 
+{
+    padding-right: 1%;
+}
+
+#img-lieu 
+{ 
+position: relative;
+background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
+background-repeat:no-repeat;
+margin-right: 5%;
+width: 300px;
+height: 400px;
+} 
+#maCarte1 
+{
+    border-radius: 10px;
+    width: 100%;
+    height: 50%; 
+}
+#journee-patrimoine 
+{
+    display: flex;
+    margin-top: 30%;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    
+   
+}
+#journee-patrimoine ul
+{
+     
+    list-style: none;
+    width: 20vh; 
+    border-radius: 20px;
+    color: #fff;
+    background-color: #4062bb;  
+    margin: 1.75rem 0;
+    padding: 0rem 1rem 0rem 1rem;
+}  
+#journee-patrimoine li 
+{
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    /* @extend %boxshadow; */
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 0rem 1rem 2rem; 
+} 
+#journee-patrimoine li:hover 
+{
+    background-color: #52b2cf; 
+    cursor: pointer;
+} 
+ #txt-journee-patrimoine 
+{
+    flex-direction: column;
+    display: flex;
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    
+} 
+
+#GroupeDeMiniatures 
+{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-left: 5%;
+} 
+
+.ImageMiniature 
+{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-align: center;  
+} 
+
+#nom-ville 
+{
+display: flex; 
+justify-content: flex-start;
+flex-direction: row;
+margin-top: -0.3%;
+
+} 
+#txt-nom-ville
+{
+    background-color: #4062bb;
+    display: flex;
+    flex-direction: row;
+}
+#nom-ville p 
+{
+    color:#fff; 
+}
+#txt-card 
+{
+display: flex;
+width: 100%;
+justify-content: space-around; 
+flex-wrap: wrap;
+}
+#presentation p
+{
+    width: 60%;
+} 
+#carte-ville 
+{
+    display: flex;
+    border: 1px solid #000000; 
+    height: 300px; 
+    width: 125px;
+    border-radius: 30px;  
+    background-image: url("https://76.monvillagenormand.fr/images/300/176000077.webp");
+   
+} 
+

@@ -6,13 +6,15 @@ Composition du groupe :
     - Duprez Virgile
     - Faucon Matthias
     - Flamme Lisa
-    - Debut Loîc
+    - Debut Loic
     - Cavarec Léo
 
 URL du projet :
     https://github.com/matthiasfaucon/123villages.git
 
-Fonctionnalités mises en place :
+Fonctionnalités mises en place : 
+    - Ajout d'API 
+    - 
 
 Techniques choisies :
     - PHP
@@ -23,7 +25,8 @@ Organisation du groupe :
     - Duprez Virgile : Back End / API Facebook  
     - Faucon Matthias : Front End
     - Flamme Lisa : Secrétaire / services.php
-    - Debut Loîck : API Google
+    - Debut Loïc : API Google
     - Cavarec Léo : API OpenStreet Map
 
 Difficultés rencontrées :
+    - Manque d'assurance du l'utilisation de Git pouvant ralentir le projet

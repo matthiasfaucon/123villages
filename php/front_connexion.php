@@ -23,8 +23,8 @@
     </div>
 
     <div id="apigf">
-        <div id="apig"></div>
-        <div id="apif"></div>
+        <div id="apig"><p>Connexion avec Google</div>
+        <div id="apif"><p>Connexion avec Facebook </div>
     </div>
 
     </div>

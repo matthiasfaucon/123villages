@@ -718,8 +718,8 @@ flex-wrap: wrap;
 
 border: solid #4062BB; 
 border-radius:100% ;
-width: 96px;
-height: 96px;
+width: 50px;
+height: 50px;
 margin: 10px;
 
 } 
@@ -751,12 +751,15 @@ width: 40%;
 {
     background-color: #4062BB;
     width: 50%;
-    justify-content: center;
+    flex-direction: column;
+    margin-left: -5%;
+  
 }  
 #lcoin
 {
  width: 80%;
- margin: 2%; 
+ margin: 5%; 
+ margin-bottom: 0;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -771,10 +774,22 @@ justify-content: space-between;
 }
 #apigf
 {
-width: 50%;
-margin-left: 2%;
+width: 75%;
+margin-left: 5%;
+margin-top: 5%;
+display: flex;
+justify-content: space-between;
 }
 #apig, #apif
 {
-    
+    width: 33%;  
+    height: 30px;
+    background-color: #52B2CF; 
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
 }

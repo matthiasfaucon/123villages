@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+html{
+    font-size: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700&display=swap');
+
 body{
     background-color:#f4f4f9;
     overflow-x: hidden;
@@ -11,7 +17,7 @@ body{
 header{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
 }
 
@@ -27,56 +33,51 @@ a{
     color: #4062BB;
 }
 
-section div p{
-    font-family: "Montserrat";
-}
-
 #logoTypo{
     top: 2%;
     left: 1%;
     position: absolute;
-    font-size: 50px;
+    font-size: 1.5rem;
     color: #f4f4f9;
 }
+
 #banner img{
     width: 100vw;
 }
 
 h1{
-    font: 36px "Open Sans";
+    font-family: 'Open Sans', sans-serif;
     padding-top: 5vh;
     padding-bottom: 5vh;
     display: flex;
     justify-self: center;
     align-self:center;
+    font-size: 2rem;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchBarre{
+    margin: 0 5% 0 0;
     display: flex;
-    top: 2%;
-    justify-content: flex-end;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
-    width: 20vw;
-    height: 5vh;
+    width: 40vw;
+    height: 6vh;
     border-radius: 50px;
+    background: white;
 }
 
 #searchBarre p{
     padding-right: 35%;
-    color: #f4f4f9;
+    color: black;
+    font-size: 0.7rem;
 }
-
-#research{
-    right: 0;
-    width: 3vw;
-    height: 5vh;
-    border-radius: 0px 50px 50px 0px;
-    border: 2px solid #f4f4f9;
-}
-
-
 
 .positionPresentation{
     display: flex;
@@ -96,7 +97,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1%;
+    margin: 1% 0 5% 0;
     width:200px;
     height:200px;
     background: #4062BB;
@@ -105,11 +106,10 @@ h1{
 }
 
 .info p{
-    font: 18px "Montserrat light";
     text-align: center;
     color: white;
-    font-size: 18px;
     padding: 3%;
+    font-size: 1em;
 }
 
 hr{
@@ -139,14 +139,19 @@ hr{
     justify-content: center;
     align-items: center;
     background: #4062BB;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 100%;
 }
 
 #boutonRecherche p{
     text-align: center;
     color: #f4f4f9;
+    font-size: 1em
+}
+
+#research{
+    width: 2vw;
 }
 
 #maCarte{
@@ -217,16 +222,16 @@ margin-top: 5%;
       }  */
 
 ::-webkit-scrollbar {
-    width: 100px;
-        background-color: #b46868;
+    width: 20px;
+        background-color: #4062BB;
   } /* the new scrollbar will have a flat appearance with the set background color */
 
   ::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.2); 
+        background-color: rgba(0, 0, 0, 0.5); 
   } /* this will style the thumb, ignoring the track */
 
   ::-webkit-scrollbar-button {
-        background-color: #7c2929;
+        background-color: #fdc758;
   } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
 
   ::-webkit-scrollbar-corner {
@@ -303,7 +308,7 @@ width: 50vw;
 justify-content: space-between;
 }
 
-.hotel, .magasin{
+.Avoir, .Voyager, .SportEtLoisirs, .ServicesPublics, .Santé, .CommercesEtServices, .DonnéesPubliques{
     margin-top: 3%;
     display: flex;
     justify-content: center;
@@ -313,6 +318,15 @@ justify-content: space-between;
     height:70px;
     border-radius:30px;
 }
+
+#icone div svg{
+    transform: scale(0.6);
+    color: #fdc758;
+}
+
+/* #icone div svg path{
+    color: #fdc758;
+} */
 
 #presentationCarte{
     width: 80vw;
@@ -326,17 +340,14 @@ justify-content: space-between;
     justify-self: self-start;
     align-self: self-start;
 } 
-#logoTypo{
-    top: 2%;
-    left: 1%;
-    position: absolute;
-    font-size: 50px;
-    color: #f4f4f9;
-}
+
 #banner img{
     width: 100vw;
 }
 
+/* <<<<<<< HEAD
+.positionPresentation{
+======= */
 /* h1{
     font: 36px "Open Sans";
     padding-top: 5vh;
@@ -372,10 +383,11 @@ justify-content: space-between;
 } */
 
 /* .positionPresentation{
-    display: flex;
+/* >>>>>>> d7c7ef6edb0b4c64e724f94c420bfa1b71539816 */
+    /* display: flex;
     justify-content: center;
     align-items: center;
-} */
+} */ */
 
 /* #boxinfo{
       width: 60vw;
@@ -390,13 +402,14 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     margin: 1%;
-    width:200px;
-    height:200px;
+    width:250px;
+    height:250px;
     background: #4062BB;
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 } */
-
+/* 
+<<<<<<< HEAD */
 /* .info p{
     font: 18px "Montserrat light";
     text-align: center;
@@ -406,11 +419,14 @@ justify-content: space-between;
 } */
 
 /* hr{
-    border: 1px solid #4062BB;
+=======
+hr{
+/* >>>>>>> 962cffa8705f79c853fa7881ff4502c44505b167 */
+    /* border: 1px solid #4062BB;
     margin-top: 10vh;
     margin-bottom: 5vh;
     width: 80vw;
-} */
+} */ */
 
 /* #trouverLieux{
     display: flex;
@@ -425,8 +441,38 @@ justify-content: space-between;
     align-items: center;
     width: 80vw;
     margin: 5vh 0 5vh 0;
+<<<<<<< HEAD
 } */
 /* 
+=======
+}
+
+<<<<<<< HEAD
+#maCarte{
+    border-radius: 30px;
+position: relative;
+display: flex;
+width: 50vw;
+height: 50vh;
+margin-left: 10%;
+}
+
+
+.contenerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1% 0 1% 0;
+    /* scroll-snap-type: x mandatory; */
+    /* width: 80vw;
+=======
+>>>>>>> 962cffa8705f79c853fa7881ff4502c44505b167 */
+
 #boutonRecherche{
     display: flex;
     justify-content: center;
@@ -435,12 +481,17 @@ justify-content: space-between;
     height: 150px;
     width: 150px;
     border-radius: 100%;
-} */
+} 
 
 /* #boutonRecherche p{
     text-align: center;
     color: #f4f4f9;
+<<<<<<< HEAD
 } */
+/* =======
+>>>>>>> d7c7ef6edb0b4c64e724f94c420bfa1b71539816
+}
+>>>>>>> 962cffa8705f79c853fa7881ff4502c44505b167 */
 
 .card {
   width: 300px;
@@ -515,7 +566,24 @@ justify-content: space-between;
     color: white;
   } */
    
+
+.fleche{
+position: absolute;
+font-size: 3rem;
+}
+
+.fleche.gauche{
+    left:5vw;
+  color: #4062BB;
+    }
+
+    .fleche.droite{
+        right:5vw;
+      color: #4062BB;
+        }
+
 /* footer{
+>>>>>>> d7c7ef6edb0b4c64e724f94c420bfa1b71539816
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,8 +632,6 @@ justify-content: space-between;
 
 #title_lieu
 { 
-font-style: normal;
-font-weight: 300;
 text-align: center;
 color: #000000;
 }  
@@ -585,8 +651,6 @@ color: #000000;
 {
 
 width: 65%;
-font-style: normal;
-font-weight: normal;
 font-size: 18px;
 line-height: 22px;
 line-height: 1.5em;
@@ -618,7 +682,7 @@ height: 400px;
     display: flex;
     margin-top: 30%;
     padding: 2%;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     flex-direction: row;
     justify-content: space-around;
     
@@ -699,10 +763,7 @@ width: 100%;
 justify-content: space-around; 
 flex-wrap: wrap;
 }
-#presentation p
-{
-    width: 60%;
-} 
+
 #carte-ville 
 {
     display: flex;
@@ -714,6 +775,7 @@ flex-wrap: wrap;
    
 } 
 
+/* <<<<<<< HEAD */
 #arrow {
 
 border: solid #4062BB; 
@@ -842,3 +904,68 @@ border-bottom: 2px solid #fff;
     background: linear-gradient(to right, #4062BB, #52B2CF);
     border: none;
 }
+
+/*test*/
+
+
+#menuSecondaireHorizontal {
+    list-style: none;
+    list-style-position: inside;    
+    margin: 0;
+    padding: 0;
+    background-color: #4062bb;
+    ;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: relative; /* used with absolute for positioning underline */
+  }
+
+  .menu-link:after {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    line-height: 1;
+    width: 100%;
+    background-color: #fdc758;
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+  }
+  .menu-link:hover:after,
+  .menu-link:active:after {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;
+  }
+
+  nav{
+      margin-top: 2%;
+      position: fixed;
+      width: 13vw;
+      height: auto;
+        background-color: #4062bb;
+        border-radius: 0 30px 30px 0;
+  }
+
+  nav li{
+      font-size: 1em;
+      /* font-family: 'Montserrat', sans-serif; */
+      font-family: 'Open Sans', sans-serif;
+      list-style: none;
+      padding:7%;
+      color: white;
+  }
+
+  #menuVertical{
+      margin: 7%;
+  }
+

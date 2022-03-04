@@ -13,10 +13,16 @@
     <path d="m8.41 15 5.29-5.29-1.41-1.42-7 7a1 1 0 0 0 0 1.41l7 7 1.41-1.41L8.41 17H27v-2z"/></g></svg>
     </div>
 
-    <div id="peopleandcracc">
-    <div id="people"></div>
-    <div id="cracc"></div>
 
+    <div id="peopleandcracc">
+    <div id="people">  </div>
+    <div id="cracc">
+    <div id="lcoin">
+        <h2>CONNEXION</h2>
+        <a href="front_inscription.php">Pas encore de compte ? </a>
+    </div>
+
+    </div>
     </div>
 
 

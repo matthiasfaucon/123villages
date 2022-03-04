@@ -729,7 +729,45 @@ margin: 10px;
 } 
 #peopleandcracc 
 {
-    width: 80%;
-    height: 80%;
-    
+    width: 90vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-left: 10%;
+} 
+#people, #cracc 
+{
+    display: flex;
+    height: 100%;
+    border-radius: 50px;    
+} 
+#people 
+{
+background-color: lightgray; 
+width: 40%;
+}
+#cracc 
+{
+    background-color: #4062BB;
+    width: 50%;
+    justify-content: center;
+}  
+#lcoin
+{
+ width: 80%;
+ margin: 2%; 
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+
+} 
+#cracc h2 
+{
+    color: #fff ;
+}
+#lcoin a 
+{
+    color: lightgray;
 }

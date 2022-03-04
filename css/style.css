@@ -714,3 +714,22 @@ flex-wrap: wrap;
    
 } 
 
+#arrow {
+
+border: solid #4062BB; 
+border-radius:100% ;
+width: 96px;
+height: 96px;
+margin: 10px;
+
+} 
+#arrow svg 
+{
+    color: #4062BB;
+} 
+#peopleandcracc 
+{
+    width: 80%;
+    height: 80%;
+    
+}

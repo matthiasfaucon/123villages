@@ -22,6 +22,11 @@
         <a href="front_inscription.php">Pas encore de compte ? </a>
     </div>
 
+    <div id="apigf">
+        <div id="apig"></div>
+        <div id="apif"></div>
+    </div>
+
     </div>
     </div>
 

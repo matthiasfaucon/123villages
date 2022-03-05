@@ -840,7 +840,12 @@ width: 75%;
 margin-left: 5%;
 margin-top: 5%;
 display: flex;
-justify-content: space-between;
+justify-content: space-between; 
+
+} 
+#apigf p
+{
+font-size: small;
 }
 #apig, #apif
 {
@@ -898,11 +903,18 @@ border-bottom: 2px solid #fff;
 
 .form_frontco_button input[type=submit]
 {
-    width: 100%;
-    color: #fff; 
+    width: 300%;
+    height: 50px;
+    margin-left: -100%;  /*  a modifier */
+    margin-top: 50%;
+   color: #fff;  
     background-color: #52b2cf; 
     background: linear-gradient(to right, #4062BB, #52B2CF);
     border: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #000;
+    cursor: pointer;
+
 }
 
 /*test*/

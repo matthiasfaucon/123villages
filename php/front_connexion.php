@@ -29,10 +29,10 @@
 
             <div id="apigf">
                 <div id="apig">
-                    <p>Connexion avec Google
+                    <p>Connexion avec Google</p>
                 </div>
                 <div id="apif">
-                    <p>Connexion avec Facebook
+                    <p>Connexion avec Facebook</p>
                 </div>
             </div>
 

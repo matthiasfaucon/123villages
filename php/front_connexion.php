@@ -23,7 +23,7 @@
         <div id="people"> </div>
         <div id="cracc">
             <div id="lcoin">
-                <h2>CONNEXION</h2>
+                <h4>CONNEXION</h4>
                 <a href="front_inscription.php">Pas encore de compte ? </a>
             </div>
 

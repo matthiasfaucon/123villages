@@ -900,6 +900,17 @@ border-bottom: 2px solid #fff;
     border: none;
     border-bottom: 2px solid #fff;
   } 
+  .form_frontco  input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+    background-color: #4062BB; 
+    color: #fff; 
+    border: none;
+    border-bottom: 2px solid #fff;
+  } 
+
 
   
 

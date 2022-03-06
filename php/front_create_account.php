@@ -38,6 +38,16 @@
 
             <form action="" method="get" class="form_frontco_form">
 
+            <div class="form_frontco">
+                    <label for="name"> </label>
+                    <input type="text" name="name" id="name" placeholder="Prénom" required>
+                </div>
+
+                <div class="form_frontco">
+                    <label for="fname"> </label>
+                    <input type="text" name="fname" id="fname" placeholder="Nom" required>
+                </div>             
+
                 <div class="form_frontco">
                     <label for="email"> </label>
                     <input type="email" name="email" id="email" placeholder="Adresse email" required>

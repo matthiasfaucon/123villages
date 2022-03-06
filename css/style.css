@@ -836,7 +836,7 @@ justify-content: space-between;
 }
 #apigf
 {
-width: 75%;
+width: 80%;
 margin-left: 5%;
 margin-top: 5%;
 display: flex;
@@ -845,7 +845,8 @@ justify-content: space-between;
 } 
 #apigf p
 {
-font-size: small;
+font-size: small; 
+white-space: nowrap;
 }
 #apig, #apif
 {

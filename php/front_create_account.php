@@ -24,7 +24,7 @@
         <div id="cracc">
             <div id="lcoin">
                 <h4>INSCRIPTION</h4>
-                <a href="front_inscription.php">Déjà un compte ? </a>
+                <a href="front_connexion.php">Déjà un compte ? </a>
             </div>
 
             <div id="apigf">

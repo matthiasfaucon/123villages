@@ -725,3 +725,158 @@ flex-wrap: wrap;
   #menuVertical{
       margin: 7%;
   }
+
+
+  #arrow {
+
+    border: solid #4062BB; 
+    border-radius:100% ;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    
+    } 
+    #arrow svg 
+    {
+        color: #4062BB;
+    } 
+    #peopleandcracc 
+    {
+        width: 90vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        margin-left: 15%;
+    } 
+    #people, #cracc 
+    {
+        display: flex;
+        height: 100%;
+        border-radius: 50px;    
+    } 
+    #people 
+    {
+    background-color: lightgray; 
+    width: 40%;
+    }
+    #cracc 
+    {
+        background-color: #4062BB;
+        width: 50%;
+        flex-direction: column;
+        margin-left: -10%;
+      
+    }  
+    #lcoin
+    {
+     width: 80%;
+     margin: 5%; 
+     margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    } 
+    #cracc h4
+    {
+        color: #fff ;
+    }
+    #lcoin a 
+    {
+        color: lightgray; 
+        font-size: medium;
+    }
+    #apigf
+    {
+    width: 80%;
+    margin-left: 5%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; 
+    
+    } 
+    #apigf p
+    {
+    font-size: small; 
+    white-space: nowrap;
+    }
+    #apig, #apif
+    {
+        width: 33%;  
+        height: 30px;
+        background-color: #52B2CF; 
+        border-radius: 25px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        cursor: pointer;
+    }
+    
+    .form_frontco_form
+    {
+       
+        height: 80%;
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+       
+    }  
+    
+    .form_frontco  input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+    background-color: #4062BB; 
+    color: #fff; 
+    border: none;
+    border-bottom: 2px solid #fff;
+    
+    } 
+    
+    .form_frontco  ::placeholder {
+        color: #fff;
+    }
+    
+    .form_frontco  input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+        background-color: #4062BB; 
+        color: #fff; 
+        border: none;
+        border-bottom: 2px solid #fff;
+      } 
+      .form_frontco  input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box; 
+        background-color: #4062BB; 
+        color: #fff; 
+        border: none;
+        border-bottom: 2px solid #fff;
+      } 
+    
+    
+      
+    
+    .form_frontco_button input[type=submit]
+    {
+        width: 300%;
+        height: 50px;
+        margin-left: -100%;  /*  a modifier */
+        margin-top: 50%;
+       color: #fff;  
+        background-color: #52b2cf; 
+        background: linear-gradient(to right, #4062BB, #52B2CF);
+        border: none;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #000;
+        cursor: pointer;
+    
+    }

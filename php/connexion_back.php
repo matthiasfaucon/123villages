@@ -6,7 +6,7 @@
     $mp = 0;
 
     $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
-    $mdp = htmlentities($_GET['mdp'], ENT_QUOTES);
+    $mdp = htmlentities($_GET['password'], ENT_QUOTES);
 
     if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
     }

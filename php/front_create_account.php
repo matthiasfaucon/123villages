@@ -11,11 +11,8 @@
 
 <body>
     <div id="arrow">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <g data-name="20-Arrow Left">
-                <path d="m8.41 15 5.29-5.29-1.41-1.42-7 7a1 1 0 0 0 0 1.41l7 7 1.41-1.41L8.41 17H27v-2z" />
-            </g>
-        </svg>
+    <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33"><defs><style>.cls-1{fill:#4062bb;}</style></defs><title>up-arrow-svgrepo-com</title><polygon class="cls-1" points="31.93 164.82 490 164.82 490 149.51 31.93 149.51 189.08 11.52 178.97 0 0 157.17 178.97 314.33 189.08 302.82 31.93 164.82"/></svg>
+</svg>
     </div>
 
 

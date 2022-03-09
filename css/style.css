@@ -525,6 +525,7 @@ color: #000000;
 #txt-img-lieu 
 {
     display: flex;
+    justify-content: space-between;
 }
 
 #txt-infos-lieu
@@ -542,6 +543,16 @@ line-height: 22px;
 line-height: 1.5em;
 color: #000000; 
 } 
+
+#infos-local
+{
+    margin-left: 50px;   
+    width: 65%;
+font-size: 18px;
+line-height: 22px;
+line-height: 1.5em;
+color: #000000; 
+}
 
 #cont-img-infos 
 {
@@ -624,6 +635,7 @@ height: 400px;
     flex-wrap: wrap; 
     justify-content: center; 
     margin-left: 5%;
+    margin-top: 10%;
 } 
 
 .ImageMiniature 

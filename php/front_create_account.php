@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Connexion</title>
+    <title>Inscription</title>
 </head>
 
 <body>
@@ -23,20 +23,30 @@
         <div id="people"> </div>
         <div id="cracc">
             <div id="lcoin">
-                <h4>CONNEXION</h4>
-                <a href="front_create_account.php">Pas encore de compte ? </a>
+                <h4>INSCRIPTION</h4>
+                <a href="front_connexion.php">Déjà un compte ? </a>
             </div>
 
             <div id="apigf">
                 <div id="apig">
-                    <p>Connexion avec Google</p>
+                    <p>S'inscrire avec Google</p>
                 </div>
                 <div id="apif">
-                    <p>Connexion avec Facebook</p>
+                    <p>S'inscrire avec Facebook</p>
                 </div>
             </div>
 
-            <form action="connexion_back.php" method="get" class="form_frontco_form">
+            <form action="" method="get" class="form_frontco_form">
+
+            <div class="form_frontco">
+                    <label for="name"> </label>
+                    <input type="text" name="name" id="name" placeholder="Prénom" required>
+                </div>
+
+                <div class="form_frontco">
+                    <label for="fname"> </label>
+                    <input type="text" name="fname" id="fname" placeholder="Nom" required>
+                </div>             
 
                 <div class="form_frontco">
                     <label for="email"> </label>

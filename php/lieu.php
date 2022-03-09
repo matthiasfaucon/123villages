@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>Lieu</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="..\css\style.css">
@@ -36,16 +36,16 @@
   </div>
   <div id="txt-img-lieu">
     <div id="infos-local">
-    <div>
-      <p>Type :Château fort</p>
-      <p>Mail :harcourt@cg27.fr</p>
-      <p>Site Internet: http://www.harcourt-normandie.fr</p>
-      <p>Téléphone :+33 2 32 46 29 70</p>
-      <p>Fax :+33 2 32 46 53 38</p>
-      <p>Adresse: 13 rue du Château 27800 Harcourt</p>
-      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
+      <div>
+        <p>Type :Château fort</p>
+        <p>Mail :harcourt@cg27.fr</p>
+        <p>Site Internet: http://www.harcourt-normandie.fr</p>
+        <p>Téléphone :+33 2 32 46 29 70</p>
+        <p>Fax :+33 2 32 46 53 38</p>
+        <p>Adresse: 13 rue du Château 27800 Harcourt</p>
+        <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
 
-    </div>
+      </div>
 
     </div>
     <div id="cont-img-infos">
@@ -99,10 +99,12 @@
     </div>
   </div>
   <div id="txt-infos-lieu">
-  <p>
-        Au cœur d'une forêt de 95 hectares, le château des XIIe-XIVe siècles remanié au XVIIe siècle est entouré d'une partie du mur d'enceinte et bordé d'un double fossé. Une exposition permanente présente aux visiteurs l'histoire du château, l'évolution de son architecture et l'histoire de la famille d'Harcourt. Véritable patrimoine végétal faisant pendant aux qualités architecturales du bâtiment, l'arboretum comprend 470 espèces d'arbres réparties sur 11 hectares. Créé au début du XIXe siècle, il fût l'un des premiers arboretums de France à introduire certaines espèces encore inconnues alors, comme les cèdres du Liban ou les séquoias
-      </p>
+    <p>
+      Au cœur d'une forêt de 95 hectares, le château des XIIe-XIVe siècles remanié au XVIIe siècle est entouré d'une partie du mur d'enceinte et bordé d'un double fossé. Une exposition permanente présente aux visiteurs l'histoire du château, l'évolution de son architecture et l'histoire de la famille d'Harcourt. Véritable patrimoine végétal faisant pendant aux qualités architecturales du bâtiment, l'arboretum comprend 470 espèces d'arbres réparties sur 11 hectares. Créé au début du XIXe siècle, il fût l'un des premiers arboretums de France à introduire certaines espèces encore inconnues alors, comme les cèdres du Liban ou les séquoias
+    </p>
     <div>
+      </div>
+
 
 
     </div>
@@ -118,12 +120,9 @@
 
       </ul>
       <div id="txt-journee-patrimoine">
-        <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2013</h2>
+        <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2021</h2>
 
-        <p id="p-txt-journee-patrimoine">4817 Chasse aux papillons nocturnes </br>
-          4818 La conférence des oiseaux, théâtre d'Illusia </br>
-          4819 visite guidée </br>
-          4820 Visite libre </br></p>
+        <p id="p-txt-journee-patrimoine">4639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet</p>
       </div>
     </section>
     <div id="GroupeDeMiniatures">
@@ -200,6 +199,31 @@
       date[5].addEventListener("click", function() {
         document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2014";
         document.getElementById("p-txt-journee-patrimoine").innerHTML = "4760 Exposition Les arbres remarquables de France </br>4761 Présentation des recherches archéologiques récentes</br>4762 visite guidée </br>4763 Visite guidée A la découverte des arbres remarquables de l'arboretum </br>4764 Visite libre";
+      });
+
+      date[4].addEventListener("click", function() {
+        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2015";
+        document.getElementById("p-txt-journee-patrimoine").innerHTML = "5044 visite guidée</br>5045 Visite libre</br>4762 visite guidée </br>5046 Visite théatralisée - Domaine à vendre";
+      });
+
+      date[3].addEventListener("click", function() {
+        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2018";
+        document.getElementById("p-txt-journee-patrimoine").innerHTML = "9512599 Visite libre du domaine d'Harcourt, château et arboretum</br>15930892 Visite libre du Chantier Chapentiers sans frontières";
+      });
+
+      date[2].addEventListener("click", function() {
+        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2019";
+        document.getElementById("p-txt-journee-patrimoine").innerHTML = "56071185 Spectacle de théâtre jeune public au domaine d'Harcourt</br>60300153 Lecture musicale au domaine d'Harcourt</br>4762 visite guidée";
+      });
+
+      date[1].addEventListener("click", function() {
+        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2020";
+        document.getElementById("p-txt-journee-patrimoine").innerHTML = "20437322 Visite libre du domaine d'Harcourt, château et arboretum</br>73767743 Savoir-faire : de lin à l'autre - Art éphémère extraordinaire par François Abélanet";
+      });
+
+      date[0].addEventListener("click", function() {
+        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2021";
+        document.getElementById("p-txt-journee-patrimoine").innerHTML = "64639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet";
       });
     </script>
 

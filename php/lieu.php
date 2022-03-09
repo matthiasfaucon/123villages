@@ -182,7 +182,9 @@
 
       </figure>
 
-    </div>
+    </div> 
+
+    
     <footer>Mentions légales</footer>
     <script>
       let date = document.getElementsByClassName("date");

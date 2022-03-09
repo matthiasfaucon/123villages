@@ -37,8 +37,8 @@
 </div>
 </nav>
 
-<section id="presentation">
-    <h1>Présentation</h1>
+<section id="presentationDepartement">
+    <h1>Bienvenue en Seine-Maritime</h1>
     <div class="positionPresentation">
     <div id="boutonRecherche"><p>Trouver votre village</p></div>
     <div id="infoDepartement"><p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>
@@ -50,12 +50,17 @@
   </section>
 
   <section id="activites">
+  <h1>Découvrez la Seine-Maritime</h1>
     <div id="menuSecondaireHorizontal">
-   <span class="menu-link">Services</span> 
-   <span class="menu-link">Patrimoine</span> 
-   <span class="menu-link">Commerces</span> 
-   <span class="menu-link">Découvrir</span>
+  <span class="menu-link">A voir</span>
+  <span class="menu-link">Voyager</span>
+  <span class="menu-link">Sport et loisirs</span>
+  <span class="menu-link">Services publics</span>
+  <span class="menu-link">Santé</span>
+  <span class="menu-link">Commerces et Services</span>
+  <span class="menu-link">Données publiques</span>
     </div>
+    <div class="carteInformations">
     <div id="maCarteDepartement"></div>
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
 <script>
@@ -98,36 +103,19 @@
     xmlhttp.send(null);
 </script>
 
-<div id="icone">
+<div class="informationsMonument">
+  
+<h1 class='titreInfo'>Cirque-Théatre</h1>
+<img class='imageInfo' src="images/cirque.jpg"></img></br>
+<p class='adresseInfo'>Adresse: 2 Rue Augustin Henry, 76500 Elbeuf</p></br>
+<p class='telephoneInfo'>Téléphone: 0232131050</p>
 
-  <div class="Avoir"><svg class="svgAvoir" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.99 52.43"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M65.32,52.42h-.4C22.89,52.43,0,26.21,0,26.21S27.11,1.13,64.55,0a26.21,26.21,0,0,0,.77,52.38Z"/><path d="M66,42.63A16.4,16.4,0,0,1,49.8,23.55a9.41,9.41,0,1,0,12.39-13.3A15.9,15.9,0,0,1,66,9.8a16.42,16.42,0,0,1,0,32.83Z"/><path d="M132,26.21S104.88,51.3,67.44,52.39A26.21,26.21,0,0,0,66.67,0h.41C109.1,0,132,26.21,132,26.21Z"/><path class="cls-1" d="M66.57,0q-1,0-1.92,0c.44,0,.9,0,1.35,0Z"/><path class="cls-1" d="M65.43,52.42l1.92,0c-.45,0-.9,0-1.35,0Z"/><path class="cls-1" d="M82.41,26.21A16.42,16.42,0,1,1,49.8,23.55a9.41,9.41,0,1,0,12.39-13.3A15.9,15.9,0,0,1,66,9.8,16.41,16.41,0,0,1,82.41,26.21Z"/><path d="M82.41,26.21A16.42,16.42,0,1,1,49.8,23.55a9.41,9.41,0,1,0,12.39-13.3A15.9,15.9,0,0,1,66,9.8,16.41,16.41,0,0,1,82.41,26.21Z"/></g></g></svg>
-<style>
-
-.svgAvoir{
-  color:red;
-}
-
-</style>
 </div>
-
-  <div class="Voyager"><img src="images/icone/commerces-et-services.svg">    
-  <style>
-    svg{
-      color:red;
-      z-index: 5;
-    }
-  </style></div>
-
-  <div class="SportEtLoisirs"><img src="images/icone/sante.svg"></div>
-  <div class="ServicesPublics"><img src="images/icone/services-publics.svg"></div>
-  <div class="Santé"><img src="images/icone/sports-et-loisirs.svg"></div>
-  <div class="CommercesEtServices"><img src="images/icone/voyager.svg"></div>
-</div>
-
+  </div>
   </section>
 
   <section id="presentationCarte">
-    <h2>Églises</h2>
+    <h1>Notre sélection pour la Seine-Marritime</h1>
     <div class="contenerCard">
     <div class="cards">
       <div class="card">
@@ -212,6 +200,8 @@
 </div>
         
 </section> 
+
+<footer>Mentions légales</footer>
 </body>
 
 </html>

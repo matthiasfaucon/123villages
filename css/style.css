@@ -58,12 +58,12 @@ header img{
 
 h1{
     font-family: 'Open Sans', sans-serif;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-bottom: 5%;
     display: flex;
     justify-self: center;
     align-self:center;
     font-size: 2rem;
+    color: #1a181b;
 }
 
 
@@ -93,7 +93,12 @@ h1{
     background-color: #4062BB;
 }
 
-#presentation,#choixAPresenter h1{
+#presentationDepartement{
+    width: 100vw;
+    background-color: #4062BB;
+}
+
+#presentation h1,#presentationDepartement h1,#choixAPresenter h1,#presentationCarte h1{
     color: #e9f0f1;
 }
 
@@ -194,9 +199,8 @@ margin-left: 10%;
     border-radius: 30px;
 position: relative;
 display: flex;
-width: 50vw;
-height: 50vh;
-margin-top: 5%;
+width: 40vw;
+height: 60vh;
 }
 
 #choixAPresenter{
@@ -314,6 +318,7 @@ footer{
 }
 
 #infoDepartement{
+    color: #e9f0f1;
     margin: 0 0 0 10%;
     width: 60%;
 }
@@ -322,7 +327,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70vw;
+    width: 80vw;
     height: 7vh;
     border-radius: 30px;
     background: #4062BB;
@@ -379,14 +384,14 @@ justify-content: space-between;
 }
 
 
-#maCarte{
+/* #maCarte{
     border-radius: 30px;
 position: relative;
 display: flex;
-width: 50vw;
+width: 40vw;
 height: 50vh;
 margin-left: 10%;
-}
+} */
 
 
 .contenerCard{
@@ -460,22 +465,29 @@ margin-left: 10%;
   }
    
 #fleche{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
     align-content: center;
+    width: 100vw;
 }
 
 .fleche.gauche{
-    left:5vw;
-  color: #e9f0f1;
+    position: absolute;
+    left: 5vw;
+    margin-top: 50vh;
+    color: #e9f0f1;
+    width: 10vw;
     }
 
 .fleche.droite{
-        right:5vw;
-      color: #e9f0f1;
+    position: absolute;
+    right: -2vw;
+    margin-top: 50vh;
+    color: #e9f0f1;
+    width: 10vw;
         }
 
 #boutonCodePostal {
@@ -496,20 +508,6 @@ margin-left: 10%;
     margin: 0 0 0 10%;
     width: 60%;
 }
-
-#menuSecondaireHorizontal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 50vw;
-    height: 8vh;
-    border-radius: 30px;
-    background: #4062BB;
-}
-
-#menuSecondaireHorizontal span{
-   color: #e9f0f1;
-} 
 
 #div_title_lieu 
 {
@@ -662,16 +660,6 @@ flex-wrap: wrap;
 } 
 
 /*test*/
-
-
-#menuSecondaireHorizontal {
-    list-style: none;
-    list-style-position: inside;    
-    margin: 0;
-    padding: 0;
-    background-color: #4062bb;
-    ;
-  }
 
   .menu-link {
     text-decoration: none;
@@ -889,3 +877,49 @@ flex-wrap: wrap;
         cursor: pointer;
     
     }
+
+    
+.informationsMonument {
+    border-radius: 10px;
+    padding: 2% 0 0 4%;
+    width: 30vw;
+    height: 55vh;
+    background: #4062BB;
+}
+
+.carteInformations{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+}
+
+.titreInfo{
+    font-size: 1.5em;
+    color: #e9f0f1;
+}
+
+.adresseInfo{
+    font-size: 0.8em;
+    color: #e9f0f1;
+}
+
+.imageInfo{
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.telephoneInfo{
+    color: #e9f0f1;
+    font-size: 0.8em;
+}
+
+img.leaflet-interactive{
+    transform: scale(5);
+}
+
+/* <span class='titreInfo'>Cirque-Théatre</span></br>
+<span class='adresseInfo'>2 Rue Augustin Henry, 76500 Elbeuf</span>
+<img class='imageInfo' src="images/cirque.jpg"></img>
+<span class='titreInfo'>Cirque-Théatre</span> */

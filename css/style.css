@@ -34,7 +34,11 @@ section{
 }
 
 a{
-    color: #4062BB;
+    color: #fdc758;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 #logoTypo{
@@ -341,19 +345,10 @@ justify-content: space-between;
     justify-content: center;
     align-items: center;
     background-color: #4062BB;
-    width: 66px;
-    height:70px;
+    width: 80px;
+    height: 80px;
     border-radius:30px;
 }
-
-#icone div svg{
-    transform: scale(0.6);
-    color: #fdc758;
-}
-
-/* #icone div svg path{
-    color: #fdc758;
-} */
 
 #presentationCarte{
     display: flex;
@@ -364,8 +359,10 @@ justify-content: space-between;
 
 #presentationCarte h2{
     display: flex;
-    justify-self: self-start;
-    align-self: self-start;
+    /* justify-self: self-start; */
+    /* align-self: self-start; */
+    margin-right: 70vw;
+    color: white;
 } 
 
 .positionPresentation{

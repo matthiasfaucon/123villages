@@ -95,13 +95,14 @@
         </div>
   <section id="journee-patrimoine">
     <ul>
-      <li class="date">2013</li>
-      <li class="date">2014</li>
-      <li class="date">2015</li>
-      <li class="date">2018</li>
-      <li class="date">2019</li>
-      <li class="date">2020</li>
-      <li class="date">2021</li>
+    <li class="date">2021</li>
+    <li class="date">2020</li>
+    <li class="date">2019</li>
+    <li class="date">2018</li>
+    <li class="date">2015</li>
+    <li class="date">2014</li>
+    <li class="date">2013</li>
+       
     </ul>
     <div id="txt-journee-patrimoine">
       <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2013</h2>
@@ -177,18 +178,13 @@
 
 
 
-
-
-
-
-
-    date[0].addEventListener("click", function() {
+    date[6].addEventListener("click", function() {
       document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2013";
       document.getElementById("p-txt-journee-patrimoine").innerHTML = "4817 Chasse aux papillons nocturnes </br> 4818 La conférence des oiseaux, théâtre d'Illusia </br> 4819 visite guidée </br> 4820 Visite libre </br>";
       console.log(kl);
     });
 
-    date[1].addEventListener("click", function() {
+    date[5].addEventListener("click", function() {
       document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2014";
       document.getElementById("p-txt-journee-patrimoine").innerHTML = "4760 Exposition Les arbres remarquables de France </br>4761 Présentation des recherches archéologiques récentes</br>4762 visite guidée </br>4763 Visite guidée A la découverte des arbres remarquables de l'arboretum </br>4764 Visite libre";
     });

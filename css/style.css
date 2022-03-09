@@ -566,19 +566,21 @@ height: 400px;
 #journee-patrimoine 
 {
     display: flex;
-    margin-top: 30%;
+    margin-top: 10%;
     padding: 2%;
     /* font-family: 'Montserrat', sans-serif; */
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     
    
 }
 #journee-patrimoine ul
 {
-     
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     list-style: none;
-    width: 20vh; 
+    width: 100vh; 
     border-radius: 20px;
     color: #fff;
     background-color: #4062bb;  
@@ -597,7 +599,9 @@ height: 400px;
 #journee-patrimoine li:hover 
 {
     background-color: #52b2cf; 
-    cursor: pointer;
+    cursor: pointer; 
+
+
 } 
  #txt-journee-patrimoine 
 {
@@ -606,8 +610,13 @@ height: 400px;
     width: 40%;
     height: auto;
     margin-left: auto;
+    margin-left: -1%;
     
 } 
+
+#icone div img{
+    transform: scale(0.6);
+}
 
 #GroupeDeMiniatures 
 {

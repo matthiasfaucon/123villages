@@ -116,7 +116,7 @@
     <div class="contenerCard">
     <div class="cards">
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -126,7 +126,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -136,7 +136,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -146,7 +146,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -156,7 +156,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -166,7 +166,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -176,7 +176,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>
@@ -186,7 +186,7 @@
       </div>
 
       <div class="card">
-        <div class="card-background" style="background-image: url(images/bleu.jpg);"></div>
+        <div class="card-background" style="background-image: url(images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Rouen</h3>
           </div>

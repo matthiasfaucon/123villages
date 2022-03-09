@@ -45,8 +45,10 @@ a{
     color: #f4f4f9;
 }
 
-#banner img{
+header img{
     width: 100vw;
+    display: flex;
+    align-self: baseline;
 }
 
 h1{
@@ -74,12 +76,12 @@ p{
     width: 40vw;
     height: 6vh;
     border-radius: 50px;
-    background: white;
+    background: #e9f0f1;
 }
 
 #searchBarre p{
     padding-right: 35%;
-    color: black;
+    color: #1a181b;
     font-size: 0.7rem;
 }
 
@@ -89,7 +91,7 @@ p{
 }
 
 #presentation,#choixAPresenter h1{
-    color: white;
+    color: #e9f0f1;
 }
 
 #boxinfo{
@@ -108,42 +110,14 @@ p{
     margin: 1%;
     /* width:250px;
     height:250px;
-    background: white; */
+    background: #e9f0f1; */
     box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
 }
 
-/* .info:nth-of-type(1){
-    top: 1vw;
-    left: -2vw;
-    z-index: 3;
-}
-
-.info:nth-of-type(2){
-    top: 12vw;
-    left: 10vw;
-    
-}
-
-.info:nth-of-type(3){
-    top: 5vh;
-    left: 30vh;
-    z-index: 2;
-}
-
-.info:nth-of-type(4){
-    top: 20vh;
-    left: 27vw;
-}
-
-.info:nth-of-type(5){
-    top: 5vw;
-    left: 37vw;
-} */
-
 .info p{
     text-align: center;
-    color: white;
+    color: #e9f0f1;
     padding: 3%;
     font-size: 1em;
 }
@@ -172,7 +146,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #4062BB;
+    background: #e9f0f1;
     height: 200px;
     width: 200px;
     border-radius: 100%;
@@ -180,7 +154,23 @@ p{
 
 #boutonRecherche p{
     text-align: center;
-    color: #f4f4f9;
+    color: #1a181b;
+    font-size: 1em
+}
+
+#boutonLieu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4062BB;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+}
+
+#boutonLieu p{
+    text-align: center;
+    color: #e9f0f1;
     font-size: 1em
 }
 
@@ -189,7 +179,7 @@ p{
 }
 
 #maCarte{
-    border-radius: 30px;
+border-radius: 30px;
 position: relative;
 display: flex;
 width: 50vw;
@@ -272,29 +262,29 @@ margin-top: 5%;
   } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
 
   ::-webkit-scrollbar-corner {
-        background-color: black;
+        background-color: #1a181b;
   }
 
 .card .ville {
     position: relative;
   padding: 3vh 0 0 1vw;
-  color: white;
+  color: #e9f0f1;
   z-index: 5;
 }
 
 .card:hover .ville {
-  color: white;
+  color: #e9f0f1;
 }
     
 .card .monument {
     position: relative;
     padding: 1vh 0 0 1vw;
-    color: black;
+    color: #1a181b;
     z-index: 100;
   }
 
   .card:hover .monument {
-    color: white;
+    color: #e9f0f1;
   }
    
 footer{
@@ -317,7 +307,7 @@ footer{
 }
 
 #boutonCodePostal p{
-    color: white;
+    color: #e9f0f1;
 }
 
 #infoDepartement{
@@ -336,7 +326,7 @@ footer{
 }
 
 #menuSecondaireHorizontal span{
-   color: white;
+   color: #e9f0f1;
 }
 
 #icone{
@@ -377,10 +367,6 @@ justify-content: space-between;
     justify-self: self-start;
     align-self: self-start;
 } 
-
-#banner img{
-    width: 100vw;
-}
 
 .positionPresentation{
     display: flex;
@@ -458,23 +444,23 @@ margin-left: 10%;
 .card .ville {
     position: relative;
   padding: 3vh 0 0 1vw;
-  color: white;
+  color: #e9f0f1;
   z-index: 5;
 }
 
 .card:hover .ville {
-  color: white;
+  color: #e9f0f1;
 }
     
 .card .monument {
     position: relative;
     padding: 1vh 0 0 1vw;
-    color: black;
+    color: #1a181b;
     z-index: 100;
   }
 
   .card:hover .monument {
-    color: white;
+    color: #e9f0f1;
   }
    
 #fleche{
@@ -488,12 +474,12 @@ margin-left: 10%;
 
 .fleche.gauche{
     left:5vw;
-  color: white;
+  color: #e9f0f1;
     }
 
 .fleche.droite{
         right:5vw;
-      color: white;
+      color: #e9f0f1;
         }
 
 #boutonCodePostal {
@@ -507,7 +493,7 @@ margin-left: 10%;
 }
 
 #boutonCodePostal p{
-    color: white;
+    color: #e9f0f1;
 }
 
 #infoDepartement{
@@ -526,7 +512,7 @@ margin-left: 10%;
 }
 
 #menuSecondaireHorizontal span{
-   color: white;
+   color: #e9f0f1;
 } 
 
 #div_title_lieu 
@@ -736,7 +722,7 @@ flex-wrap: wrap;
       font-family: 'Open Sans', sans-serif;
       list-style: none;
       padding:7%;
-      color: white;
+      color: #e9f0f1;
   }
 
   #menuVertical{

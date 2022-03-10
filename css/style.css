@@ -949,4 +949,44 @@ img.leaflet-interactive{
 /* <span class='titreInfo'>Cirque-Théatre</span></br>
 <span class='adresseInfo'>2 Rue Augustin Henry, 76500 Elbeuf</span>
 <img class='imageInfo' src="images/cirque.jpg"></img>
-<span class='titreInfo'>Cirque-Théatre</span> */
+<span class='titreInfo'>Cirque-Théatre</span> */ 
+
+
+
+#menu_gestion_admin 
+{
+    height: 100%; 
+    width: 20%; 
+    margin-left: 0px;
+    background-color: #4062BB; 
+    display: flex;  
+    flex-direction: column;
+} 
+#menu_gestion_admin p
+{
+    color: #fff;  
+    margin-left: 5px; 
+    margin-top: 5%;
+
+}
+#menu_gestion_admin ul
+{
+    margin-top: 10%; 
+    margin-bottom: 10%; 
+    margin-left: 15px; 
+    list-style: none;
+} 
+#menu_gestion_admin ul li 
+{
+    margin-top: 5%; 
+    color: #fff; 
+} 
+
+#menu_gestion_admin ul li:hover
+{
+    text-decoration: underline;
+    /* background-color: #fdc758; */
+    /* transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.4s linear; */
+}

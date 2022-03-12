@@ -976,7 +976,13 @@ margin-top: 20%;
 #admindep span, #admin span, #membre span
 {
     margin-left: 5px;  
-    
     color: #fff;
 }
-
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
+{
+    margin-top: 5%;
+} 
+.menu__item_gestion_membre:hover
+{
+    color: red; 
+}

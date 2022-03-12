@@ -18,9 +18,9 @@
             <p>Membre</p>
 
             
-                <span class="menu__item_gestion_membre">Dépôt de photos</a>
-                <span class="menu__item_gestion_membre">Proposition modification d'informations</a>
-                <span class="menu__item_gestion_membre">Photos validées</a>
+                <span class="menu__item_gestion_membre">Dépôt de photos</span></br>
+                <span class="menu__item_gestion_membre">Proposition modification d'informations</span></br>
+                <span class="menu__item_gestion_membre">Photos validées</span></br>
             
         </div>
          <div id="admin"> 
@@ -28,20 +28,20 @@
 
 
            
-                 <span class="menu__item_gestion_admin">Espace validation photos</a></br>
-                 <span class="menu__item_gestion_admin">Espace validation texte</a></br>
-                 <span class="menu__item_gestion_admin">Espace création lieu</a> </br>
-                 <span class="menu__item_gestion_admin">Campagnes de mail</a></br>
-                 <span class="menu__item_gestion_admin">mise à jour SiteMap</a></br>
-                 <span class="menu__item_gestion_admin">Indexation</a> </br>
-                 <span class="menu__item_gestion_admin">supervision du département</a></br>
+                 <span class="menu__item_gestion_admin">Espace validation photos</span></br>
+                 <span class="menu__item_gestion_admin">Espace validation texte</span></br>
+                 <span class="menu__item_gestion_admin">Espace création lieu</span> </br>
+                 <span class="menu__item_gestion_admin">Campagnes de mail</span></br>
+                 <span class="menu__item_gestion_admin">mise à jour SiteMap</span></br>
+                 <span class="menu__item_gestion_admin">Indexation</span> </br>
+                 <span class="menu__item_gestion_admin">supervision du département</span></br>
          
         </div> 
     
         <div id="admindep">
 
             <p>Admin département </p>
-            <span class="menu__item_gestion_admin">Gestion Admin Département</a>
+            <span class="menu__item_gestion_admindep">Gestion Admin Département</span>
         </div> 
     </div>
 

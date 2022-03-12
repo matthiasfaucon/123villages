@@ -970,11 +970,13 @@ img.leaflet-interactive{
 {
 display: flex; 
 flex-direction: column;
-margin-top: 5%;
+margin-top: 20%; 
+
 }  
 #admindep span, #admin span, #membre span
 {
-    margin-left: 5px; 
+    margin-left: 5px;  
+    
     color: #fff;
 }
 

@@ -955,7 +955,8 @@ img.leaflet-interactive{
 
 #gestion_admin 
 {
-    height: 100vh; 
+    
+    height: 200%; 
     width: 20%; 
     margin-left: 0px;
     background-color: #4062BB; 
@@ -969,10 +970,16 @@ img.leaflet-interactive{
 #admindep, #admin, #membre
 {
 display: flex; 
-flex-direction: column;
-margin-top: 20%; 
+flex-direction: column; 
+margin-left: 1%;
+margin-top: 5%; 
 
-}  
+}   
+#membre  
+{
+    margin-top: 1%;   
+}
+
 #admindep span, #admin span, #membre span
 {
     margin-left: 5px;  
@@ -980,9 +987,55 @@ margin-top: 20%;
 }
 .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
 {
-    margin-top: 5%;
-} 
-.menu__item_gestion_membre:hover
-{
-    color: red; 
+    margin-top: 2%;
+    cursor: pointer; 
+
+  
 }
+
+
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep{
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: relative; /* used with absolute for positioning underline */
+  }
+
+  .menu__item_gestion_membre:after,.menu__item_gestion_admin::after ,.menu__item_gestion_admindep:after  {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    line-height: 1;
+    width: 100%;
+    background-color: #fdc758;
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+  }
+  .menu__item_gestion_membre:hover:after,
+  .menu__item_gestion_membre:active:after {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;
+  } 
+
+  .menu__item_gestion_admin:hover:after, 
+  .menu__item_gestion_admin:active:after 
+  {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;   
+  } 
+  .menu__item_gestion_admindep:hover:after, 
+  .menu__item_gestion_admindep:active:after 
+  {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;  
+  }
+  

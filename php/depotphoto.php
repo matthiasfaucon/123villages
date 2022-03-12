@@ -43,7 +43,7 @@
 </div>
  
 <div id="depot_photo">
-<form action="upload.php" method="POST">
+<form id="dep-phot" action="upload.php" method="POST">
   <input type="file" multiple>
   <p>Drag your files here or click in this area.</p>
   <button type="submit">Upload</button>
@@ -52,11 +52,11 @@
 </div>
     
 </body> 
-<!-- <script> 
+<script> 
 $(document).ready(function(){
   $('form input').change(function () {
     $('form p').text(this.files.length + " file(s) selected");
   });
 });
-</script>  -->
+</script> 
 </html>

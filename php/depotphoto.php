@@ -42,14 +42,48 @@
 </div> 
 </div>
  
-<div id="depot_photo">
-<form id="dep-phot" action="upload.php" method="POST">
+<div id="depot_photo"> 
+
+<h4>Zone de dépôt de photo</h4> </br>   
+
+<form action="upload.php" method="post">  
+<div class="form_frontco">
+<label for="name"> </label>
+<input type="text" name="name" id="name" placeholder="Nom du lieu" required> 
+</div>
+<div class="form_frontco">
+<label for="adress"> </label>
+<input type="text" name="adress" id="adress" placeholder="Adresse du lieu" required> 
+</div> 
+
+<div class="form_frontco">
+<label for="link"> </label>
+<input type="text" name="link" id="link" placeholder="Lien de la page du lieu " required> 
+</div>
+
+<div class="form_frontco">
+<input type="file" multiple>   
+</div> 
+<div id="zonededepot">
+<p>Drag your files here or click in this area.</p> 
+</div>
+<button type="submit">Upload</button>
+
+</form>
+
+
+</div> 
+<!-- <form id="dep-phot" action="upload.php" method="POST">
   <input type="file" multiple>
   <p>Drag your files here or click in this area.</p>
   <button type="submit">Upload</button>
-</form>
+</form> -->
 
-</div>
+
+
+
+
+   
     
 </body> 
 <script> 

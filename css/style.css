@@ -961,7 +961,8 @@ img.leaflet-interactive{
     margin-left: 0px;
     background-color: #4062BB; 
     display: flex;  
-    flex-direction: column;  
+    flex-direction: column;   
+    border-radius: 0px 20px 20px 0px;
     
     
 }  
@@ -972,9 +973,18 @@ img.leaflet-interactive{
 display: flex; 
 flex-direction: column; 
 margin-left: 1%;
-margin-top: 5%; 
+margin-top: 5%;  
 
 }   
+
+
+#admindep p, #admin p, #membre p 
+{
+    color: #fdc758; 
+    font-weight: bold;
+}
+
+
 #membre  
 {
     margin-top: 1%;   
@@ -1041,53 +1051,45 @@ margin-top: 5%;
 
   #depot_photo 
   {
-      margin-top: -50%; 
-      margin-left: 20%;
-      /* height: 50vh; */
+      
+      margin-top: -60%; 
+      margin-left: 35%; 
+      width: 50%;
+      height: 80vh; 
+      border-radius: 40px;
       display: flex; 
-      justify-content: center; 
-  } 
-  #depot_photo form 
-  {
-      width: 75%;
-      height: 50%; 
-      background-color: #fdc758;  
-      border-radius: 20px; 
-      display: flex;
-      flex-direction: column;
       align-items: center;
-  } 
-  #depot_photo form p 
-  {
-      width: 100%;
-      height: 100%; 
-      text-align: center;
-  line-height: 170px;
-  color: #ffffff;
-  } 
-  #depot_photo form input 
-  {
-    width: 100%;
-    height: 100%;  
-    cursor: pointer;  
-    background-color: #4062BB; 
-    border-radius: 2px;
-  } 
-  #depot_photo form button 
-  {
-      cursor: pointer;
-  }
-  #dep-phot button 
-  {
-      border-style: none;
-      background-color: #4062BB;
-      color: #fff; 
-      width: 100%;
-      height: 35px;
-      margin-top: -20px;
+      flex-direction: column; 
+    
+      background-color: #4062BB; 
+  }  
 
-      border-radius: 4px;
-      border-bottom: 4px solid #fff;
-      transition: all .2s ease;
-      outline: none;
+  #depot_photo h4 
+  {
+color: #fff; 
+margin-top: 5%;
   }
+
+  input[type="file"]
+  {
+    border-style: none;
+    border-radius: 5px; 
+    background-color: #fdc758;
+  } 
+
+  #zonededepot
+  {
+      margin-top: 5%;
+      width: 75%; 
+      height:  50%;
+      background-color: #fdc758; 
+      border-color: #fff;
+      border-style: dashed;  
+      display: flex;
+      align-items: center; 
+  }  
+  #zonededepot p 
+  {
+      color: #4062BB;
+  }
+  

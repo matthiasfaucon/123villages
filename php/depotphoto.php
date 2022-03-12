@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <title>depot_photo</title>
 </head>
 <body>
@@ -39,9 +41,22 @@
     <span class="menu__item_gestion_admindep">Gestion Admin Département</span>
 </div> 
 </div>
+ 
+<div id="depot_photo">
+<form action="upload.php" method="POST">
+  <input type="file" multiple>
+  <p>Drag your files here or click in this area.</p>
+  <button type="submit">Upload</button>
+</form>
 
-
-
+</div>
     
-</body>
+</body> 
+<!-- <script> 
+$(document).ready(function(){
+  $('form input').change(function () {
+    $('form p').text(this.files.length + " file(s) selected");
+  });
+});
+</script>  -->
 </html>

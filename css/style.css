@@ -1038,4 +1038,10 @@ margin-top: 5%;
     transform-origin: left bottom;
     transition: transform 0.4s linear;  
   }
-  
+
+  #depot_photo 
+  {
+      margin-top: -50%;
+      display: flex; 
+      justify-content: center; 
+  }

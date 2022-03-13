@@ -949,4 +949,161 @@ img.leaflet-interactive{
 /* <span class='titreInfo'>Cirque-Théatre</span></br>
 <span class='adresseInfo'>2 Rue Augustin Henry, 76500 Elbeuf</span>
 <img class='imageInfo' src="images/cirque.jpg"></img>
-<span class='titreInfo'>Cirque-Théatre</span> */
+<span class='titreInfo'>Cirque-Théatre</span> */ 
+
+
+
+#gestion_admin 
+{
+    
+    height: 200%; 
+    width: 20%; 
+    margin-left: 0px;
+    background-color: #4062BB; 
+    display: flex;  
+    flex-direction: column;   
+    border-radius: 0px 20px 20px 0px;
+    
+    
+}  
+
+
+#admindep, #admin, #membre
+{
+display: flex; 
+flex-direction: column; 
+margin-left: 1%;
+margin-top: 5%;  
+
+}   
+
+
+#admindep p, #admin p, #membre p 
+{
+    color: #fdc758; 
+    font-weight: bold;
+}
+
+
+#membre  
+{
+    margin-top: 1%;   
+}
+
+#admindep span, #admin span, #membre span
+{
+    margin-left: 5px;  
+    color: #fff;
+}
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
+{
+    margin-top: 2%;
+    cursor: pointer; 
+
+  
+}
+
+
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep{
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: relative; /* used with absolute for positioning underline */
+  }
+
+  .menu__item_gestion_membre:after,.menu__item_gestion_admin::after ,.menu__item_gestion_admindep:after  {
+    position: absolute;
+    content: "";
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    line-height: 1;
+    width: 100%;
+    background-color: #fdc758;
+    transform-origin: right bottom;
+    transform: scaleX(0);
+    transition: transform 0.4s linear;
+  }
+  .menu__item_gestion_membre:hover:after,
+  .menu__item_gestion_membre:active:after {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;
+  } 
+
+  .menu__item_gestion_admin:hover:after, 
+  .menu__item_gestion_admin:active:after 
+  {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;   
+  } 
+  .menu__item_gestion_admindep:hover:after, 
+  .menu__item_gestion_admindep:active:after 
+  {
+    transform: scaleX(1);
+    transform-origin: left bottom;
+    transition: transform 0.4s linear;  
+  }
+
+  #depot_photo 
+  {
+      
+      margin-top: -60%; 
+      margin-left: 35%; 
+      width: 50%;
+      height: 80vh; 
+      border-radius: 40px;
+      display: flex; 
+      align-items: center;
+      flex-direction: column; 
+    
+      background-color: #4062BB; 
+  }  
+
+  #depot_photo h4 
+  {
+color: #fff; 
+margin-top: 5%;
+  }
+
+  input[type="file"]
+  {
+    border-style: none;
+    border-radius: 5px; 
+    background-color: #fdc758;
+  } 
+
+  #zonededepot
+  {
+      margin-top: 5%;
+      width: 75%; 
+      height:  50%;
+      background-color: #fdc758; 
+      border-color: #fff;
+      border-style: dashed;  
+      display: flex;
+      align-items: center; 
+  }  
+  #zonededepot p 
+  {
+      color: #4062BB;
+  } 
+
+  #modinfos
+  {
+    background-color: #4062BB;
+    width: 50%; 
+    height: 50vh;
+    flex-direction: column; 
+    border-radius: 50px; 
+    margin-left: 30%; 
+    margin-top: -50%;
+  }
+  #modinfos form 
+  {
+      height: 200%;
+  }

@@ -58,7 +58,6 @@
   <span class="menu-link">Services publics</span>
   <span class="menu-link">Santé</span>
   <span class="menu-link">Commerces et Services</span>
-  <span class="menu-link">Données publiques</span>
     </div>
     <div class="carteInformations">
     <div id="maCarteDepartement"></div>
@@ -116,6 +115,10 @@
 
   <section id="presentationCarte">
     <h1>Notre sélection pour la Seine-Marritime</h1>
+    <div id="fleche">
+    <div class="fleche gauche"><</div>
+    <div class="fleche droite">></div>
+  </div>
     <div class="contenerCard">
     <div class="cards">
       <div class="card">
@@ -124,7 +127,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -134,7 +137,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -144,7 +147,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -154,7 +157,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -164,7 +167,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -174,7 +177,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -184,7 +187,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 
@@ -194,7 +197,7 @@
             <h3>Rouen</h3>
           </div>
           <div class="monument">
-            <p>Eglise de barentin</p>
+            <p>Eglise de Rouen</p>
           </div>
       </div>
 </div>

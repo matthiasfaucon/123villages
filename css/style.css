@@ -644,23 +644,49 @@ height: 400px;
 } 
 
 #nom-ville 
-{
+{ 
+width: 25%;     
+background-color: #4062bb;    
 display: flex; 
 justify-content: flex-start;
 flex-direction: row;
-margin-top: -0.3%;
-
+margin-bottom: 5%; 
+height: auto;
 } 
-#txt-nom-ville
+#txt-nom-ville, #code-postal, #village_fleuri
 {
     background-color: #4062bb;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    margin-left: 5px;
+    width: 33%; 
+    height: 100%;
 }
-#nom-ville p 
+#nom-ville p, #code-postal p
 {
-    color:#fff; 
+    color:#fff;      
+}  
+
+#code-postal 
+{
+    margin-left: 10px;
+} 
+#village_fleuri div
+{
+    width: 100%; 
+    height: 5vh;
+    border: solid #fff; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+
+} 
+#village_fleuri div p 
+{
+    font-size: small;
 }
+
+
 #txt-card 
 {
 display: flex;

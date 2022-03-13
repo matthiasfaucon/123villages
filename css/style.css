@@ -1091,5 +1091,19 @@ margin-top: 5%;
   #zonededepot p 
   {
       color: #4062BB;
+  } 
+
+  #modinfos
+  {
+    background-color: #4062BB;
+    width: 50%; 
+    height: 50vh;
+    flex-direction: column; 
+    border-radius: 50px; 
+    margin-left: 30%; 
+    margin-top: -50%;
   }
-  
+  #modinfos form 
+  {
+      height: 200%;
+  }

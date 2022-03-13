@@ -650,7 +650,8 @@ background-color: #4062bb;
 display: flex; 
 justify-content: flex-start;
 flex-direction: row;
-margin-bottom: 5%; 
+margin-bottom: 5%;  
+margin-left: 1.2%;
 height: auto;
 } 
 #txt-nom-ville, #code-postal, #village_fleuri
@@ -659,7 +660,7 @@ height: auto;
     display: flex;
     flex-direction: row; 
     margin-left: 5px;
-    width: 33%; 
+    width: 30%; 
     height: 100%;
 }
 #nom-ville p, #code-postal p
@@ -689,10 +690,16 @@ height: auto;
 
 #txt-card 
 {
-display: flex;
+display: flex; 
+flex-direction: row;
+align-items: center;
 width: 100%;
 justify-content: space-around; 
 flex-wrap: wrap;
+} 
+#txt-card p 
+{
+    width: 50%;
 }
 
 #carte-ville 
@@ -715,6 +722,7 @@ flex-wrap: wrap;
     font-size: 1rem;
     line-height: 1.4;
     position: relative; /* used with absolute for positioning underline */
+    cursor: pointer;
   }
 
   .menu-link:after {

@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 html{
@@ -256,7 +257,7 @@ height: 60vh;
       }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    /* width: 20px; */
         background-color: #4062BB;
   } /* the new scrollbar will have a flat appearance with the set background color */
 
@@ -1106,4 +1107,159 @@ margin-top: 5%;
   #modinfos form 
   {
       height: 200%;
+  }
+
+#codePostale{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#codePostale a{
+   font-size: 0.9em;
+   color: #4062BB;
+}
+
+
+#codePostale a:hover{
+    font-size: 0.9em;
+    color: #fdc758;
+ }
+
+#codePostale div{
+    border-collapse: collapse;
+    border: solid #4062BB 2px;
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 30vh;
+    margin-bottom: 5%;
+    padding: 2%;
+    overflow: auto;
+ }
+
+ #codePostale div:nth-child(odd){
+    margin-right: 0vw;
+ }
+
+ #codePostale div h2{
+     display: flex;
+     padding-bottom: 3%;
+     justify-self: flex-start;
+     align-self:flex-start;
+     font-size: 1.3em;
+ }
+
+#apparitionMenu{
+    display: none;
+}
+ 
+ @media(max-width: 585px){
+
+        #apparitionMenu{
+            display: initial;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    
+        #apparitionMenu.active{
+            width: 100vw;
+            height: 100vh;
+            background-color: #4063bbab;
+            opacity: 0.8;
+            z-index: 1;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    
+        #menuToggleDiv{
+            display: none;
+          }
+    
+        #menuToggleDiv.active{
+          display: initial;
+        }
+        
+        .menuToggle{
+            margin-left: 2%;
+          font-family: "D-DIN Bold", serif;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-size: 4em;
+          color: #fdc758;
+          text-decoration: none; /*enlever attributs texte (ici underline) */
+          width: fit-content;
+        }
+    
+        /***************/ 
+        .menuToggle:hover { /* quand survoler */
+          transition-duration: 0.2s;  /*temps de la transition */
+          transition-timing-function: ease-out;
+          text-decoration: underline 2px #d4b902;
+          opacity:0.9;
+        }
+      
+        #toggle 
+    {
+        margin: 2%;
+        z-index: 10;
+        border-radius: 100%;
+        position: relative;
+        width: 60px; 
+        height: 60px;
+        background: blue; 
+        background-size: cover;
+        cursor: pointer; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+    } 
+    
+    #toggle.active
+    {
+        background: #d4b902;
+    } 
+    
+     #toggle.active::before 
+    {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+    
+     #toggle::before
+    { 
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transition: 0.2s; 
+        transform: translateY(-10px); 
+        box-shadow: 0 10px 0 #fff;
+    } 
+    
+    #toggle::after
+    { 
+        content: '';
+        position: absolute;
+        width: 28px;
+        height: 2px;
+        background: #fff;
+        transition: 0.2s; 
+        transform: translateY(10px);
+    } 
+    
+    #toggle.active::after 
+    {
+        transform: translateY(0px)rotate(-45deg);
+    }
   }

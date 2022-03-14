@@ -1189,6 +1189,35 @@ margin-top: 5%;
 #apparitionMenu{
     display: none;
 }
+
+#fil-ariane{
+    width:fit-content;
+    background-color: #4062BB;
+}
+
+/*Reset sur les éléments de la liste*/
+#fil-ariane ul {
+    display: flex;
+list-style-type:none;
+justify-content: space-evenly;
+padding: 1vh 2vw 1vh 2vw;
+}	
+
+#fil-ariane li {
+    display: flex;
+    align-items: center;
+    }
+
+    #fil-ariane li a{
+        display: flex;
+        justify-content: center;
+        }
+
+#fil-ariane ul li{
+    display: flex;
+  color: white;
+  margin: 0 1vw 0 1vw ;
+    }	
  
  @media(max-width: 585px){
 
@@ -1237,7 +1266,7 @@ margin-top: 5%;
         .menuToggle:hover { /* quand survoler */
           transition-duration: 0.2s;  /*temps de la transition */
           transition-timing-function: ease-out;
-          text-decoration: underline 2px #d4b902;
+          text-decoration: underline 2px #fdc758;
           opacity:0.9;
         }
       

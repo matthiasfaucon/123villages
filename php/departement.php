@@ -40,7 +40,7 @@
 <section id="presentationDepartement">
     <h1>Bienvenue en Seine-Maritime</h1>
     <div class="positionPresentation">
-    <div id="boutonRecherche"><p>Trouver votre village</p></div>
+    <a href="codePostale.php"><div id="boutonRecherche"><p>Trouver votre village</p></div><a>
     <div id="infoDepartement"><p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>
       Mais le département de Seine-Maritime, c'est 745 communes !!!</br>
       Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n'oublions pas le petit patrimoine.</br>

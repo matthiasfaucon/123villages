@@ -39,6 +39,7 @@ include 'php/verif_script.php';
 
     <script type="text/javascript" src="../js/menu.js"></script>
 
+
     <div id="fil-ariane"> 
         <ul id="fil-ariane-historique">
             <li class="element-fil-ariane"><a href="#">Elbeuf</a></li>
@@ -73,7 +74,17 @@ include 'php/verif_script.php';
         </ul>
     </div>
 
+    <nav id="trier">
+    <p>trier par</p>
+    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="0.353553" y1="0.646447" x2="8.35355" y2="8.64645" stroke="white"/>
+<line x1="17.3536" y1="0.353553" x2="8.35355" y2="9.35355" stroke="white"/>
+</svg>
+
+</nav>
+
 <section id="codePostale">
+
 <div class="76000">
 <h2>Code Postal 76000</h2>
 <a>Rouen</a>

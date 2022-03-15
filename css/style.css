@@ -744,7 +744,9 @@ flex-wrap: wrap;
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform 0.4s linear;
-  }
+  } 
+
+  
 
   nav{
       margin-top: 2%;

@@ -811,7 +811,7 @@ flex-wrap: wrap;
     #cracc 
     {
         background-color: #4062BB;
-        width: 50%;
+        width: 50vw;
         flex-direction: column;
         margin-left: -10%;
       
@@ -823,7 +823,8 @@ flex-wrap: wrap;
      margin-bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between; 
+    flex-wrap: wrap;
     } 
     #cracc h4
     {
@@ -831,8 +832,11 @@ flex-wrap: wrap;
     }
     #lcoin a 
     {
+
         color: lightgray; 
-        font-size: medium;
+        font-size: medium;  
+        width: 15vw;
+
     }
     #apigf
     {
@@ -840,17 +844,19 @@ flex-wrap: wrap;
     margin-left: 5%;
     margin-top: 5%;
     display: flex;
-    justify-content: space-between; 
+    flex: 1 0 auto;
+    justify-content: space-between;  
+    flex-wrap: wrap;
     
     } 
     #apigf p
     {
-    font-size: small; 
+    font-size: 1vw; 
     white-space: nowrap;
     }
     #apig, #apif
     {
-        width: 33%;  
+        width: 12vw;  
         height: 30px;
         background-color: #52B2CF; 
         border-radius: 25px;
@@ -858,14 +864,15 @@ flex-wrap: wrap;
         display: flex;
         justify-content: center;
         align-items: center;
-    
         cursor: pointer;
+        flex-wrap: wrap; 
+        flex-shrink: 2;
     }
     
     .form_frontco_form
     {
        
-        height: 80%;
+        height: 80ch;
         margin-top: 10%;
         display: flex;
         flex-direction: column; 
@@ -879,8 +886,7 @@ flex-wrap: wrap;
        width: 60%;
        
     }  
-    
-    
+
     .form_frontco  input[type=email] {
     width: 100%;
     padding: 12px 20px;
@@ -891,7 +897,6 @@ flex-wrap: wrap;
     color: #fff; 
     border: none;
     border-bottom: 2px solid #fff;
-    
     } 
     
     .form_frontco  ::placeholder {
@@ -920,9 +925,6 @@ flex-wrap: wrap;
         border-bottom: 2px solid #fff;
       } 
     
-    
-      
-    
     .form_frontco_button input[type=submit]
     {
         width: 300%;
@@ -947,7 +949,35 @@ flex-wrap: wrap;
     height: 55vh;
     background: #4062BB;
 }
+@media screen and (max-width: 830px) { 
+    body
+    {
+        background-color: red;
+    } 
+    #peopleandcracc 
+    {
+        justify-content: center;
+    }
+    #people
+    {
+        display: none;
+    }
+    #cracc
+    {
+        flex: 1 0 auto; 
+        height: 70vh; 
+        margin-right: 10px;
+    }  
+    #apig, #apif 
+    {
+        width: 30vw;
+    }
+    #apigf p
+    {
+        font-size:2vw;
+    }
 
+}
 .carteInformations{
     margin-top: 5%;
     display: flex;

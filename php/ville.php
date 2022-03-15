@@ -33,7 +33,6 @@
   <section id="nom-ville">
     <div id="txt-nom-ville">
       <p>Elbeuf</p>
-
     </div>
     <div id="code-postal">
       <p>76500</p>
@@ -105,95 +104,95 @@
 
         xmlhttp.send(null);
       </script>
-    </div> 
+    </div>
   </section>
 
-    <section id="presentationCarte">
+  <section id="presentationCarte">
     <h1>Notre sélection pour la Seine-Marritime</h1>
     <div class="contenerCard">
-    <div class="cards">
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>../
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
-      </div>
+        </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
+        <div class="card">
+          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
           <div class="ville">
             <h3>Elbeuf</h3>
           </div>
           <div class="monument">
             <p>Eglise d'Elbeuf</p>
           </div>
+        </div>
       </div>
-</div>
-        
-</section> 
+
+  </section>
 
 
   </section>

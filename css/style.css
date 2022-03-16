@@ -759,6 +759,7 @@ flex-wrap: wrap;
       display: flex; 
       flex-direction: row;
       align-items: center;
+      /* overflow-x: hidden; */
   }
   .w-img-nav_next, .w-img-nav_previous
   {
@@ -769,7 +770,8 @@ flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center; 
-    cursor: pointer;
+    cursor: pointer; 
+    z-index: 50;
   } 
   .w-img-nav_previous svg,  .w-img-nav_next svg
   {
@@ -796,6 +798,7 @@ flex-wrap: wrap;
   #img-primary-wrapper :nth-of-type(2) 
   {
       margin-left: 30vw;
+      margin-right: 30vw;
   }
   .card_leo img 
   {

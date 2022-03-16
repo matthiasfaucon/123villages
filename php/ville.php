@@ -248,7 +248,10 @@
           </svg></i>
       </div>
 
-    </div>
+    </div> 
+    
+  </section> 
+  
     <!-- <div class="card_leo">
         <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
         <div class="info_card_leo">
@@ -296,28 +299,56 @@
   <footer>Mentions légales</footer>
   <script>
     const next = document.getElementsByClassName("w-img-nav_next")[0];
+    const pre = document.getElementsByClassName("w-img-nav_previous")[0]; 
 
+    const card = document.getElementsByClassName("card_leo")[0]; 
+    const card1 = document.getElementsByClassName("card_leo")[1];
+    const card2 = document.getElementsByClassName("card_leo")[2];  
+ let count = 0; 
+    next.addEventListener("click", function(){
+      count++; 
+      console.log("count:"+count);  
 
+      if (count == 1){
+        
+        card.style.transform = "translateX(" + (-30) + "vw)"; 
+        card1.style.transform = "translateX(" + (-55) + "vw)";
+        card2.style.transform = "translateX(" + (-55) + "vw)";
+      } 
+      if (count == 2){
+        
+        card1.style.transform = "translateX(" + (-100) + "vw)"; 
+        card2.style.transform = "translateX(" + (-110) + "vw)";
+      }
+    }); 
+  
+  
+    pre.addEventListener("click", function(){ 
+      // if (count >= 1) 
+      // {
+      //   count--; 
+      // }
+      console.log("count:"+count);   
+      count++; 
 
-
-    next.addEventListener("click", colorbg);
-
-    function colorbg() {
-
-
-      for (let i = 0; i < 3; i++) { 
-
-     
-        console.log(i); 
-        const card = document.getElementsByClassName("card_leo")[I];
-        card.style.transform = "translateX(" + (-30) + "vw)";
-      console.log("coucou");
+      if (count == 1){
+        
+        card.style.transform = "translateX(" + (+30) + "vw)"; 
+        card1.style.transform = "translateX(" + (+55) + "vw)";
+        card2.style.transform = "translateX(" + (+55) + "vw)";
+      } 
+      if (count == 2){
+        
+        card1.style.transform = "translateX(" + (+100) + "vw)"; 
+        card2.style.transform = "translateX(" + (+110) + "vw)";
       }
 
 
-    } 
+    }
+    ); 
 
-
+         // const card1 = document.getElementsByClassName("card_leo")[i++];  
+        // card1.style.transform = "translateX(" + (-30) + "vw)";
   </script>
 </body>
 

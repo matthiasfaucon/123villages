@@ -753,8 +753,15 @@ flex-wrap: wrap;
       flex-direction: row;
       align-items: center; 
       justify-content: space-between; */
+  } 
+  #main_carrousel 
+  {
+      display: flex; 
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
   }
-  .w-img-nav 
+  .w-img-nav_next, .w-img-nav_previous
   {
     height: 50px;
     width: 50px; 
@@ -764,13 +771,16 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   } 
-  .w-img-nav svg
+  .w-img-nav_previous svg,  .w-img-nav_next svg
   {
     stroke: #1D2026; 
   } 
   #img-primary-wrapper
   {
-    display: flex;
+    border: solid red; 
+    width: 50vw; 
+    overflow-x: hidden;
+    display: flex; 
     flex-direction: row;
     align-items: center; 
     justify-content: space-between;
@@ -799,8 +809,8 @@ flex-wrap: wrap;
       
       width: 100%; 
       display: flex; 
-      justify-content: space-evenly;
-      flex-direction: row;
+      /* justify-content: space-evenly;*/
+      flex-direction: row; 
       ;
   } 
   .info_card_leo div 

@@ -33,7 +33,6 @@
   <section id="nom-ville">
     <div id="txt-nom-ville">
       <p>Elbeuf</p>
-
     </div>
     <div id="code-postal">
       <p>76500</p>
@@ -193,12 +192,18 @@
         </div>
       </div>
 
+  </section> 
+
+
+
+
+
   </section>
 
 
   <section id="test-presentation-cat">
     <div id="main_carrousel">
-      <div class="w-img-nav previous">
+      <div class="w-img-nav_previous">
         <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
           </svg></i>
@@ -215,7 +220,18 @@
           </div>
         </div>
         <div class="card_leo">
-          <img src="..\images\batiment-avec-fond\avoir\chateau.jpg">
+          <img src="..\images\batiment-avec-fond\avoir\colombier.jpg">
+          <div class="info_card_leo">
+            <div></div>
+            <p>Elbeuf</p>
+          </div>
+          <div>
+            <p>chateau de Léo</p>
+          </div>
+        </div>
+
+        <div class="card_leo">
+          <img src="..\images\batiment-avec-fond\avoir\antique.jpg">
           <div class="info_card_leo">
             <div></div>
             <p>Elbeuf</p>
@@ -226,7 +242,7 @@
         </div>
 
       </div>
-      <div class="w-img-nav next">
+      <div class="w-img-nav_next">
       <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path></svg></i>
       </div>
 
@@ -277,15 +293,22 @@
   </section>
   <footer>Mentions légales</footer> 
   <script>
-const next_s = document.querySelectorAll('.i-next'); 
-const previous_s = document.querySelectorAll('.i-previous');  
+// const next_s = document.querySelectorAll('.i-next'); 
+const next = document.getElementsByClassName("w-img-nav_next")[0]; 
+// const previous_s = document.querySelectorAll('.i-previous');  
 const car = document.getElementById("main_carrousel"); 
+const presentationCarte = document.getElementById('presentationCarte'); 
 
-function modify() 
+next.addEventListener("click", colorbg); 
+
+function colorbg()
 {
- car.style.display="none"; 
+  next.style.backgroundColor = "red";
+  console.log("coucou"); 
 }
-next_s.addEventListener ("click", )
+
+
+
   </script>
 </body>
 

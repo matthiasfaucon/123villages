@@ -197,8 +197,102 @@
 
 
 
+
   </section>
-  <footer>Mentions légales</footer>
+
+
+  <section id="test-presentation-cat">
+    <div id="main_carrousel">
+      <div class="w-img-nav previous">
+        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+      <div id="img-primary-wrapper">
+        <div class="card_leo">
+          <img src="..\images\batiment-avec-fond\avoir\chateau.jpg">
+          <div class="info_card_leo">
+            <div></div>
+            <p>Elbeuf</p>
+          </div>
+          <div>
+            <p>chateau de Léo</p>
+          </div>
+        </div>
+        <div class="card_leo">
+          <img src="..\images\batiment-avec-fond\avoir\chateau.jpg">
+          <div class="info_card_leo">
+            <div></div>
+            <p>Elbeuf</p>
+          </div>
+          <div>
+            <p>chateau de Léo</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="w-img-nav next">
+      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path></svg></i>
+      </div>
+
+    </div>
+    <!-- <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>   -->
+  </section>
+  <footer>Mentions légales</footer> 
+  <script>
+const next_s = document.querySelectorAll('.i-next'); 
+const previous_s = document.querySelectorAll('.i-previous');  
+const car = document.getElementById("main_carrousel"); 
+
+function modify() 
+{
+ car.style.display="none"; 
+}
+next_s.addEventListener ("click", )
+  </script>
 </body>
+
 
 </html>

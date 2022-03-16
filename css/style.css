@@ -759,7 +759,6 @@ flex-wrap: wrap;
       display: flex; 
       flex-direction: row;
       align-items: center;
-      cursor: pointer;
   }
   .w-img-nav_next, .w-img-nav_previous
   {
@@ -769,7 +768,8 @@ flex-wrap: wrap;
     border-radius: 50%; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    cursor: pointer;
   } 
   .w-img-nav_previous svg,  .w-img-nav_next svg
   {
@@ -779,7 +779,6 @@ flex-wrap: wrap;
   {
     border: solid red; 
     width: 50vw; 
-    overflow-x: hidden;
     display: flex; 
     flex-direction: row;
     align-items: center; 

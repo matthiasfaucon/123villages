@@ -192,7 +192,7 @@
         </div>
       </div>
 
-  </section> 
+  </section>
 
 
 
@@ -243,7 +243,9 @@
 
       </div>
       <div class="w-img-nav_next">
-      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path></svg></i>
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
       </div>
 
     </div>
@@ -291,22 +293,29 @@
         </div>
     </div>   -->
   </section>
-  <footer>Mentions légales</footer> 
+  <footer>Mentions légales</footer>
   <script>
-// const next_s = document.querySelectorAll('.i-next'); 
-const next = document.getElementsByClassName("w-img-nav_next")[0]; 
-// const previous_s = document.querySelectorAll('.i-previous');  
-const car = document.getElementById("main_carrousel"); 
-const presentationCarte = document.getElementById('presentationCarte'); 
+    const next = document.getElementsByClassName("w-img-nav_next")[0];
 
-next.addEventListener("click", colorbg); 
 
-function colorbg()
-{
-  next.style.backgroundColor = "red";
-  console.log("coucou"); 
-}
 
+
+    next.addEventListener("click", colorbg);
+
+    function colorbg() {
+
+
+      for (let i = 0; i < 3; i++) { 
+
+     
+        console.log(i); 
+        const card = document.getElementsByClassName("card_leo")[I];
+        card.style.transform = "translateX(" + (-30) + "vw)";
+      console.log("coucou");
+      }
+
+
+    } 
 
 
   </script>

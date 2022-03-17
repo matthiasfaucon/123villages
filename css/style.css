@@ -624,8 +624,7 @@ height: 400px;
 {
     background-color: #52b2cf; 
     cursor: pointer; 
-
-
+    padding: 1rem 0rem 1rem 2rem; 
 } 
  #txt-journee-patrimoine 
 {
@@ -1259,18 +1258,63 @@ margin-top: 5%;
   #slider-lieu
   {
       width: 100vw;
-      height: 30vh;
+      height: 50vh;
       background-color: #fdc758; 
       margin-top: 30px;
       margin-bottom: 30px;
-      display: flex;
-    justify-content: flex-end;
+      display: flex; 
+      flex-direction: row;
+     justify-content: center;
+
+    padding: 0%;
   }
 
 #main-slider
   {
       width: 80vw;
-      height: 100vh;
+      height: 100%;
       background-color: pink;
+      display: flex;  
+      align-items: center; 
+      justify-content: space-around;  
+      
+} 
 
-  }
+.card-slider
+{
+     /* background-color: #fff;
+    border: solid 1px; */
+    border-radius: 20px;
+    width: 15vw;
+    height: 40vh; 
+}
+#image-slider, #image-slider1, #image-slider2 
+{
+ height: 100%; 
+ width: 100%;
+border-radius: 20px;
+
+background-repeat: no-repeat;
+background-size: cover;
+} 
+#image-slider{
+background-image: url( https://27.monvillagenormand.fr/images/300/327000356.webp); 
+}
+#image-slider1{
+background-image: url(https://27.monvillagenormand.fr/images/300/327000357.webp); 
+}
+#image-slider2{
+background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp); 
+}
+#slider-lieu p
+{
+    color: purple;  
+    text-decoration: underline; 
+    font-size: 0.5em;
+    cursor: pointer;
+    margin-top: 15%;
+} 
+#test-slider-lieu 
+{
+    display: none;
+}

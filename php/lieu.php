@@ -103,141 +103,317 @@
       Au cœur d'une forêt de 95 hectares, le château des XIIe-XIVe siècles remanié au XVIIe siècle est entouré d'une partie du mur d'enceinte et bordé d'un double fossé. Une exposition permanente présente aux visiteurs l'histoire du château, l'évolution de son architecture et l'histoire de la famille d'Harcourt. Véritable patrimoine végétal faisant pendant aux qualités architecturales du bâtiment, l'arboretum comprend 470 espèces d'arbres réparties sur 11 hectares. Créé au début du XIXe siècle, il fût l'un des premiers arboretums de France à introduire certaines espèces encore inconnues alors, comme les cèdres du Liban ou les séquoias
     </p>
     <div>
-      </div>
-
-
-
     </div>
-    <section id="journee-patrimoine">
-      <ul>
-        <li class="date">2021</li>
-        <li class="date">2020</li>
-        <li class="date">2019</li>
-        <li class="date">2018</li>
-        <li class="date">2015</li>
-        <li class="date">2014</li>
-        <li class="date">2013</li>
 
-      </ul>
-      <div id="txt-journee-patrimoine">
-        <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2021</h2>
 
-        <p id="p-txt-journee-patrimoine">4639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet</p>
+
+  </div>
+  <section id="journee-patrimoine">
+    <ul>
+      <li class="date">2021</li>
+      <li class="date">2020</li>
+      <li class="date">2019</li>
+      <li class="date">2018</li>
+      <li class="date">2015</li>
+      <li class="date">2014</li>
+      <li class="date">2013</li>
+
+    </ul>
+    <div id="txt-journee-patrimoine">
+      <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2021</h2>
+
+      <p id="p-txt-journee-patrimoine">4639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet</p>
+    </div>
+  </section>
+  <div id="GroupeDeMiniatures">
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000356">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
+      </a>
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000357">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
+      </a>
+
+
+
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000359">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
+      </a>
+
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000362">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000370">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000371">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000372">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000373">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000374">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+      </a>
+
+    </figure>
+
+  </div>
+
+  <section id="slider-lieu"> 
+  <div class="w-img-nav_previous">
+        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
       </div>
-    </section>
-    <div id="GroupeDeMiniatures">
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000356">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
-        </a>
-      </figure>
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000357">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
-        </a>
 
-
-
-      </figure>
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000359">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
-        </a>
-
-      </figure>
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000362">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
-        </a>
-      </figure>
-
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000370">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
-        </a>
-      </figure>
-
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000371">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
-        </a>
-      </figure>
-
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000372">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
-        </a>
-      </figure>
-
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000373">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
-        </a>
-      </figure>
-
-      <figure class="ImageMiniature">
-        <a href="illustration.php?NumImage=327000374">
-          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
-        </a>
-
-      </figure>
-
-    </div>  
-
-    <section id="slider-lieu">
-
-        <div id="main-slider">
-
-
+    <div id="main-slider">
+    
+        <div class="card-slider">
+        <div id="image-slider"></div>  
+   
         </div>
 
 
-    </section>
+        <div class="card-slider">
+        <div id="image-slider1"></div>
 
-    
-    <footer>Mentions légales</footer>
-    <script>
-      let date = document.getElementsByClassName("date");
-      let kl = document.getElementsByClassName("date").value;
+        </div>
+
+        <div class="card-slider">
+        <div id="image-slider2"></div>
+        </div>
+
+    </div> 
+    <div class="w-img-nav_next">
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+    </div>
 
 
 
-      date[6].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2013";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "4817 Chasse aux papillons nocturnes </br> 4818 La conférence des oiseaux, théâtre d'Illusia </br> 4819 visite guidée </br> 4820 Visite libre </br>";
-        console.log(kl);
-      });
 
-      date[5].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2014";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "4760 Exposition Les arbres remarquables de France </br>4761 Présentation des recherches archéologiques récentes</br>4762 visite guidée </br>4763 Visite guidée A la découverte des arbres remarquables de l'arboretum </br>4764 Visite libre";
-      });
+          <p id="voir-photos">Voir toutes les photos</p>
 
-      date[4].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2015";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "5044 visite guidée</br>5045 Visite libre</br>4762 visite guidée </br>5046 Visite théatralisée - Domaine à vendre";
-      });
 
-      date[3].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2018";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "9512599 Visite libre du domaine d'Harcourt, château et arboretum</br>15930892 Visite libre du Chantier Chapentiers sans frontières";
-      });
+  </section>
+        <div id="test-slider-lieu">
+  <div id="GroupeDeMiniatures">
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000356">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
+      </a>
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000357">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
+      </a>
 
-      date[2].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2019";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "56071185 Spectacle de théâtre jeune public au domaine d'Harcourt</br>60300153 Lecture musicale au domaine d'Harcourt</br>4762 visite guidée";
-      });
 
-      date[1].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2020";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "20437322 Visite libre du domaine d'Harcourt, château et arboretum</br>73767743 Savoir-faire : de lin à l'autre - Art éphémère extraordinaire par François Abélanet";
-      });
 
-      date[0].addEventListener("click", function() {
-        document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2021";
-        document.getElementById("p-txt-journee-patrimoine").innerHTML = "64639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet";
-      });
-    </script>
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000359">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
+      </a>
+
+    </figure>
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000362">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000370">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000371">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000372">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000373">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+      </a>
+    </figure>
+
+    <figure class="ImageMiniature">
+      <a href="illustration.php?NumImage=327000374">
+        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+      </a>
+
+    </figure>
+  </div>
+  </div>
+
+
+  <footer>Mentions légales</footer>
+  <script>
+    let date = document.getElementsByClassName("date");
+    let kl = document.getElementsByClassName("date").value; 
+    const voir = document.getElementById("voir-photos");  
+
+    const next = document.getElementsByClassName("w-img-nav_next")[0];
+    const pre = document.getElementsByClassName("w-img-nav_previous")[0]; 
+
+    const imageslider = document.getElementById("image-slider");
+    const imageslider1 = document.getElementById("image-slider1");
+    const imageslider2 = document.getElementById("image-slider2"); 
+
+    var count = 0; 
+
+    // il faut changer les noms des variables parce que c'est les memes que dans ville.php
+
+        voir.addEventListener("click", function()
+        {
+         document.getElementById("test-slider-lieu").style.display = "block"; 
+        }); 
+
+
+
+
+        next.addEventListener("click", maFcontion);
+    pre.addEventListener("click", maFcontion1);
+
+    function maFcontion() {
+
+      count++;
+      console.log("true");
+       console.log(count);
+
+       if (count == 0) {
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+    }
+
+      if (count == 1) {
+      
+      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')"; 
+      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
+      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+    }  
+    if (count == 2) {
+      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
+      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
+    } 
+    if (count == 3)
+    {
+      count=0; 
+      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+    }
+
+    }
+
+    function maFcontion1() {
+
+      count--;
+      console.log(count); 
+      if (count == 0) {
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+    }
+      if (count == 1) {
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')"; 
+      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
+      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+    }  
+    if (count == 2) {
+      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
+      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
+    } 
+    if (count == -1)
+    {
+      count=0; 
+      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+    }
+
+    }
+
+    console.log(count)
+    if (count == 1) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
+    }
+
+    date[6].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2013";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "4817 Chasse aux papillons nocturnes </br> 4818 La conférence des oiseaux, théâtre d'Illusia </br> 4819 visite guidée </br> 4820 Visite libre </br>";
+      console.log(kl);
+    });
+
+    date[5].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2014";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "4760 Exposition Les arbres remarquables de France </br>4761 Présentation des recherches archéologiques récentes</br>4762 visite guidée </br>4763 Visite guidée A la découverte des arbres remarquables de l'arboretum </br>4764 Visite libre";
+    });
+
+    date[4].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2015";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "5044 visite guidée</br>5045 Visite libre</br>4762 visite guidée </br>5046 Visite théatralisée - Domaine à vendre";
+    });
+
+    date[3].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2018";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "9512599 Visite libre du domaine d'Harcourt, château et arboretum</br>15930892 Visite libre du Chantier Chapentiers sans frontières";
+    });
+
+    date[2].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2019";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "56071185 Spectacle de théâtre jeune public au domaine d'Harcourt</br>60300153 Lecture musicale au domaine d'Harcourt</br>4762 visite guidée";
+    });
+
+    date[1].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2020";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "20437322 Visite libre du domaine d'Harcourt, château et arboretum</br>73767743 Savoir-faire : de lin à l'autre - Art éphémère extraordinaire par François Abélanet";
+    });
+
+    date[0].addEventListener("click", function() {
+      document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2021";
+      document.getElementById("p-txt-journee-patrimoine").innerHTML = "64639888 Installation d'une oeuvre d'art contemporain immersive par Anne Blanchet";
+    });
+  </script>
 
 </body>
 

@@ -182,7 +182,17 @@
 
       </figure>
 
-    </div> 
+    </div>  
+
+    <section id="slider-lieu">
+
+        <div id="main-slider">
+
+
+        </div>
+
+
+    </section>
 
     
     <footer>Mentions légales</footer>

@@ -1254,4 +1254,23 @@ margin-top: 5%;
   #modinfos form 
   {
       height: 200%;
+  } 
+
+  #slider-lieu
+  {
+      width: 100vw;
+      height: 30vh;
+      background-color: #fdc758; 
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+    justify-content: flex-end;
+  }
+
+#main-slider
+  {
+      width: 80vw;
+      height: 100vh;
+      background-color: pink;
+
   }

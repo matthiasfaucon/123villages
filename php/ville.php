@@ -210,7 +210,7 @@
       </div>
       <div id="img-primary-wrapper">
         <div class="card_leo">
-          <img src="..\images\batiment-avec-fond\avoir\chateau.jpg">
+          <img id="card_leo_img1" src="..\images\batiment-avec-fond\avoir\chateau.jpg">
           <div class="info_card_leo">
             <div></div>
             <p>Elbeuf</p>
@@ -220,7 +220,7 @@
           </div>
         </div>
         <div class="card_leo">
-          <img src="..\images\batiment-avec-fond\avoir\colombier.jpg">
+          <img id="card_leo_img2" src="..\images\batiment-avec-fond\avoir\colombier.jpg">
           <div class="info_card_leo">
             <div></div>
             <p>Elbeuf</p>
@@ -230,16 +230,7 @@
           </div>
         </div>
 
-        <div class="card_leo">
-          <img src="..\images\batiment-avec-fond\avoir\antique.jpg">
-          <div class="info_card_leo">
-            <div></div>
-            <p>Elbeuf</p>
-          </div>
-          <div>
-            <p>chateau de Léo</p>
-          </div>
-        </div>
+
 
       </div>
       <div class="w-img-nav_next">
@@ -301,25 +292,28 @@
     const next = document.getElementsByClassName("w-img-nav_next")[0];
     const pre = document.getElementsByClassName("w-img-nav_previous")[0]; 
 
-    const card = document.getElementsByClassName("card_leo")[0]; 
-    const card1 = document.getElementsByClassName("card_leo")[1];
-    const card2 = document.getElementsByClassName("card_leo")[2];  
+    const card_img1 = document.getElementById("card_leo_img1")[0]; 
+    const card_img2 = document.getElementById("card_leo_img2")[1];
+
  let count = 0; 
     next.addEventListener("click", function(){
       count++; 
-      console.log("count:"+count);  
+      console.log("count:"+count);   
+      gh="../images/batiment-avec-fond/avoir/blockhaus.jpg"; 
 
       if (count == 1){
+        if (card_img1 =="../images/batiment-avec-fond/avoir/blockhaus.jpg") {
+          card_img1="../images/batiment-avec-fond/avoir/blockhaus.jpg"; 
+        }
+    
+       
         
-        card.style.transform = "translateX(" + (-30) + "vw)"; 
-        card1.style.transform = "translateX(" + (-55) + "vw)";
-        card2.style.transform = "translateX(" + (-55) + "vw)";
       } 
-      if (count == 2){
+      // if (count == 2){
         
-        card1.style.transform = "translateX(" + (-100) + "vw)"; 
-        card2.style.transform = "translateX(" + (-110) + "vw)";
-      }
+      //   card1.s
+      //   card2.
+      // }
     }); 
   
   
@@ -331,17 +325,19 @@
       console.log("count:"+count);   
       count++; 
 
-      if (count == 1){
+      // if (count == 1){
         
-        card.style.transform = "translateX(" + (+30) + "vw)"; 
-        card1.style.transform = "translateX(" + (+55) + "vw)";
-        card2.style.transform = "translateX(" + (+55) + "vw)";
-      } 
-      if (count == 2){
+      //   card_img1.setAttribute("src", "../images/batiment-avec-fond/avoir/blockhaus.jpg");
+      //   card_img2.setAttribute("src", "../images/batiment-avec-fond/avoir/moulin.jpg");
         
-        card1.style.transform = "translateX(" + (+100) + "vw)"; 
-        card2.style.transform = "translateX(" + (+110) + "vw)";
-      }
+      // } 
+
+
+      // if (count == 2){
+        
+      //   card1.s
+      //   card2.
+      // }
 
 
     }

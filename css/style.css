@@ -749,16 +749,17 @@ flex-wrap: wrap;
   #test-presentation-cat
   {
       background-color: rebeccapurple; 
-      /* display: flex;
+      display: flex;
       flex-direction: row;
       align-items: center; 
-      justify-content: space-between; */
+      justify-content: space-between;
   } 
   #main_carrousel 
   {
       display: flex; 
       flex-direction: row;
-      align-items: center;
+      align-items: center; 
+      
       /* overflow-x: hidden; */
   }
   .w-img-nav_next, .w-img-nav_previous
@@ -780,7 +781,7 @@ flex-wrap: wrap;
   #img-primary-wrapper
   {
     border: solid red; 
-    width: 50vw; 
+    width: 75vw; 
     display: flex; 
     flex-direction: row;
     align-items: center; 
@@ -795,11 +796,11 @@ flex-wrap: wrap;
     height: 30vh;
 
   }  
-  #img-primary-wrapper :nth-of-type(2) 
+  /* #img-primary-wrapper :nth-of-type(2) 
   {
-      margin-left: 30vw;
-      margin-right: 30vw;
-  }
+      /* margin-left: 30vw;
+      margin-right: 30vw; 
+  } */
   .card_leo img 
   {
       width: 100%; 

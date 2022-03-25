@@ -398,27 +398,13 @@ text-align: center;
 color: #000000;
 }  
 
-#txt-img-lieu 
+#ii 
 {
-    display: flex;
-    justify-content: space-between;
-}
+display: flex;
 
-#txt-infos-lieu
-{
-    margin-left: 50px;   
 }
 
 
-#txt-infos-lieu p 
-{
-
-width: 65%;
-font-size: 18px;
-line-height: 22px;
-line-height: 1.5em;
-color: #000000; 
-} 
 
 #infos-local
 {
@@ -427,61 +413,118 @@ color: #000000;
 font-size: 18px;
 line-height: 22px;
 line-height: 1.5em;
-color: #000000; 
+color: #000000;  
+position: relative;
 }
+
+
 
 #cont-img-infos 
 {
-    padding-right: 1%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-left: -2vw;  
+    position: relative;
+
 }
 
 #img-lieu 
 { 
-position: relative;
+
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
-margin-right: 5%;
 width: 300px;
-height: 400px;
-} 
+height: 400px; 
+}  
+
+
+
 #maCarte1 
 {
     border-radius: 10px;
-    width: 100%;
-    height: 50%; 
+    width: 300px;
+    height: 400px;   
+} 
+
+#txt-infos-lieu-bt
+{
+    width: 65vw; 
+    margin-top: 80vh;
+    background-color: #4062BB;
+    border: 10px solid;
+    border-color: #d4b902;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center; 
+    z-index: 2; 
+    cursor: pointer;
 }
+#txt-infos-lieu
+{
+    margin-left: 50px;   
+    z-index: 2;
+    margin-top: 20vh;
+}
+
+#txt-infos-lieu p 
+{
+
+width: 65vw;
+font-size: 1em;
+line-height: 22px;
+line-height: 1.5em;
+color: #000000; 
+}   
+
+@media screen and (max-width: 1040px) {
+    #txt-infos-lieu 
+    {
+        display: none;
+    } 
+    #ii 
+    {
+        align-content: center;
+        flex-wrap: wrap;
+    } 
+    /* #cont-img-infos 
+    {
+       
+    } */
+    
+}
+
+
 #journee-patrimoine 
 {
     display: flex;
     margin-top: 10%;
     padding: 2%;
     /* font-family: 'Montserrat', sans-serif; */
-    flex-direction: column;
-    justify-content: space-around;
-    
-   
+    flex-direction: row;
+    justify-content: space-around; 
 }
 #journee-patrimoine ul
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     list-style: none;
-    width: 100vh; 
+
     border-radius: 20px;
     color: #fff;
-    background-color: #4062bb;  
+    background-color: #4062bb;
     margin: 1.75rem 0;
-    padding: 0rem 1rem 0rem 1rem;
+ 
 }  
 #journee-patrimoine li 
 {
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    /* @extend %boxshadow; */
+    
     counter-increment: gradient-counter;
     margin-top: 1rem;
-    min-height: 3rem;
-    padding: 1rem 0rem 1rem 2rem; 
+    padding: 1rem 1rem 1rem 1rem;
 } 
 #journee-patrimoine li:hover 
 {

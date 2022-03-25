@@ -34,23 +34,31 @@
   <div id="div_title_lieu">
     <h1 id="title_lieu">Château d'Harcourt (Eure)</h1>
   </div>
-  <div id="txt-img-lieu">
+
+
+
+
+
+  <div id="ii">
     <div id="infos-local">
-      <div>
-        <p>Type :Château fort</p>
-        <p>Mail :harcourt@cg27.fr</p>
-        <p>Site Internet: http://www.harcourt-normandie.fr</p>
-        <p>Téléphone :+33 2 32 46 29 70</p>
-        <p>Fax :+33 2 32 46 53 38</p>
-        <p>Adresse: 13 rue du Château 27800 Harcourt</p>
-        <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
 
-      </div>
-
+      <p>Type :Château fort</p>
+      <p>Mail :harcourt@cg27.fr</p>
+      <p>Site Internet: http://www.harcourt-normandie.fr</p>
+      <p>Téléphone :+33 2 32 46 29 70</p>
+      <p>Fax :+33 2 32 46 53 38</p>
+      <p>Adresse: 13 rue du Château 27800 Harcourt</p>
+      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
     </div>
+
+
+
     <div id="cont-img-infos">
+
+
       <div id="img-lieu">
       </div>
+
 
 
       <div id="maCarte1"> </div>
@@ -97,6 +105,10 @@
       </script>
 
     </div>
+  </div>
+
+  <div id="txt-infos-lieu-bt">
+        <p>En savoir +</p>
   </div>
   <div id="txt-infos-lieu">
     <p>
@@ -221,6 +233,7 @@
     <p id="voir-photos">Voir toutes les photos</p>
 
 
+ 
   </section>
   <div id="test-slider-lieu">
     <div id="GroupeDeMiniatures">
@@ -282,6 +295,7 @@
     </div>
   </div>
 
+      
 
   <footer>Mentions légales</footer>
   <script>
@@ -296,9 +310,11 @@
     const imageslider1 = document.getElementById("image-slider1");
     const imageslider2 = document.getElementById("image-slider2");
 
+
     var count = 0;
 
     // il faut changer les noms des variables parce que c'est les memes que dans ville.php
+
 
     voir.addEventListener("click", function() {
       document.getElementById("test-slider-lieu").style.display = "block";

@@ -5,6 +5,11 @@
     $mail = 0;
     $mp = 0;
 
+    $_SESSION['email_verif'] = '';
+    $_SESSION['mdp_verif'] = '';
+    $_SESSION['email_exist'] = '';
+    $_SESSION['no_email'] = '';
+
     $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
     $mdp = htmlentities($_GET['password'], ENT_QUOTES);
 

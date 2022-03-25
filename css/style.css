@@ -460,13 +460,14 @@ height: 400px;
     display: flex;
     justify-content: center; 
     z-index: 2; 
-    cursor: pointer;
+    cursor: pointer; 
+    display: none;
 }
 #txt-infos-lieu
 {
     margin-left: 50px;   
     z-index: 2;
-    margin-top: 20vh;
+    margin-top: -40vh;
 }
 
 #txt-infos-lieu p 
@@ -483,6 +484,10 @@ color: #000000;
     #txt-infos-lieu 
     {
         display: none;
+    } 
+    #txt-infos-lieu-bt
+    {
+        display: block;
     } 
     #ii 
     {

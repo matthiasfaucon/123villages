@@ -99,12 +99,27 @@
   //     $('form p').text(this.files.length + " file(s) selected");
   //   });
   // }); 
-
+  let menuTogglead = document.getElementById('gestion_admin');
   const toad = document.getElementById("togadmin"); 
-  toad.addEventListener("click", function()
+
+  toad.addEventListener("click", function() 
   {
-    console.log("hjk"); 
-  }); 
+    toad.classList.toggle('active');
+    menuTogglead.style.display = "block";
+
+  });  
+
+  document.onclick = function (e) {
+
+if (e.target.id !== 'toggle') {
+    toad.classList.remove('active');
+    menuTogglead.style.display = "none";
+}
+
+// if (toggle.classList == '') {
+//     menuTogglead.style.display = "none";
+// }
+  }
 </script>
 
 </html>

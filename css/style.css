@@ -1052,10 +1052,12 @@ img.leaflet-interactive{
     display: flex;  
     flex-direction: column;   
     border-radius: 0px 20px 20px 0px;
-    
-    
-}  
 
+}  
+#gestion_admin.active 
+{
+    display: initial;
+}
 
 #admindep, #admin, #membre
 {
@@ -1164,16 +1166,23 @@ margin-top: 5%;
     height: 20px;
     width: 20px;
     background-color: black;
+} 
+#togadmin.active 
+{
+    display: initial;
 }
   @media(max-width: 700px){  
 
     #gestion_admin 
     {
         display: none;
+    } 
+    #gestion_admin.active
+    {
+        display: block;
     }
     #depot_photo 
     {
-        position: relative; 
         margin-top: 10vh;
     }
     #depot_photo h4

@@ -452,6 +452,7 @@ height: 400px;
 #txt-infos-lieu-bt
 {
     width: 65vw; 
+    margin-left: 50px;
     margin-top: 15vh;
     background-color: #4062BB;
     border: 10px solid;
@@ -461,7 +462,7 @@ height: 400px;
     justify-content: center; 
     z-index: 2; 
     cursor: pointer; 
-    display: none;
+    display: none; 
 }
 #txt-infos-lieu
 {

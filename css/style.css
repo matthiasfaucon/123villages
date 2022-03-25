@@ -427,7 +427,7 @@ position: relative;
     flex-direction: column;
     align-items: flex-end; 
     margin-left: -2vw;  
-    position: absolute;
+    position: relative;
 
 }
 
@@ -449,22 +449,54 @@ height: 400px;
     height: 400px;   
 } 
 
+#txt-infos-lieu-bt
+{
+    width: 65vw; 
+    margin-top: 80vh;
+    background-color: #4062BB;
+    border: 10px solid;
+    border-color: #d4b902;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center; 
+    z-index: 2; 
+    cursor: pointer;
+}
 #txt-infos-lieu
 {
     margin-left: 50px;   
-
+    z-index: 2;
+    margin-top: 20vh;
 }
-
 
 #txt-infos-lieu p 
 {
 
-width: 65%;
-font-size: 18px;
+width: 65vw;
+font-size: 1em;
 line-height: 22px;
 line-height: 1.5em;
 color: #000000; 
-} 
+}   
+
+@media screen and (max-width: 1040px) {
+    #txt-infos-lieu 
+    {
+        display: none;
+    } 
+    #ii 
+    {
+        align-content: center;
+        flex-wrap: wrap;
+    } 
+    /* #cont-img-infos 
+    {
+       
+    } */
+    
+}
+
+
 #journee-patrimoine 
 {
     display: flex;

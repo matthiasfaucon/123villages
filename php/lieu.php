@@ -107,6 +107,9 @@
     </div>
   </div>
 
+  <div id="txt-infos-lieu-bt">
+        <p>En savoir +</p>
+  </div>
   <div id="txt-infos-lieu">
     <p>
       Au cœur d'une forêt de 95 hectares, le château des XIIe-XIVe siècles remanié au XVIIe siècle est entouré d'une partie du mur d'enceinte et bordé d'un double fossé. Une exposition permanente présente aux visiteurs l'histoire du château, l'évolution de son architecture et l'histoire de la famille d'Harcourt. Véritable patrimoine végétal faisant pendant aux qualités architecturales du bâtiment, l'arboretum comprend 470 espèces d'arbres réparties sur 11 hectares. Créé au début du XIXe siècle, il fût l'un des premiers arboretums de France à introduire certaines espèces encore inconnues alors, comme les cèdres du Liban ou les séquoias
@@ -229,7 +232,7 @@
 
     <p id="voir-photos">Voir toutes les photos</p>
 
-
+ 
   </section>
   <div id="test-slider-lieu">
     <div id="GroupeDeMiniatures">
@@ -291,6 +294,7 @@
     </div>
   </div>
 
+      
 
   <footer>Mentions légales</footer>
   <script>
@@ -304,10 +308,15 @@
     const imageslider = document.getElementById("image-slider");
     const imageslider1 = document.getElementById("image-slider1");
     const imageslider2 = document.getElementById("image-slider2");
-
+     
+    const bouton_txt = document.getElementById("txt-infos-lieu-bt"); 
     var count = 0;
 
     // il faut changer les noms des variables parce que c'est les memes que dans ville.php
+
+    // bouton_txt.addEventListener("click", function() {
+    //   imageslider.style.
+    // }); 
 
     voir.addEventListener("click", function() {
       document.getElementById("test-slider-lieu").style.display = "block";

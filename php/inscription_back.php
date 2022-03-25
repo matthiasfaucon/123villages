@@ -3,6 +3,7 @@
     session_start();
 
     $_SESSION['email_exist'] = 0;
+    $_SESSION['no_email'] == 0;
 
     $prenom = ucwords(strtolower(htmlentities($_GET['prenom'], ENT_QUOTES)));
     $nom = ucwords(strtolower(htmlentities($_GET['nom'], ENT_QUOTES)));

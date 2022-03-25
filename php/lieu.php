@@ -284,6 +284,7 @@
 
 
   <footer>Mentions légales</footer>
+  
   <script>
     let date = document.getElementsByClassName("date");
     let kl = document.getElementsByClassName("date").value; 

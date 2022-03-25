@@ -1303,3 +1303,26 @@ padding: 1vh 2vw 1vh 2vw;
     display: flex;
 }
 
+.card h3,
+.card p {
+  -webkit-transform: translateX(-2vw);
+  transform: translateX(-2vh);
+  margin: 0;
+}
+
+.card p {
+  font-size: 0.8em;
+}
+
+.card:hover img{
+  opacity: 0.6;
+}
+
+.card:hover:after,
+.card.hover:after,
+.card:hover div {
+    
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1  ;
+}

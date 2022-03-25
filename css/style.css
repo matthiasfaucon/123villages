@@ -1141,7 +1141,7 @@ margin-top: 5%;
   #depot_photo 
   {
       
-      margin-top: -60%; 
+      position: absolute;
       margin-left: 35%; 
       width: 50%;
       height: 80vh; 

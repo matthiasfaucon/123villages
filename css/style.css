@@ -401,7 +401,7 @@ color: #000000;
 #txt-img-lieu 
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 #txt-infos-lieu
@@ -442,13 +442,26 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp)
 background-repeat:no-repeat;
 margin-right: 5%;
 width: 300px;
-height: 400px;
-} 
+height: 400px; 
+
+
+}  
+
+#cont-img-infos 
+{
+    width: 100vw;
+    height: 400px; 
+  
+    display: flex;  
+    justify-content: flex-end;
+
+}
+
 #maCarte1 
 {
     border-radius: 10px;
-    width: 100%;
-    height: 50%; 
+    width: 30%;
+    height: 100%; 
 }
 #journee-patrimoine 
 {

@@ -1070,7 +1070,8 @@ margin-top: 5%;
 #admindep p, #admin p, #membre p 
 {
     color: #fdc758; 
-    font-weight: bold;
+    font-weight: bold; 
+    font-size: 1em;
 }
 
 
@@ -1157,13 +1158,48 @@ margin-top: 5%;
   {
 color: #fff; 
 margin-top: 5%;
+  } 
+#togadmin 
+{
+    height: 20px;
+    width: 20px;
+    background-color: black;
+}
+  @media(max-width: 700px){  
+
+    #gestion_admin 
+    {
+        display: none;
+    }
+    #depot_photo 
+    {
+        position: relative; 
+        margin-top: 10vh;
+    }
+    #depot_photo h4
+    {
+        font-size: 0.7em;
+    }
+    .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
+    {
+        font-size: 0.5em;
+    } 
+    #membre p, #admin p
+    {
+        font-size: 0.7em;
+    }      
+    #admindep p {
+        font-size: 0.6em;
+    } 
+
   }
 
   input[type="file"]
   {
     border-style: none;
     border-radius: 5px; 
-    background-color: #fdc758;
+    background-color: #fdc758; 
+    width: 100%;
   } 
 
   #zonededepot

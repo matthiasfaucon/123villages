@@ -10,7 +10,9 @@
   <title>depot_photo</title>
 </head>
 
-<body>
+<body> 
+
+<div id="togadmin"></div>
   <div id="gestion_admin">
 
     <div id="membre">
@@ -92,11 +94,17 @@
 
 </body>
 <script>
-  $(document).ready(function() {
-    $('form input').change(function() {
-      $('form p').text(this.files.length + " file(s) selected");
-    });
-  });
+  // $(document).ready(function() {
+  //   $('form input').change(function() {
+  //     $('form p').text(this.files.length + " file(s) selected");
+  //   });
+  // }); 
+
+  const toad = document.getElementById("togadmin"); 
+  toad.addEventListener("click", function()
+  {
+    console.log("hjk"); 
+  }); 
 </script>
 
 </html>

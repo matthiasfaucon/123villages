@@ -184,192 +184,189 @@
 
   </div>
 
-  <section id="slider-lieu"> 
-  <div class="w-img-nav_previous">
-        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
-      </div>
+  <section id="slider-lieu">
+    <div class="w-img-nav_previous">
+      <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
+    </div>
 
     <div id="main-slider">
-    
-        <div class="card-slider">
-        <div id="image-slider"></div>  
-   
-        </div>
+
+      <div class="card-slider">
+        <div id="image-slider"></div>
+
+      </div>
 
 
-        <div class="card-slider">
+      <div class="card-slider">
         <div id="image-slider1"></div>
 
-        </div>
+      </div>
 
-        <div class="card-slider">
+      <div class="card-slider">
         <div id="image-slider2"></div>
-        </div>
+      </div>
 
-    </div> 
+    </div>
     <div class="w-img-nav_next">
-        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
+      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
     </div>
 
 
 
 
-          <p id="voir-photos">Voir toutes les photos</p>
+    <p id="voir-photos">Voir toutes les photos</p>
 
 
   </section>
-        <div id="test-slider-lieu">
-  <div id="GroupeDeMiniatures">
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000356">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
-      </a>
-    </figure>
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000357">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
-      </a>
+  <div id="test-slider-lieu">
+    <div id="GroupeDeMiniatures">
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000356">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000356.webp">
+        </a>
+      </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000357">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000357.webp">
+        </a>
 
 
 
-    </figure>
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000359">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
-      </a>
+      </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000359">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000359.webp">
+        </a>
 
-    </figure>
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000362">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
-      </a>
-    </figure>
+      </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000362">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000362.webp">
+        </a>
+      </figure>
 
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000370">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
-      </a>
-    </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000370">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+        </a>
+      </figure>
 
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000371">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
-      </a>
-    </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000371">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+        </a>
+      </figure>
 
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000372">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
-      </a>
-    </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000372">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000372.webp">
+        </a>
+      </figure>
 
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000373">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
-      </a>
-    </figure>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000373">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+        </a>
+      </figure>
 
-    <figure class="ImageMiniature">
-      <a href="illustration.php?NumImage=327000374">
-        <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
-      </a>
+      <figure class="ImageMiniature">
+        <a href="illustration.php?NumImage=327000374">
+          <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+        </a>
 
-    </figure>
-  </div>
+      </figure>
+    </div>
   </div>
 
 
   <footer>Mentions légales</footer>
   <script>
     let date = document.getElementsByClassName("date");
-    let kl = document.getElementsByClassName("date").value; 
-    const voir = document.getElementById("voir-photos");  
+    let kl = document.getElementsByClassName("date").value;
+    const voir = document.getElementById("voir-photos");
 
     const next = document.getElementsByClassName("w-img-nav_next")[0];
-    const pre = document.getElementsByClassName("w-img-nav_previous")[0]; 
+    const pre = document.getElementsByClassName("w-img-nav_previous")[0];
 
     const imageslider = document.getElementById("image-slider");
     const imageslider1 = document.getElementById("image-slider1");
-    const imageslider2 = document.getElementById("image-slider2"); 
+    const imageslider2 = document.getElementById("image-slider2");
 
-    var count = 0; 
+    var count = 0;
 
     // il faut changer les noms des variables parce que c'est les memes que dans ville.php
 
-        voir.addEventListener("click", function()
-        {
-         document.getElementById("test-slider-lieu").style.display = "block"; 
-        }); 
+    voir.addEventListener("click", function() {
+      document.getElementById("test-slider-lieu").style.display = "block";
+    });
 
 
 
 
-        next.addEventListener("click", maFcontion);
+    next.addEventListener("click", maFcontion);
     pre.addEventListener("click", maFcontion1);
 
     function maFcontion() {
 
       count++;
       console.log("true");
-       console.log(count);
+      console.log(count);
 
-       if (count == 0) {
+      if (count == 0) {
         imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
-        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')";
         imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
-    }
+      }
 
       if (count == 1) {
-      
-      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')"; 
-      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
-      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
-    }  
-    if (count == 2) {
-      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
-      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
-      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
-    } 
-    if (count == 3)
-    {
-      count=0; 
-      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
-        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+      }
+      if (count == 2) {
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
+      }
+      if (count == 3) {
+        count = 0;
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')";
         imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
-    }
+      }
 
     }
 
     function maFcontion1() {
 
       count--;
-      console.log(count); 
+      console.log(count);
       if (count == 0) {
         imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
-        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')";
         imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
-    }
+      }
       if (count == 1) {
-        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')"; 
-      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
-      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
-    }  
-    if (count == 2) {
-      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
-      imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
-      imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
-    } 
-    if (count == -1)
-    {
-      count=0; 
-      imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
-        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')"; 
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000372.webp')";
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+      }
+      if (count == 2) {
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000362.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000371.webp')";
+        imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000370.webp')";
+      }
+      if (count == -1) {
+        count = 0;
+        imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
+        imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')";
         imageslider2.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000359.webp')";
-    }
+      }
 
     }
 

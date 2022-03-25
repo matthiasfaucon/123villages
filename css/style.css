@@ -1476,16 +1476,16 @@ padding: 1vh 2vw 1vh 2vw;
 
   #slider-lieu
   {
-      width: 100vw;
-      height: 50vh;
-      background-color: #fdc758; 
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: flex; 
-      flex-direction: row;
-     justify-content: center;
-
+    width: 100vw;
+    height: 50vh;
+    background-color: #fdc758;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 0%;
+    position: relative;
   }
 
 #main-slider
@@ -1527,11 +1527,13 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 }
 #slider-lieu p
 {
-    color: purple;  
-    text-decoration: underline; 
+    color: purple;
+    position: absolute;
+    text-decoration: underline;
     font-size: 0.5em;
     cursor: pointer;
     margin-top: 15%;
+    bottom: 10px;
 } 
 #test-slider-lieu 
 {

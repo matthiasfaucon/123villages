@@ -430,38 +430,35 @@ line-height: 1.5em;
 color: #000000; 
 }
 
-#cont-img-infos 
-{
-    padding-right: 1%;
-}
 
-#img-lieu 
-{ 
-position: relative;
-background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
-background-repeat:no-repeat;
-margin-right: 5%;
-width: 300px;
-height: 400px; 
-
-
-}  
 
 #cont-img-infos 
 {
     width: 100vw;
-    height: 400px; 
-  
+    height: 100vh;
     display: flex;  
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-left: -2vw;  
 
 }
+
+#img-lieu 
+{ 
+
+background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
+background-repeat:no-repeat;
+width: 300px;
+height: 400px; 
+}  
+
+
 
 #maCarte1 
 {
     border-radius: 10px;
-    width: 30%;
-    height: 100%; 
+    width: 300px;
+    height: 400px;   
 }
 #journee-patrimoine 
 {
@@ -470,9 +467,7 @@ height: 400px;
     padding: 2%;
     /* font-family: 'Montserrat', sans-serif; */
     flex-direction: column;
-    justify-content: space-around;
-    
-   
+    justify-content: space-around; 
 }
 #journee-patrimoine ul
 {

@@ -49,16 +49,17 @@
 
   </div>
 
-  <div id="txt-img-lieu">
-    <div id="img-lieu">
-    </div>
-  </div>
+
 
 
 
 
   <div id="cont-img-infos">
 
+    <div id="txt-img-lieu">
+      <div id="img-lieu">
+      </div>
+    </div>
 
 
     <div id="maCarte1"> </div>

@@ -192,11 +192,170 @@
         </div>
       </div>
 
+  </section> 
+
+
+
+
+
   </section>
 
 
+
+
+
+  </section>
+
+
+  <section id="test-presentation-cat">
+    <div id="main_carrousel">
+      <div class="w-img-nav_previous">
+        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+      <div id="img-primary-wrapper">
+        <div class="card_leo">
+          <div class="img-slider-fond">
+            <!-- <img id="card_leo_img1" src="..\images\batiment-avec-fond\avoir\chateau.jpg"> -->
+          </div>
+          <div class="info_card_leo">
+            <div></div> <!--  rond -->
+            <p>Elbeuf</p>
+          </div>
+          <div>
+            <p>chateau de Léo</p>
+          </div>
+        </div>
+        <div class="card_leo">
+          <div class="img-slider-fond1">
+            <!-- <img id="card_leo_img2" src="..\images\batiment-avec-fond\avoir\colombier.jpg">  -->
+          </div>
+          <div class="info_card_leo">
+            <div></div> <!--  rond -->
+            <p>Elbeuf</p>
+          </div>
+          <div>
+            <p>chateau de Léo</p>
+          </div>
+        </div>
+
+
+
+      </div>
+      <div class="w-img-nav_next">
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>  
+
+    <div class="card_leo">
+        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
+        <div class="info_card_leo">
+          <div></div>
+          <p>Elbeuf</p>
+        </div>
+        <div>
+        <p>chateau de Léo</p> 
+        </div>
+    </div>   -->
   </section>
   <footer>Mentions légales</footer>
+  <script>
+    const next = document.getElementsByClassName("w-img-nav_next")[0];
+    const pre = document.getElementsByClassName("w-img-nav_previous")[0];
+
+    const card_img1 = document.getElementsByClassName("img-slider-fond")[0];
+    const card_img2 = document.getElementsByName("img-slider-fond1")[0];
+    var count = 0;
+
+    next.addEventListener("click", maFcontion);
+    pre.addEventListener("click", maFcontion1);
+
+    function maFcontion() {
+
+      count++;
+      console.log("true");
+       console.log(count);
+       if (count == 0) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/colombier.jpg')";
+    }
+      if (count == 1) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
+    }  
+    if (count == 2) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/chateau.jpg')";
+    } 
+    if (count == 3)
+    {
+      count=0; 
+    }
+
+    }
+
+    function maFcontion1() {
+
+      count--;
+      console.log(count); 
+      if (count == 0) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/colombier.jpg')";
+    }
+      if (count == 1) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
+    }  
+    if (count == 2) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/chateau.jpg')";
+    } 
+    if (count == -1)
+    {
+      count=0; 
+    }
+
+    }
+
+    console.log(count)
+    if (count == 1) {
+      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
+    }
+  </script>
 </body>
+
 
 </html>

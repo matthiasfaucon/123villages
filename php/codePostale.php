@@ -83,7 +83,7 @@ include 'php/verif_script.php';
 
 </nav>
 
-<section id="codePostale">
+<section id="codePostaux">
 
 <div class="76000">
 <h2>Code Postal 76000</h2>
@@ -127,6 +127,55 @@ Code Postal 76133
 Épouville  |  Manéglise  |  Notre-Dame-du-Bec  |  Rolleville  |  Saint-Martin-du-Bec</a>
 </div>
 </section>
+
+<?php
+
+try
+    {
+        $bdd=new PDO('mysql:host=localhost;dbname=ptut','root','');
+    }
+    catch(Exception $e)
+    {
+        die('Erreur :'.$e->getMessage());
+    }
+
+    $reponse=$bdd->query('SELECT code_postal, nom_ville FROM code_postaux');
+
+    while ($donnees=$reponse->fetch())
+    {
+      $codePostal = $donnees['code_postal'];
+      $ville = $donnees['nom_ville'];
+       echo '<script>
+  // je crée un nouvelle élément div
+  var newDiv = document.createElement("div");
+  // je lui donne les valeurs de la BDD
+  var newH3 = document.createElement("h3");
+  var newContentCodePostale = document.createTextNode(codePostal);
+  var newA = document.createElement("a");
+  var newContentVille = document.createTextNode("ville");
+  // ajoute le nœud texte au nouveau div créé
+  newDiv.appendChild(newH3);
+  newDiv.appendChild(newContentCodePostale);
+  newDiv.appendChild(newA);
+  newDiv.appendChild(newContentVille);
+
+  // ajoute le nouvel élément créé et son contenu dans le DOM
+  var codePostaux = document.getElementById("codePostaux");
+  document.body.appendChild(newDiv);
+</script>';
+
+        echo $donnees['code_postal'].'/'.$donnees['nom_ville'];
+        
+    }
+    
+    $reponse->closeCursor();
+
+    ?>
+    <script>
+
+
+
+</script>
 
 <footer>Mentions légales</footer>
 </body>

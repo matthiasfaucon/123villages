@@ -113,96 +113,88 @@
   </div>
   </section>
 
-  <section id="presentationCarte">
-    <h1>Notre sélection pour la Seine-Marritime</h1>
+  <section id="choixAPresenter">
+    <h1>A découvrir</h1>
     <div id="fleche">
     <div class="fleche gauche"><</div>
     <div class="fleche droite">></div>
-  </div>
-    <div class="contenerCard">
+    </div>
     <div class="cards">
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+<div class="card">
+  <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+  <div>
+    <h3>Rouen</h3>
+    <p>Eglise de Rouen</p>
+  </div>
+  <a href="#"></a>
+</div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+   <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
 
-      <div class="card">
-        <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Rouen</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise de Rouen</p>
-          </div>
-      </div>
+  <div class="card">
+   <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
+    <div>
+      <h3>Rouen</h3>
+      <p>Eglise de Rouen</p>
+    </div>
+    <a href="#"></a>
+  </div>
+
 </div>
         
-</section> 
+</section>
 
 <footer>Mentions légales</footer>
 </body>

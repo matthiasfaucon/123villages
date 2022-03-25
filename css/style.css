@@ -1033,25 +1033,25 @@ margin-top: 5%;
       height: 200%;
   }
 
-#codePostale{
+#codePostaux {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5vh;
     justify-items: center;
 }
 
-#codePostale a{
+#codePostaux a{
    font-size: 0.9em;
    color: #4062BB;
 }
 
 
-#codePostale a:hover{
+#codePostaux a:hover{
     font-size: 0.9em;
     color: #fdc758;
  }
 
-#codePostale div{
+#codePostaux div{
     display: grid;
     border-collapse: collapse;
     border: solid #4062BB 2px;
@@ -1063,7 +1063,7 @@ margin-top: 5%;
     overflow: auto;
  }
 
- #codePostale div h2{
+ #codePostaux div h2{
      display: flex;
      padding-bottom: 3%;
      justify-self: flex-start;
@@ -1281,13 +1281,26 @@ padding: 1vh 2vw 1vh 2vw;
     bottom: 0;
     right: 0;
     z-index: 1;
-    opacity: 0.7;
+    opacity: 1;
     background-color: #4062BB;
     width: 50%;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     align-content: flex-end;
     flex-wrap: wrap;
+}
+
+.card .infoCard{
+    display: flex;
+}
+
+.card .ville{
+    display: flex;
+}
+
+.card .monument{
+    margin-top: 50%;
+    display: flex;
 }
 
 .card h3,
@@ -1310,5 +1323,5 @@ padding: 1vh 2vw 1vh 2vw;
     
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  opacity: 0.9  ;
+  opacity: 1  ;
 }

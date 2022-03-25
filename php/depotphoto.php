@@ -62,10 +62,11 @@
 </div>
 
 <div class="form_frontco">
-<input type="file" multiple>   
+
 </div> 
-<div id="zonededepot">
-<p>Drag your files here or click in this area.</p> 
+<div id="zonededepot"> 
+<input type="file"><div draggable="true" class="box">Drag your files here or click in this area.</input> 
+Drag your files here or click in this area. 
 </div>
 <button type="submit">Upload</button>
 

@@ -50,7 +50,11 @@ a:hover{
     font-size: 1.5rem;
     color: #f4f4f9;
 }
-
+@media screen and (max-width: 500px) {
+    #logoTypo{ 
+        font-size: 1em;
+    }
+}
 header img{
     width: 100vw;
     display: flex;
@@ -202,7 +206,20 @@ position: relative;
 display: flex;
 width: 40vw;
 height: 60vh;
+} 
+
+@media screen and (max-width: 1100px) { 
+
+    #maCarteDepartement{ 
+        width: 80vw;
+height: 70vh;
+
+    }
+
+
+
 }
+
 
 #choixAPresenter{
     width: 100vw;
@@ -470,8 +487,7 @@ height: 400px;
 {
     background-color: #52b2cf; 
     cursor: pointer; 
-
-
+    padding: 1rem 0rem 1rem 2rem; 
 } 
  #txt-journee-patrimoine 
 {
@@ -561,6 +577,7 @@ flex-wrap: wrap;
 #txt-card p 
 {
     width: 50%;
+    color:#fff; 
 }
 
 #carte-ville 
@@ -605,8 +622,106 @@ flex-wrap: wrap;
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform 0.4s linear;
-  }
+  } 
 
+  #test-presentation-cat
+  {
+      background-color: rebeccapurple; 
+      display: flex;
+      flex-direction: row;
+      align-items: center; 
+      justify-content: space-between;
+  } 
+  #main_carrousel 
+  {
+      display: flex; 
+      flex-direction: row;
+      align-items: center; 
+      
+      /* overflow-x: hidden; */
+  }
+  .w-img-nav_next, .w-img-nav_previous
+  {
+    height: 50px;
+    width: 50px; 
+    background-color: #fff; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer; 
+    z-index: 50;
+  } 
+  .w-img-nav_previous svg,  .w-img-nav_next svg
+  {
+    stroke: #1D2026; 
+  } 
+  #img-primary-wrapper
+  {
+    border: solid red; 
+    width: 75vw; 
+    display: flex; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+  }
+  .card_leo  /* fait en mobile fist */
+  {
+    background-color: #fff; 
+    border: solid 1px; 
+    border-radius: 20px;
+    width: 25vw;       
+    height: 30vh;
+
+  }  
+  /* #img-primary-wrapper :nth-of-type(2) 
+  {
+      /* margin-left: 30vw;
+      margin-right: 30vw; 
+  } */
+  .img-slider-fond,  .img-slider-fond1
+  {
+      width: 100%; 
+      height: 70%; 
+      border-radius: 20px 20px 0px 0px; 
+      background-image: url("../images/batiment-avec-fond/avoir/colombier.jpg");
+      background-repeat: no-repeat;  
+      background-size: cover;
+
+  }  
+
+
+  .img-slider-fond1
+  {
+    background-image: url("../images/batiment-avec-fond/avoir/chateau.jpg");
+  }
+  .info_card_leo 
+  {
+      
+      width: 100%; 
+      display: flex; 
+      justify-content: space-evenly;
+      flex-direction: row; 
+      ;
+  } 
+  .info_card_leo div 
+  {
+      background-color: #4062BB; 
+      width: 10px;
+      border-radius: 50%; 
+      
+  }
+  .card_leo :nth-of-type(3)
+  {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px;
+    font-size: 0.5em;
+  }
+  .info_card_leo p 
+  {
+      font-size: 0.4em;
+  }
   nav{
       margin-top: 2%;
       position: fixed;
@@ -1031,27 +1146,28 @@ margin-top: 5%;
   #modinfos form 
   {
       height: 200%;
+
   }
 
-#codePostaux {
+#codePostale{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5vh;
     justify-items: center;
 }
 
-#codePostaux a{
+#codePostale a{
    font-size: 0.9em;
    color: #4062BB;
 }
 
 
-#codePostaux a:hover{
+#codePostale a:hover{
     font-size: 0.9em;
     color: #fdc758;
  }
 
-#codePostaux div{
+#codePostale div{
     display: grid;
     border-collapse: collapse;
     border: solid #4062BB 2px;
@@ -1063,7 +1179,7 @@ margin-top: 5%;
     overflow: auto;
  }
 
- #codePostaux div h2{
+ #codePostale div h2{
      display: flex;
      padding-bottom: 3%;
      justify-self: flex-start;
@@ -1281,7 +1397,7 @@ padding: 1vh 2vw 1vh 2vw;
     bottom: 0;
     right: 0;
     z-index: 1;
-    opacity: 1;
+    opacity: 0.7;
     background-color: #4062BB;
     width: 50%;
     -webkit-transform: translateX(100%);
@@ -1290,17 +1406,93 @@ padding: 1vh 2vw 1vh 2vw;
     flex-wrap: wrap;
 }
 
-.card .infoCard{
-    display: flex;
+.card h3,
+.card p {
+  -webkit-transform: translateX(-2vw);
+  transform: translateX(-2vh);
+  margin: 0;
 }
 
-.card .ville{
-    display: flex;
+.card p {
+  font-size: 0.8em;
 }
 
-.card .monument{
-    margin-top: 50%;
-    display: flex;
+.card:hover img{
+  opacity: 0.6;
+}
+.card:hover:after,
+.card.hover:after,
+.card:hover div {
+    
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 0.9  ;
+}
+
+
+
+  #slider-lieu
+  {
+      width: 100vw;
+      height: 50vh;
+      background-color: #fdc758; 
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex; 
+      flex-direction: row;
+     justify-content: center;
+
+    padding: 0%;
+  }
+
+#main-slider
+  {
+      width: 80vw;
+      height: 100%;
+      background-color: pink;
+      display: flex;  
+      align-items: center; 
+      justify-content: space-around;  
+      
+} 
+
+.card-slider
+{
+     /* background-color: #fff;
+    border: solid 1px; */
+    border-radius: 20px;
+    width: 15vw;
+    height: 40vh; 
+}
+#image-slider, #image-slider1, #image-slider2 
+{
+ height: 100%; 
+ width: 100%;
+border-radius: 20px;
+
+background-repeat: no-repeat;
+background-size: cover;
+} 
+#image-slider{
+background-image: url( https://27.monvillagenormand.fr/images/300/327000356.webp); 
+}
+#image-slider1{
+background-image: url(https://27.monvillagenormand.fr/images/300/327000357.webp); 
+}
+#image-slider2{
+background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp); 
+}
+#slider-lieu p
+{
+    color: purple;  
+    text-decoration: underline; 
+    font-size: 0.5em;
+    cursor: pointer;
+    margin-top: 15%;
+} 
+#test-slider-lieu 
+{
+    display: none;
 }
 
 .card h3,

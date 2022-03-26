@@ -101,25 +101,31 @@
   // }); 
   let menuTogglead = document.getElementById('gestion_admin');
   const toad = document.getElementById("togadmin"); 
+  const depot = document.getElementById("depot_photo"); 
 
   toad.addEventListener("click", function() 
   {
     toad.classList.toggle('active');
     menuTogglead.style.display = "block";
+    depot.style.marginTop= "-20vh"; 
 
+    if (toad.classList == '') {
+    menuTogglead.style.display = "none";
+    depot.style.marginTop= "100vh"; 
+}
   });  
 
-  document.onclick = function (e) {
+//   document.onclick = function (e) {
 
-if (e.target.id !== 'toggle') {
-    toad.classList.remove('active');
-    menuTogglead.style.display = "none";
-}
-
-// if (toggle.classList == '') {
+// if (e.target.id !== 'toad') {
+//     toad.classList.remove('active');
 //     menuTogglead.style.display = "none";
 // }
-  }
+
+// if (toad.classList == '') {
+//     menuTogglead.style.display = "none";
+// }
+  // }
 </script>
 
 </html>

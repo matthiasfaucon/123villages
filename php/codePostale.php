@@ -12,7 +12,7 @@ include 'php/verif_script.php';
   <meta property="og:title" content="Trouvez votre village grâce à son code postal" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="Page ressourssant tout les codes postaux de votre département" />
-  <meta property="og:url" content="http://localhost/mmi2/123villages/php/departement.php" />
+  <meta property="og:url" content="http://localhost/mmi2/123villages/php/codePostale.php" />
   <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
   <meta property="og:site_name" content="Site 123villages" />
 

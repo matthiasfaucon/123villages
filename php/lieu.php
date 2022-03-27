@@ -31,6 +31,7 @@
     </div>
     <div id="banner"><img src="../images/banniere.jpg"></div>
   </header>
+  
   <div id="div_title_lieu">
     <h1 id="title_lieu">Château d'Harcourt (Eure)</h1>
   </div>

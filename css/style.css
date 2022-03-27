@@ -274,8 +274,15 @@ width: 40vw;
 height: 60vh;
 } 
 
-
-
+#codePostalHeader{
+    transform: rotate(2deg);
+    /* font-family: 'Open Sans', sans-serif; */
+    display: flex;
+    position: absolute;
+    top: 16.5vh;
+    right: 2.7vw;
+    font-size: 1.5em;
+}
 
 
 #choixAPresenter{
@@ -284,7 +291,7 @@ height: 60vh;
 }
 
 ::-webkit-scrollbar {
-    /* width: 20px; */
+    width: 15px;
         background-color: #4062BB;
   } /* the new scrollbar will have a flat appearance with the set background color */
 
@@ -446,7 +453,8 @@ margin-left: 10%;
 
 #div_title_lieu 
 {
-  margin-left: 50px;
+width: 80vw;
+  margin: 3vw 3vh;
 }
 
 #title_lieu
@@ -1030,6 +1038,13 @@ flex-wrap: wrap;
     padding: 5vh 3vw 5vh 3vw;
     width: 30vw;
     background: #4062BB;
+}
+
+#positionnementInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 830px) { 

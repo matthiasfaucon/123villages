@@ -22,8 +22,8 @@ body{
 
 header{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -74,7 +74,7 @@ h1{
 
 
 #searchBarre{
-    margin: 0 5% 0 0;
+    margin: 2vh 0vw 0 0;
     display: flex;
     padding: 0 2% 0 2%;
     justify-content: space-between;
@@ -87,10 +87,76 @@ h1{
     background: #e9f0f1;
 }
 
-#searchBarre p{
+#profil{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 1vh;
+    right: 5vw;
+    border: solid 2px white;
+    border-radius: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#profil svg {
+    transform: scale(0.6);
+    fill: white;
+}
+
+
+#menuProfil{
+    border: solid 2px #d4b902 ;
+    opacity: 0;
+    z-index: 5;
+    padding: 3vh 1vw 3vh 1vw;
+    display: flex;
+    width: max-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4062BB;
+    position: absolute;
+    top: 4vh;
+    right: 2vw;
+}
+
+#menuProfil a:nth-of-type(2){
+    color:red;
+}
+
+
+
+#profil:hover{
+    cursor: pointer;
+}
+
+#menuProfil.ouvrir{
+        animation: 0.6s ease-out 0.1s 1 alternate ouvrir ;
+        animation-fill-mode: forwards;
+    }
+    
+@keyframes ouvrir {
+    0% { transform:translateY(0px); opacity: 0;}
+    100% { transform:translateY(40px); opacity: 1;}
+  }
+
+  @keyframes fermer {
+    0% { transform:translateY(0px); opacity: 1;}
+    100% { transform:translateY(-40px); opacity: 0;}
+  }
+
+#searchBarre input{
     padding-right: 35%;
     color: #1a181b;
     font-size: 0.7rem;
+    border: none;
+    background: transparent;
+}
+
+input:focus {
+    outline: none;
 }
 
 #presentation{
@@ -120,7 +186,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1%;
+    margin-bottom: 2vh;
     /* width:250px;
     height:250px;
     background: #e9f0f1; */
@@ -131,7 +197,7 @@ h1{
 .info p{
     text-align: center;
     color: #e9f0f1;
-    padding: 3%;
+    padding: 2vh 5vw 2vh 5vw;
     font-size: 1em;
 }
 
@@ -208,17 +274,8 @@ width: 40vw;
 height: 60vh;
 } 
 
-@media screen and (max-width: 1100px) { 
-
-    #maCarteDepartement{ 
-        width: 80vw;
-height: 70vh;
-
-    }
 
 
-
-}
 
 
 #choixAPresenter{
@@ -890,6 +947,7 @@ flex-wrap: wrap;
         border: none;
         border-bottom: 2px solid #fff;
       } 
+
       .form_frontco  input[type=text] {
         width: 100%;
         padding: 12px 20px;
@@ -920,11 +978,11 @@ flex-wrap: wrap;
     
 .informationsMonument {
     border-radius: 10px;
-    padding: 2% 0 0 4%;
+    padding: 5vh 3vw 5vh 3vw;
     width: 30vw;
-    height: 55vh;
     background: #4062BB;
 }
+
 @media screen and (max-width: 830px) { 
     body
     {
@@ -1149,25 +1207,25 @@ margin-top: 5%;
 
   }
 
-#codePostale{
+#codePostaux{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5vh;
     justify-items: center;
 }
 
-#codePostale a{
+#codePostaux a{
    font-size: 0.9em;
    color: #4062BB;
 }
 
 
-#codePostale a:hover{
+#codePostaux a:hover{
     font-size: 0.9em;
     color: #fdc758;
  }
 
-#codePostale div{
+#codePostaux div{
     display: grid;
     border-collapse: collapse;
     border: solid #4062BB 2px;
@@ -1179,7 +1237,7 @@ margin-top: 5%;
     overflow: auto;
  }
 
- #codePostale div h2{
+ #codePostaux div h2{
      display: flex;
      padding-bottom: 3%;
      justify-self: flex-start;
@@ -1516,5 +1574,125 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     
   -webkit-transform: translateX(0);
   transform: translateX(0);
-  opacity: 1  ;
+  opacity: 1;
+}
+
+@media all and (min-width: 0px) and (max-width: 1100px){
+    html{
+        font-size: 12px;
+    }
+    
+    body{
+        background-color: white;
+    }
+
+    header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .carteInformations{
+        display: flex;
+       flex-direction: column;
+    }
+
+    #maCarteDepartement{ 
+        position: relative;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        margin-bottom: 5vh;
+}
+
+#recherche{
+    display: flex;
+   flex-direction: column-reverse;
+}
+
+#maCarte{ 
+    position: relative;
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    margin-bottom: 5vh;
+    margin-left: 0;
+}
+
+#boutonLieu {
+    height: 120px;
+    width: 120px;
+    border-radius: 100%;
+}
+
+#menuSecondaireHorizontal{
+    width: 90vw;
+    height: 8vh;
+    border-radius: 20px;
+}
+
+.informationsMonument {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#boutonRecherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e9f0f1;
+    height: 80px;
+    width: 80px;
+    border-radius: 100%;
+}
+
+#searchBarre {
+    display: flex;
+    margin: 0 0 1vh 0;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 50vw;
+    height: 3vh;
+    border-radius: 30px;
+    background: #e9f0f1;
+}
+
+
+#profil {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 1vh;
+    right: 8vw;
+    border: solid 2px white;
+    border-radius: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#menuProfil{
+    
+    opacity: 0;
+    z-index: 5;
+    padding: 1vh 1vw 1vh 1vw;
+    display: flex;
+    width: max-content;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4062BB;
+    position: absolute;
+    top: 3vh;
+    right: 4.5vw;
+}
+
+@keyframes ouvrir {
+0% { transform:translateY(0px); opacity: 0;}
+100% { transform:translateY(15px); opacity: 1;}
+}
 }

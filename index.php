@@ -6,24 +6,83 @@
 
 <!doctype html>
 <html lang="fr">
+<html xmlns:og="http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <title>Accueil</title>
+  <meta property="og:title" content="Découvrez la France, à travers notre sélection" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Page d'accueil du site 123villages contenant un accès à toutes les informations pour tout les villages de France " />
+  <meta property="og:url" content="http://localhost/mmi2/123villages/" />
+  <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+  <meta property="og:site_name" content="Site 123villages" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/x-icon" href="images/favicon.svg">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
         <script src="https://kit.fontawesome.com/7eb76eff39.js" crossorigin="anonymous"></script>
+        <script src="js/profil.js"></script>
 </head>
 <body>
 
 <header>
-    <p id="logoTypo">LaVieDuVillage.fr</p>
-    <div class="profil"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg></div>
-    <div id="searchBarre"><p>Rechercher...</p><a href="php/departement.php"><div id="research"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M236 176c0 15.46-12.54 28-28 28S180 191.5 180 176S192.5 148 208 148S236 160.5 236 176zM500.3 500.3c-15.62 15.62-40.95 15.62-56.57 0l-119.7-119.7c-40.41 27.22-90.9 40.65-144.7 33.46c-91.55-12.23-166-87.28-177.6-178.9c-17.24-136.2 97.29-250.7 233.4-233.4c91.64 11.6 166.7 86.07 178.9 177.6c7.19 53.8-6.236 104.3-33.46 144.7l119.7 119.7C515.9 459.3 515.9 484.7 500.3 500.3zM294.1 182.2C294.1 134.5 255.6 96 207.1 96C160.4 96 121.9 134.5 121.9 182.2c0 38.35 56.29 108.5 77.87 134C201.8 318.5 204.7 320 207.1 320c3.207 0 6.26-1.459 8.303-3.791C237.8 290.7 294.1 220.5 294.1 182.2z"/></svg></div></a></div>
-    <img src="images/banniere.jpg"/>
+<img src="images/banniere.jpg"/>
+      <p id="logoTypo">LaVieDuVillage.fr</p>
+    <div id="profil"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg></div>
+    <div id="menuProfil"><a>Mon compte</a><a>se déconnecter</a></div>
+    <div id="searchBarre"><input type="text" id="name" name="name" required placeholder="Rechercher..."><a href="php/departement.php"><div id="research"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M236 176c0 15.46-12.54 28-28 28S180 191.5 180 176S192.5 148 208 148S236 160.5 236 176zM500.3 500.3c-15.62 15.62-40.95 15.62-56.57 0l-119.7-119.7c-40.41 27.22-90.9 40.65-144.7 33.46c-91.55-12.23-166-87.28-177.6-178.9c-17.24-136.2 97.29-250.7 233.4-233.4c91.64 11.6 166.7 86.07 178.9 177.6c7.19 53.8-6.236 104.3-33.46 144.7l119.7 119.7C515.9 459.3 515.9 484.7 500.3 500.3zM294.1 182.2C294.1 134.5 255.6 96 207.1 96C160.4 96 121.9 134.5 121.9 182.2c0 38.35 56.29 108.5 77.87 134C201.8 318.5 204.7 320 207.1 320c3.207 0 6.26-1.459 8.303-3.791C237.8 290.7 294.1 220.5 294.1 182.2z"/></svg></div></a></div>
+    
 </header>
+
+<script>
+
+profil = document.getElementById('profil');
+menuProfil = document.getElementById('menuProfil');
+
+// profil.addEventListener('click', event => {
+  
+//   nbrClick = `${event.detail}`;
+
+// if (nbrClick == 1){
+
+  profil.addEventListener('click', function(){
+    menuProfil.classList.toggle("ouvrir");
+  })
+
+// else {
+
+//   menuProfil.classList.replace('ouvrir','fermer');
+//   nbrClick = 0;
+// }
+
+// console.log (nbrClick)
+// });
+// profil.addEventListener('dblclick', function(){
+//   this.classList.remove("test");
+// });
+
+
+
+// function ouvrir(){
+//   menuProfil.animate([
+//   // étapes/keyframes
+//   { transform: 'translateY(0px)',
+//     opacity:1
+//   },
+//   { transform: 'translateY(40px)',
+//     opacity:0,
+    
+//   }
+// ], {
+//   // temporisation
+//   duration: 1000,
+  
+// });
+// }
+
+</script>
 
 <section id="presentation">
     <h1>L'office du tourisme des villages</h1>
@@ -96,7 +155,7 @@
 <div class="card">
   <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
   <div>
-    <h3>Rouen</h3>
+    <h3>$ville</h3>
     <p>Eglise de Rouen</p>
   </div>
   <a href="#"></a>
@@ -168,8 +227,6 @@
 </div>
         
 </section>
-
-
 <footer>Mentions légales</footer>
 </body>
 

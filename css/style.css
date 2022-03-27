@@ -587,9 +587,20 @@ color: #000000;
  
 #hordou
 {
-    background-color: red;
+    background-color: red; 
+    width: 70vw; 
+    height: 30vh; 
+    margin-top: 20vh; 
+    margin-left: 15vw; 
+    display: flex;
+     
 }
 
+#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
+{
+    display: flex;
+    flex-direction: row;
+}
 #journee-patrimoine 
 {
     display: flex;

@@ -135,12 +135,62 @@
 
 
 
-  </div> 
-<section id="hordou">
+  </div>
+
+  <section id="hordou">
+    <p>Horraire d'ouverture</p>
+    <div id="lundi">
+      <p>lundi</p>
+      <div>
+        <p>09:00–12:00</p>
+        <p>14:00–17:30</p>
+      </div>
+    </div>
+
+    <div id="mardi">
+      <p>mardi</p>
+      <div>
+        <p>09:00–12:00</p>
+        <p>14:00–17:30</p>
+      </div>
+    </div>
 
 
+    <div id="mercredi">
+      <p>mercredi</p>
+      <div>
+        <p> 09:00–12:00</p>
+        <p>14:00–17:30</p>
+      </div>
+    </div>
 
-</section>
+
+    <div id="jeudi">
+      <p>jeudi</p>
+      <div>
+        <p>
+          09:00–12:00</p>
+        <p> 14:00–17:30</p>
+      </div>
+    </div>
+
+    <div id="vendredi">
+      <p>
+        vendredi</p>
+      <div>
+        <p>09:00–12:00</p>
+        <p>14:00–17:30</p>
+      </div>
+    </div>
+    <div id="samedi">
+      <p>samedi</p>
+      <p>09:00–12:00</p>
+    </div>
+    <div id="dimanche">
+      <p>dimanche</p>
+      <p>Fermé</p>
+    </div>
+  </section>
 
   <section id="journee-patrimoine">
     <ul>

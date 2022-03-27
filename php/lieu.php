@@ -12,7 +12,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+
+
+  <meta property="og:title" content="Découvrez la France, à travers notre sélection" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Page du Château d'Harcourt du site 123villages contenant un accès à toutes les informations pour ce lieu " />
+  <meta property="og:url" content="http://localhost/mmi2/123villages/" />
+  <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+  <meta property="og:site_name" content="Site 123villages" />
 </head>
 
 <body>

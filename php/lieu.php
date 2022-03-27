@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
   <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
   <meta property="og:title" content="Découvrez la France, à travers notre sélection" />
@@ -56,8 +56,8 @@
       <p>Téléphone :+33 2 32 46 29 70</p>
       <p>Fax :+33 2 32 46 53 38</p>
       <p>Adresse: 13 rue du Château 27800 Harcourt</p>
-      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p> 
-      <p>Label Qualite Tourisme : 2013-04567 LE DOMAINE D'HARCOURT</p> <a href="Ville.php?INSEE=27311"> 27800 Harcourt </a> 
+      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
+      <p>Label Qualite Tourisme : 2013-04567 LE DOMAINE D'HARCOURT</p> <a href="Ville.php?INSEE=27311"> 27800 Harcourt </a>
       <p>Classement monument historique :Château : classement par liste de 1862</p>
     </div>
 
@@ -113,18 +113,18 @@
 
         xmlhttp.send(null);
       </script>
-    <div id="partenaire">  
-    
-      <div id="part1"></div>
-      <div id="part2"></div> 
-      <div id="part3"></div>
+      <div id="partenaire">
+
+        <div id="part1"></div>
+        <div id="part2"></div>
+        <div id="part3"></div>
       </div>
-    </div> 
+    </div>
 
   </div>
 
   <div id="txt-infos-lieu-bt">
-        <p>En savoir +</p>
+    <p>En savoir +</p>
   </div>
   <div id="txt-infos-lieu">
     <p>
@@ -135,7 +135,13 @@
 
 
 
-  </div>
+  </div> 
+<section id="hordou">
+
+
+
+</section>
+
   <section id="journee-patrimoine">
     <ul>
       <li class="date">2021</li>
@@ -249,7 +255,7 @@
     <p id="voir-photos">Voir toutes les photos</p>
 
 
- 
+
   </section>
   <div id="test-slider-lieu">
     <div id="GroupeDeMiniatures">
@@ -311,10 +317,10 @@
     </div>
   </div>
 
-      
+
 
   <footer>Mentions légales</footer>
-  
+
   <script>
     let date = document.getElementsByClassName("date");
     let kl = document.getElementsByClassName("date").value;
@@ -325,12 +331,12 @@
 
     const imageslider = document.getElementById("image-slider");
     const imageslider1 = document.getElementById("image-slider1");
-    const imageslider2 = document.getElementById("image-slider2"); 
+    const imageslider2 = document.getElementById("image-slider2");
 
-    const bt_txt = document.getElementById("txt-infos-lieu-bt"); 
+    const bt_txt = document.getElementById("txt-infos-lieu-bt");
 
-    
-    bt_txt.addEventListener("click", function() { 
+
+    bt_txt.addEventListener("click", function() {
       document.getElementById("txt-infos-lieu").style.display = "block";
     });
 
@@ -341,7 +347,7 @@
 
 
     voir.addEventListener("click", function() {
-      
+
       document.getElementById("test-slider-lieu").style.display = "block";
     });
 

@@ -494,7 +494,8 @@ position: relative;
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
 width: 300px;
-height: 400px; 
+height: 60vh; 
+
 }  
 
 
@@ -503,7 +504,7 @@ height: 400px;
 {
     border-radius: 10px;
     width: 300px;
-    height: 400px;   
+    height: 40vh;   
 } 
 #partenaire 
 {

@@ -1308,6 +1308,7 @@ margin-top: 5%;
     width: 20px;
     background-color: black; 
     z-index: 4;
+    display: none;
 
 } 
 /* #togadmin.active 
@@ -1316,6 +1317,10 @@ margin-top: 5%;
 } */
   @media(max-width: 700px){  
 
+    #togadmin 
+    {
+        display: block;
+    }
     #gestion_admin 
     {
         display: none;
@@ -1326,7 +1331,8 @@ margin-top: 5%;
     }
     #depot_photo 
     {
-        margin-top: 100vh;
+        margin-top: 100vh; 
+        height: 60vh;
     }
     #depot_photo h4
     {

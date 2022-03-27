@@ -457,7 +457,7 @@ color: #000000;
 
 #ii 
 {
-display: flex;
+display: flex; 
 
 }
 
@@ -485,6 +485,7 @@ position: relative;
     align-items: flex-end; 
     margin-left: -2vw;  
     position: relative;
+    
 
 }
 

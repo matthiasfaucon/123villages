@@ -467,7 +467,7 @@ display: flex;
 {
     margin-left: 50px;   
     width: 65%;
-font-size: 18px;
+font-size: 1em;
 line-height: 22px;
 line-height: 1.5em;
 color: #000000;  
@@ -560,9 +560,14 @@ color: #000000;
 }   
 
 @media screen and (max-width: 1040px) {
+    #infos-local 
+    {
+        margin-bottom: 2vh;
+    }
     #txt-infos-lieu 
     {
-        display: none;
+        display: none; 
+        margin-top: 6vh;
     } 
     #txt-infos-lieu-bt
     {

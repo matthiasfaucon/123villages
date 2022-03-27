@@ -56,7 +56,9 @@
       <p>Téléphone :+33 2 32 46 29 70</p>
       <p>Fax :+33 2 32 46 53 38</p>
       <p>Adresse: 13 rue du Château 27800 Harcourt</p>
-      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
+      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p> 
+      <p>Label Qualite Tourisme : 2013-04567 LE DOMAINE D'HARCOURT</p> <a href="Ville.php?INSEE=27311"> 27800 Harcourt </a> 
+      <p>Classement monument historique :Château : classement par liste de 1862</p>
     </div>
 
 

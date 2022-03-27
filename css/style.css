@@ -455,27 +455,13 @@ text-align: center;
 color: #000000;
 }  
 
-#txt-img-lieu 
+#ii 
 {
-    display: flex;
-    justify-content: space-between;
-}
+display: flex;
 
-#txt-infos-lieu
-{
-    margin-left: 50px;   
 }
 
 
-#txt-infos-lieu p 
-{
-
-width: 65%;
-font-size: 18px;
-line-height: 22px;
-line-height: 1.5em;
-color: #000000; 
-} 
 
 #infos-local
 {
@@ -484,61 +470,124 @@ color: #000000;
 font-size: 18px;
 line-height: 22px;
 line-height: 1.5em;
-color: #000000; 
+color: #000000;  
+position: relative;
 }
+
+
 
 #cont-img-infos 
 {
-    padding-right: 1%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-end; 
+    margin-left: -2vw;  
+    position: relative;
+
 }
 
 #img-lieu 
 { 
-position: relative;
+
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
-margin-right: 5%;
 width: 300px;
-height: 400px;
-} 
+height: 400px; 
+}  
+
+
+
 #maCarte1 
 {
     border-radius: 10px;
-    width: 100%;
-    height: 50%; 
+    width: 300px;
+    height: 400px;   
+} 
+
+#txt-infos-lieu-bt
+{
+    width: 65vw; 
+    margin-left: 50px;
+    margin-top: 15vh;
+    background-color: #4062BB;
+    border: 10px solid;
+    border-color: #d4b902;
+    border-radius: 20px; 
+    display: flex;
+    justify-content: center; 
+    z-index: 2; 
+    cursor: pointer; 
+    display: none; 
 }
+#txt-infos-lieu
+{
+    margin-left: 50px;   
+    z-index: 2;
+    margin-top: -40vh;
+}
+
+#txt-infos-lieu p 
+{
+
+width: 65vw;
+font-size: 1em;
+line-height: 22px;
+line-height: 1.5em;
+color: #000000; 
+}   
+
+@media screen and (max-width: 1040px) {
+    #txt-infos-lieu 
+    {
+        display: none;
+    } 
+    #txt-infos-lieu-bt
+    {
+        display: block;
+    } 
+    #ii 
+    {
+        align-content: center;
+        flex-wrap: wrap;
+    } 
+    /* #cont-img-infos 
+    {
+       
+    } */
+    
+}
+
+
 #journee-patrimoine 
 {
     display: flex;
     margin-top: 10%;
     padding: 2%;
     /* font-family: 'Montserrat', sans-serif; */
-    flex-direction: column;
-    justify-content: space-around;
-    
-   
+    flex-direction: row;
+    justify-content: space-around; 
 }
 #journee-patrimoine ul
 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     list-style: none;
-    width: 100vh; 
+
     border-radius: 20px;
     color: #fff;
-    background-color: #4062bb;  
+    background-color: #4062bb;
     margin: 1.75rem 0;
-    padding: 0rem 1rem 0rem 1rem;
+ 
 }  
 #journee-patrimoine li 
 {
-    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
-    /* @extend %boxshadow; */
+    
     counter-increment: gradient-counter;
     margin-top: 1rem;
-    min-height: 3rem;
-    padding: 1rem 0rem 1rem 2rem; 
+    padding: 1rem 1rem 1rem 1rem;
 } 
 #journee-patrimoine li:hover 
 {
@@ -1061,10 +1110,12 @@ img.leaflet-interactive{
     display: flex;  
     flex-direction: column;   
     border-radius: 0px 20px 20px 0px;
-    
-    
-}  
 
+}  
+#gestion_admin.active 
+{
+    display: initial;
+}
 
 #admindep, #admin, #membre
 {
@@ -1079,7 +1130,8 @@ margin-top: 5%;
 #admindep p, #admin p, #membre p 
 {
     color: #fdc758; 
-    font-weight: bold;
+    font-weight: bold; 
+    font-size: 1em;
 }
 
 
@@ -1150,7 +1202,7 @@ margin-top: 5%;
   #depot_photo 
   {
       
-      margin-top: -60%; 
+      position: absolute;
       margin-left: 35%; 
       width: 50%;
       height: 80vh; 
@@ -1166,30 +1218,88 @@ margin-top: 5%;
   {
 color: #fff; 
 margin-top: 5%;
+  } 
+#togadmin 
+{
+    height: 20px;
+    width: 20px;
+    background-color: black; 
+    z-index: 4;
+
+} 
+/* #togadmin.active 
+{
+    display: initial;
+} */
+  @media(max-width: 700px){  
+
+    #gestion_admin 
+    {
+        display: none;
+    } 
+    #gestion_admin.active
+    {
+        display: block;
+    }
+    #depot_photo 
+    {
+        margin-top: 100vh;
+    }
+    #depot_photo h4
+    {
+        font-size: 0.7em;
+    }
+    .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
+    {
+        font-size: 0.5em;
+    } 
+    #membre p, #admin p
+    {
+        font-size: 0.7em;
+    }      
+    #admindep p {
+        font-size: 0.6em;
+    } 
+
   }
 
   input[type="file"]
   {
     border-style: none;
     border-radius: 5px; 
-    background-color: #fdc758;
+    background-color: #fdc758; 
+    width: 100%;
   } 
 
   #zonededepot
   {
       margin-top: 5%;
-      width: 75%; 
+      width: 60%; 
       height:  50%;
       background-color: #fdc758; 
       border-color: #fff;
       border-style: dashed;  
       display: flex;
-      align-items: center; 
-  }  
+      align-items: center;  
+      flex-direction: column; 
+      
+  }   
+
+  #zonededepot div 
+  {
+      margin-bottom: 5%;
+  }
   #zonededepot p 
   {
       color: #4062BB;
-  } 
+  }  
+
+  #formdepot 
+  {
+      display: flex;
+      flex-direction: column;
+    align-items: center;
+  }
 
   #modinfos
   {
@@ -1491,16 +1601,16 @@ padding: 1vh 2vw 1vh 2vw;
 
   #slider-lieu
   {
-      width: 100vw;
-      height: 50vh;
-      background-color: #fdc758; 
-      margin-top: 30px;
-      margin-bottom: 30px;
-      display: flex; 
-      flex-direction: row;
-     justify-content: center;
-
+    width: 100vw;
+    height: 50vh;
+    background-color: #fdc758;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     padding: 0%;
+    position: relative;
   }
 
 #main-slider
@@ -1527,7 +1637,6 @@ padding: 1vh 2vw 1vh 2vw;
  height: 100%; 
  width: 100%;
 border-radius: 20px;
-
 background-repeat: no-repeat;
 background-size: cover;
 } 
@@ -1539,14 +1648,36 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000357.webp)
 }
 #image-slider2{
 background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp); 
+} 
+
+@media screen and (max-width: 1040px) { 
+
+    #image-slider1, #image-slider2,.card-slider:nth-child(2), .card-slider:nth-child(3)
+    {
+        display: none;
+    }  
+
+    #main-slider
+  {
+     justify-content: center;
+  }
+
+    #image-slider, .card-slider:nth-child(1)
+    {
+        
+        width:  30VW;
+    }
+
 }
 #slider-lieu p
 {
-    color: purple;  
-    text-decoration: underline; 
+    color: purple;
+    position: absolute;
+    text-decoration: underline;
     font-size: 0.5em;
     cursor: pointer;
     margin-top: 15%;
+    bottom: 10px;
 } 
 #test-slider-lieu 
 {

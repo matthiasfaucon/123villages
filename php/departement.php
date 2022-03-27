@@ -110,12 +110,12 @@
 </script>
 
 <div class="informationsMonument">
-  
+<div class="positionnementInfos">
 <h1 class='titreInfo'>Cirque-Théatre</h1>
 <img class='imageInfo' src="../images/cirque.jpg"></img></br>
 <p class='adresseInfo'>Adresse: 2 Rue Augustin Henry, 76500 Elbeuf</p></br>
 <p class='telephoneInfo'>Téléphone: 0232131050</p>
-
+  </div>
 </div>
   </div>
   </section>

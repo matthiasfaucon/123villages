@@ -274,8 +274,15 @@ width: 40vw;
 height: 60vh;
 } 
 
-
-
+#codePostalHeader{
+    transform: rotate(2deg);
+    /* font-family: 'Open Sans', sans-serif; */
+    display: flex;
+    position: absolute;
+    top: 16.5vh;
+    right: 2.7vw;
+    font-size: 1.5em;
+}
 
 
 #choixAPresenter{
@@ -284,7 +291,7 @@ height: 60vh;
 }
 
 ::-webkit-scrollbar {
-    /* width: 20px; */
+    width: 15px;
         background-color: #4062BB;
   } /* the new scrollbar will have a flat appearance with the set background color */
 
@@ -446,7 +453,7 @@ margin-left: 10%;
 
 #div_title_lieu 
 {
-  margin-left: 50px;
+  margin-left: 1vw;
 }
 
 #title_lieu
@@ -467,7 +474,7 @@ display: flex;
 {
     margin-left: 50px;   
     width: 65%;
-font-size: 1em;
+font-size: 18px;
 line-height: 22px;
 line-height: 1.5em;
 color: #000000;  
@@ -495,8 +502,7 @@ position: relative;
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
 width: 300px;
-height: 40vh; 
-
+height: 400px; 
 }  
 
 
@@ -505,29 +511,8 @@ height: 40vh;
 {
     border-radius: 10px;
     width: 300px;
-    height: 40vh;   
+    height: 400px;   
 } 
-#partenaire 
-{
-    width: 300px;
-    height: 200px; 
-    background-color: #d4b902; 
-    margin-top: 20px;  
-    margin-bottom: 5vh;
-    display: flex;
-    flex-direction: row;
-    
-}  
-
-#partenaire div 
-{
-    width: 30%; 
-    margin: 20px;
-    border: solid 3px #4062BB;   
-    border-radius: 5px;
-    background-image: url("../images/pexels-fauxels-3184418.jpg"); 
-    background-size: cover;
-}
 
 #txt-infos-lieu-bt
 {
@@ -562,14 +547,9 @@ color: #000000;
 }   
 
 @media screen and (max-width: 1040px) {
-    #infos-local 
-    {
-        margin-bottom: 2vh;
-    }
     #txt-infos-lieu 
     {
-        display: none; 
-        margin-top: 6vh;
+        display: none;
     } 
     #txt-infos-lieu-bt
     {
@@ -586,37 +566,8 @@ color: #000000;
     } */
     
 }
- 
-#hordou
-{
-    background-color: #4062BB; 
-    width: 70vw; 
-    height: auto;  
-    padding: 0px 0px 0px 0px;
-    margin-top: 20vh; 
-    margin-left: 15vw;  
-    border-radius: 20px;
- 
-}
-#hordou div:nth-child(1)
-{ 
-    
-    padding: 0;
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;
-    
-}
-#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
-{
-    display: flex;
-    flex-direction: row; 
-} 
-#lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p 
-{
-    margin-left: 2px; 
-    color: #d4b902;
-}
+
+
 #journee-patrimoine 
 {
     display: flex;
@@ -663,33 +614,6 @@ color: #000000;
     
 } 
 
-#proeve
-{
-    width: 70vw;
-    height: 30vh; 
-    margin-top: 15vh;
-    margin-left: 15vw;
-    background-color: #4062BB; 
-    border-radius: 20px; 
-    color: #fff;
-    
-} 
-#proeve p 
-{
-    margin: 20px;
-}
-#proeve div
-{
-    margin-left: 10%;
-
-    width: 80%;
-    height: 50%;
-    border: 5px solid #d4b902;
-    border-radius: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #icone div img{
     transform: scale(0.6);
 }
@@ -1116,6 +1040,13 @@ flex-wrap: wrap;
     background: #4062BB;
 }
 
+#positionnementInfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 830px) { 
     body
     {
@@ -1309,7 +1240,6 @@ margin-top: 5%;
     width: 20px;
     background-color: black; 
     z-index: 4;
-    display: none;
 
 } 
 /* #togadmin.active 
@@ -1318,10 +1248,6 @@ margin-top: 5%;
 } */
   @media(max-width: 700px){  
 
-    #togadmin 
-    {
-        display: block;
-    }
     #gestion_admin 
     {
         display: none;
@@ -1332,8 +1258,7 @@ margin-top: 5%;
     }
     #depot_photo 
     {
-        margin-top: 100vh; 
-        height: 60vh;
+        margin-top: 100vh;
     }
     #depot_photo h4
     {

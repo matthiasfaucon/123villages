@@ -6,7 +6,10 @@
 
 <!doctype html>
 <html lang="fr">
-
+<<<<<<< HEAD
+<head>
+  <meta charset="utf-8">
+  <title>Departement</title>
 <head>
     <meta charset="utf-8">
     <title>Departement</title>

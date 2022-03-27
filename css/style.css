@@ -494,7 +494,7 @@ position: relative;
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
 width: 300px;
-height: 60vh; 
+height: 40vh; 
 
 }  
 
@@ -512,6 +512,7 @@ height: 60vh;
     height: 200px; 
     background-color: #d4b902; 
     margin-top: 20px;  
+    margin-bottom: 5vh;
     display: flex;
     flex-direction: row;
     
@@ -587,19 +588,33 @@ color: #000000;
  
 #hordou
 {
-    background-color: red; 
+    background-color: #4062BB; 
     width: 70vw; 
-    height: 30vh; 
+    height: auto;  
+    padding: 0px 0px 0px 0px;
     margin-top: 20vh; 
-    margin-left: 15vw; 
-    display: flex;
-     
+    margin-left: 15vw;  
+    border-radius: 20px;
+ 
 }
-
+#hordou div:nth-child(1)
+{ 
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    
+}
 #lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+} 
+#lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p 
+{
+    margin-left: 2px; 
+    color: #d4b902;
 }
 #journee-patrimoine 
 {
@@ -647,6 +662,33 @@ color: #000000;
     
 } 
 
+#proeve
+{
+    width: 70vw;
+    height: 30vh; 
+    margin-top: 15vh;
+    margin-left: 15vw;
+    background-color: #4062BB; 
+    border-radius: 20px; 
+    color: #fff;
+    
+} 
+#proeve p 
+{
+    margin: 20px;
+}
+#proeve div
+{
+    margin-left: 10%;
+
+    width: 80%;
+    height: 50%;
+    border: 5px solid #d4b902;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #icone div img{
     transform: scale(0.6);
 }

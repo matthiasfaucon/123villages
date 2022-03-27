@@ -138,11 +138,12 @@
   </div>
 
   <section id="hordou">
-    <p>Horraire d'ouverture</p>
+  <p>horaire</p>
+<div>
     <div id="lundi">
       <p>lundi</p>
       <div>
-        <p>09:00–12:00</p>
+        <p> 09:00–12:00</p>
         <p>14:00–17:30</p>
       </div>
     </div>
@@ -150,11 +151,10 @@
     <div id="mardi">
       <p>mardi</p>
       <div>
-        <p>09:00–12:00</p>
+        <p> 09:00–12:00</p>
         <p>14:00–17:30</p>
       </div>
     </div>
-
 
     <div id="mercredi">
       <p>mercredi</p>
@@ -164,12 +164,10 @@
       </div>
     </div>
 
-
     <div id="jeudi">
       <p>jeudi</p>
       <div>
-        <p>
-          09:00–12:00</p>
+        <p>     09:00–12:00</p>
         <p> 14:00–17:30</p>
       </div>
     </div>
@@ -190,8 +188,17 @@
       <p>dimanche</p>
       <p>Fermé</p>
     </div>
+</div> 
   </section>
 
+
+ <div id="proeve"> 
+   <p>Prochain évènement</p> 
+   <div>
+   <p>Prochain évènement du lieu en question</p>
+   </div>
+
+ </div>
   <section id="journee-patrimoine">
     <ul>
       <li class="date">2021</li>

@@ -514,12 +514,16 @@ height: 400px;
     display: flex;
     flex-direction: row;
     
-} 
+}  
+
 #partenaire div 
 {
     width: 30%; 
-    margin: 30px;
-    border: solid 1px #000;
+    margin: 20px;
+    border: solid 3px #4062BB;   
+    border-radius: 5px;
+    background-image: url("../images/pexels-fauxels-3184418.jpg"); 
+    background-size: cover;
 }
 
 #txt-infos-lieu-bt

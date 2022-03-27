@@ -111,7 +111,8 @@
 
         xmlhttp.send(null);
       </script>
-    <div id="partenaire"> 
+    <div id="partenaire">  
+    
       <div id="part1"></div>
       <div id="part2"></div> 
       <div id="part3"></div>

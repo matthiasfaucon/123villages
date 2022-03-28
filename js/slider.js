@@ -10,12 +10,7 @@
     const imageslider1 = document.getElementById("image-slider1");
     const imageslider2 = document.getElementById("image-slider2");
 
-    const bt_txt = document.getElementById("txt-infos-lieu-bt");
 
-
-    bt_txt.addEventListener("click", function() {
-      document.getElementById("txt-infos-lieu").style.display = "block";
-    });
 
 
     var count = 0;
@@ -23,10 +18,6 @@
     // il faut changer les noms des variables parce que c'est les memes que dans ville.php
 
 
-    voir.addEventListener("click", function() {
-
-      document.getElementById("test-slider-lieu").style.display = "block";
-    });
 
 
 

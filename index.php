@@ -313,13 +313,13 @@
 
 
 
-      <p id="voir-photos">Voir toutes les photos</p>
+      
     </section>
 
     </div>
 
   </section>
-  <script src="../js/slider.js"></script> 
+  <script src="js/slider.js"></script> 
   <footer>Mentions légales</footer>
 </body>
 

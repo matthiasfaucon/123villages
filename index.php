@@ -47,11 +47,20 @@
     ?>
 
     <div id="searchBarre">
-    <form action="php/searchleo.php">
-      <input type="text" id="name" name="name" required placeholder="Rechercher...">
-      <div id="research"><input type="submit" value=""></div></a>
-    </form>
+
+      <input type="text" id="name" name="recherche" required placeholder="Rechercher...">
+      <div id="research"><button href="php/recherche.php">bouton</button></div>
+
 </div>
+
+<div id="affichage"> affichage </div>
+
+<?php
+
+      include('php/recherche.php')
+
+?>
+
       <!-- <div id="codePostalHeader">76</div> -->
 </header>
 

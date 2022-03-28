@@ -1759,7 +1759,9 @@ padding: 1vh 2vw 1vh 2vw;
     border: solid 1px; */
     border-radius: 20px;
     width: 15vw;
-    height: 45vh; 
+    height: 40vh; 
+    flex: 0 1 auto;
+    
 }
 #image-slider, #image-slider1, #image-slider2 
 {
@@ -1774,7 +1776,8 @@ background-size: cover;
 {
     height: 100%; 
     width: 100%;   
-    border-radius: 20px;
+    border-radius: 20px; 
+    
 }
 /* #image-slider{
 background-image: url( https://27.monvillagenormand.fr/images/300/327000356.webp); 
@@ -1801,10 +1804,36 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     #image-slider, .card-slider:nth-child(1)
     {
         
-        width:  30VW;
+        width:  30vw;
+        height: 40vh;
     }
 
-}
+} 
+
+@media screen and (max-width: 700px) { 
+
+    #image-slider, .card-slider:nth-child(1)
+    {
+        
+        width:  30vw;
+        height: 30vh;
+    }
+
+}  
+
+@media screen and (max-width: 400px) { 
+
+    #image-slider, .card-slider:nth-child(1)
+    {
+        
+        width:  40vw;
+        height: 30vh;
+    }
+
+}  
+
+
+
 #slider-lieu p
 {
     color: purple;

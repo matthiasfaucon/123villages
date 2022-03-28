@@ -12,7 +12,7 @@ catch(Exception $e)
     die('Erreur :'.$e->getMessage());
 }
 
-$reponse=$bdd->prepare('SELECT * from code_postaux WHERE code_postal="%"+:code_postal+"%" OR nom_ville="%"+:nom+"%" OR departement="%"+:depart+"%"');
+$reponse=$bdd->prepare('SELECT * from code_postaux WHERE code_postal=:code_postal OR nom_ville=:nom OR departement=:depart');
 $reponse->execute(array(':code_postal'=>$recherche,':nom'=>$recherche, ':depart'=>$recherche));
 
 while ($donnees=$reponse->fetch())

@@ -307,18 +307,24 @@
       <div id="main-slider">
 
         <div class="card-slider">
-          <div id="image-slider"></div>
+          <div id="image-slider">
+            <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          </div>
 
         </div>
 
 
         <div class="card-slider">
-          <div id="image-slider1"></div>
+          <div id="image-slider1">
+          <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          </div>
 
         </div>
 
         <div class="card-slider">
-          <div id="image-slider2"></div>
+          <div id="image-slider2">
+          <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          </div>
         </div>
 
       </div>
@@ -331,13 +337,13 @@
 
 
 
-      <p id="voir-photos">Voir toutes les photos</p>
+      
     </section>
 
     </div>
 
   </section>
-  <script src="../js/slider.js"></script> 
+  <script src="js/slider.js"></script> 
   <footer>Mentions légales</footer>
 </body>
 

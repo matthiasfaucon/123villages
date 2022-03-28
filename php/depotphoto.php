@@ -110,9 +110,6 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
       </div>
       <div id="zonededepot">
         <input type="file" name="image" accept="image/png, image/jpeg">
-        <div draggable="true" class="box">Drag your files here or click in this area.</input>
-          Drag your files here or click in this area.
-        </div>
       </div>
 
       <input type="submit" value="Upload">

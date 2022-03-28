@@ -61,7 +61,7 @@
 
 </div>
 
-<div id="affichage" class="non-activeAffichage">affichage</div>
+<div id="affichage" class="non-active">affichage</div>
 
 <?php
 

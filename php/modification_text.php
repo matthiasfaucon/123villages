@@ -84,7 +84,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     ?>
 </div>
     <div id="modinfos">
-        <form action="" method="get" class="form_frontco_form">
+        <form action="envoi_mail_modif.php" method="get" class="form_frontco_form">
 
             <div class="form_frontco">
                 <label for="name"> </label>

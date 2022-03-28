@@ -35,7 +35,7 @@ header{
 
 #searchBarre div button{
     border: none;
-    background: url("../images/recherche.svg") no-repeat;
+    /* background: url("../images/recherche.svg") no-repeat; */
     width: 100%;
     height: 100%;
 }
@@ -105,9 +105,8 @@ h1{
     background: #e9f0f1;
 }
 
-#affichage{
+#affichage.non-activeAffichage{
     margin: 2vh 0vw 0 0;
-    display: flex;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
@@ -120,8 +119,19 @@ h1{
     display: none;
 }
 
-.activeAffichage{
-    height: 10vh;
+#affichage.activeAffichage{
+    margin: 2vh 0vw 0 0;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 40vw;
+    height: 6vh;
+    background: #e9f0f1;
+    display: flex;
+    border-radius: 30px;
+    height: 20vh;
     transition: height 0.25s ease-in;
 }
 

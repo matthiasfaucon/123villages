@@ -34,7 +34,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     
         <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
         <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-        <span class="menu__item_gestion_membre">Photos validées</span></br>
+        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
     
 </div>
 
@@ -93,7 +93,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     <form action="upload.php" enctype="multipart/form-data" method="post" id="formdepot">
       <div class="form_frontco">
         <label for="name"> </label>
-        <input type="text" name="name" id="name" placeholder="Nom du lieu" required>
+        <input type="text" name="name" id="name" placeholder="Descritption" required>
       </div>
       <div class="form_frontco">
         <label for="adress"> </label>

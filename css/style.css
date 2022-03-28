@@ -33,13 +33,14 @@ header{
     justify-content: space-between;
 }
 
-#searchBarre form div input{
+#searchBarre div button{
+    border: none;
     background: url("../images/recherche.svg") no-repeat;
     width: 100%;
     height: 100%;
 }
 
-#searchBarre form div input:hover{
+#searchBarre div button:hover{
     cursor: pointer;
 }
 
@@ -90,6 +91,7 @@ h1{
 
 
 #searchBarre{
+    z-index: 2;
     margin: 2vh 0vw 0 0;
     display: flex;
     padding: 0 2% 0 2%;
@@ -101,6 +103,26 @@ h1{
     height: 6vh;
     border-radius: 50px;
     background: #e9f0f1;
+}
+
+#affichage{
+    margin: 2vh 0vw 0 0;
+    display: flex;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 40vw;
+    height: 6vh;
+    border-radius: 50px;
+    background: #e9f0f1;
+    display: none;
+}
+
+.activeAffichage{
+    height: 10vh;
+    transition: height 0.25s ease-in;
 }
 
 #profil{
@@ -123,11 +145,10 @@ h1{
 
 
 #menuProfil{
+    display: flex;
     border: solid 2px #d4b902 ;
-    opacity: 0;
     z-index: 5;
     padding: 3vh 1vw 3vh 1vw;
-    display: flex;
     width: max-content;
     flex-wrap: wrap;
     flex-direction: column;
@@ -138,11 +159,26 @@ h1{
     right: 2vw;
 }
 
-#menuProfil a:nth-of-type(2){
-    color:red;
+#menuProfil a{
+    margin: 2%;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
 }
 
+#menuProfil a:hover{
+    width: max-content;
+font-weight: bold;
+}
 
+.non-active{
+    display: none;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+}
 
 #profil:hover{
     cursor: pointer;
@@ -154,13 +190,13 @@ h1{
     }
     
 @keyframes ouvrir {
-    0% { transform:translateY(0px); opacity: 0;}
-    100% { transform:translateY(40px); opacity: 1;}
+    0% { transform:translateY(0px);}
+    100% { transform:translateY(40px);}
   }
 
   @keyframes fermer {
-    0% { transform:translateY(0px); opacity: 1;}
-    100% { transform:translateY(-40px); opacity: 0;}
+    0% { transform:translateY(0px); display: none;}
+    100% { transform:translateY(-40px); display: initial;}
   }
 
 #searchBarre input{
@@ -990,7 +1026,7 @@ flex-wrap: wrap;
 
     #peopleandcracc 
     {
-        width: 80vw;
+        width: 70vw;
         height: auto;
         display: flex;
         flex-direction: row;
@@ -1009,8 +1045,8 @@ flex-wrap: wrap;
     }
     #cracc 
     {
-        width: 60vw;
-        padding: 5vh 3vw 5vh 3vw;
+        width: 60%;
+        padding: 5vh 1vw 5vh 1vw;
         background-color: #4062BB;
         flex-direction: column;
         border-radius: 0 30px 30px 0; 
@@ -1047,24 +1083,29 @@ flex-wrap: wrap;
 
     #apig, #apif
     {
-        width: fit-content;
-        padding: 1vh 1vw 1vh 1vw;
-        background-color: #52B2CF; 
+        width: 40%;
+        padding: 1vh 0vw 1vh 0vw;
+        background-color: white;
         border-radius: 25px;
         color: #fff;
         display: flex;
-        justify-content: center;
         align-items: center;
         cursor: pointer;
-        flex-wrap: wrap; 
+        /* flex-wrap: wrap; */
         flex-shrink: 2;
+        justify-content: space-evenly;
         
     }
 
     #apig p, #apif p
     {
         font-size: 0.8rem;
+        color: #4062BB;
         
+    }
+
+    #apig img{
+        width: 4vh;
     }
     
     .form_frontco_form
@@ -1090,7 +1131,7 @@ flex-wrap: wrap;
     .form_frontco input[type=email] {
         display: flex;
         width: 60%;
-        padding: 1vh 2vw;
+        padding: 1vh 1vw;
         margin: 0 0 1vh 0;
         box-sizing: border-box;
         background-color: #4062BB;
@@ -1106,7 +1147,7 @@ flex-wrap: wrap;
     
     .form_frontco  input[type=password] {
         width: 60%;
-        padding: 1vh 2vw;
+        padding: 1vh 1vw;
         margin: 2vh 0 5vh 0;
         box-sizing: border-box;
         font-family: 'Montserrat', sans-serif;
@@ -1119,7 +1160,7 @@ flex-wrap: wrap;
 
       .form_frontco  input[type=text] {
         width: 100%;
-        padding: 12px 20px;
+        padding: 1vh 1vw;
         margin: 8px 0;
         box-sizing: border-box; 
         background-color: #4062BB; 
@@ -1222,17 +1263,23 @@ img.leaflet-interactive{
 <img class='imageInfo' src="images/cirque.jpg"></img>
 <span class='titreInfo'>Cirque-Théatre</span> */ 
 
-
+.pageAdmin{
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+}
 
 #gestion_admin 
 {
-    
-    height: 200%; 
-    width: 20%; 
+    margin: 3vh;
+    padding: 5vh 1vw 5vh 1vw;
+    width: 25vw;
     margin-left: 0px;
-    background-color: #4062BB; 
-    display: flex;  
-    flex-direction: column;   
+    background-color: #4062BB;
+    display: flex;
+    flex-direction: column;
     border-radius: 0px 20px 20px 0px;
 
 }  
@@ -1241,15 +1288,31 @@ img.leaflet-interactive{
     display: initial;
 }
 
-#admindep, #admin, #membre
+#membre
 {
-display: flex; 
-flex-direction: column; 
-margin-left: 1%;
-margin-top: 5%;  
+    margin: 0vh 0vw 1vh 1vw;
 
 }   
 
+#admindep, #admin
+{
+    margin: 5vh 0vw 1vh 1vw;
+display: flex; 
+flex-direction: column; 
+
+}   
+
+#admindep span, #admin span, #membre span
+{
+  display: none;
+
+}   
+
+#admindep:hover span, #admin:hover span, #membre:hover span
+{
+  display: initial;
+
+}   
 
 #admindep p, #admin p, #membre p 
 {
@@ -1261,12 +1324,14 @@ margin-top: 5%;
 
 #membre  
 {
-    margin-top: 1%;   
+    display: flex;
+    flex-direction: column;
 }
 
 #admindep span, #admin span, #membre span
 {
-    margin-left: 5px;  
+    margin: 2vh 0vw 1vh 1vw;
+    width: fit-content;
     color: #fff;
 }
 .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
@@ -1326,16 +1391,12 @@ margin-top: 5%;
   #depot_photo 
   {
       
-      position: absolute;
-      margin-left: 35%; 
-      width: 50%;
-      height: 80vh; 
-      border-radius: 40px;
-      display: flex; 
-      align-items: center;
-      flex-direction: column; 
-    
-      background-color: #4062BB; 
+    height: 60vh;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4062BB;
   }  
 
   #depot_photo h4 

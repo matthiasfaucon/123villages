@@ -16,6 +16,7 @@
 </head>
 
 <body> 
+  <div class="pageAdmin">
 
 <div id="togadmin"></div>
 <div id="gestion_admin">
@@ -87,7 +88,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
   <div id="depot_photo">
 
-    <h4>Zone de dépôt de photo</h4> </br>
+    <h4>Zone de dépôt de photo</h4>
 
     <form action="upload.php" enctype="multipart/form-data" method="post" id="formdepot">
       <div class="form_frontco">
@@ -131,7 +132,6 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
 
 
-
 </body>
 <script>
   // $(document).ready(function() {
@@ -167,5 +167,6 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 // }
   // }
 </script>
+</div>
 
 </html>

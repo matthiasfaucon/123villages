@@ -74,7 +74,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 <div id="admindep">
 
     <p>Admin</p>
-    <span class="menu__item_gestion_admindep">Gestion Admin Département</span>
+    <a href="gestion_admin_depart" class="menu__item_gestion_admindep">Gestion Admin Département</a>
 </div> 
 
 <?php

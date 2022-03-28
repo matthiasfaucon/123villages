@@ -1,3 +1,11 @@
+
+<!-- <?php
+
+    include 'php/verif_script.php';
+
+?> -->
+
+
 <!-- <?php
 
     include 'php/verif_script.php';
@@ -231,8 +239,20 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
       <p>Eglise de Rouen</p>
     </div>
     <a href="#"></a>
-  </div> -->
+  </div>
 
+</div> -->
+        
+
+
+
+ 
+    <section id="slider-lieu">
+      <div class="w-img-nav_previous">
+        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
 
       <div id="main-slider">
 
@@ -263,28 +283,17 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
             <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
           </svg></i>
       </div>
-
-
-
-
-      
+    </section> 
     </section>
-
-    </div>
-
-  </section>
-
-
-
-  <script src="js/slider.js"></script>  
-
-  <footer>Mentions légales</footer>
-
-</div>
-        
-</section>
-<footer>Mentions légales</footer>
-
+<footer>Mentions légales</footer> 
+<script src="js/recherche.js"></script> 
+<script src="js/slider.js"></script>
 </body>
-<script src="js/recherche.js"></script>
+
 </html>
+
+
+
+    
+
+

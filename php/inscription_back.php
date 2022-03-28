@@ -41,7 +41,7 @@
     $reponse->closeCursor();
 
     if($_SESSION['email_exist'] == 0){
-        $reponse=$bdd->prepare('INSERT INTO users (id, Prenom, Nom, Detail, Mail, Lien, License, Pass, Pass2) VALUES (NULL, :prenom, :nom, NULL, :email, NULL, NULL, :mdp, Membre)');
+        $reponse=$bdd->prepare('INSERT INTO users (id, Prenom, Nom, Detail, Mail, Lien, License, Pass, Pass2) VALUES (NULL, :prenom, :nom, NULL, :email, NULL, NULL, :mdp, "Membre")');
         $reponse->execute(array(':prenom'=>$prenom,':nom'=>$nom,':mdp'=>$mdp,':email'=>$email));
 
         $reponse->closeCursor();

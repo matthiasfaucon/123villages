@@ -274,7 +274,7 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
 
   </section>
 
-  <img src="images/ping/marker-icon.png">
+
 
   <script src="js/slider.js"></script>  
 

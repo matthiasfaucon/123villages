@@ -35,6 +35,11 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
         <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
         <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
         <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
+
+        <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
+        <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
+        <span class="menu__item_gestion_membre">Photos validées</span>
+
     
 </div>
 
@@ -51,17 +56,14 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
  <div id="admin"> 
     <p>Admin département</p>
-
-
-   
-         <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a></br>
-         <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a></br>
-         <span class="menu__item_gestion_admin">Espace validation texte</span></br>
-         <span class="menu__item_gestion_admin">Espace création lieu</span> </br>
-         <span class="menu__item_gestion_admin">Campagnes de mail</span></br>
-         <span class="menu__item_gestion_admin">mise à jour SiteMap</span></br>
-         <span class="menu__item_gestion_admin">Indexation</span> </br>
-         <span class="menu__item_gestion_admin">supervision du département</span></br>
+         <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
+         <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
+         <span class="menu__item_gestion_admin">Espace validation texte</span>
+         <span class="menu__item_gestion_admin">Espace création lieu</span> 
+         <span class="menu__item_gestion_admin">Campagnes de mail</span>
+         <span class="menu__item_gestion_admin">mise à jour SiteMap</span>
+         <span class="menu__item_gestion_admin">Indexation</span> 
+         <span class="menu__item_gestion_admin">supervision du département</span>
 
 </div>
 
@@ -76,7 +78,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 <div id="admindep">
 
     <p>Admin</p>
-    <span class="menu__item_gestion_admindep">Gestion Admin Département</span>
+    <a href="gestion_admin_depart" class="menu__item_gestion_admindep">Gestion Admin Département</a>
 </div> 
 
 <?php
@@ -85,7 +87,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
     ?>
 </div>
-        <form method="get" enctype="multipart/form-data" action="verifphoto_back.php">
+        <form method="get" enctype="multipart/form-data" action="verifphoto_back.php" id="form-validep">
 
         <?php
 
@@ -101,14 +103,18 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
             }
 
             $reponse=$bdd->query('SELECT nom from pictures where validation = 0');
-
+?>  
+<div id="cont-photo-aval">
+<?php
             while ($donnees=$reponse->fetch())
             {
 
                 $n = $n+1;
                 ?>
 
-
+                <!-- par photo --> 
+                
+                <div id="pphoto">
 
                 <?php
 
@@ -116,7 +122,10 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
                     echo $donnees['nom'];
                     echo "<input type='checkbox' name='image[]' value='".$donnees['nom']."'><br>";
 
-                    ?>
+                    ?>   
+                   
+                    </div>
+                    </div>
 
                 <?php
 

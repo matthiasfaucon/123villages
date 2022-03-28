@@ -61,7 +61,7 @@
         die('Erreur :'.$e->getMessage());
     }
 
-    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien) VALUES (NULL, :nom, :descr, :adresse, :lien)');
+    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, 0)');
     $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien));
 
     $reponse->closeCursor();

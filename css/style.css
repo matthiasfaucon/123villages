@@ -1315,15 +1315,18 @@ flex-direction: column;
 
 }   
 
-#admindep a, #admin a, #membre a
+/* #admindep a, #admin a, #membre a
 {
   display: none;
+}    */
 
-}   
+/* .lienActif{
+    display: initial;
+} */
 
-#admindep:hover a, #admin:hover a, #membre:hover a
+#admindep:hover, #admin:hover ,#membre:hover
 {
-  display: initial;
+  cursor: pointer;
 
 }   
 
@@ -1363,6 +1366,15 @@ flex-direction: column;
 
 
 .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep{
+    text-decoration: none;
+    display: none;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: relative; /* used with absolute for positioning underline */
+  }
+
+  .lienActif{
     text-decoration: none;
     display: block;
     margin: 0.5rem 0;

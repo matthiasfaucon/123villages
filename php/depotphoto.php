@@ -30,7 +30,6 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
 <div id="membre">
     <p>Membre</p>
-
     
         <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
         <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
@@ -49,20 +48,17 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
         ?>
 
 
- <div id="admin"> 
+ <div id="admindep"> 
     <p>Admin département</p>
 
-
-   
-         <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
-         <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
-         <a class="menu__item_gestion_admin">Espace validation texte</a>
-         <a class="menu__item_gestion_admin">Espace création lieu</a> 
-         <a class="menu__item_gestion_admin">Campagnes de mail</a>
-         <a class="menu__item_gestion_admin">mise à jour SiteMap</a>
-         <a class="menu__item_gestion_admin">Indexation</a> 
-         <a class="menu__item_gestion_admin">supervision du département</a>
-
+         <a href="verifphoto.php" class="menu__item_gestion_admindep">Espace validation photos</a>
+         <a href="suppphoto.php" class="menu__item_gestion_admindep">Espace suppression photos</a>
+         <a class="menu__item_gestion_admindep">Espace validation texte</a>
+         <a class="menu__item_gestion_admindep">Espace création lieu</a> 
+         <a class="menu__item_gestion_admindep">Campagnes de mail</a>
+         <a class="menu__item_gestion_admindep">mise à jour SiteMap</a>
+         <a class="menu__item_gestion_admindep">Indexation</a> 
+         <a class="menu__item_gestion_admindep">supervision du département</a>
 </div>
 
 <?php
@@ -73,10 +69,10 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
         ?>
 
-<div id="admindep">
+<div id="admin">
 
     <p>Admin</p>
-    <a href="gestion_admin_depart" class="menu__item_gestion_admindep">Gestion Admin Département</a>
+    <a href="gestion_admin_depart" class="menu__item_gestion_admin">Gestion Admin Département</a>
 </div> 
 
 <?php
@@ -127,7 +123,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
 
 
-
+<script src="../js/animation-menu.js"></script>
 
 </body>
 <script>
@@ -165,5 +161,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
   // }
 </script>
 </div>
+
+
 
 </html>

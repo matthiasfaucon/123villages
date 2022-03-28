@@ -53,7 +53,7 @@ if($_SESSION['verif'] == 1){
                 </div>
             </div>
 
-            <form action="inscription_back.php" method="get" class="form_frontco_form">
+            <form action="inscription_back.php" method="post" class="form_frontco_form">
 
             <div class="form_frontco">
                     <label for="name"> </label>

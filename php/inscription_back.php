@@ -5,12 +5,12 @@
     $_SESSION['email_exist'] = 0;
     $_SESSION['no_email'] == 0;
 
-    $prenom = ucwords(strtolower(htmlentities($_GET['prenom'], ENT_QUOTES)));
-    $nom = ucwords(strtolower(htmlentities($_GET['nom'], ENT_QUOTES)));
-    $mdp = password_hash($_GET['mdp'], PASSWORD_DEFAULT);
-    $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
+    $prenom = ucwords(strtolower(htmlentities($_POST['prenom'], ENT_QUOTES)));
+    $nom = ucwords(strtolower(htmlentities($_POST['nom'], ENT_QUOTES)));
+    $mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);
+    $email = strtolower(htmlentities($_POST['email'], ENT_QUOTES));
 
-    if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
+    if(filter_var($_POST['email'] , FILTER_VALIDATE_EMAIL)){
     }else{
         $_SESSION['no_email'] = 1;
         header('Location: front_create_account.php');

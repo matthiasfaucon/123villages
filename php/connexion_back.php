@@ -10,10 +10,10 @@
     $_SESSION['email_exist'] = '';
     $_SESSION['no_email'] = '';
 
-    $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
-    $mdp = htmlentities($_GET['password'], ENT_QUOTES);
+    $email = strtolower(htmlentities($_POST['email'], ENT_QUOTES));
+    $mdp = htmlentities($_POST['password'], ENT_QUOTES);
 
-    if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
+    if(filter_var($_POST['email'] , FILTER_VALIDATE_EMAIL)){
     }
     else{
         echo "Le mail est incorect (retour sur l'index)";

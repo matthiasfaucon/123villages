@@ -63,7 +63,7 @@ if($_SESSION['verif'] == 1){
 
             <div id="apigf">
                 <div id="apig">
-                    <p>Connexion avec Google</p>
+                    <img src="../images/google.png"/><p>Connexion avec Google</p>
                 </div>
                 <div id="apif">
                     <p>Connexion avec Facebook</p>

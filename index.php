@@ -343,7 +343,11 @@
     </div>
 
   </section>
-  <script src="js/slider.js"></script> 
+
+  <img src="images/ping/marker-icon.png">
+
+  <script src="js/slider.js"></script>  
+
   <footer>Mentions légales</footer>
 </body>
 

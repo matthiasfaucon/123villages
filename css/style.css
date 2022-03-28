@@ -1479,7 +1479,12 @@ margin: 3vh 0 3vh 0;
     }      
     #admindep p {
         font-size: 0.6em;
-    } 
+    }  
+
+    #modinfos
+    {
+      position: relative;
+    }
 
     #gestion_admin {
         display: flex;
@@ -1555,20 +1560,21 @@ margin: 3vh 0 3vh 0;
   } */
 
   #modinfos
-  {
+  { 
+    position: relative;
     background-color: #4062BB;
     width: 50%; 
     height: 50vh;
     flex-direction: column; 
     border-radius: 50px; 
     margin-left: 30%; 
-    margin-top: -50%;
+    
   }
-  #modinfos form 
+  /* #modinfos form 
   {
       height: 200%;
 
-  }
+  } */
 
 #codePostaux{
     display: grid;

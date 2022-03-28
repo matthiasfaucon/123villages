@@ -11,7 +11,9 @@
 
     <?php
         include 'verif_script.php';
-        if($_SESSION['pass'] == "Membre"){
+        
+        
+        if ($_SESSION['pass'] == "Membre") {
             header('location:front_connexion.php');
         }
     ?>
@@ -32,10 +34,9 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     <p>Membre</p>
 
     
-        <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
-        <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
-
+        <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
+        <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
+        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
     
 </div>
 

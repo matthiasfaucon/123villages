@@ -245,7 +245,7 @@
   </div> -->
 
 
-  <section id="slider-lieu">
+    <section id="slider-lieu">
       <div class="w-img-nav_previous">
         <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
             <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
@@ -273,20 +273,20 @@
         </div>
       </div>
 
-  
-    <div class="w-img-nav_next">
-      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-        </svg></i>
+
+      <div class="w-img-nav_next">
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+
+
+
+
+
+    </section>
+
     </div>
-
-
-
-
-
-  </section>
-
-  </div>
 
   </section>
 

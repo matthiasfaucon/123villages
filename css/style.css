@@ -1804,7 +1804,7 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     #image-slider, .card-slider:nth-child(1)
     {
         
-        width:  20vw;
+        width:  30vw;
         height: 40vh;
     }
 
@@ -1821,7 +1821,7 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
 }  
 
-@media screen and (max-width: 350px) { 
+@media screen and (max-width: 400px) { 
 
     #image-slider, .card-slider:nth-child(1)
     {
@@ -1830,7 +1830,9 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         height: 30vh;
     }
 
-} 
+}  
+
+
 
 #slider-lieu p
 {

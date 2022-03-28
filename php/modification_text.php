@@ -32,7 +32,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     
         <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
         <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-        <span class="menu__item_gestion_membre">Photos validées</span></br>
+        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
     
 </div>
 
@@ -84,11 +84,11 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     ?>
 </div>
     <div id="modinfos">
-        <form action="" method="get" class="form_frontco_form">
+        <form action="envoi_mail_modif.php" method="get" class="form_frontco_form">
 
             <div class="form_frontco">
                 <label for="name"> </label>
-                <input type="text" name="auteur" id="name" placeholder="Votre nom" required>
+                <input type="text" name="subject" id="name" placeholder="Sujet" required>
             </div>
             <!--<div class="form_frontco">
                 <label for="adress"> </label>
@@ -97,12 +97,12 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             <div class="form_frontco">
                 <label for="lien"> </label>
-                <input type="text" name="lien" id="lien" placeholder="copier coller le lien de la page du lieu" required>
+                <input type="text" name="lien" id="lien" placeholder="Lien de la page du lieu" required>
             </div>
 
             <div class="form_frontco">
                 <label for="Text_mod"></label>
-                <input type="text" name="contenu" id="Text_mod" placeholder="Ecrivez la modification que vous voulez apporter" required>
+                <input type="text" name="contenu" id="Text_mod" placeholder="Proposition de modification" required>
             </div>
 
             <div class="form_frontco_button">

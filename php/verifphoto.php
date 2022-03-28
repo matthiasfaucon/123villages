@@ -34,7 +34,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     
         <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
         <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-        <span class="menu__item_gestion_membre">Photos validées</span></br>
+        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
     
 </div>
 

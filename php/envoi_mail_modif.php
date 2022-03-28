@@ -14,6 +14,8 @@
 <?php
 
     $bodytext    = $_GET['lien'].'<br><br>'.$_GET['contenu'];
+    $auteur = $_GET['nom'].' '.$_GET['prenom'];
+
 
     $email = new PHPMailer();
     $email->SMTPDebug = SMTP::DEBUG_SERVER;
@@ -25,7 +27,7 @@
     $email->SMTPSecure = "ssl" /*PHPMailer::ENCRYPTION_SMTPS*/;
     $email->Port = 465;
     $email->isHTML(true);
-    $email->SetFrom('villages.normands@gmail.com', $_GET['auteur']);
+    $email->SetFrom('villages.normands@gmail.com', $auteur);
     $email->Subject = $_GET['subject'];
     $email->Body = $bodytext;
 

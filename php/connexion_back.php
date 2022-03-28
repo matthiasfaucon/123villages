@@ -50,6 +50,7 @@
             $_SESSION['nom'] = $donnees['Nom'];
             $_SESSION['prenom'] = $donnees['Prenom'];
             $_SESSION['pass'] = $donnees['Pass2'];
+            $_SESSION['email'] = $donnees['Mail'];
 
         }
 

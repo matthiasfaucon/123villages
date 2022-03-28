@@ -1,6 +1,9 @@
 <?php
 
     include 'verif_script.php';
+    if($_SESSION['verif'] == 0){
+        header('Location:../index.php');
+    }
 
     $description = $_POST['name'];
     $adresse = $_POST['adress'];
@@ -61,8 +64,8 @@
         die('Erreur :'.$e->getMessage());
     }
 
-    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, 0)');
-    $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien));
+    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, user, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, :user, 0)');
+    $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien, ':user'=>$_SESSION['email']));
 
     $reponse->closeCursor();
 

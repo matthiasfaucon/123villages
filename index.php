@@ -150,7 +150,7 @@ menuProfil = document.getElementById('menuProfil');
 
 <section id="choixAPresenter">
     <h1>A découvrir</h1>
-    <div id="fleche">
+    <!-- <div id="fleche">
     <div class="fleche gauche"><</div>
     <div class="fleche droite">></div>
     </div>
@@ -227,12 +227,60 @@ menuProfil = document.getElementById('menuProfil');
       <p>Eglise de Rouen</p>
     </div>
     <a href="#"></a>
-  </div>
+  </div> -->
+
+
+      <div id="main-slider">
+
+        <div class="card-slider">
+          <div id="image-slider">
+            <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          </div>
+
+        </div>
+
+
+        <div class="card-slider">
+          <div id="image-slider1">
+          <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          </div>
+
+        </div>
+
+        <div class="card-slider">
+          <div id="image-slider2">
+          <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          </div>
+        </div>
+
+      </div>
+      <div class="w-img-nav_next">
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+
+
+
+
+      
+    </section>
+
+    </div>
+
+  </section>
+
+  <img src="images/ping/marker-icon.png">
+
+  <script src="js/slider.js"></script>  
+
+  <footer>Mentions légales</footer>
 
 </div>
         
 </section>
 <footer>Mentions légales</footer>
+
 </body>
 <script src="js/recherche.js"></script>
 </html>

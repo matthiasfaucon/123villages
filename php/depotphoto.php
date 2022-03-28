@@ -11,6 +11,7 @@
 </head>
 
 <body> 
+  <div class="pageAdmin">
 
 <div id="togadmin"></div>
   <div id="gestion_admin">
@@ -19,9 +20,9 @@
       <p>Membre</p>
 
 
-      <span class="menu__item_gestion_membre">Dépôt de photos</span></br>
-      <span class="menu__item_gestion_membre">Proposition modification d'informations</span></br>
-      <span class="menu__item_gestion_membre">Photos validées</span></br>
+      <span class="menu__item_gestion_membre">Dépôt de photos</span>
+      <span class="menu__item_gestion_membre">Proposition modification d'informations</span>
+      <span class="menu__item_gestion_membre">Photos validées</span>
 
     </div>
     <div id="admin">
@@ -29,13 +30,13 @@
 
 
 
-      <span class="menu__item_gestion_admin">Espace validation photos</span></br>
-      <span class="menu__item_gestion_admin">Espace validation texte</span></br>
-      <span class="menu__item_gestion_admin">Espace création lieu</span> </br>
-      <span class="menu__item_gestion_admin">Campagnes de mail</span></br>
-      <span class="menu__item_gestion_admin">mise à jour SiteMap</span></br>
-      <span class="menu__item_gestion_admin">Indexation</span> </br>
-      <span class="menu__item_gestion_admin">supervision du département</span></br>
+      <span class="menu__item_gestion_admin">Espace validation photos</span>
+      <span class="menu__item_gestion_admin">Espace validation texte</span>
+      <span class="menu__item_gestion_admin">Espace création lieu</span>
+      <span class="menu__item_gestion_admin">Campagnes de mail</span>
+      <span class="menu__item_gestion_admin">mise à jour SiteMap</span>
+      <span class="menu__item_gestion_admin">Indexation</span>
+      <span class="menu__item_gestion_admin">supervision du département</span>
 
     </div>
 
@@ -48,7 +49,7 @@
 
   <div id="depot_photo">
 
-    <h4>Zone de dépôt de photo</h4> </br>
+    <h4>Zone de dépôt de photo</h4>
 
     <form action="upload.php" method="post" id="formdepot">
       <div class="form_frontco">
@@ -91,7 +92,6 @@
 
 
 
-
 </body>
 <script>
   // $(document).ready(function() {
@@ -127,5 +127,6 @@
 // }
   // }
 </script>
+</div>
 
 </html>

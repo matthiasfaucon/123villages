@@ -33,13 +33,14 @@ header{
     justify-content: space-between;
 }
 
-#searchBarre form div input{
+#searchBarre div button{
+    border: none;
     background: url("../images/recherche.svg") no-repeat;
     width: 100%;
     height: 100%;
 }
 
-#searchBarre form div input:hover{
+#searchBarre div button:hover{
     cursor: pointer;
 }
 
@@ -104,7 +105,7 @@ h1{
     background: #e9f0f1;
 }
 
-#ResultatsSearchBarre{
+#affichage{
     margin: 2vh 0vw 0 0;
     display: flex;
     padding: 0 2% 0 2%;
@@ -117,6 +118,11 @@ h1{
     border-radius: 50px;
     background: #e9f0f1;
     display: none;
+}
+
+.activeAffichage{
+    height: 10vh;
+    transition: height 0.25s ease-in;
 }
 
 #profil{
@@ -139,11 +145,10 @@ h1{
 
 
 #menuProfil{
+    display: flex;
     border: solid 2px #d4b902 ;
-    opacity: 0;
     z-index: 5;
     padding: 3vh 1vw 3vh 1vw;
-    display: flex;
     width: max-content;
     flex-wrap: wrap;
     flex-direction: column;
@@ -154,11 +159,26 @@ h1{
     right: 2vw;
 }
 
-#menuProfil a:nth-of-type(2){
-    color:red;
+#menuProfil a{
+    margin: 2%;
+    cursor: pointer;
+    text-decoration: none;
+    color:white;
 }
 
+#menuProfil a:hover{
+    width: max-content;
+font-weight: bold;
+}
 
+.non-active{
+    display: none;
+}
+
+.active{
+    display: flex;
+    flex-direction: column;
+}
 
 #profil:hover{
     cursor: pointer;
@@ -170,13 +190,13 @@ h1{
     }
     
 @keyframes ouvrir {
-    0% { transform:translateY(0px); opacity: 0;}
-    100% { transform:translateY(40px); opacity: 1;}
+    0% { transform:translateY(0px);}
+    100% { transform:translateY(40px);}
   }
 
   @keyframes fermer {
-    0% { transform:translateY(0px); opacity: 1;}
-    100% { transform:translateY(-40px); opacity: 0;}
+    0% { transform:translateY(0px); display: none;}
+    100% { transform:translateY(-40px); display: initial;}
   }
 
 #searchBarre input{
@@ -1063,24 +1083,29 @@ flex-wrap: wrap;
 
     #apig, #apif
     {
-        width: fit-content;
-        padding: 1vh 1vw 1vh 1vw;
-        background-color: #52B2CF; 
+        width: 40%;
+        padding: 1vh 0vw 1vh 0vw;
+        background-color: white;
         border-radius: 25px;
         color: #fff;
         display: flex;
-        justify-content: center;
         align-items: center;
         cursor: pointer;
-        flex-wrap: wrap; 
+        /* flex-wrap: wrap; */
         flex-shrink: 2;
+        justify-content: space-evenly;
         
     }
 
     #apig p, #apif p
     {
         font-size: 0.8rem;
+        color: #4062BB;
         
+    }
+
+    #apig img{
+        width: 4vh;
     }
     
     .form_frontco_form

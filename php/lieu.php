@@ -48,16 +48,17 @@
 
   <div id="ii">
     <div id="infos-local">
-
-      <p>Type :Château fort</p>
-      <p>Mail :harcourt@cg27.fr</p>
-      <p>Site Internet: http://www.harcourt-normandie.fr</p>
-      <p>Téléphone :+33 2 32 46 29 70</p>
-      <p>Fax :+33 2 32 46 53 38</p>
-      <p>Adresse: 13 rue du Château 27800 Harcourt</p>
-      <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
-      <p>Label Qualite Tourisme : 2013-04567 LE DOMAINE D'HARCOURT</p> <a href="Ville.php?INSEE=27311"> 27800 Harcourt </a>
-      <p>Classement monument historique :Château : classement par liste de 1862</p>
+      <adress>
+        <p>Type :Château fort</p>
+        <a href="mailto:harcourt@cg27.fr">Mail :harcourt@cg27.fr</a>
+        <a href="http://www.harcourt-normandie.fr">Site Internet: http://www.harcourt-normandie.fr</a>
+        <a href="tel:+33232462970">Téléphone :+33 2 32 46 29 70</a>
+        <a href="fax:+33232465338">Fax :+33 2 32 46 53 38</a>
+        <p>Adresse: 13 rue du Château 27800 Harcourt</p>
+        <p>Coordonnées GPS: 49.1738014221, 0.7868893743</p>
+        <p>Label Qualite Tourisme : 2013-04567 LE DOMAINE D'HARCOURT</p> <a href="Ville.php?INSEE=27311"> 27800 Harcourt </a>
+        <p>Classement monument historique :Château : classement par liste de 1862</p>
+      <adress>
     </div>
 
 

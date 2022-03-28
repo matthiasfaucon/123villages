@@ -10,15 +10,15 @@
     $_SESSION['email_exist'] = '';
     $_SESSION['no_email'] = '';
 
-    $email = strtolower(htmlentities($_GET['email'], ENT_QUOTES));
-    $mdp = htmlentities($_GET['password'], ENT_QUOTES);
+    $email = strtolower(htmlentities($_POST['email'], ENT_QUOTES));
+    $mdp = htmlentities($_POST['password'], ENT_QUOTES);
 
-    if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
+    if(filter_var($_POST['email'] , FILTER_VALIDATE_EMAIL)){
     }
     else{
         echo "Le mail est incorect (retour sur l'index)";
         $_SESSION['no_email'] = 1;
-        header('Location: connexion.php');
+        header('Location: front_connexion.php');
         exit;
     }
 
@@ -45,11 +45,20 @@
             $mp = 1;
         }
 
-        if($donnees['Mail']==$_POST["mail"]) {
+        if($mp == 1 && $mail == 1){
+
+            $_SESSION['nom'] = $donnees['Nom'];
+            $_SESSION['prenom'] = $donnees['Prenom'];
+            $_SESSION['pass'] = $donnees['Pass2'];
+            $_SESSION['email'] = $donnees['Mail'];
+
+        }
+
+        /*if($donnees['Mail']==$_POST["mail"]) {
             $mail=1;
             $mp=1;
             echo json_encode(["location"=>"../index.php"]);
-        }
+        }*/
 
     }
 
@@ -59,9 +68,13 @@
     $reponse->closeCursor();
 
     if($_SESSION['email_verif'] == 1 && $_SESSION['mdp_verif'] == 1){
+
+
         header('Location: ../index.php');
+
     }else{
-        header('Location: connexion.php');
+
+        header('Location: front_connexion.php');
     }
 
 ?>

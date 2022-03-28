@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <title>Inscription</title>
+
+    <?php
+
+session_start();
+
+if(!isset($_SESSION['email_exist'])){
+    $_SESSION['email_exist'] = '';
+}
+
+if(!isset($_SESSION['no_email'])){
+    $_SESSION['no_email'] = '';
+}
+
+if($_SESSION['verif'] == 1){
+    header('Location: ../index.php');
+}
+
+?>
+
 </head>
 
 <body>
@@ -34,16 +53,16 @@
                 </div>
             </div>
 
-            <form action="" method="get" class="form_frontco_form">
+            <form action="inscription_back.php" method="post" class="form_frontco_form">
 
             <div class="form_frontco">
                     <label for="name"> </label>
-                    <input type="text" name="name" id="name" placeholder="Prénom" required>
+                    <input type="text" name="prenom" id="name" placeholder="Prénom" required>
                 </div>
 
                 <div class="form_frontco">
                     <label for="fname"> </label>
-                    <input type="text" name="fname" id="fname" placeholder="Nom" required>
+                    <input type="text" name="nom" id="fname" placeholder="Nom" required>
                 </div>             
 
                 <div class="form_frontco">
@@ -53,8 +72,18 @@
 
                 <div class="form_frontco">
                     <label for="password"></label>
-                    <input type="password" name="password" id="password" placeholder="Mot de passe" required>
+                    <input type="password" name="mdp" id="password" placeholder="Mot de passe" required>
                 </div>
+
+                <?php
+                    if($_SESSION['email_exist'] == 1){
+                        echo '<p>adresse e-mail déjà existant</p><br>';
+                    }
+
+                    if($_SESSION['no_email'] == 1){
+                        echo '<p>Veuillez entrer une adresse email valide</p><br>';
+                    }
+                ?>
 
                 <div class="form_frontco_button">
                     <input type="submit" value="Envoyer">

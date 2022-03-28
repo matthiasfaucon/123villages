@@ -27,6 +27,22 @@ header{
     flex-direction: column;
 }
 
+#searchBarre form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#searchBarre form div input{
+    background: url("../images/recherche.svg") no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+#searchBarre form div input:hover{
+    cursor: pointer;
+}
+
 section{
 
         display: flex;
@@ -274,15 +290,8 @@ width: 40vw;
 height: 60vh;
 } 
 
-#codePostalHeader{
-    transform: rotate(2deg);
-    /* font-family: 'Open Sans', sans-serif; */
-    display: flex;
-    position: absolute;
-    top: 16.5vh;
-    right: 2.7vw;
-    font-size: 1.5em;
-}
+
+
 
 
 #choixAPresenter{
@@ -291,7 +300,7 @@ height: 60vh;
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    /* width: 20px; */
         background-color: #4062BB;
   } /* the new scrollbar will have a flat appearance with the set background color */
 
@@ -343,7 +352,7 @@ footer{
     width: 70vw;
     height: 7vh;
     border-radius: 30px;
-    background: #4062BB;
+    border: solid 3px #4062BB;
 }
 
 #menuSecondaireHorizontal span{
@@ -453,7 +462,7 @@ margin-left: 10%;
 
 #div_title_lieu 
 {
-  margin-left: 1vw;
+  margin-left: 50px;
 }
 
 #title_lieu
@@ -474,7 +483,7 @@ display: flex;
 {
     margin-left: 50px;   
     width: 65%;
-font-size: 18px;
+font-size: 1em;
 line-height: 22px;
 line-height: 1.5em;
 color: #000000;  
@@ -502,7 +511,8 @@ position: relative;
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
 width: 300px;
-height: 400px; 
+height: 40vh; 
+
 }  
 
 
@@ -511,8 +521,29 @@ height: 400px;
 {
     border-radius: 10px;
     width: 300px;
-    height: 400px;   
+    height: 40vh;   
 } 
+#partenaire 
+{
+    width: 300px;
+    height: 200px; 
+    background-color: #d4b902; 
+    margin-top: 20px;  
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: row;
+    
+}  
+
+#partenaire div 
+{
+    width: 30%; 
+    margin: 20px;
+    border: solid 3px #4062BB;   
+    border-radius: 5px;
+    background-image: url("../images/pexels-fauxels-3184418.jpg"); 
+    background-size: cover;
+}
 
 #txt-infos-lieu-bt
 {
@@ -547,9 +578,14 @@ color: #000000;
 }   
 
 @media screen and (max-width: 1040px) {
+    #infos-local 
+    {
+        margin-bottom: 2vh;
+    }
     #txt-infos-lieu 
     {
-        display: none;
+        display: none; 
+        margin-top: 6vh;
     } 
     #txt-infos-lieu-bt
     {
@@ -566,8 +602,37 @@ color: #000000;
     } */
     
 }
-
-
+ 
+#hordou
+{
+    background-color: #4062BB; 
+    width: 70vw; 
+    height: auto;  
+    padding: 0px 0px 0px 0px;
+    margin-top: 20vh; 
+    margin-left: 15vw;  
+    border-radius: 20px;
+ 
+}
+#hordou div:nth-child(1)
+{ 
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    
+}
+#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
+{
+    display: flex;
+    flex-direction: row; 
+} 
+#lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p 
+{
+    margin-left: 2px; 
+    color: #d4b902;
+}
 #journee-patrimoine 
 {
     display: flex;
@@ -614,6 +679,33 @@ color: #000000;
     
 } 
 
+#proeve
+{
+    width: 70vw;
+    height: 30vh; 
+    margin-top: 15vh;
+    margin-left: 15vw;
+    background-color: #4062BB; 
+    border-radius: 20px; 
+    color: #fff;
+    
+} 
+#proeve p 
+{
+    margin: 20px;
+}
+#proeve div
+{
+    margin-left: 10%;
+
+    width: 80%;
+    height: 50%;
+    border: 5px solid #d4b902;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #icone div img{
     transform: scale(0.6);
 }
@@ -708,15 +800,26 @@ flex-wrap: wrap;
 /*test*/
 
   .menu-link {
+    width: fit-content;
+    height: auto;
+    background: #4062BB;
     text-decoration: none;
     display: block;
     margin: 0.5rem 0;
     font-size: 1rem;
     line-height: 1.4;
-    position: relative; /* used with absolute for positioning underline */
+    position: relative;
     cursor: pointer;
+    border-radius: 30px;
+    padding: 1vh 1vw 1vh 1vw;
   }
 
+  #menuSecondaireHorizontal span:hover{
+    color: #1a181b;
+    background-color: #d4b902;
+  }
+
+/* 
   .menu-link:after {
     position: absolute;
     content: "";
@@ -730,13 +833,13 @@ flex-wrap: wrap;
     transform-origin: right bottom;
     transform: scaleX(0);
     transition: transform 0.4s linear;
-  }
-  .menu-link:hover:after,
+  } */
+  /* .menu-link:hover:after,
   .menu-link:active:after {
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform 0.4s linear;
-  } 
+  }  */
 
   #test-presentation-cat
   {
@@ -859,13 +962,20 @@ flex-wrap: wrap;
   }
 
 
+  .seConnecter {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
   #arrow {
 
     border: solid #4062BB; 
     border-radius:100% ;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+    width: 7vh;
+    height: 7vh;
+    margin: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -880,37 +990,35 @@ flex-wrap: wrap;
 
     #peopleandcracc 
     {
-        width: 90vw;
-        height: 80vh;
+        width: 80vw;
+        height: auto;
         display: flex;
         flex-direction: row;
         margin: 0 auto;
-        margin-left: 15%;
     } 
     #people, #cracc 
     {
         display: flex;
-        height: 100%;
-        border-radius: 50px;    
+          
     } 
     #people 
     {
     background-color: lightgray; 
     width: 40%;
+    border-radius: 30px 0 0 30px; 
     }
     #cracc 
     {
+        width: 60vw;
+        padding: 5vh 3vw 5vh 3vw;
         background-color: #4062BB;
-        width: 50vw;
         flex-direction: column;
-        margin-left: -10%;
+        border-radius: 0 30px 30px 0; 
       
     }  
     #lcoin
     {
-     width: 80%;
-     margin: 5%; 
-     margin-bottom: 0;
+    margin: 3vh 3vw 3vh 3vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between; 
@@ -919,35 +1027,28 @@ flex-wrap: wrap;
     #cracc h4
     {
         color: #fff ;
+        font-size: 1.2rem;
     }
     #lcoin a 
     {
 
         color: lightgray; 
-        font-size: medium;  
-        width: 15vw;
+        font-size: 0.7rem;  
 
     }
     #apigf
     {
-    width: 80%;
-    margin-left: 5%;
-    margin-top: 5%;
-    display: flex;
-    flex: 1 0 auto;
-    justify-content: space-between;  
-    flex-wrap: wrap;
+        margin-top: 5%;
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: space-around;
     
     } 
-    #apigf p
-    {
-    font-size: 1vw; 
-    white-space: nowrap;
-    }
+
     #apig, #apif
     {
-        width: 12vw;  
-        height: 30px;
+        width: fit-content;
+        padding: 1vh 1vw 1vh 1vw;
         background-color: #52B2CF; 
         border-radius: 25px;
         color: #fff;
@@ -957,52 +1058,63 @@ flex-wrap: wrap;
         cursor: pointer;
         flex-wrap: wrap; 
         flex-shrink: 2;
+        
+    }
+
+    #apig p, #apif p
+    {
+        font-size: 0.8rem;
+        
     }
     
     .form_frontco_form
     {
        
-        height: 80ch;
-        margin-top: 10%;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
+            /* height: 50%; */
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
        
     }  
 
     .form_frontco
     {
-       
-       width: 60%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
        
     }  
 
-    .form_frontco  input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box; 
-    background-color: #4062BB;
-    font-family: 'Montserrat', sans-serif;
-    color: #fff; 
-    border: none;
-    border-bottom: 2px solid #fff;
-    } 
+    .form_frontco input[type=email] {
+        display: flex;
+        width: 60%;
+        padding: 1vh 2vw;
+        margin: 0 0 1vh 0;
+        box-sizing: border-box;
+        background-color: #4062BB;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        border: none;
+        border-bottom: 2px solid #fff;
+    }
     
     .form_frontco  ::placeholder {
         color: #fff;
     }
     
     .form_frontco  input[type=password] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box; 
-        font-family: 'Montserrat', sans-serif;        
-        background-color: #4062BB; 
-        color: #fff; 
+        width: 60%;
+        padding: 1vh 2vw;
+        margin: 2vh 0 5vh 0;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #4062BB;
+        color: #fff;
         border: none;
         border-bottom: 2px solid #fff;
+    }
       } 
 
       .form_frontco  input[type=text] {
@@ -1018,12 +1130,13 @@ flex-wrap: wrap;
     
     .form_frontco_button input[type=submit]
     {
-        width: 300%;
-        height: 50px;
-        margin-left: -100%;  /*  a modifier */
-        margin-top: 50%;
-       color: #fff;  
-        background-color: #52b2cf; 
+        width: auto;
+        padding: 2vh 10vw 2vh 10vw;
+        height: auto;
+        /* margin-left: -100%; */
+        /* margin-top: 50%; */
+        color: #fff;
+        background-color: #52b2cf;
         background: linear-gradient(to right, #4062BB, #52B2CF);
         border: none;
         border-radius: 10px;
@@ -1040,18 +1153,13 @@ flex-wrap: wrap;
     background: #4062BB;
 }
 
-#positionnementInfos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 @media screen and (max-width: 830px) { 
-    body
+
+    #apig p, #apif p
     {
-        background-color: red;
-    } 
+        font-size: 0.6rem;
+        
+    }
     #peopleandcracc 
     {
         justify-content: center;
@@ -1062,17 +1170,18 @@ flex-wrap: wrap;
     }
     #cracc
     {
+        border-radius: 30px; 
         flex: 1 0 auto; 
-        height: 70vh; 
-        margin-right: 10px;
-    }  
+    } 
+
     #apig, #apif 
     {
-        width: 30vw;
+        width: fit-content;
     }
+
     #apigf p
     {
-        font-size:2vw;
+            font-size: 0.8em;
     }
 
 }
@@ -1248,7 +1357,6 @@ margin-top: 5%;
     display: initial;
 } */
   @media(max-width: 700px){  
-
     #togadmin
     {
         display: block;
@@ -1732,11 +1840,16 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
 @media all and (min-width: 0px) and (max-width: 1100px){
     html{
+        overflow-x: hidden;
         font-size: 12px;
     }
     
     body{
         background-color: white;
+    }
+
+    #boutonLieu{
+        display: none;
     }
 
     header {
@@ -1747,6 +1860,7 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 
     .carteInformations{
+        margin-top: 7vh;
         display: flex;
        flex-direction: column;
     }
@@ -1757,6 +1871,17 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         width: 80vw;
         height: 60vh;
         margin-bottom: 5vh;
+}
+
+#menuSecondaireHorizontal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    height: 7vh;
+    border-radius: 30px;
+    border: none;
+    flex-wrap: wrap;
 }
 
 #recherche{
@@ -1777,12 +1902,6 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     height: 120px;
     width: 120px;
     border-radius: 100%;
-}
-
-#menuSecondaireHorizontal{
-    width: 90vw;
-    height: 8vh;
-    border-radius: 20px;
 }
 
 .informationsMonument {
@@ -1814,6 +1933,20 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     background: #e9f0f1;
 }
 
+.menu-link{
+    width: fit-content;
+    height: auto;
+    background: #4062BB;
+    text-decoration: none;
+    display: block;
+    margin: 1vh 1vw 1vh 1vw;
+    font-size: 1rem;
+    line-height: 1.4;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+    padding: 1vh 1vw 1vh 1vw;
+}
 
 #profil {
     width: 25px;
@@ -1847,5 +1980,15 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 @keyframes ouvrir {
 0% { transform:translateY(0px); opacity: 0;}
 100% { transform:translateY(15px); opacity: 1;}
+}
+}
+
+@media all and (min-width: 0px) and (max-width: 450px){
+html{
+    overflow-x: hidden;
+    font-size: 10px;
+}
+.info p {
+    font-size: 1.2em;
 }
 }

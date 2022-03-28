@@ -50,7 +50,7 @@
 
     <h4>Zone de dépôt de photo</h4> </br>
 
-    <form action="upload.php" method="post" id="formdepot">
+    <form action="upload.php" enctype="multipart/form-data" method="post" id="formdepot">
       <div class="form_frontco">
         <label for="name"> </label>
         <input type="text" name="name" id="name" placeholder="Nom du lieu" required>
@@ -69,13 +69,14 @@
 
       </div>
       <div id="zonededepot">
-        <input type="file">
+        <input type="file" name="image" accept="image/png, image/jpeg">
         <div draggable="true" class="box">Drag your files here or click in this area.</input>
           Drag your files here or click in this area.
         </div>
       </div>
 
-      <button type="submit">Upload</button>
+      <input type="submit" value="Upload">
+      <!--<button type="submit">Upload</button>-->
     </form>
 
 

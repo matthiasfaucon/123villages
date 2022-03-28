@@ -1,6 +1,13 @@
 <?php
 
     include 'verif_script.php';
+    if($_SESSION['verif'] == 0){
+        header('Location:../index.php');
+    }
+
+    $description = $_POST['name'];
+    $adresse = $_POST['adress'];
+    $lien = $_POST['link'];
 
     $nom=$_FILES['image']['name'];
     $size=$_FILES['image']['size'];
@@ -31,7 +38,7 @@
 
     if($nom_upload<>"") {
 
-        if(move_uploaded_file($nom_tmp,"image/".$nom_upload)) {
+        if(move_uploaded_file($nom_tmp,"../images/photos/".$nom_upload)) {
 
             echo "fichier bien transféré";
 
@@ -57,8 +64,8 @@
         die('Erreur :'.$e->getMessage());
     }
 
-    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom) VALUES (NULL, ?)');
-    $reponse->execute(array($nom_upload));
+    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, user, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, :user, 0)');
+    $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien, ':user'=>$_SESSION['email']));
 
     $reponse->closeCursor();
 

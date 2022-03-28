@@ -45,6 +45,13 @@
             $mp = 1;
         }
 
+        if($mp == 1 && $mail == 1){
+
+            $_SESSION['nom'] = $donnees['Nom'];
+            $_SESSION['prenom'] = $donnees['Prenom'];
+
+        }
+
         /*if($donnees['Mail']==$_POST["mail"]) {
             $mail=1;
             $mp=1;
@@ -59,7 +66,10 @@
     $reponse->closeCursor();
 
     if($_SESSION['email_verif'] == 1 && $_SESSION['mdp_verif'] == 1){
+
+
         header('Location: ../index.php');
+
     }else{
 
         header('Location: front_connexion.php');

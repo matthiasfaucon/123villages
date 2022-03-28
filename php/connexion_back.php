@@ -18,7 +18,7 @@
     else{
         echo "Le mail est incorect (retour sur l'index)";
         $_SESSION['no_email'] = 1;
-        header('Location: connexion.php');
+        header('Location: front_connexion.php');
         exit;
     }
 
@@ -45,11 +45,11 @@
             $mp = 1;
         }
 
-        if($donnees['Mail']==$_POST["mail"]) {
+        /*if($donnees['Mail']==$_POST["mail"]) {
             $mail=1;
             $mp=1;
             echo json_encode(["location"=>"../index.php"]);
-        }
+        }*/
 
     }
 
@@ -61,7 +61,8 @@
     if($_SESSION['email_verif'] == 1 && $_SESSION['mdp_verif'] == 1){
         header('Location: ../index.php');
     }else{
-        header('Location: connexion.php');
+
+        header('Location: front_connexion.php');
     }
 
 ?>

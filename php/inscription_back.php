@@ -13,7 +13,7 @@
     if(filter_var($_GET['email'] , FILTER_VALIDATE_EMAIL)){
     }else{
         $_SESSION['no_email'] = 1;
-        header('Location: inscription.php');
+        header('Location: front_create_account.php');
         exit;
     }
 
@@ -46,9 +46,9 @@
 
         $reponse->closeCursor();
 
-        header('Location: connexion.php');
+        header('Location: front_connexion.php');
     }else{
-        header('Location: inscription.php');
+        header('Location: front_create_account.php');
     }
 
 ?>

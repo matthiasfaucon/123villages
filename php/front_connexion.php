@@ -8,6 +8,38 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <title>Connexion</title>
+
+    <?php
+
+session_start();
+
+if(!isset($_SESSION['email_verif']) || !isset($_SESSION['mdp_verif'])){
+    $_SESSION['email_verif'] = '';
+    $_SESSION['mdp_verif'] = '';
+}
+
+if(!isset($_SESSION['email_exist'])){
+    $_SESSION['email_exist'] = '';
+}
+
+if($_SESSION['email_verif'] == 1 && $_SESSION['mdp_verif'] == 1){
+    header('Location: ../index.php');
+}
+
+if(!isset($_SESSION['no_email'])){
+    $_SESSION['no_email'] = '';
+}
+
+if(!isset($_SESSION['verif'])){
+    $_SESSION['verif'] = 0;
+}
+
+if($_SESSION['verif'] == 1){
+    header('Location: ../index.php');
+}
+
+?>
+
 </head>
 
 <body>
@@ -45,10 +77,23 @@
                     <input type="email" name="email" id="email" placeholder="Adresse email" required>
                 </div>
 
+                <?php
+                    if($_SESSION['no_email'] == 1){
+                        echo '<p>Veuillez entrer une adresse email valide</p><br>';
+                    }
+                ?>
+
                 <div class="form_frontco">
                     <label for="password"></label>
                     <input type="password" name="password" id="password" placeholder="Mot de passe" required>
                 </div>
+
+                <?php
+                    if($_SESSION['email_verif'] == 0 || $_SESSION['mdp_verif'] == 0){
+                        echo '<p>adresse e-mail ou mot de passe incorrect</p><br>';
+                    }
+
+                ?>
 
                 <div class="form_frontco_button">
                     <input type="submit" value="Envoyer">

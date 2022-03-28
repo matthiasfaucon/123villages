@@ -88,7 +88,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             <div class="form_frontco">
                 <label for="name"> </label>
-                <input type="text" name="auteur" id="name" placeholder="Votre nom" required>
+                <input type="text" name="subject" id="name" placeholder="Sujet" required>
             </div>
             <!--<div class="form_frontco">
                 <label for="adress"> </label>
@@ -97,12 +97,12 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             <div class="form_frontco">
                 <label for="lien"> </label>
-                <input type="text" name="lien" id="lien" placeholder="copier coller le lien de la page du lieu" required>
+                <input type="text" name="lien" id="lien" placeholder="Lien de la page du lieu" required>
             </div>
 
             <div class="form_frontco">
                 <label for="Text_mod"></label>
-                <input type="text" name="contenu" id="Text_mod" placeholder="Ecrivez la modification que vous voulez apporter" required>
+                <input type="text" name="contenu" id="Text_mod" placeholder="Proposition de modification" required>
             </div>
 
             <div class="form_frontco_button">

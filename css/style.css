@@ -473,7 +473,7 @@ color: #000000;
 
 #ii 
 {
-display: flex;
+display: flex; 
 
 }
 
@@ -501,6 +501,7 @@ position: relative;
     align-items: flex-end; 
     margin-left: -2vw;  
     position: relative;
+    
 
 }
 
@@ -1356,14 +1357,14 @@ margin-top: 5%;
     display: initial;
 } */
   @media(max-width: 700px){  
-
-    #togadmin 
+    #togadmin
     {
         display: block;
     }
     #gestion_admin 
     {
-        display: none;
+        display: none; 
+    
     } 
     #gestion_admin.active
     {

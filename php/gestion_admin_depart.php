@@ -11,7 +11,7 @@
 
     <?php
         include 'verif_script.php';
-        if($_SESSION['pass'] == "Membre"){
+        if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart"){
             header('location:front_connexion.php');
         }
     ?>
@@ -85,11 +85,9 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
     ?>
 </div>
-        <form method="get" enctype="multipart/form-data" action="suppphoto_back.php">
+        <form method="GET" action="changement_pass.php">
 
         <?php
-
-            $n = 0;
 
             try
             {
@@ -100,34 +98,23 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
                 die('Erreur :'.$e->getMessage());
             }
 
-            $reponse=$bdd->query('SELECT nom from pictures');
+            $reponse=$bdd->query('SELECT prenom, nom, mail, pass2 from users where pass2 = "admin" OR pass2 = "membre"');
 
             while ($donnees=$reponse->fetch())
             {
-
-                $n = $n+1;
-                ?>
-
-
-
-                <?php
-
-                    echo "<img src='../images/photos/".$donnees['nom']."' alt='image' id='photo'>".$n."<br>";
-                    echo $donnees['nom'];
-                    echo "<input type='checkbox' name='image[]' value='".$donnees['nom']."'><br>";
-
-                    ?>
-
-                <?php
-
-
-
+                echo $donnees['nom']."/".$donnees['prenom']."/".$donnees['mail']."/".$donnees["pass2"];
+                echo "<input type='checkbox' name='email[]' value='".$donnees['mail']."'><br>";
             }
 
             ?>
 
-            <input type="submit" value="valider">
+                    <select name="pass2">
+                        <option value="Membre">Membre</option>
+                        <option value="Admin depart">Administrateur départemental</option>
+                        <option value="Admin">Administrateur Global</option>
+                    </select>
+                    <input type="submit" value="éditer">
+                </form>
 
-            </form>
 
     </body>

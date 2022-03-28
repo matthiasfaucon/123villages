@@ -67,6 +67,7 @@ a:hover{
     font-size: 1.5rem;
     color: #f4f4f9;
 }
+
 @media screen and (max-width: 500px) {
     #logoTypo{ 
         font-size: 1em;
@@ -1314,13 +1315,13 @@ flex-direction: column;
 
 }   
 
-#admindep span, #admin span, #membre span
+#admindep a, #admin a, #membre a
 {
   display: none;
 
 }   
 
-#admindep:hover span, #admin:hover span, #membre:hover span
+#admindep:hover a, #admin:hover a, #membre:hover a
 {
   display: initial;
 
@@ -1340,12 +1341,18 @@ flex-direction: column;
     flex-direction: column;
 }
 
-#admindep span, #admin span, #membre span
+#admindep a, #admin a, #membre a
 {
     margin: 2vh 0vw 1vh 1vw;
     width: fit-content;
     color: #fff;
 }
+
+#admindep a:hover, #admin a:hover, #membre a:hover
+{
+ text-decoration: none;
+}
+
 .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
 {
     margin-top: 2%;

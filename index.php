@@ -38,11 +38,11 @@
 <?php
       if($_SESSION['verif'] == 1){
         ?>
-          <div id="menuProfil"><a>Mon compte</a><a href="php/deconexion_back.php">se déconnecter</a></div>
+          <div id="menuProfil"><a href="php/admin.php">Mon compte</a><a href="php/deconexion_back.php">se déconnecter</a></div>
         <?php
       }else{
         ?>
-        <div id="menuProfilAvant"><a href="php/front_connexion.php">Connexion</a><a href="php/front_create_account.php">Inscription</a></div>
+        <div id="menuProfil"><a href="php/front_connexion.php">Connexion</a><a href="php/front_create_account.php">Inscription</a></div>
         <?php
       }
     ?>
@@ -75,7 +75,6 @@
 profil = document.getElementById('profil');
 cacher = document.getElementById('cacher');
 menuProfil = document.getElementById('menuProfil');
-menuProfilAvant = document.getElementById('menuProfilAvant');
 
   profil.addEventListener('click', function(){
     if (cacher.className === "non-active") {
@@ -84,10 +83,7 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
     cacher.className = "non-active";
   }
     menuProfil.classList.toggle("ouvrir");
-    menuProfilAvant.classList.toggle("ouvrir");
   })
-
-
 
 </script>
 
@@ -264,10 +260,6 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
           </svg></i>
       </div>
 
-
-
-
-      
     </section>
 
     </div>
@@ -277,8 +269,6 @@ menuProfilAvant = document.getElementById('menuProfilAvant');
 
 
   <script src="js/slider.js"></script>  
-
-  <footer>Mentions légales</footer>
 
 </div>
         

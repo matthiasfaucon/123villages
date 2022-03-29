@@ -26,8 +26,12 @@
         case 'image/jpg':
             $nom_upload="image".time().".jpg";
             break;
-        
-        case 'image/png':
+
+        case 'image/JPG':
+            $nom_upload="image".time().".jpg";
+            break;
+            
+        case 'image/JPEG':
             $nom_upload="image".time().".jpg";
             break;
         

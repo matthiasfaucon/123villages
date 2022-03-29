@@ -114,7 +114,7 @@
 
         </div>
         <div id="zonededepot">
-          <input type="file" name="image" accept="image/png, image/jpeg">
+          <input type="file" name="image" accept="image/jpg, image/jpeg, image/JPG, image/JPEG">
         </div>
 
         <input type="submit" value="Upload">

@@ -113,5 +113,5 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
                     <input type="submit" value="éditer">
                 </form>
 
-
+                <script src="../js/animation-menu.js"></script>
     </body>

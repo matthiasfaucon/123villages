@@ -107,7 +107,7 @@
         $reponse->closeCursor();
 
         ?>
-
+<script src="../js/animation-menu.js"></script>
 </body>
 
 </html>

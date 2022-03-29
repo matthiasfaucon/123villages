@@ -107,7 +107,17 @@
   <section id="presentation">
     <h1>Présentation</h1>
     <div id="txt-card">
-      <p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>
+
+    <?php
+
+      $presentation = $_GET['presentation'];
+      $histoire = $_GET['histoire'];
+
+      echo "<p>".$presentation."</p>";
+
+    ?>
+
+      <!--<p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>-->
       <div id="carte-ville">
         <!-- <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> -->
       </div>
@@ -180,11 +190,17 @@
   <div id="histoire"> 
     <p>Histoire de la ville d'elbeuf</p> 
 
-    <p>Après la guerre de 1870, un grand nombre d'Alsaciens qui refusaient l'annexion ont choisi Elbeuf pour s'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32.
+    <?php
+
+        echo "<p>".$histoire."<p>";
+
+    ?>
+
+  <!--<p>Après la guerre de 1870, un grand nombre d'Alsaciens qui refusaient l'annexion ont choisi Elbeuf pour s'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32.
 
 Paul Lévy écrit : « Des 4 000 Bischwillerois qui ont quitté leur ville natale entre 1869 et 1874 — dont 75 fabricants sur 96 et plus de 3 000 ouvriers sur 5 000 — plus de la moitié s'est retrouvée à Elbeuf, où ils continuaient à former un groupement original au sein de la population autochtone. D'abord beaucoup d'entre eux étaient luthériens au milieu d'une population catholique. Leur pasteur leur faisait un sermon en allemand tous les quinze jours et, l'office terminé, s'entretenait avec eux en dialecte. Car le dialecte a subsisté, parlé couramment chez tous les vieux, fidèlement conservé par beaucoup de jeunes33 » et il cite Delahache : « Je les ai entendus [en 1914], entre eux ou avec les patrons, et d'entendre ce langage ici, dans une petite ville normande, à 500 km de l'Alsace […] je me croyais là-bas, chez eux, chez moi […] Ils se sont longtemps mariés entre « pays », et cette tradition non plus n'est pas perdue34 ».
 
-Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog35. L'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.</p>
+Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog35. L'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.</p>-->
     
   </div>
 

@@ -76,5 +76,4 @@
 
     $_SESSION['valide_photo'] = 1;
     header('Location:depotphoto.php');
-
 ?>

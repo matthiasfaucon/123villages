@@ -25,5 +25,4 @@
     $reponse->closeCursor();
 
     //header('location:'.$recherche.'.php'); 
-
- ?>
+?>

@@ -21,5 +21,4 @@ while ($donnees=$reponse->fetch())
     echo $donnees['code_postal'].'/'.$donnees['nom_ville'].'/'.$donnees['departement'];
 
 }
-
 ?>

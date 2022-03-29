@@ -28,6 +28,4 @@
 
     $_SESSION['valide_photoverif'] = 1;
     header('Location: verifphoto.php');
-
-
 ?>

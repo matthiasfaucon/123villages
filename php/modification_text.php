@@ -11,7 +11,7 @@
 
     <?php
     include('verif_script.php');
-    if (!isset($_SESSION['mail_valide'])){
+    if (!isset($_SESSION['mail_valide'])) {
         $_SESSION['mail_valide'] = '';
     }
     ?>
@@ -20,70 +20,70 @@
 </head>
 
 <body>
-<div id="gestion_admin">
+    <div id="gestion_admin">
 
-<?php
+        <?php
 
-if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SESSION['pass'] == "Admin"){
-
-        ?>
-
-
-<div id="membre">
-    <p>Membre</p>
-
-    
-    
-    <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
-        <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
-        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
-    
-</div>
-
-<?php 
-
-    }else{
-        header('location:front_connexion.php');
-    }
-
-    if($_SESSION['pass'] == "Admin" || $_SESSION['pass'] == "Admin depart"){
+        if ($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SESSION['pass'] == "Admin") {
 
         ?>
 
 
- <div id="admin"> 
-    <p>Admin département</p>
-    <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
-         <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
-         <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
-         <a href="" class="menu__item_gestion_admin">Espace création lieu</a> 
-         <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
-         <a href="" class="menu__item_gestion_admin">mise à jour SiteMap</a>
-         <a href="" class="menu__item_gestion_admin">Indexation</a> 
-         <a href="" class="menu__item_gestion_admin">supervision du département</a>
+            <div id="membre">
+                <p>Membre</p>
 
-</div>
 
-<?php
 
-    }
+                <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
+                <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
+                <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
 
-    if($_SESSION['pass'] == "Admin"){
+            </div>
+
+        <?php
+
+        } else {
+            header('location:front_connexion.php');
+        }
+
+        if ($_SESSION['pass'] == "Admin" || $_SESSION['pass'] == "Admin depart") {
 
         ?>
 
-<div id="admindep">
 
-    <p>Admin</p>
-    <a href="gestion_admin_depart.php" class="menu__item_gestion_admindep">Gestion Admin Département</a>
-</div> 
+            <div id="admin">
+                <p>Admin département</p>
+                <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
+                <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
+                <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
+                <a href="" class="menu__item_gestion_admin">Espace création lieu</a>
+                <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
+                <a href="" class="menu__item_gestion_admin">mise à jour SiteMap</a>
+                <a href="" class="menu__item_gestion_admin">Indexation</a>
+                <a href="" class="menu__item_gestion_admin">supervision du département</a>
 
-<?php
+            </div>
 
-    }
+        <?php
 
-    ?>
-</div>
+        }
+
+        if ($_SESSION['pass'] == "Admin") {
+
+        ?>
+
+            <div id="admindep">
+
+                <p>Admin</p>
+                <a href="gestion_admin_depart.php" class="menu__item_gestion_admindep">Gestion Admin Département</a>
+            </div>
+
+        <?php
+
+        }
+
+        ?>
+    </div>
     <div id="modinfos">
         <form action="envoi_mail_modif.php" method="get" class="form_modtext_form">
 
@@ -112,17 +112,17 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             <?php
 
-                if($_SESSION['mail_valide'] == 1){
-                    echo "Message envoyer avec succès";
-                }
-                if($_SESSION['mail_valide'] == 0){
-                    echo "Message envoyer avec succès";
-                }
+            if ($_SESSION['mail_valide'] == 1) {
+                echo "Message envoyer avec succès";
+            }
+            if ($_SESSION['mail_valide'] == 0) {
+                echo "Message envoyer avec succès";
+            }
 
             ?>
 
         </form>
-        
+
     </div>
     <script src="../js/animation-menu.js"></script>
 </body>

@@ -21,126 +21,26 @@
 
 </head>
 
-<<<<<<< HEAD
-    <body>
-        <div class="placement">
-    <div id="gestion_admin">
-
-<?php
-
-if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SESSION['pass'] == "Admin"){
-
-        ?>
-
-
-<div id="membre">
-    <p>Membre</p>
-
-    
-        <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
-        <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
-        <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
-    
-</div>
-
-<?php 
-
-    }else{
-        header('location:front_connexion.php');
-    }
-
-    if($_SESSION['pass'] == "Admin" || $_SESSION['pass'] == "Admin depart"){
-
-        ?>
-
-
-<div id="admin"> 
-    <p>Admin département</p>
-         <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
-         <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
-         <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
-         <a href="" class="menu__item_gestion_admin">Espace création lieu</a> 
-         <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
-         <a href="" class="menu__item_gestion_admin">mise à jour SiteMap</a>
-         <a href="" class="menu__item_gestion_admin">Indexation</a> 
-         <a href="" class="menu__item_gestion_admin">supervision du département</a>
-
-</div>
-
-<?php
-
-    }
-
-    if($_SESSION['pass'] == "Admin"){
-
-        ?>
-
-<div id="admindep">
-
-    <p>Admin</p>
-    <a href="gestion_admin_depart.php" class="menu__item_gestion_admindep">Gestion Admin Département</a>
-</div> 
-
-<?php
-
-    }
-
-    ?>
-</div>
-
-<div class="adminDepart">
-    <h2>Les membres</h2>
-        <form method="GET" action="changement_pass.php">
-
-=======
 <body> 
 <a href="../index.php">Home</a>
     <div id="gestion_admin">
 
->>>>>>> e6c37da536a9a1a9f2bac74b6b4de1a2fcf8cf01
         <?php
 
         if ($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SESSION['pass'] == "Admin") {
 
         ?>
 
-<<<<<<< HEAD
-            while ($donnees=$reponse->fetch())
-            {
-                echo "<h3>".$donnees['nom']."/".$donnees['prenom']."/".$donnees['mail']."/".$donnees["pass2"]."</h3> ";
-                echo "<input type='checkbox' name='email[]' value='".$donnees['mail']."'>";
-            }
-
-            ?>
-                <div id="selector">
-                    <select name="pass2">
-                        <option value="Membre">Membre</option>
-                        <option value="Admin depart">Administrateur départemental</option>
-                        <option value="Admin">Administrateur Global</option>
-                    </select>
-                    <input type="submit" value="éditer">
-        </div>
-=======
 
             <div id="membre">
                 <p>Membre</p>
 
->>>>>>> e6c37da536a9a1a9f2bac74b6b4de1a2fcf8cf01
 
                 <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
                 <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
                 <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
 
-<<<<<<< HEAD
-                        if($_SESSION['valide_changementpass'] == 1){
-                            echo "<p>Le changement de Pass à été réalisé avec succès !</p>";
-                        }
-                        if($_SESSION['valide_changementpass'] == 0){
-                            echo "<p>Erreur lors du changement de Pass</p>";
-                        }
-=======
             </div>
->>>>>>> e6c37da536a9a1a9f2bac74b6b4de1a2fcf8cf01
 
         <?php
 
@@ -148,14 +48,6 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
             header('location:front_connexion.php');
         }
 
-<<<<<<< HEAD
-                    </div>
-                    </div>
-                <script src="../js/animation-menu.js"></script>
-    </body>
-
-    </html>
-=======
         if ($_SESSION['pass'] == "Admin" || $_SESSION['pass'] == "Admin depart") {
 
         ?>
@@ -237,4 +129,3 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 </body>
 
 </html>
->>>>>>> e6c37da536a9a1a9f2bac74b6b4de1a2fcf8cf01

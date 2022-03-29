@@ -12,6 +12,8 @@
     catch(Exception $e)
     {
         die('Erreur :'.$e->getMessage());
+        $_SESSION['valide_changementpass'] = 0;
+        header('Location: gestion_admin_depart.php');
     }
 
     foreach($_GET['email'] as $email){
@@ -25,7 +27,8 @@
 
     $reponse->closeCursor();
 
-    header('Location: admin.php');
+    $_SESSION['valide_changementpass'] = 1;
+    header('Location: gestion_admin_depart.php');
 
 
 ?>

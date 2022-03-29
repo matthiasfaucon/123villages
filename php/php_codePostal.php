@@ -1,6 +1,6 @@
 <?php
 
-try{
+    try{
         $bdd=new PDO('mysql:host=localhost;dbname=ptut','root','');
     }
     catch(Exception $e){
@@ -19,7 +19,6 @@ try{
 
     }
     
-
     $reponse->closeCursor();
 
-      ?>
+?>

@@ -28,6 +28,4 @@
     $reponse->closeCursor();
     $_SESSION['valide_photosupp'] = 1;
     header('Location: suppphoto.php');
-
-
 ?>

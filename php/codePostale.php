@@ -6,26 +6,28 @@
 
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Departement</title>
+
 <head>
     <meta charset="utf-8">
     <title>Departement</title>
-    <meta property="og:title" content="Trouvez votre village grâce à son code postal" />
-    <meta property="og:type" content="article" />
-    <meta property="og:description" content="Page ressourssant tout les codes postaux de votre département" />
-    <meta property="og:url" content="http://localhost/mmi2/123villages/php/departement.php" />
-    <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
-    <meta property="og:site_name" content="Site 123villages" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
-    <!-- <script src="script.js"></script> -->
-    <script src="https://kit.fontawesome.com/7eb76eff39.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Departement</title>
+        <meta property="og:title" content="Trouvez votre village grâce à son code postal" />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content="Page ressourssant tout les codes postaux de votre département" />
+        <meta property="og:url" content="http://localhost/mmi2/123villages/php/departement.php" />
+        <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+        <meta property="og:site_name" content="Site 123villages" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/style.css">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+        <!-- <script src="script.js"></script> -->
+        <script src="https://kit.fontawesome.com/7eb76eff39.js" crossorigin="anonymous"></script>
+    </head>
 
 <body>
 

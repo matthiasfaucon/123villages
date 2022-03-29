@@ -189,7 +189,7 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
   </div>
 
   <section id="presentationCarte">
-    <h1>Notre sélection de monument pour Elbeuf</h1> 
+    <h1>Notre sélection de monuments pour Elbeuf</h1> 
 
     <section id="slider-lieu">
     <div class="w-img-nav_previous">

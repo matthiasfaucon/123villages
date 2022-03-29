@@ -41,7 +41,7 @@
       <?php
       if ($_SESSION['verif'] == 1) {
       ?>
-        <div id="menuProfil"><a href="php/admin.php">Mon compte</a><a href="php/deconexion_back.php">se déconnecter</a></div>
+        <div id="menuProfil"><a href="php/depotphoto.php">Mon compte</a><a href="php/deconexion_back.php">se déconnecter</a></div>
       <?php
       } else {
       ?>

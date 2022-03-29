@@ -57,12 +57,12 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     <p>Admin département</p>
          <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
          <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
-         <span class="menu__item_gestion_admin">Espace validation texte</span>
-         <span class="menu__item_gestion_admin">Espace création lieu</span> 
-         <span class="menu__item_gestion_admin">Campagnes de mail</span>
-         <span class="menu__item_gestion_admin">mise à jour SiteMap</span>
-         <span class="menu__item_gestion_admin">Indexation</span> 
-         <span class="menu__item_gestion_admin">supervision du département</span>
+         <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
+         <a href="" class="menu__item_gestion_admin">Espace création lieu</a> 
+         <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
+         <a href="" class="menu__item_gestion_admin">mise à jour SiteMap</a>
+         <a href="" class="menu__item_gestion_admin">Indexation</a> 
+         <a href="" class="menu__item_gestion_admin">supervision du département</a>
 
 </div>
 

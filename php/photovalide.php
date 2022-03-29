@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<a href="../index.php">Home</a>
 
     <div id="gestion_admin">
 

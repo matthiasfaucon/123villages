@@ -107,14 +107,14 @@
   <section id="presentation">
     <h1>Présentation</h1>
     <div id="txt-card">
-      <p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un complet de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>
+      <p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>
       <div id="carte-ville">
         <!-- <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> -->
       </div>
     </div>
   </section>
   <section id="activites">
-    <h1>Découvrez la Seine-Maritime</h1>
+    <h1>Découvrez Elbeuf</h1>
     <div id="menuSecondaireHorizontal">
       <span class="menu-link">A voir</span>
       <span class="menu-link">Voyager</span>
@@ -175,253 +175,79 @@
 
       </div>
     </div>
-  </section>
+  </section> 
+
+  <div id="histoire"> 
+    <p>Histoire de la ville d'elbeuf</p> 
+
+    <p>Après la guerre de 1870, un grand nombre d'Alsaciens qui refusaient l'annexion ont choisi Elbeuf pour s'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32.
+
+Paul Lévy écrit : « Des 4 000 Bischwillerois qui ont quitté leur ville natale entre 1869 et 1874 — dont 75 fabricants sur 96 et plus de 3 000 ouvriers sur 5 000 — plus de la moitié s'est retrouvée à Elbeuf, où ils continuaient à former un groupement original au sein de la population autochtone. D'abord beaucoup d'entre eux étaient luthériens au milieu d'une population catholique. Leur pasteur leur faisait un sermon en allemand tous les quinze jours et, l'office terminé, s'entretenait avec eux en dialecte. Car le dialecte a subsisté, parlé couramment chez tous les vieux, fidèlement conservé par beaucoup de jeunes33 » et il cite Delahache : « Je les ai entendus [en 1914], entre eux ou avec les patrons, et d'entendre ce langage ici, dans une petite ville normande, à 500 km de l'Alsace […] je me croyais là-bas, chez eux, chez moi […] Ils se sont longtemps mariés entre « pays », et cette tradition non plus n'est pas perdue34 ».
+
+Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog35. L'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.</p>
+    
+  </div>
 
   <section id="presentationCarte">
-    <h1>Notre sélection pour la Seine-Marritime</h1>
-    <div class="contenerCard">
-      <div class="cards">
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>../
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
+    <h1>Notre sélection de monuments pour Elbeuf</h1> 
+
+    <section id="slider-lieu">
+    <div class="w-img-nav_previous">
+      <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
+    </div>
+
+    <div id="main-slider">
+
+      <div class="card-slider">
+        <div id="image-slider">
+          <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
         </div>
 
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-background" style="background-image: url(../images/batiment-avec-fond/avoir/eglisecatholique.jpg);"></div>
-          <div class="ville">
-            <h3>Elbeuf</h3>
-          </div>
-          <div class="monument">
-            <p>Eglise d'Elbeuf</p>
-          </div>
-        </div>
       </div>
 
-  </section>
 
-
-
-
-
-  </section>
-
-
-
-
-
-  </section>
-
-
-  <section id="test-presentation-cat">
-    <div id="main_carrousel">
-      <div class="w-img-nav_previous">
-        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
-      </div>
-      <div id="img-primary-wrapper">
-        <div class="card_leo">
-          <div class="img-slider-fond">
-            <!-- <img id="card_leo_img1" src="..\images\batiment-avec-fond\avoir\chateau.jpg"> -->
-          </div>
-          <div class="info_card_leo">
-            <div></div> <!--  rond -->
-            <p>Elbeuf</p>
-          </div>
-          <div>
-            <p>chateau de Léo</p>
-          </div>
-        </div>
-        <div class="card_leo">
-          <div class="img-slider-fond1">
-            <!-- <img id="card_leo_img2" src="..\images\batiment-avec-fond\avoir\colombier.jpg">  -->
-          </div>
-          <div class="info_card_leo">
-            <div></div> <!--  rond -->
-            <p>Elbeuf</p>
-          </div>
-          <div>
-            <p>chateau de Léo</p>
-          </div>
+      <div class="card-slider">
+        <div id="image-slider1">
+          <img src="https://27.monvillagenormand.fr/images/300/327000357.webp" id="img2">
         </div>
 
-
-
       </div>
-      <div class="w-img-nav_next">
-        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
+
+      <div class="card-slider">
+        <div id="image-slider2">
+          <img src="https://27.monvillagenormand.fr/images/300/327000359.webp" id="img3">
+        </div>
       </div>
 
     </div>
+    <div class="w-img-nav_next">
+      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
+    </div>
+    
+
+
+
 
   </section>
 
-  <!-- <div class="card_leo">
-        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
-        <div class="info_card_leo">
-          <div></div>
-          <p>Elbeuf</p>
-        </div>
-        <div>
-        <p>chateau de Léo</p> 
-        </div>
-    </div>  
+  </section> 
 
-    <div class="card_leo">
-        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
-        <div class="info_card_leo">
-          <div></div>
-          <p>Elbeuf</p>
-        </div>
-        <div>
-        <p>chateau de Léo</p> 
-        </div>
-    </div>  
 
-    <div class="card_leo">
-        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
-        <div class="info_card_leo">
-          <div></div>
-          <p>Elbeuf</p>
-        </div>
-        <div>
-        <p>chateau de Léo</p> 
-        </div>
-    </div>  
 
-    <div class="card_leo">
-        <img src="..\images\batiment-avec-fond\avoir\chateau.jpg"> 
-        <div class="info_card_leo">
-          <div></div>
-          <p>Elbeuf</p>
-        </div>
-        <div>
-        <p>chateau de Léo</p> 
-        </div>
-    </div>   -->
-  </section>
+
+
+
+
+
+
+
+ 
   <footer>Mentions légales</footer>
-  <script>
-    const next = document.getElementsByClassName("w-img-nav_next")[0];
-    const pre = document.getElementsByClassName("w-img-nav_previous")[0];
-
-    const card_img1 = document.getElementsByClassName("img-slider-fond")[0];
-    const card_img2 = document.getElementsByName("img-slider-fond1")[0];
-    var count = 0;
-
-    next.addEventListener("click", maFcontion);
-    pre.addEventListener("click", maFcontion1);
-
-    function maFcontion() {
-
-      count++;
-      console.log("true");
-      console.log(count);
-      if (count == 0) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/colombier.jpg')";
-      }
-      if (count == 1) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
-      }
-      if (count == 2) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/chateau.jpg')";
-      }
-      if (count == 3) {
-        count = 0;
-      }
-
-    }
-
-    function maFcontion1() {
-
-      count--;
-      console.log(count);
-      if (count == 0) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/colombier.jpg')";
-      }
-      if (count == 1) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
-      }
-      if (count == 2) {
-        card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/chateau.jpg')";
-      }
-      if (count == -1) {
-        count = 0;
-      }
-
-    }
-
-    console.log(count)
-    if (count == 1) {
-      card_img1.style.backgroundImage = "url('../images/batiment-avec-fond/avoir/eglisecatholique.jpg')";
-    }
+  <script src="../js/slider-departement.js"></script>
   </script>
 </body>
 

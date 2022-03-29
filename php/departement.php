@@ -63,18 +63,6 @@
 ?>
 </header>
 
-<nav>
-  <div id="menuVertical">
-  <li class="menu-link">A voir</li>
-  <li class="menu-link">Voyager</li>
-  <li class="menu-link">Sport et loisirs</li>
-  <li class="menu-link">Services publics</li>
-  <li class="menu-link">Santé</li>
-  <li class="menu-link">Commerces et Services</li>
-  <li class="menu-link">Données publiques</li>
-</div>
-</nav>
-
 <section id="presentationDepartement">
     <h1>Bienvenue en Seine-Maritime</h1>
     <div class="positionPresentation">
@@ -153,84 +141,6 @@
 
   <section id="choixAPresenter">
     <h1>A découvrir</h1>
-    <!-- <div id="fleche">
-    <div class="fleche gauche"><</div>
-    <div class="fleche droite">></div>
-    </div>
-    <div class="cards">
-<div class="card">
-  <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-  <div>
-    <h3>Rouen</h3>
-    <p>Eglise de Rouen</p>
-  </div>
-  <a href="#"></a>
-</div>
-
-  <div class="card">
-    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-   <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-   <a href="#"><img src="../images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-</div> -->
 
 <section id="slider-lieu">
       <div class="w-img-nav_previous">

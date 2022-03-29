@@ -236,7 +236,7 @@ input:focus {
     outline: none;
 }
 
-#presentation {
+.presentation {
     width: 100vw;
     background-color: #4062BB;
 }
@@ -246,11 +246,15 @@ input:focus {
     background-color: #4062BB;
 }
 
-#presentation h1, #presentationDepartement h1, #choixAPresenter h1, #presentationCarte h1 {
+#presentationDepartement a{
+    text-decoration: none;
+}
+
+.presentation h1, #presentationDepartement h1, #choixAPresenter h1, #presentationCarte h1 {
     color: #e9f0f1;
 }
 
-#boxinfo {
+.boxinfo, .boxInfoLieu {
     /* position: relative; */
     display: flex;
     justify-content: space-around;
@@ -259,6 +263,7 @@ input:focus {
 }
 
 .info {
+    width: 80vw;
     /* position: absolute; */
     display: flex;
     justify-content: center;
@@ -283,6 +288,36 @@ input:focus {
 }
 
 .info:nth-of-type(4):hover {
+    z-index: 2;
+}
+
+
+.infoLieux {
+    width: 80vw;
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+    /* width:250px;
+    height:250px;
+    background: #e9f0f1; */
+    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.infoLieux p, .infoLieux a {
+    text-align: center;
+    color: #4062BB;
+    padding: 2vh 5vw 2vh 5vw;
+    font-size: 1em;
+}
+
+.infoLieux:nth-of-type(2):hover {
+    z-index: 3;
+}
+
+.infoLieux:nth-of-type(4):hover {
     z-index: 2;
 }
 
@@ -385,11 +420,21 @@ input:focus {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 10vh;
     width: 100vw;
     background: #fdc758;
+}
+
+footer a{
+    color: #4062BB;
+}
+
+footer a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color: #4062BB;
 }
 
 #boutonCodePostal {
@@ -510,7 +555,7 @@ align-items: center;
 
 .adminDepart form p{
     color: #e9f0f1;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     margin: 1vh 0;
 }
@@ -2323,4 +2368,11 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 {
     /* width: 20%; */
     height: 20%;
+}
+
+@media all and (min-width:0) and (max-width: 1190px) {
+
+#menuSecondaireHorizontal {
+    border: none;
+}
 }

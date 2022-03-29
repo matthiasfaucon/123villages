@@ -127,91 +127,6 @@
 
 <section id="choixAPresenter">
     <h1>A découvrir</h1>
-    <!-- <div id="fleche">
-    <div class="fleche gauche"><</div>
-    <div class="fleche droite">></div>
-    </div>
-    <div class="cards">
-
-    
-<div class="card">
-  <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-  <div>
-    <h3>$ville</h3>
-    <p>$monument</p>
-  </div>
-  <a href="#"></a>
-</div>
-
-  <div class="card">
-    <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-   <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-    <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-  <div class="card">
-   <a href="#"><img src="images/batiment-avec-fond/avoir/antique.jpg" alt="sample67"/></a>
-    <div>
-      <h3>Rouen</h3>
-      <p>Eglise de Rouen</p>
-    </div>
-    <a href="#"></a>
-  </div>
-
-</div> -->
-        
-
-
-
- 
     <section id="slider-lieu">
       <div class="w-img-nav_previous">
         <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -253,7 +168,7 @@
     </div>
     </section> 
     </section>
-<footer>Mentions légales</footer> 
+<footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 <script src="js/recherche.js"></script> 
 <script src="js/slider.js"></script>
 <script src="js/animation-sidebar.js"></script>

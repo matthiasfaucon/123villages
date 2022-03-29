@@ -31,7 +31,7 @@ const datep = document.getElementById("date+");
       huit.classList.toggle("active");
       cinq.classList.toggle("active");
       quatre.classList.toggle("active");
-      trois.classList.toggle("active"); 
+      trois 
     }); 
 
 
@@ -42,7 +42,7 @@ const datep = document.getElementById("date+");
 
     voir.addEventListener("click", function() {
 
-      document.getElementById("test-slider-lieu").style.display = "block";
+      document.getElementById("test-slider-lieu").classList.toggle("active");
     });
 
 

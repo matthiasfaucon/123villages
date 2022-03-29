@@ -11,6 +11,9 @@
 
   <?php
     include('verif_script.php');
+    if(!isset($_SESSION['valide_photo'])){
+      $_SESSION['valide_photo'] = '';
+    }
   ?>
 
 </head>
@@ -110,6 +113,16 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
       <input type="submit" value="Upload">
       <!--<button type="submit">Upload</button>-->
+
+      <?php
+        if($_SESSION['valide_photo'] == 1){
+          echo "L'envoie à été un succès !<br>Veuillez désormais attendre la validation d'un administrateur";
+        }
+        if($_SESSION['valide_photo'] == 0){
+          echo "Echec de l'envoie";
+        }
+      ?>
+
     </form>
 
 

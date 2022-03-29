@@ -1,9 +1,11 @@
 <?php
 
     include 'verif_script.php';
+    
     if($_SESSION['verif'] == 0){
         header('Location:../index.php');
     }
+    $_SESSION['valide_photo'] = '';
 
     $description = $_POST['name'];
     $adresse = $_POST['adress'];
@@ -44,7 +46,8 @@
 
         } else {
 
-            echo "erreur";
+            $_SESSION['valide_photo'] = 0;
+            header('location:depotphoto.php');
 
         }
 
@@ -62,6 +65,8 @@
     catch(Exception $e)
     {
         die('Erreur :'.$e->getMessage());
+        $_SESSION['valide_photo'] = 0;
+        header('location:depotphoto.php');
     }
 
     $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, user, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, :user, 0)');
@@ -69,6 +74,7 @@
 
     $reponse->closeCursor();
 
-    header('Location: ../index.php');
+    $_SESSION['valide_photo'] = 1;
+    header('Location:depotphoto.php');
 
 ?>

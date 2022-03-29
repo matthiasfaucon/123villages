@@ -56,8 +56,7 @@ const datep = document.getElementById("datep");
     function maFcontion() {
 
       count++;
-      console.log("true");
-      console.log(count);
+
 
       if (count == 0) {
         imageslider.src = "https://27.monvillagenormand.fr/images/300/327000356.webp";
@@ -88,7 +87,7 @@ const datep = document.getElementById("datep");
     function maFcontion1() {
 
       count--;
-      console.log(count);
+  
       if (count == 0) {
         imageslider.src = "https://27.monvillagenormand.fr/images/300/327000356.webp";
         imageslider1.src = "https://27.monvillagenormand.fr/images/300/327000357.webp";
@@ -121,7 +120,7 @@ const datep = document.getElementById("datep");
     date[6].addEventListener("click", function() {
       document.getElementById("titre-txt-journee-patrimoine").innerHTML = "Journée du patrimoine 2013";
       document.getElementById("p-txt-journee-patrimoine").innerHTML = "4817 Chasse aux papillons nocturnes </br> 4818 La conférence des oiseaux, théâtre d'Illusia </br> 4819 visite guidée </br> 4820 Visite libre </br>";
-      console.log(kl);
+      
     });
 
     date[5].addEventListener("click", function() {

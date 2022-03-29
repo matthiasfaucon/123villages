@@ -28,8 +28,7 @@
     function maFcontion() {
 
       count++;
-      console.log("true");
-      console.log(count);
+      
 
       if (count == 0) {
         imageslider.src = "https://27.monvillagenormand.fr/images/300/427000018.webp";
@@ -60,7 +59,7 @@
     function maFcontion1() {
 
       count--;
-      console.log(count);
+    
       if (count == 0) {
         imageslider.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000356.webp')";
         imageslider1.style.backgroundImage = "url('https://27.monvillagenormand.fr/images/300/327000357.webp')";

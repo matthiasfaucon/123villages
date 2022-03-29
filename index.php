@@ -120,7 +120,9 @@
                 // Ici j'ai une seule agence
                 // On crée un marqueur pour l'agence
                 let marker = L.marker([agence[1].lat, agence[1].lon]).addTo(carte)
-                marker.bindPopup(agence[1].nom)
+                // marker.bindPopup(agence[1].nom) 
+                .bindPopup('<button id="trigger">En savoir+</button> ') 
+                
               })
             } else {
               console.log(xmlhttp.statusText);
@@ -1017,7 +1019,10 @@
 <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 <script src="js/recherche.js"></script> 
 <script src="js/slider.js"></script>
-<script src="js/animation-sidebar.js"></script>
+<script src="js/animation-sidebar.js"></script> 
+ 
+ 
+
 </body>
 
 </html>

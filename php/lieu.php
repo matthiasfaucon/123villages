@@ -255,33 +255,39 @@
   </section>
 
 
-  <section id="slider-lieu">
+  <section id="choixAPresenter">
+
+    <section id="slider-lieu">
     <div class="w-img-nav_previous">
       <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div>
+    
 
-    <div id="main-slider">
-
-      <div class="card-slider">
-        <div id="image-slider">
-          <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+    <div class="cards">
+      <div class="card">
+      <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
 
-      <div class="card-slider">
-        <div id="image-slider1">
-          <img src="https://27.monvillagenormand.fr/images/300/327000357.webp" id="img2">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
-      <div class="card-slider">
-        <div id="image-slider2">
-          <img src="https://27.monvillagenormand.fr/images/300/327000359.webp" id="img3">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
       </div>
 
@@ -290,8 +296,11 @@
       <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
-    </div>
+    </div> 
     <p id="voir-photos">Voir toutes les photos</p>
+  </section>
+
+   
 
 
 

@@ -66,16 +66,37 @@
 
     <?php
 
-    include('recherche.php')
+    include('recherche.php');
+
+    $presentation = $_GET['presentation'];
+    $histoire = $_GET['histoire'];
+    $ville = $_GET['ville'];
+    $code_postal = $_GET['code_postal'];
 
     ?>
   </header>
 
   <div id="fil-ariane">
     <ul id="fil-ariane-historique">
-      <li class="element-fil-ariane"><a href="#">Elbeuf</a></li>
+      <li class="element-fil-ariane"><a href="#">
+        
+      <?php
+
+        echo $ville;
+
+      ?>
+
+      </a></li>
       <li class="element-fil-ariane"><span>></span></li>
-      <li class="element-fil-ariane"><a href="#">76500</a></li>
+      <li class="element-fil-ariane"><a href="#">
+        
+      <?php
+
+        echo $code_postal;
+
+      ?>
+
+      </a></li>
       <li class="element-fil-ariane"><span>></span></li>
       <li class="element-fil-ariane"><a href="#"><svg width="135" height="45" viewBox="0 0 135 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.5" y="1.5" width="132" height="42" fill="#4062BB" stroke="white" stroke-width="3" />
@@ -104,25 +125,37 @@
         </a></li>
     </ul>
   </div>
-  <section id="presentation">
+  <!--<section id="presentation">
     <h1>Présentation</h1>
-    <div id="txt-card">
+    <div id="txt-card">-->
 
     <?php
 
-      $presentation = $_GET['presentation'];
-      $histoire = $_GET['histoire'];
+      if($presentation == ''){}else{
+
+      echo '<section id="presentation">';
+
+      echo "h1>Présentation</h1>";
+      echo '<div id="txt-card">';
 
       echo "<p>".$presentation."</p>";
+
+      echo '<div id="carte-ville">';
+
+      echo "</div></div></section>";
+
+
+
+      }
 
     ?>
 
       <!--<p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>-->
-      <div id="carte-ville">
-        <!-- <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> -->
+      <!--<div id="carte-ville">
+         <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> 
       </div>
     </div>
-  </section>
+  </section>-->
   <section id="activites">
     <h1>Découvrez Elbeuf</h1>
     <div id="menuSecondaireHorizontal">
@@ -188,11 +221,15 @@
   </section> 
 
   <div id="histoire"> 
-    <p>Histoire de la ville d'elbeuf</p> 
+    <!--<p>Histoire de la ville d'elbeuf</p>-->
 
     <?php
 
+        if($histoire == ''){}else{
+
+        echo "<p>Histoire de la ville de ".$ville."</p>";
         echo "<p>".$histoire."<p>";
+      }
 
     ?>
 
@@ -204,36 +241,42 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
     
   </div>
 
-  <section id="presentationCarte">
-    <h1>Notre sélection de monuments pour Elbeuf</h1> 
+    
 
+  <section id="choixAPresenter">
+    
+  <h1>Notre sélection de monuments pour Elbeuf</h1> 
     <section id="slider-lieu">
     <div class="w-img-nav_previous">
       <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div>
+    
 
-    <div id="main-slider">
-
-      <div class="card-slider">
-        <div id="image-slider">
-          <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+    <div class="cards">
+      <div class="card">
+      <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
 
-      <div class="card-slider">
-        <div id="image-slider1">
-          <img src="https://27.monvillagenormand.fr/images/300/327000357.webp" id="img2">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
-      <div class="card-slider">
-        <div id="image-slider2">
-          <img src="https://27.monvillagenormand.fr/images/300/327000359.webp" id="img3">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
       </div>
 
@@ -243,14 +286,11 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
           <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div>
-    
-
-
-
-
   </section>
 
+  </div>
   </section> 
+  </section>  
 
 
 

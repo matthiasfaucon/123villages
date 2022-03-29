@@ -1207,7 +1207,7 @@ nav li {
 }
 
 
-.form_frontco input[type=text], .form_modtext input[type=text] {
+.form_frontco input[type=text] {
     width: 100%;
     padding: 1vh 1vw;
     margin: 8px 0;

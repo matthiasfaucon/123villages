@@ -736,7 +736,8 @@ margin-left: 10%;
     border-radius: 10px;
     width: 300px;
     height: 40vh; 
-    margin-bottom: 10vh;
+    margin-bottom: 10vh; 
+    z-index: 10;
 }
 
 #partenaire {
@@ -934,7 +935,14 @@ display: block;
     cursor: pointer;
     padding: 1rem 0rem 1rem 2rem;
 }
-
+#journee-patrimoine li svg 
+{
+ 
+} 
+#presentation 
+{
+    background-color: #4062BB;
+}
 #txt-journee-patrimoine {
     flex-direction: column;
     display: flex;
@@ -987,9 +995,15 @@ display: block;
 .ImageMiniature {
     margin-right: 20px;
     margin-bottom: 20px;
-    text-align: center;
-}
+    text-align: center; 
 
+}
+ 
+.ImageMiniature img 
+{
+    width: 150px;
+    height: 200px;
+}
 #nom-ville {
     width: 25%;
     background-color: #4062bb;
@@ -2197,6 +2211,10 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
 #test-slider-lieu {
     display: none;
+} 
+#test-slider-lieu.active 
+{
+    display: block;
 }
 
 .card h3,

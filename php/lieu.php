@@ -243,7 +243,9 @@
       <li class="date">2015</li>
       <li class="date">2014</li>
       <li class="date ">2013</li>
-      <li id="date+">></li>
+      <li id="date+">
+      <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.6 19.8"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs><title>3</title><line class="cls-1" x1="8.3" x2="8.3" y2="15.06"/><polyline class="cls-1" points="0.18 11.34 8.28 19.45 16.42 11.3"/></svg>
+</li>
     </ul>
     <div id="txt-journee-patrimoine">
       <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2021</h2>

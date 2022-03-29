@@ -72,7 +72,9 @@
     </div>
     <div class="seConnecter">
         <div id="peopleandcracc">
-            <div id="people"> </div>
+            <div id="people"> 
+            <img src="../images/membre.png">
+            </div>
             <div id="cracc">
                 <div id="lcoin">
                     <h4>CONNEXION</h4>

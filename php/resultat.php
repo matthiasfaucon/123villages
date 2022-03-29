@@ -18,7 +18,8 @@ $reponse->execute(array(':code_postal'=>$recherche,':nom'=>$recherche, ':depart'
 while ($donnees=$reponse->fetch())
 {
 
-    echo $donnees['code_postal'].'/'.$donnees['nom_ville'].'/'.$donnees['departement'];
+    echo '<a href="php/ville.php?departement='.$donnees['departement'].'&code_postal='.$donnees['code_postal'].'&ville='.$donnees['nom_ville'].'&presentation='.$donnees['presentation'].'&histoire='.$donnees['histoire'].'">'.$donnees['departement'].'/'.$donnees['code_postal'].'/'.$donnees['nom_ville'].'</a>';
+
 
 }
 ?>

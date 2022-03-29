@@ -54,7 +54,9 @@
 
 
     <div id="peopleandcracc">
-        <div id="people"> </div>
+        <div id="people">
+            <img src="../images/membre.png">
+         </div>
         <div id="cracc">
             <div id="lcoin">
                 <h4>INSCRIPTION</h4>

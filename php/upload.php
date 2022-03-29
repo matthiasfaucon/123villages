@@ -10,6 +10,7 @@
     $description = $_POST['name'];
     $adresse = $_POST['adress'];
     $lien = $_POST['link'];
+    $code = $_POST['code'];
 
     $nom=$_FILES['image']['name'];
     $size=$_FILES['image']['size'];
@@ -25,8 +26,12 @@
         case 'image/jpg':
             $nom_upload="image".time().".jpg";
             break;
-        
-        case 'image/png':
+
+        case 'image/JPG':
+            $nom_upload="image".time().".jpg";
+            break;
+            
+        case 'image/JPEG':
             $nom_upload="image".time().".jpg";
             break;
         
@@ -65,8 +70,8 @@
         header('location:depotphoto.php');
     }
 
-    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, user, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, :user, 0)');
-    $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien, ':user'=>$_SESSION['email']));
+    $reponse=$bdd->prepare('INSERT INTO pictures (id, nom, description, adresse, lien, user, code, validation) VALUES (NULL, :nom, :descr, :adresse, :lien, :user, :code, 0)');
+    $reponse->execute(array(':nom'=>$nom_upload, ':descr'=>$description, ':adresse'=>$adresse, ':lien'=>$lien, ':user'=>$_SESSION['email'], ':code'=>$code));
 
     $reponse->closeCursor();
 

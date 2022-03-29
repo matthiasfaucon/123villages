@@ -1,9 +1,9 @@
 <?php
 
     include 'verif_script.php';
-    /*if($_SESSION['verif'] == 0 || $_SESSION['pass'] == "Membre"){
+    if($_SESSION['verif'] == 0 || $_SESSION['pass'] == "Membre"){
         header('Location:../index.php');
-    }*/
+    }
 
     try
     {
@@ -28,6 +28,4 @@
     $reponse->closeCursor();
     $_SESSION['valide_photosupp'] = 1;
     header('Location: suppphoto.php');
-
-
 ?>

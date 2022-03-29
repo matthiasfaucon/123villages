@@ -2376,3 +2376,25 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     border: none;
 }
 }
+#histoire
+{
+
+    width: 100vw; 
+
+   margin-bottom: 5vh;
+}
+
+#histoire p:nth-child(1)
+{
+    margin-left: 5vw; 
+    font-size: 1.5em; 
+    width: 100vw;
+}
+
+#histoire p:nth-child(2)
+{
+    width: 75vw; 
+    margin-left: 10vw; 
+    margin-top: 5vh; 
+    margin-bottom: 5vh;
+}

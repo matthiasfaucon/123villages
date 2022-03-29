@@ -16,8 +16,6 @@
     $type=$_FILES['image']['type'];
     $nom_tmp=$_FILES['image']['tmp_name'];
 
-    echo '<br>'.$nom.'<br>'.$size.'<br>'.$type.'<br>'.$nom_tmp;
-
     switch($type) {
 
         case 'image/jpeg':
@@ -42,8 +40,6 @@
 
         if(move_uploaded_file($nom_tmp,"../images/photos/".$nom_upload)) {
 
-            echo "fichier bien transféré";
-
         } else {
 
             $_SESSION['valide_photo'] = 0;
@@ -53,14 +49,14 @@
 
     } else {
 
-        echo "le type de fichier n'est pas valide";
+        $_SESSION['valide_photo'] = 0;
+        header('Location:depotphoto.php');
 
     }
 
     try
     {
         $bdd=new PDO('mysql:host=localhost;dbname=ptut','root','');
-        echo "Connection à la BDD réussi<br/>";     //a supprimer une fois le code fini
     }
     catch(Exception $e)
     {
@@ -76,5 +72,4 @@
 
     $_SESSION['valide_photo'] = 1;
     header('Location:depotphoto.php');
-
 ?>

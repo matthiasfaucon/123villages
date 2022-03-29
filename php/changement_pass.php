@@ -1,9 +1,9 @@
 <?php
 
     include 'verif_script.php';
-    /*if($_SESSION['verif'] == 0 || $_SESSION['pass'] == "Membre"){
+    if($_SESSION['verif'] == 0 || $_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart"){
         header('Location:../index.php');
-    }*/
+    }
 
     try
     {
@@ -30,5 +30,4 @@
     $_SESSION['valide_changementpass'] = 1;
     header('Location: gestion_admin_depart.php');
 
-
-?>
+    ?>

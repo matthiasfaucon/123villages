@@ -8,5 +8,4 @@
     if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin" || $_SESSION['pass'] == "Admin depart"){
         $_SESSION['verif'] = 1;
     }
-    
 ?>

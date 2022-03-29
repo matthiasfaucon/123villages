@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    
+
     <title>Services</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../css/style.css">
@@ -10,16 +10,16 @@
 
 <body>
     <header id="header-services">
-            <img id="banniere-image" src="../images/banniere.jpg" alt=""/>
-            <h1 id="titre-du-site"><a href="../index.php">MonVillageNormand.fr</a></h1>
-            <div id="barre-de-recherche">
-                <input type="text" id="zone-de-recherche" name="zone-de-recherche">
-                <a href=""><img id="loupe-de-recherche" src="../images/loupe.png" alt="bouton rechercher"/></a>
-            </div>
-            <button id="connexion"> Se connecter </button>
+        <img id="banniere-image" src="../images/banniere.jpg" alt="" />
+        <h1 id="titre-du-site"><a href="../index.php">MonVillageNormand.fr</a></h1>
+        <div id="barre-de-recherche">
+            <input type="text" id="zone-de-recherche" name="zone-de-recherche">
+            <a href=""><img id="loupe-de-recherche" src="../images/loupe.png" alt="bouton rechercher" /></a>
+        </div>
+        <button id="connexion"> Se connecter </button>
     </header>
 
-    <div id="fil-ariane"> 
+    <div id="fil-ariane">
         <ul id="fil-ariane-historique">
             <li class="element-fil-ariane">Elbeuf</li>
             <li class="element-fil-ariane">76500</li>
@@ -50,7 +50,7 @@
         <h2 class="titre-div-principal">Transports</h2>
         <p>CARTE</p>
     </div>
-    
+
     <div class="div-principal">
         <h2 class="titre-div-principal">Santé</h2>
         <p>CARTE</p>
@@ -61,4 +61,5 @@
         <p> Mis à jour le : </p>
     </footer>
 </body>
+
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
-    <title>Gestion de contenue</title>
+    <title>Gestion Administrateur</title>
 
     <?php
     include 'verif_script.php';

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
-    <title>Gestion de contenue</title>
+    <title>Verification Photo</title>
 
     <?php
     include 'verif_script.php';
@@ -106,7 +106,7 @@
             while ($donnees = $reponse->fetch()) {
 
                 $n = $n + 1;
-                
+
             ?>
 
                 <div id="pphoto">

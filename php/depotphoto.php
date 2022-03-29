@@ -19,6 +19,7 @@
 </head>
 
 <body>
+<a href="../index.php">Home</a>
   <div class="pageAdmin">
 
 

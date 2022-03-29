@@ -1216,6 +1216,18 @@ nav li {
     color: #fff;
     border: none;
     border-bottom: 2px solid #fff;
+} 
+.form_modtext input[type=text] { 
+
+    width: 50vw;
+    height: auto;
+    padding: 1vh 1vw;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #4062BB;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
 }
 
 .form_frontco_button input[type=submit] {
@@ -1617,7 +1629,7 @@ input[type="file"] {
     #gestion_admin 
     {
         width: 80vw;
-        margin-left: 2vw;
+        /* margin-left: 2vw; */
     }
     #formedepot 
     {

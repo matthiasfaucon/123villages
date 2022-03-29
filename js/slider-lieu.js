@@ -1,7 +1,9 @@
 let date = document.getElementsByClassName("date"); 
 const datep = document.getElementById("datep");
     let kl = document.getElementsByClassName("date").value;
-    const voir = document.getElementById("voir-photos");
+    const voir = document.getElementById("voir-photos"); 
+
+    let arr =document.getElementById("#Calque_1"); 
 
     const next = document.getElementsByClassName("w-img-nav_next")[0];
     const pre = document.getElementsByClassName("w-img-nav_previous")[0];
@@ -32,7 +34,6 @@ const datep = document.getElementById("datep");
       cinq.classList.toggle("active");
       quatre.classList.toggle("active");
       trois.classList.toggle("active"); 
-
     }); 
 
 

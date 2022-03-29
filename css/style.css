@@ -889,10 +889,7 @@ display: flex;
     margin: 2px;
     
 }
-#lundi p:nth-child(1)
-{
-    font-weight: bold;
-}
+
 #journee-patrimoine {
     display: flex;
     margin-top: 10%;
@@ -935,14 +932,11 @@ display: block;
     cursor: pointer;
     padding: 1rem 0rem 1rem 2rem;
 }
-#journee-patrimoine li svg 
+/* #journee-patrimoine li svg 
 {
  
-}  
-#Calque_1.active
-{
- rotation: 180deg;
-}
+}   */
+
 #presentation 
 {
     background-color: #4062BB;

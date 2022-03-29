@@ -67,7 +67,7 @@
 ?>
 </header>
 
-    <div id="apparitionMenu">
+    <!-- <div id="apparitionMenu">
         <div id="toggle"></div>
 
 
@@ -78,7 +78,7 @@
             <p><a class="menuToggle" href="#creations">Créations</a></p>
             <p><a class="menuToggle" href="#contact">Contact</a></p>
         </div>
-    </div>
+    </div> -->
 
     <script type="text/javascript" src="../js/menu.js"></script>
 

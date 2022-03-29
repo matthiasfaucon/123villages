@@ -30,9 +30,9 @@
             <p>Membre</p>
 
             
-                <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
-                <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-                <span class="menu__item_gestion_membre">Photos validées</span></br>
+                <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
+                <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
+                <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
             
         </div>
 
@@ -54,12 +54,12 @@
            
                  <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a></br>
                  <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a></br>
-                 <span class="menu__item_gestion_admin">Espace validation texte</span></br>
-                 <span class="menu__item_gestion_admin">Espace création lieu</span> </br>
-                 <span class="menu__item_gestion_admin">Campagnes de mail</span></br>
-                 <span class="menu__item_gestion_admin">mise à jour SiteMap</span></br>
-                 <span class="menu__item_gestion_admin">Indexation</span> </br>
-                 <span class="menu__item_gestion_admin">supervision du département</span></br>
+                 <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
+         <a href="" class="menu__item_gestion_admin">Espace création lieu</a> 
+         <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
+         <a href="" class="menu__item_gestion_admin">mise à jour SiteMap</a>
+         <a href="" class="menu__item_gestion_admin">Indexation</a> 
+         <a href="" class="menu__item_gestion_admin">supervision du département</a>
 
         </div>
 

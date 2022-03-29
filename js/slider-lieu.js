@@ -1,5 +1,5 @@
 let date = document.getElementsByClassName("date"); 
-const datep = document.getElementById("date+");
+const datep = document.getElementById("datep");
     let kl = document.getElementsByClassName("date").value;
     const voir = document.getElementById("voir-photos");
 
@@ -31,7 +31,8 @@ const datep = document.getElementById("date+");
       huit.classList.toggle("active");
       cinq.classList.toggle("active");
       quatre.classList.toggle("active");
-      trois 
+      trois.classList.toggle("active"); 
+
     }); 
 
 

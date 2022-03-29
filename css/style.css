@@ -938,10 +938,22 @@ display: block;
 #journee-patrimoine li svg 
 {
  
-} 
+}  
+#Calque_1.active
+{
+ rotation: 180deg;
+}
 #presentation 
 {
     background-color: #4062BB;
+} 
+#presentation h1
+{
+    color: #e9f0f1;
+} 
+#txt-card p {
+    width: 50%;
+    color: #fff;
 }
 #txt-journee-patrimoine {
     flex-direction: column;

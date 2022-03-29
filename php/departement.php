@@ -189,9 +189,7 @@
             <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
           </svg></i>
       </div>
-      <script src="js/recherche.js"></script> 
-      <script src="../js/slider-departement.js"></script>
-      <script src="../js/animation-sidebar.js"></script>
+
 
 
 
@@ -200,7 +198,22 @@
   </section>
 
   <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <script src="js/recherche.js"></script> 
+      <script src="../js/slider-departement.js"></script>
+      <script src="../js/animation-sidebar.js"></script> 
+      <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script> 
+      <script> 
 
+$('#maCarte').on('click', '#trigger', function() {
+   
+  document.getElementsByClassName("titreInfo").innerHTML= "Titre du lieu en question"; 
+  document.getElementsByClassName("imageInfo").src="../images/batiment-avec-fond/voyager/hotel5.png"; 
+  document.getElementsByClassName("adresseInfo").innerHTML= "Adresse: Champ de Foire, 76500 Elbeuf";  
+  document.getElementsByClassName("telephoneInfo").innerHTML= "Téléphone: 0232131050";  
+  
+});
+
+</script>
 </body>
 
 </html>

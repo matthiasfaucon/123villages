@@ -2143,7 +2143,7 @@ input[type="file"] {
 #slider-lieu {
     width: 100vw;
     height: 50vh;
-    background-color: #e9f0f1;
+    /* background-color: #e9f0f1; */
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;

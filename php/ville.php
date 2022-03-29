@@ -204,36 +204,42 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
     
   </div>
 
-  <section id="presentationCarte">
-    <h1>Notre sélection de monuments pour Elbeuf</h1> 
+    
 
+  <section id="choixAPresenter">
+    
+  <h1>Notre sélection de monuments pour Elbeuf</h1> 
     <section id="slider-lieu">
     <div class="w-img-nav_previous">
       <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
           <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div>
+    
 
-    <div id="main-slider">
-
-      <div class="card-slider">
-        <div id="image-slider">
-          <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+    <div class="cards">
+      <div class="card">
+      <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
 
-      <div class="card-slider">
-        <div id="image-slider1">
-          <img src="https://27.monvillagenormand.fr/images/300/327000357.webp" id="img2">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
       </div>
 
-      <div class="card-slider">
-        <div id="image-slider2">
-          <img src="https://27.monvillagenormand.fr/images/300/327000359.webp" id="img3">
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
       </div>
 
@@ -243,14 +249,11 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
           <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div>
-    
-
-
-
-
   </section>
 
+  </div>
   </section> 
+  </section>  
 
 
 

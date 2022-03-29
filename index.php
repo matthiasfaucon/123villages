@@ -102,7 +102,7 @@
       <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
       <script>
         // On initialise la carte
-        var carte = L.map('maCarte').setView([48.852969, 2.349903], 13);
+        var carte = L.map('maCarte').setView([49.29168093591604, 1.00563408259848], 13);
 
         // On charge les "tuiles"
         L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {

@@ -1,6 +1,9 @@
 <?php
 
 include('verif_script.php');
+if($_SESSION['verif'] == 0){
+    header('Location:../index.php');
+}
 
 $_SESSION['mail_valide'] = '';
 

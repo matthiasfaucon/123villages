@@ -106,9 +106,8 @@
             while ($donnees = $reponse->fetch()) {
 
                 $n = $n + 1;
+                
             ?>
-
-                <!-- par photo -->
 
                 <div id="pphoto">
 
@@ -124,8 +123,6 @@
         </div>
 
     <?php
-
-
 
             }
 

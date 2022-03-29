@@ -14,6 +14,9 @@
         if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart"){
             header('location:front_connexion.php');
         }
+        if(!isset($_SESSION['valide_changementpass'])){
+            $_SESSION['valide_changementpass'] = '';
+        }
     ?>
 
 </head>
@@ -111,6 +114,18 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
                         <option value="Admin">Administrateur Global</option>
                     </select>
                     <input type="submit" value="éditer">
+
+                    <?php
+
+                        if($_SESSION['valide_changementpass'] == 1){
+                            echo "Le changement de Pass à été réalisé avec succès !";
+                        }
+                        if($_SESSION['valide_changementpass'] == 0){
+                            echo "Erreur lors du changement de Pass";
+                        }
+
+                    ?>
+
                 </form>
 
                 <script src="../js/animation-menu.js"></script>

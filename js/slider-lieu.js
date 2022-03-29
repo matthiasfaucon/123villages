@@ -13,7 +13,8 @@ let date = document.getElementsByClassName("date");
 
     bt_txt.addEventListener("click", function() {
       document.getElementById("txt-infos-lieu").style.display = "block";
-    });
+    }); 
+
 
 
     var count = 0;

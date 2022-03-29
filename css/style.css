@@ -543,7 +543,7 @@ position: relative;
 #cont-img-infos 
 {
     width: 100vw;
-    height: 100vh;
+  
     display: flex;  
     flex-direction: column;
     align-items: flex-end; 
@@ -559,7 +559,7 @@ position: relative;
 background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
 background-repeat:no-repeat;
 width: 300px;
-height: 40vh; 
+height: 400px; 
 
 }  
 
@@ -591,23 +591,29 @@ height: 40vh;
     border-radius: 5px;
     background-image: url("../images/pexels-fauxels-3184418.jpg"); 
     background-size: cover;
-}
+} 
+
 
 #txt-infos-lieu-bt
 {
-    width: 65vw; 
-    margin-left: 50px;
+    width: 60vw;
+    margin-left: 20vw;
     margin-top: 15vh;
     background-color: #4062BB;
-    border: 10px solid;
-    border-color: #d4b902;
+    color : #fff; 
     border-radius: 20px; 
     display: flex;
     justify-content: center; 
     z-index: 2; 
     cursor: pointer; 
-    display: none; 
+    display: none;
+} 
+#txt-infos-lieu-bt p
+{ 
+    display: flex;
+    justify-content: center;
 }
+
 #txt-infos-lieu
 {
     margin-left: 50px;   
@@ -624,6 +630,14 @@ line-height: 22px;
 line-height: 1.5em;
 color: #000000; 
 }   
+
+
+@media screen and (min-width: 1040px) {
+    #txt-infos-lieu-bt 
+    {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1040px) {
     #infos-local 
@@ -649,6 +663,17 @@ color: #000000;
        
     } */
     
+} 
+
+@media screen and (max-width: 450px) {  
+
+    #cont-img-infos 
+    {
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+
 }
  
 #hordou
@@ -662,7 +687,7 @@ color: #000000;
     border-radius: 20px;
  
 }
-#hordou div:nth-child(1)
+/* #hordou div:nth-child(1)
 { 
     
     padding: 0;
@@ -670,11 +695,12 @@ color: #000000;
     flex-direction: column;   
     justify-content: center;
     
-}
+} */
 #lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
 {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
+    justify-content: space-between;
 } 
 #lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p 
 {

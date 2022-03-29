@@ -1,5 +1,7 @@
 <?php
 
+    include('verif_script.php');
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
@@ -13,8 +15,9 @@
 <link rel='stylesheet' href='../style/style.css'>
 <?php
 
-    $bodytext    = $_GET['lien'].'<br><br>'.$_GET['contenu'];
-    $auteur = $_GET['nom'].' '.$_GET['prenom'];
+
+    $auteur = $_SESSION['nom'].' '.$_SESSION['prenom'];
+    $bodytext    = $auteur."<br>".$_SESSION['email']."<br>".$_GET['lien'].'<br><br>'.$_GET['contenu'];
 
 
     $email = new PHPMailer();
@@ -37,7 +40,7 @@
         if ($email->Send()){
             echo '</p> - Envoyé !</p>';
             $email->clearAllRecipients();
-            header('location');
+            header('location:modification_text.php');
         }
         else{
             echo "</p> - Erreur lors de l'envoi !</p>";

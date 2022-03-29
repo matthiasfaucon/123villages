@@ -72,7 +72,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 <div id="admin">
 
     <p>Admin</p>
-    <a href="gestion_admin_depart" class="menu__item_gestion_admin">Gestion Admin Département</a>
+    <a href="gestion_admin_depart.php" class="menu__item_gestion_admin">Gestion Admin Département</a>
 </div> 
 
 <?php

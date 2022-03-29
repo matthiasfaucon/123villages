@@ -74,7 +74,7 @@
         <div id="admindep">
 
             <p>Admin</p>
-            <a href="gestion_admin_depart" class="menu__item_gestion_admindep">Gestion Admin Département</a>
+            <a href="gestion_admin_depart.php" class="menu__item_gestion_admindep">Gestion Admin Département</a>
         </div> 
 
         <?php

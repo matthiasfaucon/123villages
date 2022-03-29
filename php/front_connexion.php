@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 <html xmlns:og="http://ogp.me/ns#">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">

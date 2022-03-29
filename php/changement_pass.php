@@ -30,5 +30,4 @@
     $_SESSION['valide_changementpass'] = 1;
     header('Location: gestion_admin_depart.php');
 
-
-?>
+    ?>

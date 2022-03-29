@@ -20,4 +20,5 @@ while($donnees=$reponse->fetch()) {
 }
 
 $reponse->closeCursor();
+
 ?>

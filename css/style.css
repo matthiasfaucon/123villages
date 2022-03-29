@@ -49,7 +49,7 @@ section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 5% 0 10% 0;
+    padding: 5% 0 7% 0;
 }
 
 a {
@@ -250,7 +250,7 @@ input:focus {
     text-decoration: none;
 }
 
-.presentation h1, #presentationDepartement h1, #choixAPresenter h1, #presentationCarte h1 {
+.presentation h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
     color: #e9f0f1;
 }
 
@@ -391,8 +391,9 @@ input:focus {
 
 
 #choixAPresenter {
+    position: relative;
     width: 100vw;
-    background-color: #4062BB;
+    background-color: #e9f0f1;
 }
 
 ::-webkit-scrollbar {
@@ -469,6 +470,71 @@ footer a:hover{
 
 #menuSecondaireHorizontal span {
     color: #e9f0f1;
+}
+
+#rechercheDepartement{
+    background: #4062BB;
+}
+
+.styles_FranceRegionsMap__jrn0P{
+font-family: Open Sans,sans-serif,Arial;
+-webkit-text-size-adjust: 100%;
+fill: #e9f0f1;
+line-height: 1.5;
+cursor: default;
+text-align: center;
+font-size: 0;
+box-sizing: inherit;
+position: relative;
+max-height: 80rem;
+width: 100vw;
+}
+
+.styles_FranceRegionsMap__jrn0P svg{
+font-family: Open Sans,sans-serif,Arial;
+-webkit-text-size-adjust: 100%;
+color: #4062bb;
+line-height: 1.5;
+cursor: default;
+text-align: center;
+font-size: 0;
+x: 0px;
+y: 0px;
+box-sizing: inherit;
+overflow: hidden;
+width: 45vw;
+margin-bottom: 5vh;
+}
+
+.styles_FranceRegionsMap__jrn0P svg g{
+font-family: Open Sans,sans-serif,Arial;
+-webkit-text-size-adjust: 100%;
+color: #4062BB;
+line-height: 1.5;
+cursor: default;
+text-align: center;
+font-size: 0;
+box-sizing: inherit;
+
+}
+
+.styles_FranceRegionsMap__jrn0P svg path:hover{
+   fill: #fdc758;
+    }
+    
+
+.styles_FranceRegionsMap__jrn0P svg g a{
+font-family: Open Sans,sans-serif,Arial;
+-webkit-text-size-adjust: 100%;
+line-height: 1.5;
+text-align: center;
+font-size: 0;
+box-sizing: inherit;
+background-color: transparent;
+color: #333;
+cursor: pointer;
+text-decoration: none;
+touch-action: manipulation;
 }
 
 #icone {
@@ -1033,7 +1099,7 @@ margin-left: 10%;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    z-index: 50;
+    z-index: 50;  
 }
 
 .w-img-nav_previous svg, .w-img-nav_next svg {
@@ -1944,15 +2010,14 @@ input[type="file"] {
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 
 .cards {
-    width: 80vw;
     display: flex;
-    overflow-x: scroll;
     padding: 1% 0 1% 0;
     /* scroll-snap-type: x mandatory; */
 }
 
 .card {
-    margin-right: 2vw;
+    border-radius: 20px;
+    margin: 2vw;
     display: flex;
     flex: 1 0 300px;
     position: relative;
@@ -1968,10 +2033,6 @@ input[type="file"] {
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
-}
-
-.card img {
-    max-width: 100%;
 }
 
 .card div {
@@ -2030,7 +2091,7 @@ input[type="file"] {
 }
 #main-slider {
     width: 80vw;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -2090,29 +2151,9 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
 }
 
-@media screen and (max-width: 700px) {
-
-    #image-slider, .card-slider:nth-child(1) {
-
-        width: 30vw;
-        height: 30vh;
-    }
-
-}
-
-@media screen and (max-width: 400px) {
-
-    #image-slider, .card-slider:nth-child(1) {
-
-        width: 40vw;
-        height: 30vh;
-    }
-
-}
 
 
-
-#slider-lieu p {
+#slider-lieu #voir-photos {
     color: purple;
     position: absolute;
     text-decoration: underline;
@@ -2324,6 +2365,21 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 }
 
+@media all and (min-width: 0px) and (max-width: 1150px) {
+    .card:nth-child(3){
+        display: none;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 780px) {
+    .card:nth-child(2), .card:nth-child(3){
+        display: none;
+    }
+    .styles_FranceRegionsMap__jrn0P{
+        width: 60vw;
+        }
+}
+
 @media all and (min-width: 0px) and (max-width: 450px) {
     html {
         overflow-x: hidden;
@@ -2335,10 +2391,16 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 }
 
-#form-validep {
-    display: flex;
-    flex-direction: column;
-}
+@media all and (min-width: 0px) and (max-width: 420px) {
+    .w-img-nav_next, .w-img-nav_previous{
+    height: 30px;
+    width: 30px;
+    }
+
+    .w-img-nav_next i svg, .w-img-nav_previous i svg{
+        transform: scale(0.6);
+        }
+    }
 
 #form-validep input[type=submit] {
     margin-top: 2vh;

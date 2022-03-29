@@ -1,18 +1,18 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-size: 20px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700&display=swap');
 
-body{
-    background-color:#f4f4f9;
+body {
+    background-color: #f4f4f9;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -20,47 +20,47 @@ body{
 
 }
 
-header{
+header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
-#searchBarre form{
+#searchBarre form {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-#searchBarre div button{
+#searchBarre div button {
     border: none;
     /* background: url("../images/recherche.svg") no-repeat; */
     width: 100%;
     height: 100%;
 }
 
-#searchBarre div button:hover{
+#searchBarre div button:hover {
     cursor: pointer;
 }
 
-section{
+section {
 
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        padding: 5% 0 10% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 0 10% 0;
 }
 
-a{
+a {
     color: #fdc758;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
 
-#logoTypo{
+#logoTypo {
     top: 2%;
     left: 1%;
     position: absolute;
@@ -69,29 +69,30 @@ a:hover{
 }
 
 @media screen and (max-width: 500px) {
-    #logoTypo{ 
+    #logoTypo {
         font-size: 1em;
     }
 }
-header img{
+
+header img {
     width: 100vw;
     display: flex;
     align-self: baseline;
 }
 
-h1{
+h1 {
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 5%;
     display: flex;
     justify-self: center;
-    align-self:center;
+    align-self: center;
     font-size: 2rem;
     color: #1a181b;
 }
 
 
 
-#searchBarre{
+#searchBarre {
     z-index: 2;
     margin: 2vh 0vw 0 0;
     display: flex;
@@ -106,7 +107,7 @@ h1{
     background: #e9f0f1;
 }
 
-#affichage.non-activeAffichage{
+#affichage.non-activeAffichage {
     margin: 2vh 0vw 0 0;
     padding: 0 2% 0 2%;
     justify-content: space-between;
@@ -120,7 +121,7 @@ h1{
     display: none;
 }
 
-#affichage.activeAffichage{
+#affichage.activeAffichage {
     margin: 2vh 0vw 0 0;
     padding: 0 2% 0 2%;
     justify-content: space-between;
@@ -135,7 +136,7 @@ h1{
     transition: height 0.25s ease-in;
 }
 
-#profil{
+#profil {
     width: 60px;
     height: 60px;
     position: absolute;
@@ -154,9 +155,9 @@ h1{
 }
 
 
-#menuProfil, #menuProfilAvant{
+#menuProfil, #menuProfilAvant {
     display: flex;
-    border: solid 2px #d4b902 ;
+    border: solid 2px #d4b902;
     z-index: 5;
     padding: 3vh 1vw 3vh 1vw;
     width: max-content;
@@ -169,47 +170,59 @@ h1{
     right: 2vw;
 }
 
-#menuProfil a, #menuProfilAvant a{
+#menuProfil a, #menuProfilAvant a {
     margin-top: 1vh;
     cursor: pointer;
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
-#menuProfil a:hover, #menuProfilAvant a:hover{
+#menuProfil a:hover, #menuProfilAvant a:hover {
     width: max-content;
-font-weight: bold;
+    font-weight: bold;
 }
 
-.non-active{
+.non-active {
     display: none;
 }
 
-.active{
+.active {
     display: flex;
     flex-direction: column;
 }
 
-#profil:hover{
+#profil:hover {
     cursor: pointer;
 }
 
-#menuProfilAvant.ouvrir, #menuProfil.ouvrir{
-        animation: 0.6s ease-out 0.1s 1 alternate ouvrir ;
-        animation-fill-mode: forwards;
-    }
-    
+#menuProfilAvant.ouvrir, #menuProfil.ouvrir {
+    animation: 0.6s ease-out 0.1s 1 alternate ouvrir;
+    animation-fill-mode: forwards;
+}
+
 @keyframes ouvrir {
-    0% { transform:translateY(0px);}
-    100% { transform:translateY(40px);}
-  }
+    0% {
+        transform: translateY(0px);
+    }
 
-  @keyframes fermer {
-    0% { transform:translateY(0px); display: none;}
-    100% { transform:translateY(-40px); display: initial;}
-  }
+    100% {
+        transform: translateY(40px);
+    }
+}
 
-#searchBarre input{
+@keyframes fermer {
+    0% {
+        transform: translateY(0px);
+        display: none;
+    }
+
+    100% {
+        transform: translateY(-40px);
+        display: initial;
+    }
+}
+
+#searchBarre input {
     width: 90%;
     height: 50%;
     padding-right: 35%;
@@ -223,29 +236,29 @@ input:focus {
     outline: none;
 }
 
-#presentation{
+#presentation {
     width: 100vw;
     background-color: #4062BB;
 }
 
-#presentationDepartement{
+#presentationDepartement {
     width: 100vw;
     background-color: #4062BB;
 }
 
-#presentation h1,#presentationDepartement h1,#choixAPresenter h1,#presentationCarte h1{
+#presentation h1, #presentationDepartement h1, #choixAPresenter h1, #presentationCarte h1 {
     color: #e9f0f1;
 }
 
-#boxinfo{
+#boxinfo {
     /* position: relative; */
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.info{
+.info {
     /* position: absolute; */
     display: flex;
     justify-content: center;
@@ -258,34 +271,34 @@ input:focus {
     border-radius: 30px;
 }
 
-.info p{
+.info p {
     text-align: center;
     color: #e9f0f1;
     padding: 2vh 5vw 2vh 5vw;
     font-size: 1em;
 }
 
-.info:nth-of-type(2):hover{
+.info:nth-of-type(2):hover {
     z-index: 3;
 }
 
-.info:nth-of-type(4):hover{
+.info:nth-of-type(4):hover {
     z-index: 2;
 }
 
-#trouverLieux{
+#trouverLieux {
     width: 100vw;
     position: relative;
 }
 
-#recherche{
+#recherche {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80vw;
 }
 
-#boutonRecherche{
+#boutonRecherche {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,13 +308,13 @@ input:focus {
     border-radius: 100%;
 }
 
-#boutonRecherche p{
+#boutonRecherche p {
     text-align: center;
     color: #1a181b;
     font-size: 1em
 }
 
-#boutonLieu{
+#boutonLieu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -311,60 +324,66 @@ input:focus {
     border-radius: 100%;
 }
 
-#boutonLieu p{
+#boutonLieu p {
     text-align: center;
     color: #e9f0f1;
     font-size: 1em
 }
 
-#research{
+#research {
     width: 2vw;
 }
 
-#maCarte{
-border-radius: 30px;
-position: relative;
-display: flex;
-width: 50vw;
-height: 50vh;
-margin-left: 10%;
+#maCarte {
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    margin-left: 10%;
 }
 
-#maCarteDepartement{
+#maCarteDepartement {
     border-radius: 30px;
-position: relative;
-display: flex;
-width: 40vw;
-height: 60vh;
-} 
+    position: relative;
+    display: flex;
+    width: 40vw;
+    height: 60vh;
+}
 
 
 
 
 
-#choixAPresenter{
+#choixAPresenter {
     width: 100vw;
     background-color: #4062BB;
 }
 
 ::-webkit-scrollbar {
     /* width: 20px; */
-        background-color: #4062BB;
-  } /* the new scrollbar will have a flat appearance with the set background color */
+    background-color: #4062BB;
+}
 
-  ::-webkit-scrollbar-thumb {
-        background-color: rgba(0, 0, 0, 0.5); 
-  } /* this will style the thumb, ignoring the track */
+/* the new scrollbar will have a flat appearance with the set background color */
 
-  ::-webkit-scrollbar-button {
-        background-color: #fdc758;
-  } /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
-  ::-webkit-scrollbar-corner {
-        background-color: #1a181b;
-  }
-   
-footer{
+/* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+    background-color: #fdc758;
+}
+
+/* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+    background-color: #1a181b;
+}
+
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -383,17 +402,17 @@ footer{
     border-radius: 100%;
 }
 
-#boutonCodePostal p{
+#boutonCodePostal p {
     color: #e9f0f1;
 }
 
-#infoDepartement{
+#infoDepartement {
     color: #e9f0f1;
     margin: 0 0 0 10%;
     width: 60%;
 }
 
-#menuSecondaireHorizontal{
+#menuSecondaireHorizontal {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -403,17 +422,17 @@ footer{
     border: solid 3px #4062BB;
 }
 
-#menuSecondaireHorizontal span{
-   color: #e9f0f1;
+#menuSecondaireHorizontal span {
+    color: #e9f0f1;
 }
 
-#icone{
-display: flex;
-width: 50vw;
-justify-content: space-between;
+#icone {
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
 }
 
-.Avoir, .Voyager, .SportEtLoisirs, .ServicesPublics, .Santé, .CommercesEtServices, .DonnéesPubliques{
+.Avoir, .Voyager, .SportEtLoisirs, .ServicesPublics, .Santé, .CommercesEtServices, .DonnéesPubliques {
     margin-top: 3%;
     display: flex;
     justify-content: center;
@@ -421,36 +440,36 @@ justify-content: space-between;
     background-color: #4062BB;
     width: 80px;
     height: 80px;
-    border-radius:30px;
+    border-radius: 30px;
 }
 
-#presentationCarte{
+#presentationCarte {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4062BB;
 }
 
-#presentationCarte h2{
+#presentationCarte h2 {
     display: flex;
     /* justify-self: self-start; */
     /* align-self: self-start; */
     margin-right: 70vw;
     color: white;
-} 
+}
 
-.positionPresentation{
+.positionPresentation {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#boxinfo{
-      width: 60vw;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  flex-wrap: wrap;
+#boxinfo {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -462,8 +481,8 @@ width: 40vw;
 height: 50vh;
 margin-left: 10%;
 } */
-   
-#fleche{
+
+#fleche {
     position: relative;
     display: flex;
     justify-content: center;
@@ -473,21 +492,21 @@ margin-left: 10%;
     width: 100vw;
 }
 
-.fleche.gauche{
+.fleche.gauche {
     position: absolute;
     left: 5vw;
     margin-top: 50vh;
     color: #e9f0f1;
     width: 10vw;
-    }
+}
 
-.fleche.droite{
+.fleche.droite {
     position: absolute;
     right: -2vw;
     margin-top: 50vh;
     color: #e9f0f1;
     width: 10vw;
-        }
+}
 
 #boutonCodePostal {
     display: flex;
@@ -499,202 +518,188 @@ margin-left: 10%;
     border-radius: 100%;
 }
 
-#boutonCodePostal p{
+#boutonCodePostal p {
     color: #e9f0f1;
 }
 
-#infoDepartement{
+#infoDepartement {
     margin: 0 0 0 10%;
     width: 60%;
 }
 
-#div_title_lieu 
-{
-  margin-left: 50px;
+#div_title_lieu {
+    margin-left: 50px;
 }
 
-#title_lieu
-{ 
+#title_lieu {
     margin-top: 3vh;
-text-align: center;
-color: #000000;
-}  
+    text-align: center;
+    color: #000000;
+}
 
-#ii 
-{
-display: flex; 
+#ii {
+    display: flex;
 
 }
 
 
 
-#infos-local
-{
-    margin-left: 50px;   
+#infos-local {
+    margin-left: 50px;
     width: 65%;
-font-size: 1em;
-line-height: 22px;
-line-height: 1.5em;
-color: #000000;  
-position: relative;
-}
-
-
-
-#cont-img-infos 
-{
-    width: 100vw;
-  
-    display: flex;  
-    flex-direction: column;
-    align-items: flex-end; 
-    margin-left: -2vw;  
+    font-size: 1em;
+    line-height: 22px;
+    line-height: 1.5em;
+    color: #000000;
     position: relative;
-    
+}
+
+
+
+#cont-img-infos {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: -2vw;
+    position: relative;
+
 
 }
 
-#img-lieu 
-{ 
+#img-lieu {
 
-background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp); 
-background-repeat:no-repeat;
-width: 300px;
-height: 400px; 
+    background-image: url(https://27.monvillagenormand.fr/images/300/327000356.webp);
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 400px;
 
-}  
-
+}
 
 
-#maCarte1 
-{
+
+#maCarte1 {
     border-radius: 10px;
     width: 300px;
-    height: 40vh;   
-} 
-#partenaire 
-{
+    height: 40vh;
+}
+
+#partenaire {
     width: 300px;
-    height: 200px; 
-    background-color: #d4b902; 
-    margin-top: 20px;  
+    height: 200px;
+    background-color: #d4b902;
+    margin-top: 20px;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: row;
-    
-}  
 
-#partenaire div 
-{
-    width: 30%; 
+}
+
+#partenaire div {
+    width: 30%;
     margin: 20px;
-    border: solid 3px #4062BB;   
+    border: solid 3px #4062BB;
     border-radius: 5px;
-    background-image: url("../images/pexels-fauxels-3184418.jpg"); 
+    background-image: url("../images/pexels-fauxels-3184418.jpg");
     background-size: cover;
-} 
+}
 
 
-#txt-infos-lieu-bt
-{
+#txt-infos-lieu-bt {
     width: 60vw;
     margin-left: 20vw;
     margin-top: 15vh;
     background-color: #4062BB;
-    color : #fff; 
-    border-radius: 20px; 
+    color: #fff;
+    border-radius: 20px;
     display: flex;
-    justify-content: center; 
-    z-index: 2; 
-    cursor: pointer; 
+    justify-content: center;
+    z-index: 2;
+    cursor: pointer;
     display: none;
-} 
-#txt-infos-lieu-bt p
-{ 
+}
+
+#txt-infos-lieu-bt p {
     display: flex;
     justify-content: center;
 }
 
-#txt-infos-lieu
-{
-    margin-left: 50px;   
+#txt-infos-lieu {
+    margin-left: 50px;
     z-index: 2;
     margin-top: -40vh;
 }
 
-#txt-infos-lieu p 
-{
+#txt-infos-lieu p {
 
-width: 65vw;
-font-size: 1em;
-line-height: 22px;
-line-height: 1.5em;
-color: #000000; 
-}   
+    width: 65vw;
+    font-size: 1em;
+    line-height: 22px;
+    line-height: 1.5em;
+    color: #000000;
+}
 
 
 @media screen and (min-width: 1040px) {
-    #txt-infos-lieu-bt 
-    {
+    #txt-infos-lieu-bt {
         display: none;
     }
 }
 
 @media screen and (max-width: 1040px) {
-    #infos-local 
-    {
+    #infos-local {
         margin-bottom: 2vh;
     }
-    #txt-infos-lieu 
-    {
-        display: none; 
+
+    #txt-infos-lieu {
+        display: none;
         margin-top: 6vh;
-    } 
-    #txt-infos-lieu-bt
-    {
+    }
+
+    #txt-infos-lieu-bt {
         display: block;
-    } 
-    #ii 
-    {
+    }
+
+    #ii {
         display: flex;
-    justify-content: center;
+        justify-content: center;
         align-content: center;
         flex-wrap: wrap;
-    } 
-    #cont-img-infos 
-    {
-        width: 100vw;
-    height: 100vh;
-    display: flex;  
-    flex-direction: column;
-    align-items: center; 
-    position: relative;
     }
-    
-} 
 
-@media screen and (max-width: 450px) {  
+    #cont-img-infos {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
 
-    #cont-img-infos 
-    {
+}
+
+@media screen and (max-width: 450px) {
+
+    #cont-img-infos {
         width: 80vw;
         margin-left: 10vw;
     }
 
 
 }
- 
-#hordou
-{
-    background-color: #4062BB; 
-    width: 70vw; 
-    height: auto;  
+
+#hordou {
+    background-color: #4062BB;
+    width: 70vw;
+    height: auto;
     padding: 0px 0px 0px 0px;
-    margin-top: 20vh; 
-    margin-left: 15vw;  
+    margin-top: 20vh;
+    margin-left: 15vw;
     border-radius: 20px;
- 
+
 }
+
 /* #hordou div:nth-child(1)
 { 
     
@@ -704,28 +709,27 @@ color: #000000;
     justify-content: center;
     
 } */
-#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche
-{
+#lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-} 
-#lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p 
-{
-    margin-left: 2px; 
+}
+
+#lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p {
+    margin-left: 2px;
     color: #d4b902;
 }
-#journee-patrimoine 
-{
+
+#journee-patrimoine {
     display: flex;
     margin-top: 10%;
     padding: 2%;
     /* font-family: 'Montserrat', sans-serif; */
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-around;
 }
-#journee-patrimoine ul
-{
+
+#journee-patrimoine ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -735,49 +739,48 @@ color: #000000;
     color: #fff;
     background-color: #4062bb;
     margin: 1.75rem 0;
- 
-}  
-#journee-patrimoine li 
-{
-    
+
+}
+
+#journee-patrimoine li {
+
     counter-increment: gradient-counter;
     margin-top: 1rem;
     padding: 1rem 1rem 1rem 1rem;
-} 
-#journee-patrimoine li:hover 
-{
-    background-color: #52b2cf; 
-    cursor: pointer; 
-    padding: 1rem 0rem 1rem 2rem; 
-} 
- #txt-journee-patrimoine 
-{
+}
+
+#journee-patrimoine li:hover {
+    background-color: #52b2cf;
+    cursor: pointer;
+    padding: 1rem 0rem 1rem 2rem;
+}
+
+#txt-journee-patrimoine {
     flex-direction: column;
     display: flex;
     width: 40%;
     height: auto;
     margin-left: auto;
     margin-left: -1%;
-    
-} 
 
-#proeve
-{
+}
+
+#proeve {
     width: 70vw;
-    height: 30vh; 
+    height: 30vh;
     margin-top: 15vh;
     margin-left: 15vw;
-    background-color: #4062BB; 
-    border-radius: 20px; 
+    background-color: #4062BB;
+    border-radius: 20px;
     color: #fff;
-    
-} 
-#proeve p 
-{
+
+}
+
+#proeve p {
     margin: 20px;
 }
-#proeve div
-{
+
+#proeve div {
     margin-left: 10%;
 
     width: 80%;
@@ -788,100 +791,95 @@ color: #000000;
     justify-content: center;
     align-items: center;
 }
-#icone div img{
+
+#icone div img {
     transform: scale(0.6);
 }
 
-#GroupeDeMiniatures 
-{
+#GroupeDeMiniatures {
     display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 5%;
     margin-top: 10%;
-} 
+}
 
-.ImageMiniature 
-{
+.ImageMiniature {
     margin-right: 20px;
     margin-bottom: 20px;
-    text-align: center;  
-} 
+    text-align: center;
+}
 
-#nom-ville 
-{ 
-width: 25%;     
-background-color: #4062bb;    
-display: flex; 
-justify-content: flex-start;
-flex-direction: row;
-margin-bottom: 5%;  
-margin-left: 1.2%;
-height: auto;
-} 
-#txt-nom-ville, #code-postal, #village_fleuri
-{
+#nom-ville {
+    width: 25%;
     background-color: #4062bb;
     display: flex;
-    flex-direction: row; 
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-left: 1.2%;
+    height: auto;
+}
+
+#txt-nom-ville, #code-postal, #village_fleuri {
+    background-color: #4062bb;
+    display: flex;
+    flex-direction: row;
     margin-left: 5px;
-    width: 30%; 
+    width: 30%;
     height: 100%;
 }
-#nom-ville p, #code-postal p
-{
-    color:#fff;      
-}  
 
-#code-postal 
-{
+#nom-ville p, #code-postal p {
+    color: #fff;
+}
+
+#code-postal {
     margin-left: 10px;
-} 
-#village_fleuri div
-{
-    width: 100%; 
+}
+
+#village_fleuri div {
+    width: 100%;
     height: 5vh;
-    border: solid #fff; 
+    border: solid #fff;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
 
-} 
-#village_fleuri div p 
-{
+}
+
+#village_fleuri div p {
     font-size: small;
 }
 
 
-#txt-card 
-{
-display: flex; 
-flex-direction: row;
-align-items: center;
-width: 100%;
-justify-content: space-around; 
-flex-wrap: wrap;
-} 
-#txt-card p 
-{
-    width: 50%;
-    color:#fff; 
+#txt-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-#carte-ville 
-{
+#txt-card p {
+    width: 50%;
+    color: #fff;
+}
+
+#carte-ville {
     display: flex;
-    border: 1px solid #000000; 
-    height: 300px; 
+    border: 1px solid #000000;
+    height: 300px;
     width: 125px;
-    border-radius: 30px;  
+    border-radius: 30px;
     background-image: url("https://76.monvillagenormand.fr/images/300/176000077.webp");
-   
-} 
+
+}
 
 /*test*/
 
-  .menu-link {
+.menu-link {
     width: fit-content;
     height: auto;
     background: #4062BB;
@@ -894,12 +892,12 @@ flex-wrap: wrap;
     cursor: pointer;
     border-radius: 30px;
     padding: 1vh 1vw 1vh 1vw;
-  }
+}
 
-  #menuSecondaireHorizontal span:hover{
+#menuSecondaireHorizontal span:hover {
     color: #1a181b;
     background-color: #d4b902;
-  }
+}
 
 /* 
   .menu-link:after {
@@ -916,330 +914,327 @@ flex-wrap: wrap;
     transform: scaleX(0);
     transition: transform 0.4s linear;
   } */
-  /* .menu-link:hover:after,
+/* .menu-link:hover:after,
   .menu-link:active:after {
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform 0.4s linear;
   }  */
 
-  #test-presentation-cat
-  {
-      background-color: rebeccapurple; 
-      display: flex;
-      flex-direction: row;
-      align-items: center; 
-      justify-content: space-between;
-  } 
-  #main_carrousel 
-  {
-      display: flex; 
-      flex-direction: row;
-      align-items: center; 
-      
-      /* overflow-x: hidden; */
-  }
-  .w-img-nav_next, .w-img-nav_previous
-  {
+#test-presentation-cat {
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main_carrousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* overflow-x: hidden; */
+}
+
+.w-img-nav_next, .w-img-nav_previous {
     height: 50px;
-    width: 50px; 
-    background-color: #fff; 
-    border-radius: 50%; 
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center; 
-    cursor: pointer; 
+    align-items: center;
+    cursor: pointer;
     z-index: 50;
-  } 
-  .w-img-nav_previous svg,  .w-img-nav_next svg
-  {
-    stroke: #1D2026; 
-  } 
-  #img-primary-wrapper
-  {
-    border: solid red; 
-    width: 75vw; 
-    display: flex; 
+}
+
+.w-img-nav_previous svg, .w-img-nav_next svg {
+    stroke: #1D2026;
+}
+
+#img-primary-wrapper {
+    border: solid red;
+    width: 75vw;
+    display: flex;
     flex-direction: row;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
-  }
-  .card_leo  /* fait en mobile fist */
-  {
-    background-color: #fff; 
-    border: solid 1px; 
+}
+
+.card_leo
+
+/* fait en mobile fist */
+    {
+    background-color: #fff;
+    border: solid 1px;
     border-radius: 20px;
-    width: 25vw;       
+    width: 25vw;
     height: 30vh;
 
-  }  
-  /* #img-primary-wrapper :nth-of-type(2) 
+}
+
+/* #img-primary-wrapper :nth-of-type(2) 
   {
       /* margin-left: 30vw;
       margin-right: 30vw; 
   } */
-  .img-slider-fond,  .img-slider-fond1
-  {
-      width: 100%; 
-      height: 70%; 
-      border-radius: 20px 20px 0px 0px; 
-      background-image: url("../images/batiment-avec-fond/avoir/colombier.jpg");
-      background-repeat: no-repeat;  
-      background-size: cover;
+.img-slider-fond, .img-slider-fond1 {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px 20px 0px 0px;
+    background-image: url("../images/batiment-avec-fond/avoir/colombier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-  }  
+}
 
 
-  .img-slider-fond1
-  {
+.img-slider-fond1 {
     background-image: url("../images/batiment-avec-fond/avoir/chateau.jpg");
-  }
-  .info_card_leo 
-  {
-      
-      width: 100%; 
-      display: flex; 
-      justify-content: space-evenly;
-      flex-direction: row; 
-      ;
-  } 
-  .info_card_leo div 
-  {
-      background-color: #4062BB; 
-      width: 10px;
-      border-radius: 50%; 
-      
-  }
-  .card_leo :nth-of-type(3)
-  {
+}
+
+.info_card_leo {
+
+    width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly;
+    flex-direction: row;
+    ;
+}
+
+.info_card_leo div {
+    background-color: #4062BB;
+    width: 10px;
+    border-radius: 50%;
+
+}
+
+.card_leo :nth-of-type(3) {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
     font-size: 0.5em;
-  }
-  .info_card_leo p 
-  {
-      font-size: 0.4em;
-  }
-  nav{
-      margin-top: 2%;
-      position: fixed;
-      width: 13vw;
-      height: auto;
-        background-color: #4062bb;
-        border-radius: 0 30px 30px 0;
-  }
+}
 
-  nav li{
-      font-size: 1em;
-      /* font-family: 'Montserrat', sans-serif; */
-      font-family: 'Open Sans', sans-serif;
-      list-style: none;
-      padding:7%;
-      color: #e9f0f1;
-  }
+.info_card_leo p {
+    font-size: 0.4em;
+}
 
-  #menuVertical{
-      margin: 7%;
-  }
+nav {
+    margin-top: 2%;
+    position: fixed;
+    width: 13vw;
+    height: auto;
+    background-color: #4062bb;
+    border-radius: 0 30px 30px 0;
+}
+
+nav li {
+    font-size: 1em;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    padding: 7%;
+    color: #e9f0f1;
+}
+
+#menuVertical {
+    margin: 7%;
+}
 
 
-  .seConnecter {
+.seConnecter {
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-  #arrow {
+#arrow {
 
-    border: solid #4062BB; 
-    border-radius:100% ;
+    border: solid #4062BB;
+    border-radius: 100%;
     width: 7vh;
     height: 7vh;
     margin: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-        
-    } 
 
-    #arrow svg 
-    {
-        width: 75%;
-        height: 75%;
-    }
+}
 
-    #peopleandcracc 
-    {
-        width: 70vw;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        margin: 0 auto;
-    } 
-    #people, #cracc 
-    {
-        display: flex;
-          
-    } 
-    #people 
-    {
-    background-color: lightgray; 
+#arrow svg {
+    width: 75%;
+    height: 75%;
+}
+
+#peopleandcracc {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+#people, #cracc {
+    display: flex;
+
+}
+
+#people {
+    background-color: lightgray;
     width: 40%;
-    border-radius: 30px 0 0 30px; 
-    }
-    #cracc 
-    {
-        width: 60%;
-        padding: 5vh 1vw 5vh 1vw;
-        background-color: #4062BB;
-        flex-direction: column;
-        border-radius: 0 30px 30px 0; 
-      
-    }  
-    #lcoin
-    {
+    border-radius: 30px 0 0 30px;
+}
+
+#cracc {
+    width: 60%;
+    padding: 5vh 1vw 5vh 1vw;
+    background-color: #4062BB;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+
+}
+
+#lcoin {
     margin: 3vh 3vw 3vh 3vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; 
+    justify-content: space-between;
     flex-wrap: wrap;
-    } 
-    #cracc h4
-    {
-        color: #fff ;
-        font-size: 1.2rem;
-    }
-    #lcoin a 
-    {
+}
 
-        color: lightgray; 
-        font-size: 0.7rem;  
+#cracc h4 {
+    color: #fff;
+    font-size: 1.2rem;
+}
 
-    }
-    #apigf
-    {
-        margin-top: 5%;
-        display: flex;
-        flex: 1 0 auto;
-        justify-content: space-around;
-    
-    } 
+#lcoin a {
 
-    #apig, #apif
-    {
-        width: 40%;
-        padding: 1vh 0vw 1vh 0vw;
-        background-color: white;
-        border-radius: 25px;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        cursor: pointer;
-        /* flex-wrap: wrap; */
-        flex-shrink: 2;
-        justify-content: space-evenly;
-        
-    }
+    color: lightgray;
+    font-size: 0.7rem;
 
-    #apig p, #apif p
-    {
-        font-size: 0.8rem;
-        color: #4062BB;
-        
-    }
+}
 
-    #apig img{
-        width: 4vh;
-    }
-    
-    .form_frontco_form, .form_modtext_form
-    {
-       
-            /* height: 50%; */
-            margin-top: 10%;
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            align-items: center;
-       
-    }  
+#apigf {
+    margin-top: 5%;
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: space-around;
 
-    .form_frontco, .form_modtext_form
-    {
-        
+}
+
+#apig, #apif {
+    width: 40%;
+    padding: 1vh 0vw 1vh 0vw;
+    background-color: white;
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* flex-wrap: wrap; */
+    flex-shrink: 2;
+    justify-content: space-evenly;
+
+}
+
+#apig p, #apif p {
+    font-size: 0.8rem;
+    color: #4062BB;
+
+}
+
+#apig img {
+    width: 4vh;
+}
+
+.form_frontco_form, .form_modtext_form {
+
+    /* height: 50%; */
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+
+}
+
+.form_frontco, .form_modtext_form {
+
     width: 60%;
-        display: flex;
-        justify-content: center;
-       
-    }  
-    .form_modtext_form {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form_modtext_form {
     width: 100%;
     height: 100%;
     display: flex;
     margin-top: -5%;
     justify-content: space-evenly;
-    }
-    .form_frontco input[type=email]{
-        display: flex;
-        width: 60%;
-        padding: 1vh 1vw;
-        margin: 0 0 1vh 0;
-        box-sizing: border-box;
-        background-color: #4062BB;
-        font-family: 'Montserrat', sans-serif;
-        color: #fff;
-        border: none;
-        border-bottom: 2px solid #fff;
-    }
-    
-    .form_frontco ::placeholder, .form_modtext ::placeholder {
-        color: #fff;
-    }
-    
-    .form_frontco  input[type=password] {
-        width: 60%;
-        padding: 1vh 1vw;
-        margin: 2vh 0 5vh 0;
-        box-sizing: border-box;
-        font-family: 'Montserrat', sans-serif;
-        background-color: #4062BB;
-        color: #fff;
-        border: none;
-        border-bottom: 2px solid #fff;
-    }
-      
+}
 
-      .form_frontco  input[type=text], .form_modtext  input[type=text] {
-        width: 100%;
-        padding: 1vh 1vw;
-        margin: 8px 0;
-        box-sizing: border-box; 
-        background-color: #4062BB; 
-        color: #fff; 
-        border: none;
-        border-bottom: 2px solid #fff;
-      } 
-    
-    .form_frontco_button input[type=submit]
-    {
-        width: auto;
-        padding: 2vh 10vw 2vh 10vw;
-        height: auto;
-        /* margin-left: -100%; */
-        /* margin-top: 50%; */
-        color: #fff;
-        background-color: #52b2cf;
-        background: linear-gradient(to right, #4062BB, #52B2CF);
-        border: none;
-        border-radius: 10px;
-        box-shadow: 10px 5px 5px #000;
-        cursor: pointer;
-    
-    }
+.form_frontco input[type=email] {
+    display: flex;
+    width: 60%;
+    padding: 1vh 1vw;
+    margin: 0 0 1vh 0;
+    box-sizing: border-box;
+    background-color: #4062BB;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
 
-    
+.form_frontco ::placeholder, .form_modtext ::placeholder {
+    color: #fff;
+}
+
+.form_frontco input[type=password] {
+    width: 60%;
+    padding: 1vh 1vw;
+    margin: 2vh 0 5vh 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #4062BB;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+
+.form_frontco input[type=text], .form_modtext input[type=text] {
+    width: 100%;
+    padding: 1vh 1vw;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #4062BB;
+    color: #fff;
+    border: none;
+    border-bottom: 2px solid #fff;
+}
+
+.form_frontco_button input[type=submit] {
+    width: auto;
+    padding: 2vh 10vw 2vh 10vw;
+    height: auto;
+    /* margin-left: -100%; */
+    /* margin-top: 50%; */
+    color: #fff;
+    background-color: #52b2cf;
+    background: linear-gradient(to right, #4062BB, #52B2CF);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px #000;
+    cursor: pointer;
+
+}
+
+
 .informationsMonument {
     border-radius: 10px;
     padding: 5vh 3vw 5vh 3vw;
@@ -1247,39 +1242,37 @@ flex-wrap: wrap;
     background: #4062BB;
 }
 
-@media screen and (max-width: 830px) { 
+@media screen and (max-width: 830px) {
 
-    #apig p, #apif p
-    {
+    #apig p, #apif p {
         font-size: 0.6rem;
-        
+
     }
-    #peopleandcracc 
-    {
+
+    #peopleandcracc {
         justify-content: center;
     }
-    #people
-    {
+
+    #people {
         display: none;
     }
-    #cracc
-    {
-        border-radius: 30px; 
-        flex: 1 0 auto; 
-    } 
 
-    #apig, #apif 
-    {
+    #cracc {
+        border-radius: 30px;
+        flex: 1 0 auto;
+    }
+
+    #apig, #apif {
         width: fit-content;
     }
 
-    #apigf p
-    {
-            font-size: 0.8em;
+    #apigf p {
+        font-size: 0.8em;
     }
 
 }
-.carteInformations{
+
+.carteInformations {
     margin-top: 5%;
     display: flex;
     justify-content: space-around;
@@ -1287,36 +1280,36 @@ flex-wrap: wrap;
     width: 80vw;
 }
 
-.titreInfo{
+.titreInfo {
     font-size: 1.5em;
     color: #e9f0f1;
 }
 
-.adresseInfo{
+.adresseInfo {
     font-size: 0.8em;
     color: #e9f0f1;
 }
 
-.imageInfo{
+.imageInfo {
     width: 90%;
     margin-bottom: 5%;
 }
 
-.telephoneInfo{
+.telephoneInfo {
     color: #e9f0f1;
     font-size: 0.8em;
 }
 
-img.leaflet-interactive{
+img.leaflet-interactive {
     transform: scale(5);
 }
 
 /* <span class='titreInfo'>Cirque-Théatre</span></br>
 <span class='adresseInfo'>2 Rue Augustin Henry, 76500 Elbeuf</span>
 <img class='imageInfo' src="images/cirque.jpg"></img>
-<span class='titreInfo'>Cirque-Théatre</span> */ 
+<span class='titreInfo'>Cirque-Théatre</span> */
 
-.pageAdmin{
+.pageAdmin {
     display: flex;
     width: 80vw;
     height: 100vh;
@@ -1324,8 +1317,7 @@ img.leaflet-interactive{
     justify-content: space-between;
 }
 
-#gestion_admin 
-{
+#gestion_admin {
     margin: 3vh;
     padding: 5vh 1vw 5vh 1vw;
     width: 25vw;
@@ -1335,83 +1327,78 @@ img.leaflet-interactive{
     flex-direction: column;
     border-radius: 0px 20px 20px 0px;
 
-}  
-#gestion_admin.active 
-{
+}
+
+#gestion_admin.active {
     display: initial;
 }
 
-#membre
-{
+#membre {
     margin: 0vh 0vw 1vh 1vw;
 
-}   
+}
 
-#admindep, #admin
-{
-margin: 5vh 0vw 1vh 1vw;
-display: flex; 
-flex-direction: column; 
+#admindep, #admin {
+    margin: 5vh 0vw 1vh 1vw;
+    display: flex;
+    flex-direction: column;
 
-}   
+}
 
-#admindep:hover, #admin:hover ,#membre:hover
-{
-  cursor: pointer;
+#admindep:hover, #admin:hover, #membre:hover {
+    cursor: pointer;
 
-}   
+}
 
-#admindep p, #admin p, #membre p 
-{
-    color: #fdc758; 
-    font-weight: bold; 
+#admindep p, #admin p, #membre p {
+    color: #fdc758;
+    font-weight: bold;
     font-size: 1em;
 }
 
 
-#membre  
-{
+#membre {
     display: flex;
     flex-direction: column;
 }
 
-#admindep a, #admin a, #membre a
-{
+#admindep a, #admin a, #membre a {
     margin: 2vh 0vw 1vh 1vw;
     width: fit-content;
     color: #fff;
 }
 
-#admindep a:hover, #admin a:hover, #membre a:hover
-{
- text-decoration: none;
+#admindep a:hover, #admin a:hover, #membre a:hover {
+    text-decoration: none;
 }
 
-.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
-{
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep {
     margin-top: 2%;
-    cursor: pointer;  
+    cursor: pointer;
 }
-.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep{
+
+.menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep {
     top: -1vh;
     text-decoration: none;
     display: none;
     margin: 0.5rem 0;
     font-size: 1rem;
     line-height: 1.4;
-    position: relative; /* used with absolute for positioning underline */
-  }
+    position: relative;
+    /* used with absolute for positioning underline */
+}
 
-  .lienActif{
+.lienActif {
     text-decoration: none;
     display: block;
     margin: 0.5rem 0;
     font-size: 1rem;
     line-height: 1.4;
-    position: relative; /* used with absolute for positioning underline */
+    position: relative;
+    /* used with absolute for positioning underline */
 }
 
-  .menu__item_gestion_membre:after,.menu__item_gestion_admin::after ,.menu__item_gestion_admindep:after  {
+.menu__item_gestion_membre:after, .menu__item_gestion_admin::after, .menu__item_gestion_admindep:after {
     position: absolute;
     content: "";
     display: block;
@@ -1424,32 +1411,31 @@ flex-direction: column;
     transform-origin: right bottom;
     transform: scaleX(0);
     transition: transform 0.4s linear;
-  }
-  .menu__item_gestion_membre:hover:after,
-  .menu__item_gestion_membre:active:after {
+}
+
+.menu__item_gestion_membre:hover:after,
+.menu__item_gestion_membre:active:after {
     transform: scaleX(1);
     transform-origin: left bottom;
     transition: transform 0.4s linear;
-  } 
+}
 
-  .menu__item_gestion_admin:hover:after, 
-  .menu__item_gestion_admin:active:after 
-  {
+.menu__item_gestion_admin:hover:after,
+.menu__item_gestion_admin:active:after {
     transform: scaleX(1);
     transform-origin: left bottom;
-    transition: transform 0.4s linear;   
-  } 
-  .menu__item_gestion_admindep:hover:after, 
-  .menu__item_gestion_admindep:active:after 
-  {
+    transition: transform 0.4s linear;
+}
+
+.menu__item_gestion_admindep:hover:after,
+.menu__item_gestion_admindep:active:after {
     transform: scaleX(1);
     transform-origin: left bottom;
-    transition: transform 0.4s linear;  
-  }
+    transition: transform 0.4s linear;
+}
 
-  #depot_photo 
-  {
-      
+#depot_photo {
+
     width: 35vw;
     padding: 3vh 3vw 3vh 3vw;
     border-radius: 40px;
@@ -1457,11 +1443,10 @@ flex-direction: column;
     align-items: center;
     flex-direction: column;
     background-color: #4062BB;
-  }  
+}
 
-  #depot_photo input[type="submit"] 
-  {
-      
+#depot_photo input[type="submit"] {
+
 
     border-radius: 20px;
     padding: 1vh 1vw 1vh 1vw;
@@ -1471,113 +1456,108 @@ flex-direction: column;
     /* height: 3vh; */
     outline: none;
     border: none;
-  }  
+}
 
-  #depot_photo h4 
-  {
-color: #fff; 
-margin: 3vh 0 3vh 0;
-  } 
-#togadmin 
-{
+#depot_photo h4 {
+    color: #fff;
+    margin: 3vh 0 3vh 0;
+}
+
+#togadmin {
     height: 20px;
     width: 20px;
-    background-color: black; 
+    background-color: black;
     z-index: 4;
     display: none;
 
-} 
+}
+
 /* #togadmin.active 
 {
     display: initial;
 } */
-  @media(max-width: 700px){  
+@media(max-width: 700px) {
 
-    
-    #gestion_admin.active
-    {
+
+    #gestion_admin.active {
         display: block;
     }
-    #membre, #admin, #admindep 
-    {
+
+    #membre, #admin, #admindep {
         margin: 0vh;
     }
-    #depot_photo h4
-    {
+
+    /* #depot_photo h4 {
+        font-size: 0.7em;
+    } */
+
+    .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep {
+        font-size: 0.5em;
+    }
+
+    #membre p, #admin p {
         font-size: 0.7em;
     }
-    .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep
-    {
-        font-size: 0.5em;
-    } 
-    #membre p, #admin p
-    {
-        font-size: 0.7em;
-    }      
+
     #admindep p {
         font-size: 0.6em;
-    }  
+    }
 
-    #modinfos
-    {
-      position: relative;
+    #modinfos {
+        position: relative;
     }
 
     #gestion_admin {
         display: flex;
-    width: 80vw;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: space-evenly; 
-    align-items: flex-start;
-    border-radius: 20px;
-    margin-left: 10vw;
-    } 
-    #membre 
-    {
+        width: 80vw;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        border-radius: 20px;
+        margin-left: 10vw;
+    }
+
+    #membre {
         margin: 0px;
     }
 
-  }
+}
 
-  input[type="file"]
-  {
+input[type="file"] {
     border-style: none;
-    border-radius: 5px; 
-    background-color: #fdc758; 
+    border-radius: 5px;
+    background-color: #fdc758;
     width: 100%;
-  } 
+}
 
-  #zonededepot
-  {
-      margin-top: 2vh;
-      width: 60%; 
-      height:50%;
-      border-color: #fff;
-      display: flex;
-      align-items: center;  
-      flex-direction: column; 
-      
-  }   
-
-  #zonededepot div 
-  {
-      margin-bottom: 5%;
-  }
-  #zonededepot p 
-  {
-      color: #4062BB;
-  }  
-
-  #formdepot 
-  {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+#zonededepot {
+    margin-top: 2vh;
+    width: 60%;
+    height: 50%;
+    border-color: #fff;
+    display: flex;
     align-items: center;
-  }
+    flex-direction: column;
 
-  /* .btn-upload {
+}
+
+#zonededepot div {
+    margin-bottom: 5%;
+}
+
+#zonededepot p {
+    color: #4062BB;
+}
+
+#formdepot {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .btn-upload {
     background-color: #e9f0f1;
     border: 21px solid #000;
     color: #000;
@@ -1600,8 +1580,7 @@ margin: 3vh 0 3vh 0;
     font-size: 2rem;
   } */
 
-  #modinfos
-  { 
+#modinfos {
     position: relative;
     background-color: #4062BB;
     width: 50vw;
@@ -1611,47 +1590,68 @@ margin: 3vh 0 3vh 0;
     margin-left: 30%;
     display: flex;
     align-items: center;
-    
-  }
 
-  @media(max-width: 700px){   
-    
-    #modinfos
+}
+
+@media(max-width: 700px) {
+
+    #modinfos {
+        width: 80vw;
+        height: 80vh;
+        margin-left: 10vw;
+
+    }
+    .pageAdmin 
     {
-        width:80vw;
-    height: 80vh; 
-    margin-left: 10vw;
-
+        flex-direction: column; 
+        justify-content: space-around;
+        align-items: center; 
+        margin-left: 10vw;
     } 
-    .form_modtext_form 
+    #depot_photo
     {
+        width: 80vw;
+    height: 70vh; 
+    margin-left: -1vw;
+    } 
+    #gestion_admin 
+    {
+        width: 80vw;
+        margin-left: 2vw;
+    }
+    #formedepot 
+    {
+        height: 100%;
+    }
+
+    .form_modtext_form {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
     }
 }
- 
 
-#codePostaux{
+
+#codePostaux {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 5vh;
     justify-items: center;
 }
 
-#codePostaux a{
-   font-size: 0.9em;
-   color: #4062BB;
+#codePostaux a {
+    font-size: 0.9em;
+    color: #4062BB;
 }
 
 
-#codePostaux a:hover{
+#codePostaux a:hover {
     font-size: 0.9em;
     color: #fdc758;
- }
+}
 
-#codePostaux div{
+#codePostaux div {
     display: grid;
     border-collapse: collapse;
     border: solid #4062BB 2px;
@@ -1661,189 +1661,187 @@ margin: 3vh 0 3vh 0;
     height: 30vh;
     padding: 2%;
     overflow: auto;
- }
+}
 
- #codePostaux div h2{
-     display: flex;
-     padding-bottom: 3%;
-     justify-self: flex-start;
-     align-self:flex-start;
-     font-size: 1.3em;
- }
+#codePostaux div h2 {
+    display: flex;
+    padding-bottom: 3%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    font-size: 1.3em;
+}
 
-#apparitionMenu{
+#apparitionMenu {
     display: none;
 }
 
-#fil-ariane{
-    width:fit-content;
+#fil-ariane {
+    width: fit-content;
     background-color: #4062BB;
 }
 
 
 #fil-ariane ul {
     display: flex;
-list-style-type:none;
-justify-content: space-evenly;
-padding: 1vh 2vw 1vh 2vw;
-}	
+    list-style-type: none;
+    justify-content: space-evenly;
+    padding: 1vh 2vw 1vh 2vw;
+}
 
 #fil-ariane li {
     display: flex;
     align-items: center;
-    }
+}
 
-    #fil-ariane li a{
-        display: flex;
-        justify-content: center;
-        }
-
-#fil-ariane ul li{
+#fil-ariane li a {
     display: flex;
-  color: white;
-  margin: 0 1vw 0 1vw ;
-    }	
+    justify-content: center;
+}
 
-    #trier{
-        width: fit-content;
-        margin-bottom: 2vh;
+#fil-ariane ul li {
+    display: flex;
+    color: white;
+    margin: 0 1vw 0 1vw;
+}
+
+#trier {
+    width: fit-content;
+    margin-bottom: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 5vw;
+    top: 2vh;
+    background-color: #4062BB;
+    color: #f4f4f9;
+    padding: 0 2vw 0 2vw;
+}
+
+#trier p {
+    margin-right: 1vw;
+    width: max-content;
+    display: flex;
+}
+
+#trier svg {
+    margin: 2vh 1vw 2vh 1vw;
+    display: flex;
+}
+
+#trier svg line {
+    display: flex;
+    stroke: #fdc758;
+}
+
+@media(max-width: 585px) {
+
+    #apparitionMenu {
+        display: initial;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    #apparitionMenu.active {
+        width: 100vw;
+        height: 100vh;
+        background-color: #4063bbab;
+        opacity: 0.8;
+        z-index: 1;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+
+    #menuToggleDiv {
+        display: none;
+    }
+
+    #menuToggleDiv.active {
+        display: initial;
+    }
+
+    .menuToggle {
+        margin-left: 2%;
+        font-family: "D-DIN Bold", serif;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        position: relative;
-        left: 5vw;
-        top: 2vh;
-        background-color: #4062BB;
-        color: #f4f4f9;
-        padding: 0 2vw 0 2vw;
+        font-size: 4em;
+        color: #fdc758;
+        text-decoration: none;
+        /*enlever attributs texte (ici underline) */
+        width: fit-content;
     }
 
-    #trier p{
-        margin-right: 1vw;
-        width: max-content;
-        display: flex;
+    /***************/
+    .menuToggle:hover {
+        /* quand survoler */
+        transition-duration: 0.2s;
+        /*temps de la transition */
+        transition-timing-function: ease-out;
+        text-decoration: underline 2px #fdc758;
+        opacity: 0.9;
     }
 
-    #trier svg{
-        margin: 2vh 1vw 2vh 1vw;
-        display: flex;
-    }
- 
-    #trier svg line{
-        display: flex;
-        stroke: #fdc758;
-    }
-
- @media(max-width: 585px){
-
-        #apparitionMenu{
-            display: initial;
-            width: 100vw;
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-        }
-    
-        #apparitionMenu.active{
-            width: 100vw;
-            height: 100vh;
-            background-color: #4063bbab;
-            opacity: 0.8;
-            z-index: 1;
-            position: fixed;
-            left: 0;
-            top: 0;
-        }
-    
-        #menuToggleDiv{
-            display: none;
-          }
-    
-        #menuToggleDiv.active{
-          display: initial;
-        }
-        
-        .menuToggle{
-            margin-left: 2%;
-          font-family: "D-DIN Bold", serif;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          font-size: 4em;
-          color: #fdc758;
-          text-decoration: none; /*enlever attributs texte (ici underline) */
-          width: fit-content;
-        }
-    
-        /***************/ 
-        .menuToggle:hover { /* quand survoler */
-          transition-duration: 0.2s;  /*temps de la transition */
-          transition-timing-function: ease-out;
-          text-decoration: underline 2px #fdc758;
-          opacity:0.9;
-        }
-      
-        #toggle 
-    {
+    #toggle {
         margin: 2%;
         z-index: 10;
         border-radius: 100%;
         position: relative;
-        width: 60px; 
+        width: 60px;
         height: 60px;
-        background: blue; 
+        background: blue;
         background-size: cover;
-        cursor: pointer; 
+        cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 0.5s;
-    } 
-    
-    #toggle.active
-    {
+    }
+
+    #toggle.active {
         background: #d4b902;
-    } 
-    
-     #toggle.active::before 
-    {
+    }
+
+    #toggle.active::before {
         transform: translateY(0px) rotate(45deg);
         box-shadow: 0 0 0 #fff;
     }
-    
-     #toggle::before
-    { 
+
+    #toggle::before {
         content: '';
         position: absolute;
         width: 28px;
         height: 2px;
         background: #fff;
-        transition: 0.2s; 
-        transform: translateY(-10px); 
+        transition: 0.2s;
+        transform: translateY(-10px);
         box-shadow: 0 10px 0 #fff;
-    } 
-    
-    #toggle::after
-    { 
+    }
+
+    #toggle::after {
         content: '';
         position: absolute;
         width: 28px;
         height: 2px;
         background: #fff;
-        transition: 0.2s; 
+        transition: 0.2s;
         transform: translateY(10px);
-    } 
-    
-    #toggle.active::after 
-    {
+    }
+
+    #toggle.active::after {
         transform: translateY(0px)rotate(-45deg);
     }
-  }
-  @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+}
 
-.cards{
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.cards {
     width: 80vw;
     display: flex;
     overflow-x: scroll;
@@ -1853,24 +1851,27 @@ padding: 1vh 2vw 1vh 2vw;
 
 .card {
     margin-right: 2vw;
-  display: flex;
-  flex: 1 0 300px;
-  position: relative;
-  overflow: hidden;
-  height: 400px;
-  width: 100%;
-  color: white;
-  background-color: #000000;
+    display: flex;
+    flex: 1 0 300px;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    color: white;
+    background-color: #000000;
 }
+
 .card * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
 }
+
 .card img {
-  max-width: 100%;
+    max-width: 100%;
 }
+
 .card div {
     display: flex;
     flex-direction: column;
@@ -1892,79 +1893,73 @@ padding: 1vh 2vw 1vh 2vw;
 
 .card h3,
 .card p {
-  -webkit-transform: translateX(-2vw);
-  transform: translateX(-2vh);
-  margin: 0;
+    -webkit-transform: translateX(-2vw);
+    transform: translateX(-2vh);
+    margin: 0;
 }
 
 .card p {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
-.card:hover img{
-  opacity: 0.6;
+.card:hover img {
+    opacity: 0.6;
 }
+
 .card:hover:after,
 .card.hover:after,
 .card:hover div {
-    
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 0.9  ;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0.9;
 }
+#slider-lieu {
+    width: 100vw;
+    height: 50vh;
+    background-color: #e9f0f1;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0%;
+    position: relative;
+}
+#main-slider {
+    width: 80vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-
-
-  #slider-lieu
-  {
-        width: 100vw;
-        height: 50vh;
-        background-color: #e9f0f1;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 0%;
-        position: relative;
-  }
-
-#main-slider
-  {
-      width: 80vw;
-      height: 100%;
-      display: flex;  
-      align-items: center; 
-      justify-content: space-around;  
-      
-} 
-
-.card-slider
-{
-     /* background-color: #fff;
+}
+.card-slider {
+    /* background-color: #fff;
     border: solid 1px; */
     border-radius: 20px;
     width: 15vw;
-    height: 40vh; 
+    height: 40vh;
     flex: 0 1 auto;
-    
-}
-#image-slider, #image-slider1, #image-slider2 
-{
- height: 100%; 
- width: 100%;
 
-background-repeat: no-repeat;
-background-size: cover; 
-
-}  
-#image-slider img, #image-slider1 img, #image-slider2 img
-{
-    height: 100%; 
-    width: 100%;   
-    border-radius: 20px; 
-    
 }
+
+#image-slider, #image-slider1, #image-slider2 {
+    height: 100%;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#image-slider img, #image-slider1 img, #image-slider2 img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
 /* #image-slider{
 background-image: url( https://27.monvillagenormand.fr/images/300/327000356.webp); 
 }
@@ -1975,53 +1970,47 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000357.webp)
 background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp); 
 }  */
 
-@media screen and (max-width: 1040px) { 
+@media screen and (max-width: 1040px) {
 
-    #image-slider1, #image-slider2,.card-slider:nth-child(2), .card-slider:nth-child(3)
-    {
+    #image-slider1, #image-slider2, .card-slider:nth-child(2), .card-slider:nth-child(3) {
         display: none;
-    }  
+    }
 
-    #main-slider
-  {
-     justify-content: center;
-  }
+    #main-slider {
+        justify-content: center;
+    }
 
-    #image-slider, .card-slider:nth-child(1)
-    {
-        
-        width:  30vw;
+    #image-slider, .card-slider:nth-child(1) {
+
+        width: 30vw;
         height: 40vh;
     }
 
-} 
+}
 
-@media screen and (max-width: 700px) { 
+@media screen and (max-width: 700px) {
 
-    #image-slider, .card-slider:nth-child(1)
-    {
-        
-        width:  30vw;
+    #image-slider, .card-slider:nth-child(1) {
+
+        width: 30vw;
         height: 30vh;
     }
 
-}  
+}
 
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 400px) {
 
-    #image-slider, .card-slider:nth-child(1)
-    {
-        
-        width:  40vw;
+    #image-slider, .card-slider:nth-child(1) {
+
+        width: 40vw;
         height: 30vh;
     }
 
-}  
+}
 
 
 
-#slider-lieu p
-{
+#slider-lieu p {
     color: purple;
     position: absolute;
     text-decoration: underline;
@@ -2029,182 +2018,182 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     cursor: pointer;
     margin-top: 15%;
     bottom: 10px;
-} 
-#test-slider-lieu 
-{
+}
+
+#test-slider-lieu {
     display: none;
 }
 
 .card h3,
 .card p {
-  -webkit-transform: translateX(-2vw);
-  transform: translateX(-2vh);
-  margin: 0;
+    -webkit-transform: translateX(-2vw);
+    transform: translateX(-2vh);
+    margin: 0;
 }
 
 .card p {
-  font-size: 0.8em;
+    font-size: 0.8em;
 }
 
-.card:hover img{
-  opacity: 0.6;
+.card:hover img {
+    opacity: 0.6;
 }
 
 .card:hover:after,
 .card.hover:after,
 .card:hover div {
-    
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
 }
 
-@media all and (min-width: 0px) and (max-width: 1100px){
-    html{
+@media all and (min-width: 0px) and (max-width: 1100px) {
+    html {
         overflow-x: hidden;
         font-size: 12px;
     }
-    
-    body{
+
+    body {
         background-color: white;
     }
 
-    #boutonLieu{
+    #boutonLieu {
         display: none;
     }
 
-    .carteInformations{
+    .carteInformations {
         margin-top: 7vh;
         display: flex;
-       flex-direction: column;
+        flex-direction: column;
     }
 
-    #maCarteDepartement{ 
+    #maCarteDepartement {
         position: relative;
         display: flex;
         width: 80vw;
         height: 60vh;
         margin-bottom: 5vh;
-}
+    }
 
-#menuSecondaireHorizontal{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80vw;
-    height: 7vh;
-    border-radius: 30px;
-    border: none;
-    flex-wrap: wrap;
-}
+    #menuSecondaireHorizontal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 80vw;
+        height: 7vh;
+        border-radius: 30px;
+        border: none;
+        flex-wrap: wrap;
+    }
 
-#recherche{
-    display: flex;
-   flex-direction: column-reverse;
-}
+    #recherche {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-#maCarte{ 
-    position: relative;
-    display: flex;
-    width: 80vw;
-    height: 60vh;
-    margin-bottom: 5vh;
-    margin-left: 0;
-}
+    #maCarte {
+        position: relative;
+        display: flex;
+        width: 80vw;
+        height: 60vh;
+        margin-bottom: 5vh;
+        margin-left: 0;
+    }
 
-#boutonLieu {
-    height: 120px;
-    width: 120px;
-    border-radius: 100%;
-}
+    #boutonLieu {
+        height: 120px;
+        width: 120px;
+        border-radius: 100%;
+    }
 
-.informationsMonument {
-    width: 80vw;
-    display: flex;
-    flex-direction: column;
-}
+    .informationsMonument {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
 
-#boutonRecherche{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #e9f0f1;
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-}
+    #boutonRecherche {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #e9f0f1;
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+    }
 
-#searchBarre {
-    display: flex;
-    margin: 1vh 0 0 0;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    border: 2px solid #f4f4f9;
-    width: 50vw;
-    height: 5vh;
-    border-radius: 30px;
-    background: #e9f0f1;
-}
+    #searchBarre {
+        display: flex;
+        margin: 1vh 0 0 0;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        border: 2px solid #f4f4f9;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 30px;
+        background: #e9f0f1;
+    }
 
-#affichage.non-activeAffichage{
-    margin: 1vh 0vw 0 0;
-    padding: 0 2% 0 2%;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    border: 2px solid #f4f4f9;
-    width: 50vw;
-    height: 5vh;
-    border-radius: 50px;
-    background: #e9f0f1;
-    display: none;
-}
+    #affichage.non-activeAffichage {
+        margin: 1vh 0vw 0 0;
+        padding: 0 2% 0 2%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        border: 2px solid #f4f4f9;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 50px;
+        background: #e9f0f1;
+        display: none;
+    }
 
-#affichage.activeAffichage{
-    margin: 1vh 0vw 0 0;
-    padding: 0 2% 0 2%;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    border: 2px solid #f4f4f9;
-    width: 50vw;
-    background: #e9f0f1;
-    display: flex;
-    border-radius: 30px;
-    height: 15vh;
-    transition: height 0.25s ease-in;
-}
+    #affichage.activeAffichage {
+        margin: 1vh 0vw 0 0;
+        padding: 0 2% 0 2%;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        border: 2px solid #f4f4f9;
+        width: 50vw;
+        background: #e9f0f1;
+        display: flex;
+        border-radius: 30px;
+        height: 15vh;
+        transition: height 0.25s ease-in;
+    }
 
-.menu-link{
-    width: fit-content;
-    height: auto;
-    background: #4062BB;
-    text-decoration: none;
-    display: block;
-    margin: 1vh 1vw 1vh 1vw;
-    font-size: 1rem;
-    line-height: 1.4;
-    position: relative;
-    cursor: pointer;
-    border-radius: 30px;
-    padding: 1vh 1vw 1vh 1vw;
-}
+    .menu-link {
+        width: fit-content;
+        height: auto;
+        background: #4062BB;
+        text-decoration: none;
+        display: block;
+        margin: 1vh 1vw 1vh 1vw;
+        font-size: 1rem;
+        line-height: 1.4;
+        position: relative;
+        cursor: pointer;
+        border-radius: 30px;
+        padding: 1vh 1vw 1vh 1vw;
+    }
 
-#profil {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    top: 1vh;
-    right: 8vw;
-    border: solid 2px white;
-    border-radius: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
+    #profil {
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 1vh;
+        right: 8vw;
+        border: solid 2px white;
+        border-radius: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
 
-/* #menuProfil,#menuProfilAvant{
+    /* #menuProfil,#menuProfilAvant{
     
     opacity: 0;
     z-index: 5;
@@ -2220,50 +2209,55 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     right: 4.5vw;
 } */
 
-@keyframes ouvrir {
-0% { transform:translateY(0px); opacity: 0;}
-100% { transform:translateY(15px); opacity: 1;}
-}
+    @keyframes ouvrir {
+        0% {
+            transform: translateY(0px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(15px);
+            opacity: 1;
+        }
+    }
 }
 
-@media all and (min-width: 0px) and (max-width: 450px){
-html{
-    overflow-x: hidden;
-    font-size: 10px;
-}
-.info p {
-    font-size: 1.2em;
-}
-}  
+@media all and (min-width: 0px) and (max-width: 450px) {
+    html {
+        overflow-x: hidden;
+        font-size: 10px;
+    }
 
-#form-validep
-{
+    .info p {
+        font-size: 1.2em;
+    }
+}
+
+#form-validep {
     display: flex;
     flex-direction: column;
-} 
+}
 
-#form-validep input[type=submit] 
-{
-    margin-top: 2vh; 
+#form-validep input[type=submit] {
+    margin-top: 2vh;
     margin-left: 40vw;
-    margin-right: 40vw; 
+    margin-right: 40vw;
     margin-bottom: 5vh;
 }
+
 /* #cont-photo-aval 
 {
 
   
 }  */
-#pphoto 
-{
- border: 3px solid #4062BB; 
- border-radius: 20px; 
- display: flex;
- justify-content: space-around; 
- align-items: center; 
- height: 33vh; 
- margin-top: 5vh; 
- margin-left: 2vw;
- margin-right: 2vw;
-} 
-
+#pphoto {
+    border: 3px solid #4062BB;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 33vh;
+    margin-top: 5vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}

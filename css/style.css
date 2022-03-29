@@ -1207,7 +1207,7 @@ nav li {
 }
 
 
-.form_frontco input[type=text], .form_modtext input[type=text] {
+.form_frontco input[type=text] {
     width: 100%;
     padding: 1vh 1vw;
     margin: 8px 0;
@@ -2272,4 +2272,10 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     margin-top: 5vh;
     margin-left: 2vw;
     margin-right: 2vw;
+}
+
+#pphoto img 
+{
+    /* width: 20%; */
+    height: 20%;
 }

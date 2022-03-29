@@ -853,19 +853,16 @@ margin-left: 10%;
 
 }
 
-/* #hordou div:nth-child(1)
-{ 
-    
-    padding: 0;
-    display: flex;
-    flex-direction: column;   
-    justify-content: center;
-    
-} */
+#cont-hor
+{
+display: flex; 
+
+}
 #lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    
 }
 
 #lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p {

@@ -12,6 +12,8 @@
     catch(Exception $e)
     {
         die('Erreur :'.$e->getMessage());
+        $_SESSION['valide_photosupp'] = 0;
+        header('Location: suppphoto.php');
     }
 
     foreach($_GET['image'] as $image){
@@ -24,7 +26,7 @@
     }
 
     $reponse->closeCursor();
-
+    $_SESSION['valide_photosupp'] = 1;
     header('Location: suppphoto.php');
 
 

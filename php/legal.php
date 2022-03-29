@@ -63,52 +63,52 @@ include 'php/verif_script.php';
 
 ?>
 </header>
-
-<section class="presentation">
+<div id="positionLegal">
+<section id="presentationSite">
     <h1>Description du site</h1>
-    <div class="boxinfo">
-    <div class="info"><p>Contenu informatif sur les villages de France</p></div>
-    <div class="info"><p>Collecte d'informations en ligne</p></div>
-    <div class="info"><p>Catalogue, base de donnée</p></div>
-    <div class="info"><p>1ère mise en ligne : 16/11/2016</p></div>
-    <div class="info"><p>Design et développement : Fabrice Hertel, Lisa Flamme, Virgile Duprez, Léo Cavarec, Matthias Faucon</p></div>
-    </div> 
+    <ul>
+    <li>Contenu informatif sur les villages de France</li>
+    <li>Collecte d'informations en ligne</li>
+    <li>Catalogue, base de donnée</li>
+    <li>1ère mise en ligne : 16/11/2016</li>
+    <li>Design et développement : Fabrice Hertel, Lisa Flamme, Virgile Duprez, Léo Cavarec, Matthias Faucon</li>
+    </ul>
 </section>
 
-<section class="responsable">
+<section id="responsable">
     <h1>Responsable technique et éditorial</h1>
-    <div class="boxinfoLieux">
-    <div class="infoLieux"><p>Fabrice Hertel</p></div>
-    <div class="infoLieux"><p>6 impasse Voltaire</p></div>
-    <div class="infoLieux"><p>27690 Léry</p></div>
-    <div class="infoLieux"><a>Contact</a></div>
-    <div class="infoLieux"><p>06 50 88 34 97</p></div>
-    </div> 
+    <ul>
+    <li>Fabrice Hertel</li>
+    <li>6 impasse Voltaire</li>
+    <li>27690 Léry</li>
+    <li><a href="#" >Contact</a></li>
+    <li>06 50 88 34 97</li>
+    </ul>
 </section>
 
-<section class="presentation">
+<section id="hebergement">
     <h1>Hébergement</h1>
-    <div class="boxinfo">
-    <div class="info"><p>numéro de déclaration simplifiée Cnil, dans le cas de collecte de données sur les clients (non obligatoire, mais recommandé).</p></div>
-    <div class="info"><p>OVH SAS au capital de 10 059 500 €</p></div>
-    <div class="info"><p>RCS Lille Métropole 424 761 419 00045</p></div>
-    <div class="info"><p>Code APE 6202A</p></div>
-    <div class="info"><p>N° TVA : FR 22 424 761 419</p></div>
-    <div class="info"><p>Siège social : 2 rue Kellermann - 59100 Roubaix - France.</p></div>
-    </div> 
+    <ul>
+    <li>numéro de déclaration simplifiée Cnil, dans le cas de collecte de données sur les clients (non obligatoire, mais recommandé).</li>
+    <li>OVH SAS au capital de 10 059 500 €</li>
+    <li>RCS Lille Métropole 424 761 419 00045</li>
+    <li>Code APE 6202A</li>
+    <li>N° TVA : FR 22 424 761 419</li>
+    <li>Siège social : 2 rue Kellermann - 59100 Roubaix - France.</li>
+    </ul>
 </section>
 
-<section class="responsable">
+<section id="cnil">
     <h1>Déclaration Cnil</h1>
-    <div class="boxinfoLieux">
-    <div class="infoLieux"><p>numéro de déclaration simplifiée Cnil, dans le cas de collecte de données sur les clients (non obligatoire, mais recommandé).</p></div>
-    </div> 
+    <ul>
+    <li>numéro de déclaration simplifiée Cnil, dans le cas de collecte de données sur les clients (non obligatoire, mais recommandé).</li>
+    </ul>
 </section>  
 
-<section class="presentation">
+<section id="cookies">
     <h1>Cookies</h1>
-    <div class="boxinfo">
-    <div class="info"><p>Ce site implante un cookie dans votre ordinateur, afin de simplifier votre navigation et nous permettre d'effectuer des statistiques de fréquentation. Si vous le souhaitez, celui-ci peut-être désactivé.
+    <ul>
+    <li>Ce site implante un cookie dans votre ordinateur, afin de simplifier votre navigation et nous permettre d'effectuer des statistiques de fréquentation. Si vous le souhaitez, celui-ci peut-être désactivé.
 
 Les informations communiquées vous concernant ( email, adresse, téléphone... ) sont destinées à nos seuls fichiers mailing.
 
@@ -116,21 +116,21 @@ Nous ne vendons, ni n'échangeons, ni ne communiquons aucun fichier d'adresses.
 
 Vous disposez d'un droit d'accès, de modification, de rectification et de suppression des données qui vous concernent (art. 34 de la loi "Informatique et Libertés").
 
-Pour l'exercer, merci de contacter contact@monvillagenormand.fr</p></div>
-    </div> 
+Pour l'exercer, merci de contacter contact@monvillagenormand.fr</li>
+    </ul> 
 </section>
 
-<section class="responsable">
+<section id="droitAuteur">
     <h1>Droit d'auteur</h1>
-    <div class="boxinfoLieux">
-    <div class="infoLieux"><p>Les informations contenues sur ce site sont la propriété de www.MonVillageNormand.fr .
-
+    <ul>
+   <li>
+     Les informations contenues sur ce site sont la propriété de www.MonVillageNormand.fr .
 A l'exception des images / information qui appartiennent aux personnes indiquées dans leur propriétées.
-
-Merci de demander préalablement l'autorisation avant utilisation ( sauf usage privé ).</p></div>
-    </div> 
+Merci de demander préalablement l'autorisation avant utilisation ( sauf usage privé ).
+</li>
+</ul>
 </section> 
-
+    </div>
 
 <footer> <a>123Village.fr</a>  <a>Contact</a> <a>Légal</a></footer> 
 <script src="js/recherche.js"></script> 

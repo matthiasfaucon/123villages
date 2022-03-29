@@ -106,6 +106,11 @@
         </div>
 
         <div class="form_frontco">
+          <label for="code"> </label>
+          <input type="text" name="code" id="code" placeholder="Entrer le code de l'élément (7 caractères)" minlength="7" maxlength="7" required>
+        </div>
+
+        <div class="form_frontco">
 
         </div>
         <div id="zonededepot">

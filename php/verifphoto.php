@@ -16,6 +16,9 @@
         if ($_SESSION['pass'] == "Membre") {
             header('location:front_connexion.php');
         }
+        if(!isset($_SESSION['valide_photoverif'])){
+            $_SESSION['valide_photoverif'] = '';
+        }
     ?>
 
 </head>
@@ -133,6 +136,17 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
             ?>
 
             <input type="submit" value="valider">
+
+            <?php
+
+                if($_SESSION['valide_photoverif'] == 1){
+                    echo "L'image à été validé avec succès !";
+                }
+                if($_SESSION['valide_photoverif'] == 0){
+                    echo "Erreur lors de la validation";
+                }
+
+            ?>
 
             </form>
 

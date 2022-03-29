@@ -4,6 +4,7 @@
     /*if($_SESSION['verif'] == 0 || $_SESSION['pass'] == "Membre"){
         header('Location:../index.php');
     }*/
+    $_SESSION['valide_photoverif'] = '';
 
     try
     {
@@ -12,6 +13,8 @@
     catch(Exception $e)
     {
         die('Erreur :'.$e->getMessage());
+        $_SESSION['valide_photoverif'] = 0;
+        header('Location: verifphoto.php');
     }
 
     foreach($_GET['image'] as $image){
@@ -23,6 +26,7 @@
 
     $reponse->closeCursor();
 
+    $_SESSION['valide_photoverif'] = 1;
     header('Location: verifphoto.php');
 
 

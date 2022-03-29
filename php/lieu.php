@@ -1,6 +1,12 @@
+<!-- <?php
+
+include 'php/verif_script.php';
+
+?> -->
+
 <!doctype html>
 <html lang="fr">
-
+<html xmlns:og="http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <title>Lieu</title>
@@ -19,7 +25,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:description" content="Page du Château d'Harcourt du site 123villages contenant un accès à toutes les informations pour ce lieu " />
   <meta property="og:url" content="http://localhost/mmi2/123villages/" />
-  <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+  <meta property="og:image" content="images/openGraph/laVieDuVillage.png" />
   <meta property="og:site_name" content="Site 123villages" />
 </head>
 
@@ -29,8 +35,7 @@
       <p id="logoTypo">LaVieDuVillage.fr</p>
     <div id="profil"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"/></svg></div>
     <div id="cacher" class="non-active">
-    
-    <!-- <div id="menuProfil"><a>Mon compte</a><a href="php/deconexion_back.php">Déconnexion</a></div> -->
+
 <?php
       if($_SESSION['verif'] == 1){
         ?>
@@ -44,10 +49,7 @@
     ?>
     </div>
     <div id="searchBarre">
-    <!-- <form action="php/searchleo.php">
-      <input type="text" id="name" name="name" required placeholder="Rechercher...">
-      <div id="research"><input type="submit" value=""></div></a>
-    </form> -->
+
 
       <input type="text" id="text" name="recherche" required placeholder="Rechercher...">
       <div id="research"><button href="recherche.php"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -352,7 +354,8 @@
 
   <footer>Mentions légales</footer>
 
-  <script src="../js/slider-lieu.js"></script> 
+  <script src="../js/slider-lieu.js"></script>
+  <script src="../js/animation-sidebar.js"></script> 
 
 </body>
 

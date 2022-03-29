@@ -18,7 +18,7 @@
 <body> 
   <div class="pageAdmin">
 
-<div id="togadmin"></div>
+
 <div id="gestion_admin">
 
 <?php
@@ -132,21 +132,21 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
   //     $('form p').text(this.files.length + " file(s) selected");
   //   });
   // }); 
-  let menuTogglead = document.getElementById('gestion_admin');
-  const toad = document.getElementById("togadmin"); 
-  const depot = document.getElementById("depot_photo"); 
+//   let menuTogglead = document.getElementById('gestion_admin');
+//   const toad = document.getElementById("togadmin"); 
+//   const depot = document.getElementById("depot_photo"); 
 
-  toad.addEventListener("click", function() 
-  {
-    toad.classList.toggle('active');
-    menuTogglead.style.display = "block";
-    depot.style.marginTop= "36vh"; 
+//   toad.addEventListener("click", function() 
+//   {
+//     toad.classList.toggle('active');
+//     menuTogglead.style.display = "block";
+//     depot.style.marginTop= "36vh"; 
 
-    if (toad.classList == '') {
-    menuTogglead.style.display = "none";
-    depot.style.marginTop= "100vh"; 
-}
-  });  
+//     if (toad.classList == '') {
+//     menuTogglead.style.display = "none";
+//     depot.style.marginTop= "100vh"; 
+// }
+//   });  
 
 //   document.onclick = function (e) {
 

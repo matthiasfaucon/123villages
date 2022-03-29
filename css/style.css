@@ -515,6 +515,7 @@ margin-left: 10%;
 
 #title_lieu
 { 
+    margin-top: 3vh;
 text-align: center;
 color: #000000;
 }  
@@ -655,13 +656,20 @@ color: #000000;
     } 
     #ii 
     {
+        display: flex;
+    justify-content: center;
         align-content: center;
         flex-wrap: wrap;
     } 
-    /* #cont-img-infos 
+    #cont-img-infos 
     {
-       
-    } */
+        width: 100vw;
+    height: 100vh;
+    display: flex;  
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    }
     
 } 
 
@@ -1341,15 +1349,6 @@ flex-direction: column;
 
 }   
 
-/* #admindep a, #admin a, #membre a
-{
-  display: none;
-}    */
-
-/* .lienActif{
-    display: initial;
-} */
-
 #admindep:hover, #admin:hover ,#membre:hover
 {
   cursor: pointer;
@@ -1392,6 +1391,7 @@ flex-direction: column;
 
 
 .menu__item_gestion_membre, .menu__item_gestion_admin, .menu__item_gestion_admindep{
+    top: -1vh;
     text-decoration: none;
     display: none;
     margin: 0.5rem 0;
@@ -1407,7 +1407,7 @@ flex-direction: column;
     font-size: 1rem;
     line-height: 1.4;
     position: relative; /* used with absolute for positioning underline */
-  }
+}
 
   .menu__item_gestion_membre:after,.menu__item_gestion_admin::after ,.menu__item_gestion_admindep:after  {
     position: absolute;
@@ -2061,13 +2061,6 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         display: none;
     }
 
-    header {
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
     .carteInformations{
         margin-top: 7vh;
         display: flex;
@@ -2131,15 +2124,44 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
 #searchBarre {
     display: flex;
-    margin: 0 0 1vh 0;
+    margin: 1vh 0 0 0;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
     width: 50vw;
-    height: 3vh;
+    height: 5vh;
     border-radius: 30px;
     background: #e9f0f1;
+}
+
+#affichage.non-activeAffichage{
+    margin: 1vh 0vw 0 0;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 50vw;
+    height: 5vh;
+    border-radius: 50px;
+    background: #e9f0f1;
+    display: none;
+}
+
+#affichage.activeAffichage{
+    margin: 1vh 0vw 0 0;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 50vw;
+    background: #e9f0f1;
+    display: flex;
+    border-radius: 30px;
+    height: 15vh;
+    transition: height 0.25s ease-in;
 }
 
 .menu-link{

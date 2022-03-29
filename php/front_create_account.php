@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#">
 <html lang="fr">
 
 <head>
@@ -8,7 +9,13 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
     <title>Inscription</title>
-
+    	
+    <meta property="og:title" content="Rejoignez et soutenez-nous dans la découverte du patrimoine français" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Une page d'inscription, vous permettant de vous créez un compte et de contribuer au partage du patrimoine " />
+  <meta property="og:url" content="http://localhost/mmi2/123villages/" />
+  <meta property="og:image" content="images/openGraph/laVieDuVillage.png" />
+  <meta property="og:site_name" content="Site 123villages" />
     <?php
 
 session_start();

@@ -136,4 +136,7 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             </form>
 
+            
+<script src="../js/animation-menu.js"></script>
     </body>
+</html>

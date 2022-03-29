@@ -94,7 +94,7 @@ h1 {
 
 #searchBarre {
     z-index: 2;
-    margin: 2vh 0vw 0 0;
+    margin: 2vh 0vw 0 30vw;
     display: flex;
     padding: 0 2% 0 2%;
     justify-content: space-between;
@@ -108,7 +108,7 @@ h1 {
 }
 
 #affichage.non-activeAffichage {
-    margin: 2vh 0vw 0 0;
+    margin: 2vh 0 0 30vw;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
@@ -122,7 +122,7 @@ h1 {
 }
 
 #affichage.activeAffichage {
-    margin: 2vh 0vw 0 0;
+    margin: 2vh 0vw 0 30vw;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
@@ -152,6 +152,24 @@ h1 {
 #profil svg {
     transform: scale(0.6);
     fill: white;
+}
+
+#NuageEtInfo{
+display: flex;
+
+}
+
+#nuageDeMots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    width: 40vw;
+
+}
+
+#nuageDeMots img{
+    width: 40vw;
 }
 
 
@@ -236,9 +254,57 @@ input:focus {
     outline: none;
 }
 
-.presentation {
+#positionLegal {
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+#presentationSite, #cnil, #cookies{
+    width: 50vw;
+    background-color: #4062BB;
+}
+
+#presentation{
     width: 100vw;
     background-color: #4062BB;
+}
+
+#responsable,#hebergement, #droitAuteur{
+    width: 50vw;
+    background-color: #e9f0f1;
+}
+
+#presentationSite ul, #responsable ul, #hebergement ul, #cnil ul, #cookies ul, #droitAuteur ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentation ul{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#presentationSite ul li, #presentation ul li, #cnil ul li, #cookies ul li{
+    list-style-type: circle;
+    margin-top: 2vh;
+    color: #e9f0f1;
+}
+
+#presentation ul li{
+
+    font-size: 1.2em;
+ }
+
+#responsable ul li, #hebergement ul li, #droitAuteur ul li{
+    list-style-type: circle;
+    margin-top: 2vh;
+    color: #1D2026;
 }
 
 #presentationDepartement {
@@ -250,7 +316,7 @@ input:focus {
     text-decoration: none;
 }
 
-.presentation h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
+#cookies h1, #presentation h1, #presentationSite h1, #cnil h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
     color: #e9f0f1;
 }
 
@@ -476,66 +542,36 @@ footer a:hover{
     background: #4062BB;
 }
 
-.styles_FranceRegionsMap__jrn0P{
-font-family: Open Sans,sans-serif,Arial;
--webkit-text-size-adjust: 100%;
-fill: #e9f0f1;
-line-height: 1.5;
-cursor: default;
-text-align: center;
-font-size: 0;
-box-sizing: inherit;
-position: relative;
-max-height: 80rem;
-width: 100vw;
+#rechercheDepartement svg{
+    width: 50vw;
+    height: auto;
 }
 
-.styles_FranceRegionsMap__jrn0P svg{
-font-family: Open Sans,sans-serif,Arial;
--webkit-text-size-adjust: 100%;
-color: #4062bb;
-line-height: 1.5;
-cursor: default;
-text-align: center;
-font-size: 0;
-x: 0px;
-y: 0px;
-box-sizing: inherit;
-overflow: hidden;
-width: 35vw;
-margin-bottom: 5vh;
+#rechercheDepartement h1{
+    margin: 0;
+    padding: 0;
 }
 
-.styles_FranceRegionsMap__jrn0P svg g{
-font-family: Open Sans,sans-serif,Arial;
--webkit-text-size-adjust: 100%;
-color: #4062BB;
-line-height: 1.5;
-cursor: default;
-text-align: center;
-font-size: 0;
-box-sizing: inherit;
-
+#Nom_departements g text{
+    fill: #1D2026;
+    font-size: 0.7em;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.styles_FranceRegionsMap__jrn0P svg path:hover{
+#rechercheDepartement svg path{
+    fill: #e9f0f1;
+ 
+     }
+
+#rechercheDepartement svg path:hover{
    fill: #fdc758;
-    }
-    
 
-.styles_FranceRegionsMap__jrn0P svg g a{
-font-family: Open Sans,sans-serif,Arial;
--webkit-text-size-adjust: 100%;
-line-height: 1.5;
-text-align: center;
-font-size: 0;
-box-sizing: inherit;
-background-color: transparent;
-color: #333;
-cursor: pointer;
-text-decoration: none;
-touch-action: manipulation;
-}
+    }
+
+    #rechercheDepartement svg path:hover #Nom_departements g text{
+        fill: white;
+        
+         }
 
 #icone {
     display: flex;
@@ -582,6 +618,7 @@ touch-action: manipulation;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 
 .placement{
     width: 100vw;
@@ -1456,8 +1493,8 @@ nav li {
 
 .informationsMonument {
     border-radius: 10px;
-    padding: 5vh 3vw 5vh 3vw;
-    width: 30vw;
+    padding: 5vh 5vw 5vh 5vw;
+    width: max-content;
     background: #4062BB;
 }
 
@@ -1490,6 +1527,9 @@ nav li {
     }
 
 }
+#infoCarte{
+    width: max-content;
+}
 
 .carteInformations {
     margin-top: 5%;
@@ -1504,19 +1544,21 @@ nav li {
     color: #e9f0f1;
 }
 
-.adresseInfo {
+.adresseInfo, .telephoneInfo, .type, .coordonneesGeo {
     font-size: 0.8em;
+    margin-top: 0.8vh;
+    color: #e9f0f1;
+}
+
+.adresseInfo span, .telephoneInfo span, .type span, .coordonneesGeo span {
+    font-weight: bold;
     color: #e9f0f1;
 }
 
 .imageInfo {
-    width: 90%;
+    width: 300px;
+    height: 400px;
     margin-bottom: 5%;
-}
-
-.telephoneInfo {
-    color: #e9f0f1;
-    font-size: 0.8em;
 }
 
 img.leaflet-interactive {
@@ -1909,6 +1951,7 @@ input[type="file"] {
 #fil-ariane {
     width: fit-content;
     background-color: #4062BB;
+    border: solid 2px #d4b902;
 }
 
 
@@ -1964,6 +2007,21 @@ input[type="file"] {
     display: flex;
     stroke: #fdc758;
 }
+
+@media(max-width: 750px) {
+
+    .element-fil-ariane svg {
+       transform: scale(0.8);
+    }
+    
+    #searchBarre{
+        margin: 2vh 0vw 0 10vw;
+        width: 60vw;
+        height: 5vh;    
+    }
+}
+
+
 
 @media(max-width: 585px) {
 
@@ -2268,6 +2326,10 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         background-color: white;
     }
 
+    #nuageDeMots img {
+        width: 50vw;
+    }
+
     #boutonLieu {
         display: none;
     }
@@ -2317,12 +2379,6 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         border-radius: 100%;
     }
 
-    .informationsMonument {
-        width: 80vw;
-        display: flex;
-        flex-direction: column;
-    }
-
     #boutonRecherche {
         display: flex;
         justify-content: center;
@@ -2331,19 +2387,6 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         height: 80px;
         width: 80px;
         border-radius: 100%;
-    }
-
-    #searchBarre {
-        display: flex;
-        margin: 1vh 0 0 0;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        border: 2px solid #f4f4f9;
-        width: 50vw;
-        height: 5vh;
-        border-radius: 30px;
-        background: #e9f0f1;
     }
 
     #affichage.non-activeAffichage {
@@ -2442,9 +2485,10 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     .card:nth-child(2), .card:nth-child(3){
         display: none;
     }
-    .styles_FranceRegionsMap__jrn0P{
+    #rechercheDepartement svg {
         width: 60vw;
-        }
+        height: auto;
+    }
 }
 
 @media all and (min-width: 0px) and (max-width: 450px) {
@@ -2526,4 +2570,20 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     margin-left: 10vw; 
     margin-top: 5vh; 
     margin-bottom: 5vh;
+}
+
+#rechercheDepartement h1{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width: 500px) {
+
+    #profil{
+        right: 3vw;
+    }
+
+    .element-fil-ariane svg {
+       transform: scale(0.6);
+    }
 }

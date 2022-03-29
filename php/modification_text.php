@@ -82,9 +82,9 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
     ?>
 </div>
     <div id="modinfos">
-        <form action="envoi_mail_modif.php" method="get" class="form_frontco_form">
+        <form action="envoi_mail_modif.php" method="get" class="form_modtext_form">
 
-            <div class="form_frontco">
+            <div class="form_modtext">
                 <label for="name"> </label>
                 <input type="text" name="subject" id="name" placeholder="Sujet" required>
             </div>
@@ -93,12 +93,12 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
                 <input type="text" name="adress" id="adress" placeholder="Adresse du lieu" required>
             </div>-->
 
-            <div class="form_frontco">
+            <div class="form_modtext">
                 <label for="lien"> </label>
                 <input type="text" name="lien" id="lien" placeholder="Lien de la page du lieu" required>
             </div>
 
-            <div class="form_frontco">
+            <div class="form_modtext">
                 <label for="Text_mod"></label>
                 <input type="text" name="contenu" id="Text_mod" placeholder="Proposition de modification" required>
             </div>

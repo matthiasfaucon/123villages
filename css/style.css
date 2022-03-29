@@ -1154,7 +1154,7 @@ flex-wrap: wrap;
         width: 4vh;
     }
     
-    .form_frontco_form
+    .form_frontco_form, .form_modtext_form
     {
        
             /* height: 50%; */
@@ -1166,7 +1166,7 @@ flex-wrap: wrap;
        
     }  
 
-    .form_frontco
+    .form_frontco, .form_modtext_form
     {
         
     width: 60%;
@@ -1175,7 +1175,7 @@ flex-wrap: wrap;
        
     }  
 
-    .form_frontco input[type=email] {
+    .form_frontco input[type=email]{
         display: flex;
         width: 60%;
         padding: 1vh 1vw;
@@ -1188,7 +1188,7 @@ flex-wrap: wrap;
         border-bottom: 2px solid #fff;
     }
     
-    .form_frontco  ::placeholder {
+    .form_frontco::placeholder, .form_modtext::placeholder {
         color: #fff;
     }
     
@@ -1205,7 +1205,7 @@ flex-wrap: wrap;
     }
       
 
-      .form_frontco  input[type=text] {
+      .form_frontco  input[type=text], .form_modtext  input[type=text] {
         width: 100%;
         padding: 1vh 1vw;
         margin: 8px 0;
@@ -1343,7 +1343,7 @@ img.leaflet-interactive{
 
 #admindep, #admin
 {
-    margin: 5vh 0vw 1vh 1vw;
+margin: 5vh 0vw 1vh 1vw;
 display: flex; 
 flex-direction: column; 
 
@@ -1490,25 +1490,15 @@ margin: 3vh 0 3vh 0;
     display: initial;
 } */
   @media(max-width: 700px){  
-    #togadmin
-    {
-        display: block;
-    }
-    #gestion_admin 
-    {
-        /* display: none;  */
-        display: flex;
-        width: 80vw;
-        height: 20vh;
-        flex-direction: row;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        border-radius: 20px;
-        margin-left: 10vw;
-    } 
+
+    
     #gestion_admin.active
     {
         display: block;
+    }
+    #membre, #admin, #admindep 
+    {
+        margin: 0vh;
     }
     #depot_photo h4
     {
@@ -1534,12 +1524,16 @@ margin: 3vh 0 3vh 0;
     #gestion_admin {
         display: flex;
     width: 80vw;
-    height: 20vh;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
+    align-items: flex-start;
     border-radius: 20px;
     margin-left: 10vw;
+    } 
+    #membre 
+    {
+        margin: 0px;
     }
 
   }

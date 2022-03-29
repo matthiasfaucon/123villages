@@ -14,6 +14,9 @@
         if($_SESSION['pass'] == "Membre"){
             header('location:front_connexion.php');
         }
+        if(!isset($_SESSION['valide_photosupp'])){
+            $_SESSION['valide_photosupp'] = '';
+        }
     ?>
 
 </head>
@@ -127,6 +130,17 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
             ?>
 
             <input type="submit" value="valider">
+
+            <?php
+
+                if($_SESSION['valide_photosupp'] == 1){
+                        echo "L'image à été supprimé avec succès !";
+                    }
+                    if($_SESSION['valide_photosupp'] == 0){
+                        echo "Erreur lors de la suppression";
+                    }
+
+            ?>
 
             </form>
 

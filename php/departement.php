@@ -17,7 +17,7 @@
   <meta property="og:description" content="Une page vous permettant de découvrir le patrimoine de votre département" />
   <meta property="og:url" content="http://localhost/mmi2/123villages/php/departement.php" />
   <meta property="og:image" content="../images/openGraph/laVieDuVillage.png" />
-  <meta property="og:site_name" content="Site 123villages" />
+  <meta property="og:site_name" content="Site laVieDuillage" />
 
   <link rel="stylesheet" href="../css/style.css">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">

@@ -17,7 +17,7 @@
   <meta property="og:description" content="Page d'accueil du site 123villages contenant un accès à toutes les informations pour tout les villages de France " />
   <meta property="og:url" content="http://localhost/mmi2/123villages/" />
   <meta property="og:image" content="images/openGraph/laVieDuVillage.png" />
-  <meta property="og:site_name" content="Site 123villages" />
+  <meta property="og:site_name" content="Site laVieDuillage" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
@@ -69,9 +69,9 @@
     ?>
   </header>
 
-  <section id="presentation">
+  <section class="presentation">
     <h1>L'office du tourisme des villages</h1>
-    <div id="boxinfo">
+    <div class="boxinfo">
       <div class="info">
         <p>Envie de connaître le passé de votre village et des hommes qui l'ont habité ?</p>
       </div>

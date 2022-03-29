@@ -27,7 +27,7 @@
   <meta property="og:description" content="Page du Château d'Harcourt du site 123villages contenant un accès à toutes les informations pour ce lieu " />
   <meta property="og:url" content="http://localhost/mmi2/123villages/" />
   <meta property="og:image" content="images/openGraph/laVieDuVillage.png" />
-  <meta property="og:site_name" content="Site 123villages" />
+  <meta property="og:site_name" content="Site laVieDuillage" />
 </head>
 
 <body>

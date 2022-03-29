@@ -22,6 +22,7 @@
 </head>
 
     <body>
+        <div class="placement">
     <div id="gestion_admin">
 
 <?php
@@ -85,6 +86,9 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
     ?>
 </div>
+
+<div class="adminDepart">
+    <h2>Les membres</h2>
         <form method="GET" action="changement_pass.php">
 
         <?php
@@ -102,31 +106,36 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
 
             while ($donnees=$reponse->fetch())
             {
-                echo $donnees['nom']."/".$donnees['prenom']."/".$donnees['mail']."/".$donnees["pass2"];
-                echo "<input type='checkbox' name='email[]' value='".$donnees['mail']."'><br>";
+                echo "<h3>".$donnees['nom']."/".$donnees['prenom']."/".$donnees['mail']."/".$donnees["pass2"]."</h3> ";
+                echo "<input type='checkbox' name='email[]' value='".$donnees['mail']."'>";
             }
 
             ?>
-
+                <div id="selector">
                     <select name="pass2">
                         <option value="Membre">Membre</option>
                         <option value="Admin depart">Administrateur départemental</option>
                         <option value="Admin">Administrateur Global</option>
                     </select>
                     <input type="submit" value="éditer">
+        </div>
 
                     <?php
 
                         if($_SESSION['valide_changementpass'] == 1){
-                            echo "Le changement de Pass à été réalisé avec succès !";
+                            echo "<p>Le changement de Pass à été réalisé avec succès !</p>";
                         }
                         if($_SESSION['valide_changementpass'] == 0){
-                            echo "Erreur lors du changement de Pass";
+                            echo "<p>Erreur lors du changement de Pass</p>";
                         }
 
                     ?>
 
                 </form>
 
+                    </div>
+                    </div>
                 <script src="../js/animation-menu.js"></script>
     </body>
+
+    </html>

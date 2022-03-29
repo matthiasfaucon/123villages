@@ -55,7 +55,7 @@
 
     <div id="peopleandcracc">
         <div id="people">
-            <img src="../images/membre.png"
+            <img src="../images/membre.png">
          </div>
         <div id="cracc">
             <div id="lcoin">

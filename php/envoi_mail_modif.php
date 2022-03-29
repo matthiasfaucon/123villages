@@ -2,6 +2,8 @@
 
     include('verif_script.php');
 
+    $_SESSION['mail_valide'] = '';
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
@@ -38,12 +40,15 @@
     $email->AddAddress('villages.normands@gmail.com'); //email de destinataire
 
         if ($email->Send()){
+            $_SESSION['mail_valide'] = 1;
             echo '</p> - Envoyé !</p>';
             $email->clearAllRecipients();
             header('location:modification_text.php');
         }
         else{
-            echo "</p> - Erreur lors de l'envoi !</p>";
+            $_SESSION['mail_valide'] = 0;
+            header('location:modification_text.php');
+
         }
     
 

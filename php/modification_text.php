@@ -11,6 +11,9 @@
 
     <?php
     include('verif_script.php');
+    if (!isset($_SESSION['mail_valide'])){
+        $_SESSION['mail_valide'] = '';
+    }
     ?>
 
 
@@ -106,6 +109,18 @@ if($_SESSION['pass'] == "Membre" || $_SESSION['pass'] == "Admin depart" || $_SES
             <div class="form_frontco_button">
                 <input type="submit" value="Envoyer">
             </div>
+
+            <?php
+
+                if($_SESSION['mail_valide'] == 1){
+                    echo "Message envoyer avec succès";
+                }
+                if($_SESSION['mail_valide'] == 0){
+                    echo "Message envoyer avec succès";
+                }
+
+            ?>
+
         </form>
         
     </div>

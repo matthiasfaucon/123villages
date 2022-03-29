@@ -1,4 +1,5 @@
-let date = document.getElementsByClassName("date");
+let date = document.getElementsByClassName("date"); 
+const datep = document.getElementById("date+");
     let kl = document.getElementsByClassName("date").value;
     const voir = document.getElementById("voir-photos");
 
@@ -8,13 +9,30 @@ let date = document.getElementsByClassName("date");
     const imageslider = document.getElementById("img1");
     const imageslider1 = document.getElementById("img2");
     const imageslider2 = document.getElementById("img3");
-    const bt_txt = document.getElementById("txt-infos-lieu-bt");
+    const bt_txt = document.getElementById("txt-infos-lieu-bt"); 
+
+    var huit = document.querySelector("#journee-patrimoine li:nth-child(4)");   
+    
+    var cinq = document.querySelector("#journee-patrimoine li:nth-child(5)"); 
+  
+    var quatre = document.querySelector("#journee-patrimoine li:nth-child(6)"); 
+    
+    var trois = document.querySelector("#journee-patrimoine li:nth-child(7)"); 
+    
+
 
 
     bt_txt.addEventListener("click", function() {
-      document.getElementById("txt-infos-lieu").style.display = "block";
-    }); 
+      document.getElementById("txt-infos-lieu").classList.toggle("active");
+    });  
 
+    
+    datep.addEventListener("click", function() {
+      huit.classList.toggle("active");
+      cinq.classList.toggle("active");
+      quatre.classList.toggle("active");
+      trois.classList.toggle("active"); 
+    }); 
 
 
     var count = 0;

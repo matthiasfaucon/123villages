@@ -735,29 +735,42 @@ margin-left: 10%;
 #maCarte1 {
     border-radius: 10px;
     width: 300px;
-    height: 40vh;
+    height: 40vh; 
+    margin-bottom: 10vh;
 }
 
 #partenaire {
     width: 300px;
-    height: 200px;
-    background-color: #d4b902;
+   
     margin-top: 20px;
     margin-bottom: 5vh;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    align-items: center;
+    flex-wrap: wrap;
 
 }
 
 #partenaire div {
-    width: 30%;
+    width: 30px;
+    height: 30px;
     margin: 20px;
-    border: solid 3px #4062BB;
-    border-radius: 5px;
-    background-image: url("../images/pexels-fauxels-3184418.jpg");
+    cursor: pointer;
+    background-image: url("../images/logo/facebook.jpg");
     background-size: cover;
 }
-
+#partenaire div:nth-child(2) 
+{
+    background-image: url("../images/logo/LogoTwitter.jpg");
+} 
+#partenaire div:nth-child(3) 
+{
+    background-image: url("../images/logo/LogoInstagram.jpg");
+} 
+#partenaire div:nth-child(4)
+{
+    background-image: url("../images/logo/LogoWikipedia.jpg");
+}
 
 #txt-infos-lieu-bt {
     width: 60vw;
@@ -771,7 +784,8 @@ margin-left: 10%;
     z-index: 2;
     cursor: pointer;
     display: none;
-}
+} 
+
 
 #txt-infos-lieu-bt p {
     display: flex;
@@ -797,7 +811,8 @@ margin-left: 10%;
 @media screen and (min-width: 1040px) {
     #txt-infos-lieu-bt {
         display: none;
-    }
+    } 
+    
 }
 
 @media screen and (max-width: 1040px) {
@@ -807,6 +822,10 @@ margin-left: 10%;
 
     #txt-infos-lieu {
         display: none;
+        margin-top: 6vh;
+    }
+    #txt-infos-lieu.active {
+        display: block;
         margin-top: 6vh;
     }
 
@@ -822,8 +841,7 @@ margin-left: 10%;
     }
 
     #cont-img-infos {
-        width: 100vw;
-        height: 100vh;
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -849,7 +867,8 @@ margin-left: 10%;
     padding: 0px 0px 0px 0px;
     margin-top: 20vh;
     margin-left: 15vw;
-    border-radius: 20px;
+    border-radius: 20px; 
+    color: #fff;
 
 }
 
@@ -861,15 +880,18 @@ display: flex;
 #lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+  
     
 }
 
 #lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p {
-    margin-left: 2px;
-    color: #d4b902;
+    margin: 2px;
+    
 }
-
+#lundi p:nth-child(1)
+{
+    font-weight: bold;
+}
 #journee-patrimoine {
     display: flex;
     margin-top: 10%;
@@ -884,7 +906,6 @@ display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
-
     border-radius: 20px;
     color: #fff;
     background-color: #4062bb;
@@ -897,6 +918,15 @@ display: flex;
     counter-increment: gradient-counter;
     margin-top: 1rem;
     padding: 1rem 1rem 1rem 1rem;
+} 
+
+ #journee-patrimoine li:nth-child(4), #journee-patrimoine li:nth-child(5), #journee-patrimoine li:nth-child(6), #journee-patrimoine li:nth-child(7)
+{
+display: none;
+} 
+#journee-patrimoine li:nth-child(4).active, #journee-patrimoine li:nth-child(5).active, #journee-patrimoine li:nth-child(6).active, #journee-patrimoine li:nth-child(7).active
+{
+display: block;
 }
 
 #journee-patrimoine li:hover {
@@ -1638,7 +1668,12 @@ img.leaflet-interactive {
 {
     display: initial;
 } */
-@media(max-width: 700px) {
+@media(max-width: 700px) { 
+
+    #cont-hor
+    {
+        flex-direction: column;
+    }
 
     .placement{
         flex-direction: column;

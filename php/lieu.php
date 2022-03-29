@@ -99,7 +99,13 @@
 
     <div id="cont-img-infos">
 
+    <div id="partenaire">
 
+<div id="part1"></div>
+<div id="part2"></div>
+<div id="part3"></div> 
+<div id="part4"></div>
+</div>
       <div id="img-lieu">
       </div>
 
@@ -147,12 +153,7 @@
 
         xmlhttp.send(null);
       </script>
-      <div id="partenaire">
 
-        <div id="part1"></div>
-        <div id="part2"></div>
-        <div id="part3"></div>
-      </div>
     </div>
 
   </div>
@@ -177,7 +178,7 @@
       <div id="lundi">
         <p>lundi</p>
         <div>
-          <p> 09:00–12:00</p>
+          <p>09:00–12:00</p>
           <p>14:00–17:30</p>
         </div>
       </div>
@@ -185,7 +186,7 @@
       <div id="mardi">
         <p>mardi</p>
         <div>
-          <p> 09:00–12:00</p>
+          <p>09:00–12:00</p>
           <p>14:00–17:30</p>
         </div>
       </div>
@@ -193,7 +194,7 @@
       <div id="mercredi">
         <p>mercredi</p>
         <div>
-          <p> 09:00–12:00</p>
+          <p>09:00–12:00</p>
           <p>14:00–17:30</p>
         </div>
       </div>
@@ -201,8 +202,8 @@
       <div id="jeudi">
         <p>jeudi</p>
         <div>
-          <p> 09:00–12:00</p>
-          <p> 14:00–17:30</p>
+          <p>09:00–12:00</p>
+          <p>14:00–17:30</p>
         </div>
       </div>
 
@@ -241,8 +242,8 @@
       <li class="date">2018</li>
       <li class="date">2015</li>
       <li class="date">2014</li>
-      <li class="date">2013</li>
-
+      <li class="date ">2013</li>
+      <li id="date+">></li>
     </ul>
     <div id="txt-journee-patrimoine">
       <h2 id="titre-txt-journee-patrimoine">Journée du patrimoine 2021</h2>

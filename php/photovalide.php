@@ -95,7 +95,7 @@
             die('Erreur :'.$e->getMessage());
         }
 
-        $reponse=$bdd->prepare('SELECT * from pictures where user=?');
+        $reponse=$bdd->prepare('SELECT * from pictures where user=? AND validation=1');
         $reponse->execute(array($_SESSION['email']));
 
         while ($donnees=$reponse->fetch())

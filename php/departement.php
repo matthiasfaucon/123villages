@@ -68,23 +68,8 @@
     ?>
   </header>
 
-<<<<<<< HEAD
-<section id="presentationDepartement">
-=======
-  <nav>
-    <div id="menuVertical">
-      <li class="menu-link">A voir</li>
-      <li class="menu-link">Voyager</li>
-      <li class="menu-link">Sport et loisirs</li>
-      <li class="menu-link">Services publics</li>
-      <li class="menu-link">Santé</li>
-      <li class="menu-link">Commerces et Services</li>
-      <li class="menu-link">Données publiques</li>
-    </div>
-  </nav>
 
   <section id="presentationDepartement">
->>>>>>> e6c37da536a9a1a9f2bac74b6b4de1a2fcf8cf01
     <h1>Bienvenue en Seine-Maritime</h1>
     <div class="positionPresentation">
       <a href="codePostale.php">
@@ -204,7 +189,7 @@
             <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
           </svg></i>
       </div>
-
+      <script src="js/recherche.js"></script> 
       <script src="../js/slider-departement.js"></script>
       <script src="../js/animation-sidebar.js"></script>
 
@@ -214,7 +199,7 @@
 
   </section>
 
-  <footer>Mentions légales</footer>
+  <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 
 </body>
 

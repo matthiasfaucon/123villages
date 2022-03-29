@@ -19,7 +19,7 @@
   <meta property="og:type" content="article" />
   <meta property="og:description" content="Page du Château d'Harcourt du site 123villages contenant un accès à toutes les informations pour ce lieu " />
   <meta property="og:url" content="http://localhost/mmi2/123villages/" />
-  <meta property="og:image" content="http://referenseo/images/open-graph.jpg" />
+  <meta property="og:image" content="images/openGraph/laVieDuVillage.png" />
   <meta property="og:site_name" content="Site 123villages" />
 
 </head>
@@ -246,8 +246,9 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
 
 
  
-  <footer>Mentions légales</footer>
+  <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
   <script src="../js/slider-departement.js"></script>
+  <script src="../js/recherche.js"></script> 
   </script>
 </body>
 

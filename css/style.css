@@ -349,7 +349,7 @@ color: #1D2026;
     text-decoration: none;
 }
 
-#presentation h1, #presentationSite h1, #cnil h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
+#presentation h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
     color: #e9f0f1;
 }
 
@@ -641,7 +641,7 @@ footer a:hover{
 }
 
 #rechercheDepartement svg{
-    width: 50vw;
+    width: 40vw;
     height: auto;
 }
 
@@ -650,10 +650,20 @@ footer a:hover{
     padding: 0;
 }
 
-#Nom_departements g text{
-    fill: #1D2026;
-    font-size: 0.7em;
-    font-family: 'Montserrat', sans-serif;
+
+
+@media all and (min-width: 0px) and (max-width: 800px) {
+    #Nom_departements g text{
+        fill: #1D2026;
+        font-size: 1.2em;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media all and (min-width: 0px) and (max-width: 600px) {
+    #Nom_departements g text{
+        display: none;
+    }
 }
 
 #rechercheDepartement svg path{
@@ -2491,13 +2501,13 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 
     #affichage.non-activeAffichage {
-        margin: 1vh 0vw 0 0;
+        margin: 2vh 0vw 0 10vw;
         padding: 0 2% 0 2%;
         justify-content: space-between;
         align-items: center;
         position: absolute;
         border: 2px solid #f4f4f9;
-        width: 50vw;
+        width: 60vw;
         height: 5vh;
         border-radius: 50px;
         background: #e9f0f1;
@@ -2505,18 +2515,18 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 
     #affichage.activeAffichage {
-        margin: 1vh 0vw 0 0;
-        padding: 0 2% 0 2%;
-        justify-content: space-between;
-        align-items: center;
-        position: absolute;
-        border: 2px solid #f4f4f9;
-        width: 50vw;
-        background: #e9f0f1;
-        display: flex;
-        border-radius: 30px;
-        height: 15vh;
-        transition: height 0.25s ease-in;
+        margin: 2vh 0vw 0 10vw;
+    padding: 0 2% 0 2%;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    border: 2px solid #f4f4f9;
+    width: 60vw;
+    background: #e9f0f1;
+    display: flex;
+    border-radius: 30px;
+    height: 15vh;
+    transition: height 0.25s ease-in;
     }
 
     .menu-link {

@@ -139,7 +139,7 @@
 
   <section id="rechercheDepartement">
     <h1>Trouvez votre département</h1>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="1141" height="1655.1" viewBox="0 0 1141 1655.1" overflow="visible" enable-background="new 0 0 1141 1655.1" xml:space="preserve">
+	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="1141" height="1655.1" viewBox="0 0 1141 1655.1" overflow="visible" enable-background="new 0 0 1141 1655.1" xml:space="preserve">
 
 <g id="Cadre_DOM">
 	<g>
@@ -149,10 +149,10 @@
 		</g>
 		<g>
 			<g>
-				<path fill="#FFFFFF" d="M125.3,1307.3c-3.2,0-6,1.1-8.2,3.4c-2.3,2.2-3.4,5-3.4,8.2l0,0c0,3.2,1.1,6,3.4,8.2      c2.2,2.3,5,3.4,8.2,3.4h159c3.1,0,5.9-1.1,8.1-3.4c2.3-2.2,3.4-5,3.4-8.2l0,0c0-3.2-1.1-6-3.4-8.2c-2.2-2.3-5-3.4-8.1-3.4H125.3      z"></path>
-				<path fill="none" stroke="#666666" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" d="M125.3,1307.3h159      c3.1,0,5.9,1.1,8.1,3.4c2.3,2.2,3.4,5,3.4,8.2l0,0c0,3.2-1.1,6-3.4,8.2c-2.2,2.3-5,3.4-8.1,3.4h-159c-3.2,0-6-1.1-8.2-3.4      c-2.3-2.2-3.4-5-3.4-8.2l0,0c0-3.2,1.1-6,3.4-8.2C119.3,1308.4,122.1,1307.3,125.3,1307.3"></path>
+				
+				
 			</g>
-			<text transform="matrix(1 0 0 1 125.5 1322.5)" fill="#333333" font-family="'Helvetica-Bold'" font-size="9.1425">DÉPARTEMENTS D'OUTRE-MER</text>
+			
 		</g>
 	</g>
 </g>
@@ -1016,7 +1016,7 @@
     </div>
     </section> 
     </section>
-<footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+<footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a> <p>Mis à jour le: $date</p></footer> 
 <script src="js/recherche.js"></script> 
 <script src="js/slider.js"></script>
 <script src="js/animation-sidebar.js"></script> 

@@ -133,9 +133,9 @@ Merci de demander préalablement l'autorisation avant utilisation ( sauf usage p
     </div>
 
 <footer> <a>123Village.fr</a>  <a>Contact</a> <a>Légal</a></footer> 
-<script src="js/recherche.js"></script> 
-<script src="js/slider.js"></script>
-<script src="js/animation-sidebar.js"></script>
+<script src="../js/recherche.js"></script> 
+<script src="../js/slider.js"></script>
+<script src="../js/animation-sidebar.js"></script>
 </body>
 
 </html>

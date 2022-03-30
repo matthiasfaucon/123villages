@@ -185,40 +185,6 @@
     ?>
 
 </body>
-<script>
-  // $(document).ready(function() {
-  //   $('form input').change(function() {
-  //     $('form p').text(this.files.length + " file(s) selected");
-  //   });
-  // }); 
-  //   let menuTogglead = document.getElementById('gestion_admin');
-  //   const toad = document.getElementById("togadmin"); 
-  //   const depot = document.getElementById("depot_photo"); 
-
-  //   toad.addEventListener("click", function() 
-  //   {
-  //     toad.classList.toggle('active');
-  //     menuTogglead.style.display = "block";
-  //     depot.style.marginTop= "36vh"; 
-
-  //     if (toad.classList == '') {
-  //     menuTogglead.style.display = "none";
-  //     depot.style.marginTop= "100vh"; 
-  // }
-  //   });  
-
-  //   document.onclick = function (e) {
-
-  // if (e.target.id !== 'toad') {
-  //     toad.classList.remove('active');
-  //     menuTogglead.style.display = "none";
-  // }
-
-  // if (toad.classList == '') {
-  //     menuTogglead.style.display = "none";
-  // }
-  // }
-</script>
 </div>
 
 

@@ -1008,8 +1008,8 @@ include('php/recherche_index.php')
         <div class="card">
         <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
             <div>
-    <h3>$ville</h3>
-    <p>$monument</p>
+    <h3>Harcourt</h3>
+    <p>chateau</p>
           </div>
         </div>
 
@@ -1017,16 +1017,16 @@ include('php/recherche_index.php')
         <div class="card">
         <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
             <div>
-    <h3>$ville</h3>
-    <p>$monument</p>
+    <h3>Auffay</h3>
+    <p>Collégiale Notre-Dame</p>
           </div>
         </div>
 
         <div class="card">
         <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
             <div>
-    <h3>$ville</h3>
-    <p>$monument</p>
+    <h3>Yvetot</h3>
+    <p>Musée des Ivoires</p>
           </div>
         </div>
 

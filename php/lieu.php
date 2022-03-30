@@ -173,7 +173,7 @@
   </div>
 
   <section id="hordou">
-    <p>horaire</p>
+    <h2>horaire</h2>
     <div id="cont-hor">
       <div id="lundi">
         <p>lundi</p>

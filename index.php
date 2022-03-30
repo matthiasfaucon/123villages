@@ -1041,7 +1041,7 @@ include('php/recherche_index.php')
     </div>
     </section> 
     </section>
-<footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a> <p>Mis à jour le: $date</p></footer> 
+<footer> <a href="index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a> <p>Mis à jour le: $date</p></footer> 
 
 <script src="js/recherche.js"></script> 
 <script src="js/slider.js"></script>

@@ -132,7 +132,7 @@ Merci de demander préalablement l'autorisation avant utilisation ( sauf usage p
 </section> 
     </div>
 
-<footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a>Légal</a></footer> 
+<footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a>Légal</a> <img src="../images/logo-france.png"></footer> 
 <script src="../js/recherche.js"></script> 
 <script src="../js/slider.js"></script>
 <script src="../js/animation-sidebar.js"></script>

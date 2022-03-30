@@ -101,7 +101,7 @@
 
         ?>
     </div>
-
+    <div id="imageSupp">
     <?php
 
     try {
@@ -114,13 +114,16 @@
     $reponse->execute(array($_SESSION['email']));
 
     while ($donnees = $reponse->fetch()) {
-        echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'><br>";
-        echo $donnees['nom'] . "<br>" . $donnees['adresse'] . "<br>" . $donnees['description'] . "<br>" . $donnees['lien'] . "<br><br><br>";
+        echo "<div class='photoTexte'>";
+        echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" ."<div class='photoValide'>";
+        echo "<p>" . "<span>Nom de l'image: </span>" .$donnees['nom']. "</p>"  . "<p>" . "<span>Adresse: </span>" .$donnees['adresse']."</p>"  ."<p>" . "<span>Description: </span>" .$donnees['description']."</p>"  ."<p>" . "<span>Lien: </span>".$donnees['lien']."</p>";
+        echo "</div></div>";
     }
 
     $reponse->closeCursor();
 
     ?>
+    </div>
     <script src="../js/animation-menu.js"></script>
 </body>
 

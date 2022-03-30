@@ -94,27 +94,27 @@ h1 {
 
 #searchBarre {
     z-index: 2;
-    margin: 2vh 0vw 0 30vw;
+    margin: 3vh 0vw 0 36vw;
     display: flex;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
-    width: 40vw;
+    width: 25vw;
     height: 6vh;
     border-radius: 50px;
     background: #e9f0f1;
 }
 
 #affichage.non-activeAffichage {
-    margin: 2vh 0 0 30vw;
+    margin: 3vh 0vw 0 36vw;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
-    width: 40vw;
+    width: 25vw;
     height: 6vh;
     border-radius: 50px;
     background: #e9f0f1;
@@ -122,13 +122,13 @@ h1 {
 }
 
 #affichage.activeAffichage {
-    margin: 2vh 0vw 0 30vw;
+    margin: 3vh 0vw 0 36vw;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
-    width: 40vw;
+    width: 25vw;
     background: #e9f0f1;
     display: flex;
     justify-content: flex-start;
@@ -142,7 +142,7 @@ h1 {
     height: 60px;
     position: absolute;
     top: 1vh;
-    right: 5vw;
+    right: 2vw;
     border: solid 2px white;
     border-radius: 100%;
     display: flex;
@@ -497,13 +497,41 @@ color: #1D2026;
 .suppPhoto{
     display: flex;
     justify-content: flex-start;
-    width: 80%;
     align-items: center;
 }
 
 .suppPhoto input[type="checkbox"]{
     display: flex;
     margin-left: 1vw;
+}
+
+.photoValide{
+    margin-bottom: 5vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.photoValide p span{
+    font-weight: bold;
+}
+
+#imageSupp img {
+    width: 80%;
+    margin: 4vh 0 2vh 0;
+}
+
+#submitTaille{
+    margin: 2vh 40vw 5vh 40vw;
+    width: 5vw;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .photoTexte{
@@ -523,6 +551,7 @@ color: #1D2026;
 
 #imageSupp form img{
     width: 80%;
+    margin: 4vh 0 2vh 0;
 }
 
 .changementTitre{
@@ -1507,15 +1536,23 @@ nav li {
     width: 4vh;
 }
 
+.form_modtext_form p, #formdepot p{
+    margin-top: 3vh;
+    color: #e9f0f1;
+}
+
 .form_frontco_form, .form_modtext_form {
 
     /* height: 50%; */
-    margin-top: 10%;
     display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
 
+}
+
+.form_frontco_form p{
+color: #e9f0f1;
 }
 
 .form_frontco, .form_modtext_form {
@@ -1525,12 +1562,14 @@ nav li {
     justify-content: center;
 
 }
+.form_modtext:nth-child(3){
+margin-bottom: 3vh;
+}
 
 .form_modtext_form {
     width: 100%;
     height: 100%;
     display: flex;
-    margin-top: -5%;
     justify-content: space-evenly;
 }
 
@@ -1587,8 +1626,15 @@ nav li {
     border-bottom: 2px solid #fff;
 }
 
+.form_frontco_button{
+    display: flex;
+    justify-content: center;
+width: 100%;
+}
+
 .form_frontco_button input[type=submit] {
-    width: auto;
+    display: flex;
+    width: 80%;
     padding: 2vh 10vw 2vh 10vw;
     height: auto;
     /* margin-left: -100%; */
@@ -1598,8 +1644,9 @@ nav li {
     background: linear-gradient(to right, #4062BB, #52B2CF);
     border: none;
     border-radius: 10px;
-    box-shadow: 10px 5px 5px #000;
+    box-shadow: 0px 5px 20px #1D2026;
     cursor: pointer;
+    justify-content: center;
 
 }
 
@@ -1808,7 +1855,7 @@ img.leaflet-interactive {
     transition: transform 0.4s linear;
 }
 
-#depot_photo {
+#depot_photo, #modinfos {
 
     width: 35vw;
     padding: 3vh 3vw 3vh 3vw;
@@ -1817,6 +1864,10 @@ img.leaflet-interactive {
     align-items: center;
     flex-direction: column;
     background-color: #4062BB;
+}
+
+#modinfos{
+    width: max-content;
 }
 
 #depot_photo input[type="submit"] {
@@ -1834,7 +1885,7 @@ img.leaflet-interactive {
     cursor: pointer;
 }
 
-#depot_photo h4 {
+#depot_photo h3, #modinfos h3 {
     color: #fff;
     margin: 3vh 0 3vh 0;
 }
@@ -1889,10 +1940,6 @@ img.leaflet-interactive {
 
     #admindep p {
         font-size: 0.6em;
-    }
-
-    #modinfos {
-        position: relative;
     }
 
     #gestion_admin {
@@ -1968,27 +2015,14 @@ input[type="file"] {
     font-size: 2rem;
   } */
 
-#modinfos {
-    position: relative;
-    background-color: #4062BB;
-    width: 50vw;
-    height: 50vh;
-    flex-direction: column;
-    border-radius: 50px;
-    margin-left: 30%;
-    display: flex;
-    align-items: center;
-
-}
-
 @media(max-width: 700px) {
 
-    #modinfos {
+    /* #modinfos {
         width: 80vw;
         height: 80vh;
         margin-left: 10vw;
 
-    }
+    } */
     .pageAdmin 
     {
         flex-direction: column; 
@@ -2130,9 +2164,21 @@ input[type="file"] {
     }
     
     #searchBarre{
-        margin: 2vh 0vw 0 10vw;
-        width: 60vw;
-        height: 5vh;    
+        margin: 1vh 0vw 0 33vw;
+        width: 25vw;
+        height: 5vh;
+    }
+
+    #affichage.non-activeAffichage {
+        margin: 1vh 0vw 0 33vw;
+        width: 25vw;
+        height: 5vh;  
+    }
+
+    #affichage.activeAffichage {
+        margin: 1vh 0vw 0 20vw;
+        width: 25vw;
+        height: 5vh;  
     }
 }
 
@@ -2506,13 +2552,13 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 
     #affichage.non-activeAffichage {
-        margin: 2vh 0vw 0 10vw;
+        margin: 3vh 0vw 0 36vw;
         padding: 0 2% 0 2%;
         justify-content: space-between;
         align-items: center;
         position: absolute;
         border: 2px solid #f4f4f9;
-        width: 60vw;
+        width: 25vw;
         height: 5vh;
         border-radius: 50px;
         background: #e9f0f1;
@@ -2520,13 +2566,13 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
     }
 
     #affichage.activeAffichage {
-        margin: 2vh 0vw 0 10vw;
+    margin: 3vh 0vw 0 36vw;
     padding: 0 2% 0 2%;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     border: 2px solid #f4f4f9;
-    width: 60vw;
+    width: 25vw;
     background: #e9f0f1;
     display: flex;
     border-radius: 30px;
@@ -2701,5 +2747,29 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
 
     .element-fil-ariane svg {
        transform: scale(0.6);
+    }
+}
+
+@media(max-width: 750px) {
+
+    .element-fil-ariane svg {
+       transform: scale(0.8);
+    }
+    
+    #searchBarre{
+        margin: 1vh 0vw 0 33vw;
+        width: 40vw;
+        height: 5vh;
+    }
+
+    #affichage.non-activeAffichage {
+        margin: 1vh 0vw 0 33vw;
+        width: 40vw;
+
+    }
+
+    #affichage.activeAffichage {
+        margin: 1vh 0vw 0 33vw;
+        width: 40vw;
     }
 }

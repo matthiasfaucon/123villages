@@ -38,6 +38,7 @@
         </svg>
     </div>
     </a>
+    <div class="pageAdmin">
     <div id="gestion_admin">
 
         <?php
@@ -103,6 +104,7 @@
         ?>
     </div>
     <div id="modinfos">
+        <h3>Proposition de modification de texte</h3>
         <form action="envoi_mail_modif.php" method="get" class="form_modtext_form">
 
             <div class="form_modtext">
@@ -131,10 +133,10 @@
             <?php
 
             if ($_SESSION['mail_valide'] == 1) {
-                echo "Message envoyé avec succès";
+                echo "<p>Message envoyé avec succès</p>";
             }
             if ($_SESSION['mail_valide'] == 0) {
-                echo "Erreur lors de l'envoi du message";
+                echo "<p>Erreur lors de l'envoi du message</p>";
             }
 
             ?>

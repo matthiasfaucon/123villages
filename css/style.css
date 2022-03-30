@@ -1221,8 +1221,8 @@ display: block;
 #carte-ville {
     display: flex;
     border: 1px solid #000000;
-    height: 300px;
-    width: 125px;
+    height: 400px;
+    width: 300px;
     border-radius: 30px;
     background-image: url("https://76.monvillagenormand.fr/images/300/176000077.webp");
 

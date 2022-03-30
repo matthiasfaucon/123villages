@@ -372,8 +372,91 @@
         <a href="illustration.php?NumImage=327000374">
           <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
         </a>
+      </figure> 
 
-      </figure>
+      <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000365">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000365.webp">
+			</a>
+		</figure>  
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000366">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000366.webp">
+			</a>
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000367">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000367.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000368">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000368.webp">
+			</a>
+		
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000369">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000369.webp">
+			</a>
+			
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000370">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000371">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+			</a>
+			
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000371">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000373">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000374">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+			</a>
+			
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000375">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000375.webp">
+			</a>
+                    
+		</figure>
+
+
+
+
+
+
     </div>
   </div>
 

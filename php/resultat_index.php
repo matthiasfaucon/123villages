@@ -30,8 +30,8 @@ $reponse->execute(array(':code_postal'=>$recherche,':nom'=>$recherche, ':depart'
 while ($donnees=$reponse->fetch())
 {
 
-    echo '<a href="departement.php?departement='.$donnees['departement_ville'].'&descritpion='.$donnees['description_depart'].'">/'.$donnees['departement_ville'].'</a>';
-    echo '<a href="ville.php?departement='.$donnees['departement_ville'].'&code_postal='.$donnees['code_postal'].'&ville='.$donnees['nom_ville'].'&presentation='.$donnees['presentation_ville'].'&histoire='.$donnees['histoire_ville'].'">/'.$donnees['code_postal'].'/'.$donnees['nom_ville'].'</a>';
+    echo '<a href="php/departement.php?departement='.$donnees['departement_ville'].'&descritpion='.$donnees['description_depart'].'">/'.$donnees['departement_ville'].'</a>';
+    echo '<a href="php/ville.php?departement='.$donnees['departement_ville'].'&code_postal='.$donnees['code_postal'].'&ville='.$donnees['nom_ville'].'&presentation='.$donnees['presentation_ville'].'&histoire='.$donnees['histoire_ville'].'">/'.$donnees['code_postal'].'/'.$donnees['nom_ville'].'</a>';
 
 
 }

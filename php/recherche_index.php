@@ -39,7 +39,7 @@
         console.log('envoi requete AJAX');
         let recherche = document.getElementsByName("recherche")[0].value;
         // envoi de la requête au serveur
-        xhr.open("GET", "resultat.php?recherche=" + recherche, true);
+        xhr.open("GET", "php/resultat_index.php?recherche=" + recherche, true);
         console.log(xhr.readyState);
         xhr.onreadystatechange = traitementReponse;
         xhr.send(null);

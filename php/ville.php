@@ -157,6 +157,11 @@
     </div>
   </section>-->
   <section id="activites">
+    <?php
+
+      echo "<h1>Découvrez ".$ville."</h1>";
+
+    ?>
     <h1>Découvrez Elbeuf</h1>
     <div id="menuSecondaireHorizontal">
       <span class="menu-link">A voir</span>

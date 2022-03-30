@@ -146,7 +146,7 @@
           }
         }
 
-        xmlhttp.open("GET", "agence/liste_simple.php");
+        xmlhttp.open("GET", "../agence/liste_simple.php");
 
         xmlhttp.send(null);
       </script>

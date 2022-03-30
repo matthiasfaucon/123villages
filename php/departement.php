@@ -189,13 +189,8 @@
                 // Ici j'ai une seule agence
                 // On crée un marqueur pour l'agence
                 let marker = L.marker([agence[1].lat, agence[1].lon]).addTo(carte)
-<<<<<<< HEAD
-                marker.bindPopup(agence[1].nom)
-                .bindPopup('<button id="trigger">En savoir+</button> ')
-=======
                 // marker.bindPopup(agence[1].nom) 
                 .bindPopup('<button class="trigger">En savoir+</button> ') 
->>>>>>> 761479e8739f991a7be2a5c940162f15c3ea9204
               })
             } else {
               console.log(xmlhttp.statusText);
@@ -228,7 +223,7 @@
     
       <?php
 
-        echo "<h1>Notre sélection de monuments pour ".$ville."</h1>"
+        echo "<h1>Notre sélection de monuments pour "/*.$ville*/."</h1>"
 
       ?>
   <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->

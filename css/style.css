@@ -131,6 +131,7 @@ h1 {
     width: 40vw;
     background: #e9f0f1;
     display: flex;
+    justify-content: flex-start;
     border-radius: 30px;
     height: 20vh;
     transition: height 0.25s ease-in;

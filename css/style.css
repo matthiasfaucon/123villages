@@ -254,32 +254,9 @@ input:focus {
     outline: none;
 }
 
-#positionLegal {
-    display: flex;
-    width: 100vw;
-    flex-wrap: wrap;
-}
-
-#presentationSite, #cnil, #cookies{
-    width: 50vw;
-    background-color: #4062BB;
-}
-
 #presentation{
     width: 100vw;
     background-color: #4062BB;
-}
-
-#responsable,#hebergement, #droitAuteur{
-    width: 50vw;
-    background-color: #e9f0f1;
-}
-
-#presentationSite ul, #responsable ul, #hebergement ul, #cnil ul, #cookies ul, #droitAuteur ul{
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 #presentation ul{
@@ -289,6 +266,59 @@ input:focus {
 }
 
 
+#presentation ul li{
+    color: #e9f0f1;
+    font-size: 1.2em;
+ }
+
+ #positionLegal { 
+     background-color: #f4f4f9;  
+    width: 100vw;
+}
+
+#positionLegal section ul li{
+    list-style-type: none;
+    }
+
+#responsable ul li a{
+text-decoration: none;
+color: #1D2026;
+}
+
+#responsable ul li a:hover{
+    font-weight: bold;
+    color: #1D2026;
+    }
+
+    #presentationSite, #cnil, #cookies, #responsable,#hebergement{
+        width: 100vw;
+        padding: 5vh 0 4vh 0;
+    }
+
+    #droitAuteur{
+        width: 100vw;
+        padding: 5vh 0 4vh 0;
+        margin-bottom: 15vh;
+    }
+
+    #presentationSite h1, #cnil h1, #cookies h1, #responsable h1,#hebergement h1, #droitAuteur h1{
+        padding: 3vh 0 4vh 0;
+    }
+
+
+/* 
+
+
+
+#presentationSite ul, #responsable ul, #hebergement ul, #cnil ul, #cookies ul, #droitAuteur ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 
 #presentationSite ul li, #presentation ul li, #cnil ul li, #cookies ul li{
     list-style-type: circle;
@@ -296,16 +326,19 @@ input:focus {
     color: #e9f0f1;
 }
 
-#presentation ul li{
-
-    font-size: 1.2em;
- }
-
 #responsable ul li, #hebergement ul li, #droitAuteur ul li{
     list-style-type: circle;
     margin-top: 2vh;
     color: #1D2026;
+} */
+
+#presentationSite ul, #responsable ul, #hebergement ul, #cnil ul, #cookies ul, #droitAuteur ul{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 #presentationDepartement {
     width: 100vw;
@@ -316,7 +349,7 @@ input:focus {
     text-decoration: none;
 }
 
-#cookies h1, #presentation h1, #presentationSite h1, #cnil h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
+#presentation h1, #presentationSite h1, #cnil h1, #presentationDepartement h1, #presentationCarte h1, #rechercheDepartement h1 {
     color: #e9f0f1;
 }
 
@@ -452,8 +485,73 @@ input:focus {
     height: 60vh;
 }
 
+#imageSupp{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
 
+.suppPhoto{
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+    align-items: center;
+}
 
+.suppPhoto input[type="checkbox"]{
+    display: flex;
+    margin-left: 1vw;
+}
+
+.photoTexte{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imageSupp form{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#imageSupp form img{
+    width: 80%;
+}
+
+.changementTitre{
+    margin: 3vh;
+    padding: 5vh 2vw 5vh 2vw;
+    width: fit-content;
+    /* margin-left: 14px; */
+    background-color: #4062BB;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.changementTitre h2{
+   color: #e9f0f1;
+   margin: 1vh 0 2vh 0; 
+}
+
+.changementTitre p{
+    color: #e9f0f1;
+    margin: 1vh 1vw 2vh 0;
+ }
+
+ .changementTitre input[type="checkbox"]{
+    margin: 1vh 0 2vh 0; 
+ }
+
+ .check{
+    display: flex;
+ }
 
 
 #choixAPresenter {
@@ -1328,9 +1426,9 @@ nav li {
 }
 #people img 
 {
-    height: 50%;
-    width: 50%;
- border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
 }
 #cracc {
     width: 60%;
@@ -1370,8 +1468,9 @@ nav li {
 }
 
 #apig, #apif {
-    width: 40%;
-    padding: 1vh 0vw 1vh 0vw;
+    width: fit-content;
+    height: fit-content;
+    padding: 1vh 1vw 1vh 1vw;
     background-color: white;
     border-radius: 25px;
     color: #fff;
@@ -1707,8 +1806,6 @@ img.leaflet-interactive {
 }
 
 #depot_photo input[type="submit"] {
-
-
     border-radius: 20px;
     padding: 1vh 1vw 1vh 1vw;
     margin: 3vh;
@@ -1717,6 +1814,10 @@ img.leaflet-interactive {
     /* height: 3vh; */
     outline: none;
     border: none;
+}
+
+#depot_photo input[type="submit"]:hover{
+    cursor: pointer;
 }
 
 #depot_photo h4 {

@@ -63,7 +63,10 @@
 
     <?php
 
-    include('recherche.php')
+    include('recherche.php');
+
+    $nom = $_GET['departement'];
+    $description = $_GET['descritpion']
 
     ?>
   </header>
@@ -103,24 +106,45 @@
     </div>
     
   <section id="presentationDepartement">
-    <h1>Bienvenue en Seine-Maritime</h1>
+
+      <?php
+
+        echo "<h1>Bienvenue en ".$nom."</h1>";
+
+      ?>
+
+    <!--<h1>Bienvenue en Seine-Maritime</h1>-->
     <div class="positionPresentation">
       <a href="codePostale.php">
         <div id="boutonRecherche">
           <p>Trouver votre village</p>
         </div><a>
           <div id="infoDepartement">
-            <p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>
+
+            <?php
+
+              echo "<p>".$description."</p>";
+
+            ?>
+
+            <!--<p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>
               Mais le département de Seine-Maritime, c'est 745 communes !!!</br>
               Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n'oublions pas le petit patrimoine.</br>
               Qu'il s'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>
-              Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>
+              Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>-->
           </div>
     </div>
   </section>
 
   <section id="activites">
-    <h1>Découvrez la Seine-Maritime</h1>
+
+    <?php
+
+      echo "<h1>Découvrez ".$nom."</h1>"
+
+    ?>
+
+    <!--<h1>Découvrez la Seine-Maritime</h1>-->
     <div id="menuSecondaireHorizontal">
       <span class="menu-link">A voir</span>
       <span class="menu-link">Voyager</span>

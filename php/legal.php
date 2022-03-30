@@ -10,7 +10,7 @@ include 'php/verif_script.php';
 <html xmlns:og="http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
-  <title>Accueil</title>
+  <title>Legal</title>
   <meta property="og:title" content="Découvrez la France, à travers notre sélection" />
   <meta property="og:type" content="article" />
   <meta property="og:description" content="Page d'accueil du site 123villages contenant un accès à toutes les informations pour tout les villages de France " />

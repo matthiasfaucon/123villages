@@ -66,16 +66,37 @@
 
     <?php
 
-    include('recherche.php')
+    include('recherche.php');
+
+    $presentation = $_GET['presentation'];
+    $histoire = $_GET['histoire'];
+    $ville = $_GET['ville'];
+    $code_postal = $_GET['code_postal'];
 
     ?>
   </header>
 
   <div id="fil-ariane">
     <ul id="fil-ariane-historique">
-      <li class="element-fil-ariane"><a href="#">Elbeuf</a></li>
+      <li class="element-fil-ariane"><a href="#">
+        
+      <?php
+
+        echo $ville;
+
+      ?>
+
+      </a></li>
       <li class="element-fil-ariane"><span>></span></li>
-      <li class="element-fil-ariane"><a href="#">76500</a></li>
+      <li class="element-fil-ariane"><a href="#">
+        
+      <?php
+
+        echo $code_postal;
+
+      ?>
+
+      </a></li>
       <li class="element-fil-ariane"><span>></span></li>
       <li class="element-fil-ariane"><a href="#"><svg width="135" height="45" viewBox="0 0 135 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.5" y="1.5" width="132" height="42" fill="#4062BB" stroke="white" stroke-width="3" />
@@ -104,25 +125,37 @@
         </a></li>
     </ul>
   </div>
-  <section id="presentation">
+  <!--<section id="presentation">
     <h1>Présentation</h1>
-    <div id="txt-card">
+    <div id="txt-card">-->
 
     <?php
 
-      $presentation = $_GET['presentation'];
-      $histoire = $_GET['histoire'];
+      if($presentation == ''){}else{
+
+      echo '<section id="presentation">';
+
+      echo "h1>Présentation</h1>";
+      echo '<div id="txt-card">';
 
       echo "<p>".$presentation."</p>";
+
+      echo '<div id="carte-ville">';
+
+      echo "</div></div></section>";
+
+
+
+      }
 
     ?>
 
       <!--<p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>-->
-      <div id="carte-ville">
-        <!-- <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> -->
+      <!--<div id="carte-ville">
+         <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> 
       </div>
     </div>
-  </section>
+  </section>-->
   <section id="activites">
     <h1>Découvrez Elbeuf</h1>
     <div id="menuSecondaireHorizontal">
@@ -188,11 +221,15 @@
   </section> 
 
   <div id="histoire"> 
-    <p>Histoire de la ville d'elbeuf</p> 
+    <!--<p>Histoire de la ville d'elbeuf</p>-->
 
     <?php
 
+        if($histoire == ''){}else{
+
+        echo "<p>Histoire de la ville de ".$ville."</p>";
         echo "<p>".$histoire."<p>";
+      }
 
     ?>
 

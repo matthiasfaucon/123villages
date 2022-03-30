@@ -36,9 +36,9 @@
                 <p>Membre</p>
 
 
-                <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a></br>
-                <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a></br>
-                <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a></br>
+                <a href="depotphoto.php" class="menu__item_gestion_membre">Dépôt de photos</a>
+                <a href="modification_text.php" class="menu__item_gestion_membre">Proposition modification d'informations</a>
+                <a href="photovalide.php" class="menu__item_gestion_membre">Photos validées</a>
 
             </div>
 
@@ -58,8 +58,8 @@
 
 
 
-                <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a></br>
-                <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a></br>
+                <a href="verifphoto.php" class="menu__item_gestion_admin">Espace validation photos</a>
+                <a href="suppphoto.php" class="menu__item_gestion_admin">Espace suppression photos</a>
                 <a href="" class="menu__item_gestion_admin">Espace validation texte</a>
                 <a href="" class="menu__item_gestion_admin">Espace création lieu</a>
                 <a href="" class="menu__item_gestion_admin">Campagnes de mail</a>
@@ -90,6 +90,7 @@
 
         ?>
     </div>
+    <div id="imageSupp">
     <form method="get" enctype="multipart/form-data" action="suppphoto_back.php">
 
         <?php
@@ -112,10 +113,11 @@
 
 
             <?php
-
-            echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" . $n . "<br>";
+            echo "<div class='photoTexte'>";
+            echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" ."<div class='suppPhoto'>"."<p>".$n."-"."</p>";
             echo $donnees['nom'];
-            echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'><br>";
+            echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'>";
+            echo "</div></div>";
 
             ?>
 
@@ -141,6 +143,7 @@
         ?>
 
     </form>
+    </div>
     <script src="../js/animation-menu.js"></script>
 </body>
 

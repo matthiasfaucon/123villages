@@ -23,6 +23,7 @@
 
 <body> 
 <a href="../index.php">Home</a>
+<div class="pageAdmin">
     <div id="gestion_admin">
 
         <?php
@@ -86,6 +87,8 @@
 
         ?>
     </div>
+    <div class="changementTitre">
+        <h2>Les membres</h2>
     <form method="GET" action="changement_pass.php">
 
         <?php
@@ -99,31 +102,33 @@
         $reponse = $bdd->query('SELECT prenom, nom, mail, pass2 from users where pass2 = "admin" OR pass2 = "membre"');
 
         while ($donnees = $reponse->fetch()) {
-            echo $donnees['nom'] . "/" . $donnees['prenom'] . "/" . $donnees['mail'] . "/" . $donnees["pass2"];
-            echo "<input type='checkbox' name='email[]' value='" . $donnees['mail'] . "'><br>";
+            echo "<div class='check'><p>".$donnees['nom'] . "/" . $donnees['prenom'] . "/" . $donnees['mail'] . "/" . $donnees["pass2"]."</p>";
+            echo "<input type='checkbox' name='email[]' value='" . $donnees['mail'] . "'>"."</div>";
+
         }
 
         ?>
-
+        <div class="selection">
         <select name="pass2">
             <option value="Membre">Membre</option>
             <option value="Admin depart">Administrateur départemental</option>
             <option value="Admin">Administrateur Global</option>
         </select>
         <input type="submit" value="éditer">
-
+        </div>
         <?php
 
         if ($_SESSION['valide_changementpass'] == 1) {
-            echo "Le changement de Pass à été réalisé avec succès !";
+            echo "<p>Le changement de rôle à été réalisé avec succès !</p>";
         }
         if ($_SESSION['valide_changementpass'] == 0) {
-            echo "Erreur lors du changement de Pass";
+            echo "</p>Erreur lors du changement de rôle</p>";
         }
 
         ?>
 
     </form>
+    </div>
 
     <script src="../js/animation-menu.js"></script>
 </body>

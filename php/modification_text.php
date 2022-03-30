@@ -143,8 +143,30 @@
 
         </form>
 
-    </div>
-    <script src="../js/animation-menu.js"></script>
+        </div>
+
+        <?php
+
+if ($_SESSION['pass'] == "Membre") {
+
+  echo "<script src='../js/membre-menu.js'></script>";
+
+}
+
+if ($_SESSION['pass'] == "Admin depart") {
+
+  echo "<script src='../js/membre-departement-menu.js'></script>";
+
+}
+
+if ($_SESSION['pass'] == "Admin") {
+
+  echo "<script src='../js/animation-menu.js'></script>";
+
+}
+
+?>
+
 </body>
 
 </html>

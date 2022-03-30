@@ -49,7 +49,6 @@
 
       ?>
 
-
         <div id="membre">
           <p>Membre</p>
 
@@ -162,43 +161,30 @@
 
     <!-- <script src="../js/animation-menu.js"></script> -->
     <!-- <script src="../js/membre-menu.js"></script> -->
-    <script src="../js/membre-departement-menu.js"></script>
+
+    <?php
+
+    if ($_SESSION['pass'] == "Membre") {
+
+      echo "<script src='../js/membre-menu.js'></script>";
+
+    }
+
+    if ($_SESSION['pass'] == "Admin depart") {
+
+      echo "<script src='../js/membre-departement-menu.js'></script>";
+
+    }
+
+    if ($_SESSION['pass'] == "Admin") {
+
+      echo "<script src='../js/animation-menu.js'></script>";
+
+    }
+
+    ?>
 
 </body>
-<script>
-  // $(document).ready(function() {
-  //   $('form input').change(function() {
-  //     $('form p').text(this.files.length + " file(s) selected");
-  //   });
-  // }); 
-  //   let menuTogglead = document.getElementById('gestion_admin');
-  //   const toad = document.getElementById("togadmin"); 
-  //   const depot = document.getElementById("depot_photo"); 
-
-  //   toad.addEventListener("click", function() 
-  //   {
-  //     toad.classList.toggle('active');
-  //     menuTogglead.style.display = "block";
-  //     depot.style.marginTop= "36vh"; 
-
-  //     if (toad.classList == '') {
-  //     menuTogglead.style.display = "none";
-  //     depot.style.marginTop= "100vh"; 
-  // }
-  //   });  
-
-  //   document.onclick = function (e) {
-
-  // if (e.target.id !== 'toad') {
-  //     toad.classList.remove('active');
-  //     menuTogglead.style.display = "none";
-  // }
-
-  // if (toad.classList == '') {
-  //     menuTogglead.style.display = "none";
-  // }
-  // }
-</script>
 </div>
 
 

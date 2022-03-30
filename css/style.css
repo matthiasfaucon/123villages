@@ -495,8 +495,13 @@ color: #1D2026;
 }
 
 footer img{
-    width: 5%;
+    width: 4%;
 }
+
+footer a{
+    text-decoration: none;
+}
+
 
 .suppPhoto{
     display: flex;

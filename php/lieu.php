@@ -146,7 +146,7 @@
           }
         }
 
-        xmlhttp.open("GET", "agence/liste_simple.php");
+        xmlhttp.open("GET", "../agence/liste_simple.php");
 
         xmlhttp.send(null);
       </script>
@@ -170,7 +170,7 @@
   </div>
 
   <section id="hordou">
-    <h2>horaire</h2>
+    <h2>Horaires</h2>
     <div id="cont-hor">
       <div id="lundi">
         <p>lundi</p>
@@ -460,7 +460,8 @@
     </div>
   </div>
 
-  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a> <img src="../images/logo-france.png"></footer> 
+
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="legal.php">Légal</a> <img src="../images/logo-france.png"></footer> 
 
   <script src="../js/recherche.js"></script> 
   <script src="../js/slider-lieu.js"></script>

@@ -171,7 +171,7 @@
         </div>
     </section>
 
-    <footer> <a href="#">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+    <footer> <a href="../index.php">LaVieDuVillage.fr</a> <a>Contact</a> <a href="legal.php">Légal</a> <p>Mis à jour le: 31/03/2022</p> <img src="../images/logo-france.png"></footer> 
 </body>
 <script src="../js/recherche.js"></script> 
 <script src="../js/animation-sidebar.js"></script>

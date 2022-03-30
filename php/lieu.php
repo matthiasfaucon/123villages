@@ -287,7 +287,7 @@
 
 
       <div class="card">
-      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+      <img src="https://27.monvillagenormand.fr/images/300/327000357.webp" id="img2">
           <div>
   <h3>$ville</h3>
   <p>$monument</p>
@@ -295,7 +295,7 @@
       </div>
 
       <div class="card">
-      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+      <img src="https://27.monvillagenormand.fr/images/300/327000359.webp" id="img3">
           <div>
   <h3>$ville</h3>
   <p>$monument</p>

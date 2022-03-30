@@ -63,7 +63,7 @@
                 <h4>INSCRIPTION</h4>
                 <a href="front_connexion.php">Déjà un compte ? </a>
             </div>
-
+<!--
             <div id="apigf">
                 <div id="apig">
                     <p>S'inscrire avec Google</p>
@@ -72,7 +72,7 @@
                     <p>S'inscrire avec Facebook</p>
                 </div>
             </div>
-
+                -->
             <form action="inscription_back.php" method="post" class="form_frontco_form">
 
                 <div class="form_frontco">

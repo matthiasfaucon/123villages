@@ -86,7 +86,7 @@
                     <h4>CONNEXION</h4>
                     <a href="front_create_account.php">Pas encore de compte ? </a>
                 </div>
-
+<!--
                 <div id="apigf">
                     <div id="apig">
                         <img src="../images/google.png" />
@@ -96,7 +96,7 @@
                         <p>Connexion avec Facebook</p>
                     </div>
                 </div>
-
+                -->
                 <form action="connexion_back.php" method="post" class="form_frontco_form">
 
                     <div class="form_frontco">

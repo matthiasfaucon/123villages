@@ -1,9 +1,3 @@
-<!-- <?php
-
-      include 'php/verif_script.php';
-
-      ?> -->
-
 <!doctype html>
 <html lang="fr">
 <html xmlns:og="http://ogp.me/ns#">
@@ -41,6 +35,9 @@
     <div id="cacher" class="non-active">
 
       <?php
+
+      include 'verif_script.php';
+
       if ($_SESSION['verif'] == 1) {
       ?>
         <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>

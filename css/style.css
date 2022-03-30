@@ -971,7 +971,7 @@ margin-left: 10%;
 #txt-infos-lieu {
     margin-left: 50px;
     z-index: 2;
-    margin-top: -40vh;
+    margin-top: -55vh;
 }
 
 #txt-infos-lieu p {
@@ -1037,14 +1037,22 @@ margin-left: 10%;
 }
 
 #hordou {
+
+    display: flex;
+    align-self: center;
     background-color: #4062BB;
-    width: 100vw;
+    width: fit-content;
     height: auto;
     padding: 0px 0px 0px 0px;
     margin-top: 20vh;
-    border-radius: 20px; 
+    border-radius: 20px;
     color: #fff;
 
+} 
+
+#hordou h2 
+{
+    margin: 1vh 1vw 1vh 1vw; 
 }
 
 #cont-hor
@@ -1106,15 +1114,9 @@ display: block;
 }
 
 #journee-patrimoine li:hover {
-    background-color: #52b2cf;
     cursor: pointer;
-    padding: 1rem 0rem 1rem 2rem;
+    color: #d4b902; 
 }
-/* #journee-patrimoine li svg 
-{
- 
-}   */
-
 #presentation 
 {
     background-color: #4062BB;
@@ -1248,8 +1250,8 @@ display: block;
 #carte-ville {
     display: flex;
     border: 1px solid #000000;
-    height: 300px;
-    width: 125px;
+    height: 400px;
+    width: 300px;
     border-radius: 30px;
     background-image: url("https://76.monvillagenormand.fr/images/300/176000077.webp");
 
@@ -2338,6 +2340,7 @@ input[type="file"] {
 
 .card h3,
 .card p {
+    width: 75%;
     -webkit-transform: translateX(-2vw);
     transform: translateX(-2vh);
     margin: 0;

@@ -1,9 +1,3 @@
-<!-- <?php
-
-      include 'php/verif_script.php';
-
-      ?> -->
-
 <!doctype html>
 <html lang="fr">
 <html xmlns:og="http://ogp.me/ns#">
@@ -41,9 +35,12 @@
     <div id="cacher" class="non-active">
 
       <?php
+
+      include 'verif_script.php';
+
       if ($_SESSION['verif'] == 1) {
       ?>
-        <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
+        <div id="menuProfil"><a href="depotphoto.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
       <?php
       } else {
       ?>
@@ -173,7 +170,7 @@
   </div>
 
   <section id="hordou">
-    <p>horaire</p>
+    <h2>horaire</h2>
     <div id="cont-hor">
       <div id="lundi">
         <p>lundi</p>
@@ -244,7 +241,21 @@
       <li class="date">2014</li>
       <li class="date ">2013</li>
       <li id="datep">
-      <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.6 19.8"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs><title>3</title><line class="cls-1" x1="8.3" x2="8.3" y2="15.06"/><polyline class="cls-1" points="0.18 11.34 8.28 19.45 16.42 11.3"/></svg>
+      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33">
+            <defs>
+                <style>
+                    #Capa_1 {
+                      transform: rotate(269deg) scale(0.6);
+                        fill: #fff; 
+                     
+                         
+                    }
+                </style>
+            </defs>
+            <title>up-arrow-svgrepo-com</title>
+            <polygon class="cls-1" points="31.93 164.82 490 164.82 490 149.51 31.93 149.51 189.08 11.52 178.97 0 0 157.17 178.97 314.33 189.08 302.82 31.93 164.82" />
+        </svg>
+        </svg>
 </li>
     </ul>
     <div id="txt-journee-patrimoine">
@@ -361,12 +372,95 @@
         <a href="illustration.php?NumImage=327000374">
           <img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
         </a>
+      </figure> 
 
-      </figure>
+      <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000365">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000365.webp">
+			</a>
+		</figure>  
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000366">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000366.webp">
+			</a>
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000367">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000367.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000368">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000368.webp">
+			</a>
+		
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000369">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000369.webp">
+			</a>
+			
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000370">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000370.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000371">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+			</a>
+			
+		</figure> 
+
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000371">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000371.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000373">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000373.webp">
+			</a>
+
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000374">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000374.webp">
+			</a>
+			
+		</figure> 
+
+    <figure class="ImageMiniature">
+			<a href="illustration.php?NumImage=327000375">
+				<img itemprop="image" alt="Château d'Harcourt" src="https://27.monvillagenormand.fr/images/300/327000375.webp">
+			</a>
+                    
+		</figure>
+
+
+
+
+
+
     </div>
   </div>
 
-  <footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 
   <script src="../js/recherche.js"></script> 
   <script src="../js/slider-lieu.js"></script>

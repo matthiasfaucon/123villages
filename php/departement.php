@@ -32,6 +32,9 @@
   <header>
     <?php
     
+    if(!isset($_GET['departement'])){
+      header('location:../index.php');
+    }
     $nom = $_GET['departement'];
     $description = $_GET['descritpion'];
     $num = $_GET['num'];
@@ -79,8 +82,14 @@
 
   <div id="fil-ariane">
         <ul id="fil-ariane-historique">
-            <li class="element-fil-ariane"><a href="#">Elbeuf</a></li>
-            <li class="element-fil-ariane"><span>></span></li>
+            <li class="element-fil-ariane"><a href="#">
+              <?php
+
+                echo $nom;
+
+?>
+            </a></li>
+            <!--<li class="element-fil-ariane"><span>></span></li>
             <li class="element-fil-ariane"><a href="#">76500</a></li>
             <li class="element-fil-ariane"><span>></span></li>
             <li class="element-fil-ariane"><a href="#"><svg width="135" height="45" viewBox="0 0 135 45" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -107,7 +116,7 @@
                             </clipPath>
                         </defs>
                     </svg>
-                </a></li>
+                </a></li>-->
         </ul>
     </div>
     
@@ -269,7 +278,7 @@
     </div>
   </section>
 
-  <footer> <a href="#">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
   </div>
   </section> 
   </section>  

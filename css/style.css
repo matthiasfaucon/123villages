@@ -1027,13 +1027,17 @@ display: flex;
 #lundi, #mardi, #mercredi, #jeudi, #vendredi, #samedi, #dimanche {
     display: flex;
     flex-direction: column;
-  
-    
+    align-items: center;    
 }
 
 #lundi p, #mardi p, #mercredi p, #jeudi p, #vendredi p, #samedi p, #dimanche p {
     margin: 2px;
     
+} 
+#lundi div, #mardi div, #mercredi div, #jeudi div, #vendredi div, #samedi div, #dimanche div { 
+    width: fit-content;
+    margin-right: 2vw;
+    margin-left: 2vw;
 }
 
 #journee-patrimoine {
@@ -2459,6 +2463,7 @@ background-image: url(https://27.monvillagenormand.fr/images/300/327000359.webp)
         height: 60vh;
         margin-bottom: 5vh;
     }
+
 
     #menuSecondaireHorizontal {
         display: flex;

@@ -279,27 +279,22 @@
       <script src="../js/slider-departement.js"></script>
       <script src="../js/animation-sidebar.js"></script> 
       <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script> 
-      <script> 
+      <script>  
 
-// $('#maCarteDepartement').on('click', '.trigger', function() {
+      var divinfos =  document.getElementsByClassName("informationsMonument"); 
 
-//   console.log("coucou"); 
+$('#maCarteDepartement').on('click', '.trigger', function() {
+
+// $(".informationsMonument").css("background-color", "red"); 
    
-//   document.getElementsByClassName("titreInfo").innerHTML= "Titre du lieu en question"; 
-//   document.getElementsByClassName("imageInfo").src="../images/batiment-avec-fond/voyager/hotel5.png"; 
-//   document.getElementsByClassName("adresseInfo").innerHTML= "Adresse: Champ de Foire, 76500 Elbeuf";  
-//   document.getElementsByClassName("telephoneInfo").innerHTML= "Téléphone: 0232131050";   
+   $(".titreInfo").html("Titre du lieu en question"); 
+    $(".imageInfo").attr("src","../images/batiment-avec-fond/voyager/hotel5.png"); 
+//   $(".adresseInfo").html= "Adresse: Champ de Foire, 76500 Elbeuf";  
+// $(".telephoneInfo p").html= " 0781100822";   
 
   
-// });  
+});  
 
-var ping = getElementsByClassName('leaflet-marker-icon');
-ping[2].addEventListener("click", function()
-{
-
-console.log("coucou"); 
-
-}); 
 
 
 </script>

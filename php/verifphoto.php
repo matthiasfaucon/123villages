@@ -105,6 +105,7 @@
 
         ?>
     </div>
+    <div id="imageSupp">
     <form method="get" enctype="multipart/form-data" action="verifphoto_back.php" id="form-validep">
 
         <?php
@@ -119,7 +120,6 @@
 
         $reponse = $bdd->query('SELECT nom from pictures where validation = 0');
         ?>
-        <div id="cont-photo-aval">
             <?php
             while ($donnees = $reponse->fetch()) {
 
@@ -127,18 +127,15 @@
 
             ?>
 
-                <div id="pphoto">
 
                     <?php
-
-                    echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" . $n . "<br>";
+                    echo "<div class='photoTexte'>";
+                    echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" ."<div class='suppPhoto'>"."<p>".$n."-"."</p>";
                     echo $donnees['nom'];
-                    echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'><br>";
-
+                    echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'>";
+                    echo "</div></div>";
                     ?>
 
-                </div>
-        </div>
 
     <?php
 
@@ -146,7 +143,7 @@
 
     ?>
 
-    <input type="submit" value="valider">
+    <input id="submitTaille" type="submit" value="valider">
 
     <?php
 
@@ -160,6 +157,7 @@
     ?>
 
     </form>
+</div>
 
 
     <script src="../js/animation-menu.js"></script>

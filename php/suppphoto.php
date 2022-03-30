@@ -146,7 +146,7 @@
 
         ?>
 
-        <input type="submit" value="valider">
+        <input id="submitTaille" type="submit" value="valider">
 
         <?php
 

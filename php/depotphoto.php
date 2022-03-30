@@ -106,7 +106,7 @@
 
     <div id="depot_photo">
 
-      <h4>Zone de dépôt de photo</h4>
+      <h3>Zone de dépôt de photo</h3>
 
       <form action="upload.php" enctype="multipart/form-data" method="post" id="formdepot">
         <div class="form_frontco">
@@ -140,10 +140,10 @@
 
         <?php
         if ($_SESSION['valide_photo'] == 1) {
-          echo "L'envoi a été un succès !<br>Veuillez désormais attendre la validation d'un administrateur";
+          echo "<p>L'envoi a été un succès !<br>Veuillez désormais attendre la validation d'un administrateur</p>";
         }
         if ($_SESSION['valide_photo'] == 0) {
-          echo "Echec de l'envoie";
+          echo "<p>Echec de l'envoie</p>";
         }
         ?>
 

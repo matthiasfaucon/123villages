@@ -29,14 +29,14 @@
   <header>
 
     <?php
-    
+
     $presentation = $_GET['presentation'];
     $histoire = $_GET['histoire'];
     $ville = $_GET['ville'];
     $code_postal = $_GET['code_postal'];
     $num = $_GET['num'];
-    
-    echo "<img src='../images/".$num.".png' />"
+
+    echo "<img src='../images/" . $num . ".png' />"
 
     ?>
     <!--<img src="../images/banniere2.png" />-->
@@ -86,24 +86,24 @@
   <div id="fil-ariane">
     <ul id="fil-ariane-historique">
       <li class="element-fil-ariane"><a href="#">
-        
-      <?php
 
-        echo $ville;
+          <?php
 
-      ?>
+          echo $ville;
 
-      </a></li>
+          ?>
+
+        </a></li>
       <li class="element-fil-ariane"><span>></span></li>
       <li class="element-fil-ariane"><a href="#">
-        
-      <?php
 
-        echo $code_postal;
+          <?php
 
-      ?>
+          echo $code_postal;
 
-      </a></li>
+          ?>
+
+        </a></li>
       <li class="element-fil-ariane"><span>></span></li>
       <li class="element-fil-ariane"><a href="#"><svg width="135" height="45" viewBox="0 0 135 45" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="1.5" y="1.5" width="132" height="42" fill="#4062BB" stroke="white" stroke-width="3" />
@@ -136,29 +136,27 @@
     <h1>Présentation</h1>
     <div id="txt-card">-->
 
-    <?php
+  <?php
 
-      if($presentation == ''){}else{
+  if ($presentation == '') {
+  } else {
 
-      echo '<section id="presentation">';
+    echo '<section id="presentation">';
 
-      echo "<h1>Présentation</h1>";
-      echo '<div id="txt-card">';
+    echo "<h1>Présentation</h1>";
+    echo '<div id="txt-card">';
 
-      echo "<p>".$presentation."</p>";
+    echo "<p>" . $presentation . "</p>";
 
-      echo '<div id="carte-ville">';
+    echo '<div id="carte-ville">';
 
-      echo "</div></div></section>";
+    echo "</div></div></section>";
+  }
 
+  ?>
 
-
-      }
-
-    ?>
-
-      <!--<p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>-->
-      <!--<div id="carte-ville">
+  <!--<p>Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.</p>-->
+  <!--<div id="carte-ville">
          <img src="https://76.monvillagenormand.fr/images/300/176000077.webp" id="id"> 
       </div>
     </div>
@@ -166,7 +164,7 @@
   <section id="activites">
     <?php
 
-      echo "<h1>Découvrez ".$ville."</h1>";
+    echo "<h1>Découvrez " . $ville . "</h1>";
 
     ?>
     <!--<h1>Découvrez Elbeuf</h1>-->
@@ -216,10 +214,20 @@
           }
         }
 
-        xmlhttp.open("GET", "agence/liste_simple.php");
+        xmlhttp.open("GET", "../agence/liste_simple.php");
 
         xmlhttp.send(null);
       </script>
+
+
+
+
+
+
+
+
+
+
 
       <div class="informationsMonument">
 
@@ -230,90 +238,91 @@
 
       </div>
     </div>
-  </section> 
+  </section>
 
-  <div id="histoire"> 
+  <div id="histoire">
     <!--<p>Histoire de la ville d'elbeuf</p>-->
 
     <?php
 
-        if($histoire == ''){}else{
+    if ($histoire == '') {
+    } else {
 
-        echo "<p>Histoire de la ville de ".$ville."</p>";
-        echo "<p>".$histoire."<p>";
-      }
+      echo "<p>Histoire de la ville de " . $ville . "</p>";
+      echo "<p>" . $histoire . "<p>";
+    }
 
     ?>
 
-  <!--<p>Après la guerre de 1870, un grand nombre d'Alsaciens qui refusaient l'annexion ont choisi Elbeuf pour s'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32.
+    <!--<p>Après la guerre de 1870, un grand nombre d'Alsaciens qui refusaient l'annexion ont choisi Elbeuf pour s'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32.
 
 Paul Lévy écrit : « Des 4 000 Bischwillerois qui ont quitté leur ville natale entre 1869 et 1874 — dont 75 fabricants sur 96 et plus de 3 000 ouvriers sur 5 000 — plus de la moitié s'est retrouvée à Elbeuf, où ils continuaient à former un groupement original au sein de la population autochtone. D'abord beaucoup d'entre eux étaient luthériens au milieu d'une population catholique. Leur pasteur leur faisait un sermon en allemand tous les quinze jours et, l'office terminé, s'entretenait avec eux en dialecte. Car le dialecte a subsisté, parlé couramment chez tous les vieux, fidèlement conservé par beaucoup de jeunes33 » et il cite Delahache : « Je les ai entendus [en 1914], entre eux ou avec les patrons, et d'entendre ce langage ici, dans une petite ville normande, à 500 km de l'Alsace […] je me croyais là-bas, chez eux, chez moi […] Ils se sont longtemps mariés entre « pays », et cette tradition non plus n'est pas perdue34 ».
 
 Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog35. L'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.</p>-->
-    
+
   </div>
 
-    
+
 
   <section id="choixAPresenter">
-    
-      <?php
 
-        echo "<h1>Notre sélection de monuments pour ".$ville."</h1>"
+    <?php
 
-      ?>
-  <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->
+    echo "<h1>Notre sélection de monuments pour " . $ville . "</h1>"
+
+    ?>
+    <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->
     <section id="slider-lieu">
-    <div class="w-img-nav_previous">
-      <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
-          <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-        </svg></i>
-    </div>
-    
-
-    <div class="cards">
-      <div class="card">
-      <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
-          <div>
-  <h3>$ville</h3>
-  <p>$monument</p>
-        </div>
+      <div class="w-img-nav_previous">
+        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
       </div>
 
 
-      <div class="card">
-      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+      <div class="cards">
+        <div class="card">
+          <img src="https://76.monvillagenormand.fr/images/300/476000046.webp" id="img1">
           <div>
-  <h3>$ville</h3>
-  <p>$monument</p>
+            <h3>Elbeuf</h3>
+            <p>Église de l'Immaculee-Conception</p>
+          </div>
         </div>
-      </div>
 
-      <div class="card">
-      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+
+        <div class="card">
+          <img src="https://76.monvillagenormand.fr/images/300/U76000052.webp" id="img2">
           <div>
-  <h3>$ville</h3>
-  <p>$monument</p>
+            <h3>Elbeuf</h3>
+            <p>Fontaine de la source du Puchot</p>
+          </div>
         </div>
-      </div>
 
-    </div>
-    <div class="w-img-nav_next">
-      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-        </svg></i>
+        <div class="card">
+          <img src="https://76.monvillagenormand.fr/images/300/s76000083.webp" id="img3">
+          <div>
+            <h3>Elbeuf</h3>
+            <p>Statue Le bonheur maternel</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="w-img-nav_next">
+        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+          </svg></i>
+      </div>
+    </section>
+
     </div>
   </section>
-
-  </div>
-  </section> 
-  </section>  
+  </section>
 
 
 
-  <footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
-  <script src="../js/slider-departement.js"></script>
-  <script src="../js/recherche.js"></script> 
+  <footer> <a href="#">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer>
+  <script src="../js/slider-ville.js"></script>
+  <script src="../js/recherche.js"></script>
   </script>
 </body>
 

@@ -121,7 +121,7 @@ include('php/recherche_index.php')
                 // On crée un marqueur pour l'agence
                 let marker = L.marker([agence[1].lat, agence[1].lon]).addTo(carte)
                 // marker.bindPopup(agence[1].nom) 
-                .bindPopup('<button id="trigger">En savoir+</button> ') 
+                .bindPopup('<a href="php/lieu.php"><button id="trigger">En savoir+</button></a> ') 
                 
               })
             } else {

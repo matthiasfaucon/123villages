@@ -40,7 +40,7 @@
 
       if ($_SESSION['verif'] == 1) {
       ?>
-        <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
+        <div id="menuProfil"><a href="depotphoto.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
       <?php
       } else {
       ?>
@@ -460,7 +460,7 @@
     </div>
   </div>
 
-  <footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 
   <script src="../js/recherche.js"></script> 
   <script src="../js/slider-lieu.js"></script>

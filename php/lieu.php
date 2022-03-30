@@ -241,7 +241,19 @@
       <li class="date">2014</li>
       <li class="date ">2013</li>
       <li id="datep">
-      <svg id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.6 19.8"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:0.5px;}</style></defs><title>3</title><line class="cls-1" x1="8.3" x2="8.3" y2="15.06"/><polyline class="cls-1" points="0.18 11.34 8.28 19.45 16.42 11.3"/></svg>
+      <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33">
+            <defs>
+                <style>
+                    .cls-1 {
+                        fill: #fff;
+                        transform: rotate(90deg); 
+                    }
+                </style>
+            </defs>
+            <title>up-arrow-svgrepo-com</title>
+            <polygon class="cls-1" points="31.93 164.82 490 164.82 490 149.51 31.93 149.51 189.08 11.52 178.97 0 0 157.17 178.97 314.33 189.08 302.82 31.93 164.82" />
+        </svg>
+        </svg>
 </li>
     </ul>
     <div id="txt-journee-patrimoine">

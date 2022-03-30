@@ -1085,15 +1085,9 @@ display: block;
 }
 
 #journee-patrimoine li:hover {
-    background-color: #52b2cf;
     cursor: pointer;
-    padding: 1rem 0rem 1rem 2rem;
+    color: #d4b902; 
 }
-/* #journee-patrimoine li svg 
-{
- 
-}   */
-
 #presentation 
 {
     background-color: #4062BB;

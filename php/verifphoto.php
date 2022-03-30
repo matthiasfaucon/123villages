@@ -134,7 +134,7 @@
     <?php
 
     if ($_SESSION['valide_photoverif'] == 1) {
-        echo "L'image à été validé avec succès !";
+        echo "L'image a été validée avec succès !";
     }
     if ($_SESSION['valide_photoverif'] == 0) {
         echo "Erreur lors de la validation";

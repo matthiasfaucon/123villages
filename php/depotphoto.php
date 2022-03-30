@@ -122,7 +122,7 @@
 
         <?php
         if ($_SESSION['valide_photo'] == 1) {
-          echo "L'envoie à été un succès !<br>Veuillez désormais attendre la validation d'un administrateur";
+          echo "L'envoi a été un succès !<br>Veuillez désormais attendre la validation d'un administrateur";
         }
         if ($_SESSION['valide_photo'] == 0) {
           echo "Echec de l'envoie";

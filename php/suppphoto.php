@@ -134,7 +134,7 @@
         <?php
 
         if ($_SESSION['valide_photosupp'] == 1) {
-            echo "L'image à été supprimé avec succès !";
+            echo "L'image a été supprimée avec succès !";
         }
         if ($_SESSION['valide_photosupp'] == 0) {
             echo "Erreur lors de la suppression";

@@ -119,7 +119,7 @@
         <?php
 
         if ($_SESSION['valide_changementpass'] == 1) {
-            echo "<p>Le changement de rôle à été réalisé avec succès !</p>";
+            echo "<p>Le changement de rôle a été réalisé avec succès !</p>";
         }
         if ($_SESSION['valide_changementpass'] == 0) {
             echo "</p>Erreur lors du changement de rôle</p>";

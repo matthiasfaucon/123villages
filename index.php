@@ -1016,7 +1016,7 @@
     </div>
     </section> 
     </section>
-<footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+<footer> <a>LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 <script src="js/recherche.js"></script> 
 <script src="js/slider.js"></script>
 <script src="js/animation-sidebar.js"></script> 

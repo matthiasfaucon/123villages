@@ -114,10 +114,10 @@
             <?php
 
             if ($_SESSION['mail_valide'] == 1) {
-                echo "Message envoyer avec succès";
+                echo "Message envoyé avec succès";
             }
             if ($_SESSION['mail_valide'] == 0) {
-                echo "Message envoyer avec succès";
+                echo "Erreur lors de l'envoi du message";
             }
 
             ?>

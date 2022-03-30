@@ -297,11 +297,11 @@
           <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div> 
-    <p id="voir-photos">Voir toutes les photos</p>
+
   </section>
 
    
-
+  <p id="voir-photos">Voir toutes les photos</p>
 
 
 
@@ -366,7 +366,7 @@
     </div>
   </div>
 
-  <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a>LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 
   <script src="js/recherche.js"></script> 
   <script src="../js/slider-lieu.js"></script>

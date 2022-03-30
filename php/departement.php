@@ -159,7 +159,8 @@
                 // Ici j'ai une seule agence
                 // On crée un marqueur pour l'agence
                 let marker = L.marker([agence[1].lat, agence[1].lon]).addTo(carte)
-                marker.bindPopup(agence[1].nom)
+                // marker.bindPopup(agence[1].nom) 
+                .bindPopup('<button class="trigger">En savoir+</button> ') 
               })
             } else {
               console.log(xmlhttp.statusText);
@@ -167,7 +168,7 @@
           }
         }
 
-        xmlhttp.open("GET", "agence/liste_simple.php");
+        xmlhttp.open("GET", "../agence/liste_simple.php");
 
         xmlhttp.send(null);
       </script>
@@ -236,20 +237,32 @@
   </section>
 
   <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
-  <script src="js/recherche.js"></script> 
+  <script src="../js/recherche.js"></script> 
       <script src="../js/slider-departement.js"></script>
       <script src="../js/animation-sidebar.js"></script> 
       <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script> 
       <script> 
 
-$('#maCarte').on('click', '#trigger', function() {
+// $('#maCarteDepartement').on('click', '.trigger', function() {
+
+//   console.log("coucou"); 
    
-  document.getElementsByClassName("titreInfo").innerHTML= "Titre du lieu en question"; 
-  document.getElementsByClassName("imageInfo").src="../images/batiment-avec-fond/voyager/hotel5.png"; 
-  document.getElementsByClassName("adresseInfo").innerHTML= "Adresse: Champ de Foire, 76500 Elbeuf";  
-  document.getElementsByClassName("telephoneInfo").innerHTML= "Téléphone: 0232131050";  
+//   document.getElementsByClassName("titreInfo").innerHTML= "Titre du lieu en question"; 
+//   document.getElementsByClassName("imageInfo").src="../images/batiment-avec-fond/voyager/hotel5.png"; 
+//   document.getElementsByClassName("adresseInfo").innerHTML= "Adresse: Champ de Foire, 76500 Elbeuf";  
+//   document.getElementsByClassName("telephoneInfo").innerHTML= "Téléphone: 0232131050";   
+
   
-});
+// });  
+
+var ping = getElementsByClassName('leaflet-marker-icon');
+ping[2].addEventListener("click", function()
+{
+
+console.log("coucou"); 
+
+}); 
+
 
 </script>
 </body>

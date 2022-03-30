@@ -32,6 +32,9 @@
   <header>
     <?php
     
+    if(!isset($_GET['departement'])){
+      header('location:../index.php');
+    }
     $nom = $_GET['departement'];
     $description = $_GET['descritpion'];
     $num = $_GET['num'];

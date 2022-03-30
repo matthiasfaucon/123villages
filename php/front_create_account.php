@@ -92,7 +92,7 @@
 
                 <div class="form_frontco">
                     <label for="password"></label>
-                    <input type="password" name="mdp" id="password" placeholder="Mot de passe" required>
+                    <input type="password" name="mdp" id="password" placeholder="Mot de passe" minlength="8" required>
                 </div>
 
                 <?php

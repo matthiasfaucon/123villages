@@ -46,6 +46,8 @@
 
         $reponse->closeCursor();
 
+        $_SESSION['inscr'] = 1;
+
         header('Location: front_connexion.php');
     }else{
         header('Location: front_create_account.php');

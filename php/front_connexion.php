@@ -42,6 +42,10 @@
         $_SESSION['verif'] = 0;
     }
 
+    if (!isset($_SESSION['inscr'])) {
+        $_SESSION['inscr'] = 0;
+    }
+
     if ($_SESSION['verif'] == 1) {
         header('Location: ../index.php');
     }
@@ -114,6 +118,10 @@
                     <?php
                     if ($_SESSION['email_verif'] == 0 || $_SESSION['mdp_verif'] == 0) {
                         echo '<p>adresse e-mail ou mot de passe incorrect</p><br>';
+                    }
+
+                    if($_SESSION['inscr'] == 1){
+                        echo '<p>Inscription réussite !</p><br>';
                     }
 
                     ?>

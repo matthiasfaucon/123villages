@@ -49,7 +49,6 @@
 
       ?>
 
-
         <div id="membre">
           <p>Membre</p>
 
@@ -162,7 +161,28 @@
 
     <!-- <script src="../js/animation-menu.js"></script> -->
     <!-- <script src="../js/membre-menu.js"></script> -->
-    <script src="../js/membre-departement-menu.js"></script>
+
+    <?php
+
+    if ($_SESSION['pass'] == "Membre") {
+
+      echo "<script src='../js/membre-menu.js'></script>";
+
+    }
+
+    if ($_SESSION['pass'] == "Admin depart") {
+
+      echo "<script src='../js/membre-departement-menu.js'></script>";
+
+    }
+
+    if ($_SESSION['pass'] == "Admin") {
+
+      echo "<script src='../js/animation-menu.js'></script>";
+
+    }
+
+    ?>
 
 </body>
 <script>

@@ -460,7 +460,7 @@
     </div>
   </div>
 
-  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="legal.php">Légal</a></footer> 
 
   <script src="../js/recherche.js"></script> 
   <script src="../js/slider-lieu.js"></script>

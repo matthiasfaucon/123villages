@@ -1505,9 +1505,7 @@ nav li {
 }
 
 #apigf {
-    margin-top: 5%;
     display: flex;
-    flex: 1 0 auto;
     justify-content: space-around;
 
 }
@@ -1544,7 +1542,7 @@ nav li {
 }
 
 .form_frontco_form, .form_modtext_form {
-
+    margin-top: 10vh;
     /* height: 50%; */
     display: flex;
     flex-direction: column;

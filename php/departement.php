@@ -30,7 +30,16 @@
 <body>
 
   <header>
-    <img src="../images/banniere2.png" />
+    <?php
+    
+    $nom = $_GET['departement'];
+    $description = $_GET['descritpion'];
+    $num = $_GET['num'];
+    
+    echo "<img src='../images/".$num.".png' />"
+
+    ?>
+    <!--<img src="../images/banniere2.png" />-->
     <p id="logoTypo">LaVieDuVillage.fr</p>
     <div id="profil"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -40,7 +49,7 @@
       <?php
       if ($_SESSION['verif'] == 1) {
       ?>
-        <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
+        <div id="menuProfil"><a href="depotphoto.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
       <?php
       } else {
       ?>
@@ -59,14 +68,11 @@
 
     </div>
 
-    <div id="affichage" class="non-activeAffichage">affichage</div>
+    <div id="affichage" class="non-activeAffichage">Résultat</div>
 
     <?php
 
     include('recherche.php');
-
-    $nom = $_GET['departement'];
-    $description = $_GET['descritpion']
 
     ?>
   </header>
@@ -183,8 +189,13 @@
                 // Ici j'ai une seule agence
                 // On crée un marqueur pour l'agence
                 let marker = L.marker([agence[1].lat, agence[1].lon]).addTo(carte)
+<<<<<<< HEAD
                 marker.bindPopup(agence[1].nom)
                 .bindPopup('<button id="trigger">En savoir+</button> ')
+=======
+                // marker.bindPopup(agence[1].nom) 
+                .bindPopup('<button class="trigger">En savoir+</button> ') 
+>>>>>>> 761479e8739f991a7be2a5c940162f15c3ea9204
               })
             } else {
               console.log(xmlhttp.statusText);
@@ -214,68 +225,80 @@
   </section>
 
   <section id="choixAPresenter">
-    <h1>A découvrir</h1>
+    
+      <?php
 
+        echo "<h1>Notre sélection de monuments pour ".$ville."</h1>"
+
+      ?>
+  <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->
     <section id="slider-lieu">
-      <div class="w-img-nav_previous">
-        <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
-      </div>
+    <div class="w-img-nav_previous">
+      <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
+    </div>
+    
 
-      <div id="main-slider">
-
-        <div class="card-slider">
-          <div id="image-slider">
-            <img src="https://27.monvillagenormand.fr/images/300/427000018.webp" id="img1">
-          </div>
-
+    <div class="cards">
+      <div class="card">
+      <img src="https://27.monvillagenormand.fr/images/300/327000356.webp" id="img1">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
         </div>
-
-
-        <div class="card-slider">
-          <div id="image-slider1">
-            <img src="https://27.monvillagenormand.fr/images/300/327000034.webp" id="img2">
-          </div>
-
-        </div>
-
-        <div class="card-slider">
-          <div id="image-slider2">
-            <img src="https://27.monvillagenormand.fr/images/300/M27000011.webp" id="img3">
-          </div>
-        </div>
-
-      </div>
-      <div class="w-img-nav_next">
-        <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
-            <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
-          </svg></i>
       </div>
 
 
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/476002630.webp" id="img2">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
+        </div>
+      </div>
 
+      <div class="card">
+      <img src="https://76.monvillagenormand.fr/images/300/M76000016.webp" id="img3">
+          <div>
+  <h3>$ville</h3>
+  <p>$monument</p>
+        </div>
+      </div>
 
-    </section>
-
+    </div>
+    <div class="w-img-nav_next">
+      <i class="i-next"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
+        </svg></i>
+    </div>
   </section>
 
   <footer> <a href="#">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
-  
+  </div>
+  </section> 
+  </section>  
   <script src="../js/recherche.js"></script> 
       <script src="../js/slider-departement.js"></script>
       <script src="../js/animation-sidebar.js"></script> 
       <script src='https://code.jquery.com/jquery-1.11.0.min.js'></script> 
-      <script> 
+      <script>  
 
-$('#maCarte').on('click', '#trigger', function() {
+      var divinfos =  document.getElementsByClassName("informationsMonument"); 
+
+$('#maCarteDepartement').on('click', '.trigger', function() {
+
+// $(".informationsMonument").css("background-color", "red"); 
    
-  document.getElementsByClassName("titreInfo").innerHTML= "Titre du lieu en question"; 
-  document.getElementsByClassName("imageInfo").src="../images/batiment-avec-fond/voyager/hotel5.png"; 
-  document.getElementsByClassName("adresseInfo").innerHTML= "Adresse: Champ de Foire, 76500 Elbeuf";  
-  document.getElementsByClassName("telephoneInfo").innerHTML= "Téléphone: 0232131050";  
+   $(".titreInfo").html("Titre du lieu en question"); 
+    $(".imageInfo").attr("src","../images/batiment-avec-fond/voyager/hotel5.png"); 
+//   $(".adresseInfo").html= "Adresse: Champ de Foire, 76500 Elbeuf";  
+// $(".telephoneInfo p").html= " 0781100822";   
+
   
-});
+});  
+
+
 
 </script>
 </body>

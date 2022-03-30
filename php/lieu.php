@@ -297,11 +297,11 @@
           <path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"></path>
         </svg></i>
     </div> 
-    <p id="voir-photos">Voir toutes les photos</p>
+
   </section>
 
    
-
+  <p id="voir-photos">Voir toutes les photos</p>
 
 
 

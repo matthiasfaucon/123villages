@@ -39,7 +39,7 @@
 <?php
       if($_SESSION['verif'] == 1){
         ?>
-          <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
+          <div id="menuProfil"><a href="depotphoto.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
         <?php
       }else{
         ?>
@@ -58,7 +58,7 @@
 
 </div>
 
-<div id="affichage" class="non-activeAffichage">affichage</div>
+<div id="affichage" class="non-activeAffichage">Résultat</div>
 
 <?php
 

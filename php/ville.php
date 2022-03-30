@@ -27,7 +27,19 @@
 <body>
 
   <header>
-    <img src="../images/banniere2.png" />
+
+    <?php
+    
+    $presentation = $_GET['presentation'];
+    $histoire = $_GET['histoire'];
+    $ville = $_GET['ville'];
+    $code_postal = $_GET['code_postal'];
+    $num = $_GET['num'];
+    
+    echo "<img src='../images/".$num.".png' />"
+
+    ?>
+    <!--<img src="../images/banniere2.png" />-->
     <p id="logoTypo">LaVieDuVillage.fr</p>
     <div id="profil"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
         <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -39,7 +51,7 @@
       <?php
       if ($_SESSION['verif'] == 1) {
       ?>
-        <div id="menuProfil"><a href="admin.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
+        <div id="menuProfil"><a href="depotphoto.php">Mon compte</a><a href="deconexion_back.php">se déconnecter</a></div>
       <?php
       } else {
       ?>
@@ -62,16 +74,11 @@
 
     </div>
 
-    <div id="affichage" class="non-activeAffichage">affichage</div>
+    <div id="affichage" class="non-activeAffichage">Résultat</div>
 
     <?php
 
     include('recherche.php');
-
-    $presentation = $_GET['presentation'];
-    $histoire = $_GET['histoire'];
-    $ville = $_GET['ville'];
-    $code_postal = $_GET['code_postal'];
 
     ?>
   </header>
@@ -135,7 +142,7 @@
 
       echo '<section id="presentation">';
 
-      echo "h1>Présentation</h1>";
+      echo "<h1>Présentation</h1>";
       echo '<div id="txt-card">';
 
       echo "<p>".$presentation."</p>";
@@ -157,7 +164,12 @@
     </div>
   </section>-->
   <section id="activites">
-    <h1>Découvrez Elbeuf</h1>
+    <?php
+
+      echo "<h1>Découvrez ".$ville."</h1>";
+
+    ?>
+    <!--<h1>Découvrez Elbeuf</h1>-->
     <div id="menuSecondaireHorizontal">
       <span class="menu-link">A voir</span>
       <span class="menu-link">Voyager</span>
@@ -245,7 +257,12 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
 
   <section id="choixAPresenter">
     
-  <h1>Notre sélection de monuments pour Elbeuf</h1> 
+      <?php
+
+        echo "<h1>Notre sélection de monuments pour ".$ville."</h1>"
+
+      ?>
+  <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->
     <section id="slider-lieu">
     <div class="w-img-nav_previous">
       <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -294,14 +311,6 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
 
 
 
-
-
-
-
-
-
-
- 
   <footer> <a href="#">LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
   <script src="../js/slider-departement.js"></script>
   <script src="../js/recherche.js"></script> 

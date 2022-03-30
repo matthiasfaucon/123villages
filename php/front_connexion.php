@@ -54,8 +54,9 @@
 
 
 
-
+<a href="../index.php">
     <div id="arrow">
+        
         <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33">
             <defs>
                 <style>
@@ -68,8 +69,9 @@
             <polygon class="cls-1" points="31.93 164.82 490 164.82 490 149.51 31.93 149.51 189.08 11.52 178.97 0 0 157.17 178.97 314.33 189.08 302.82 31.93 164.82" />
         </svg>
         </svg>
-
+                
     </div>
+    </a>
     <div class="seConnecter">
         <div id="peopleandcracc">
             <div id="people"> 

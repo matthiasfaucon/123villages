@@ -62,7 +62,7 @@
 
     </div>
 
-    <div id="affichage" class="non-activeAffichage">affichage</div>
+    <div id="affichage" class="non-activeAffichage">Résultat</div>
 
     <?php
 
@@ -162,7 +162,7 @@
       echo "<h1>Découvrez ".$ville."</h1>";
 
     ?>
-    <h1>Découvrez Elbeuf</h1>
+    <!--<h1>Découvrez Elbeuf</h1>-->
     <div id="menuSecondaireHorizontal">
       <span class="menu-link">A voir</span>
       <span class="menu-link">Voyager</span>
@@ -250,7 +250,12 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
 
   <section id="choixAPresenter">
     
-  <h1>Notre sélection de monuments pour Elbeuf</h1> 
+      <?php
+
+        echo "<h1>Notre sélection de monuments pour ".$ville."</h1>"
+
+      ?>
+  <!--<h1>Notre sélection de monuments pour Elbeuf</h1>-->
     <section id="slider-lieu">
     <div class="w-img-nav_previous">
       <i class="i-previous"><svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
@@ -307,7 +312,7 @@ Parmi cette communauté d'origine alsacienne se trouvaient les familles Blin, Fr
 
 
  
-  <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a>LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
   <script src="../js/slider-departement.js"></script>
   <script src="../js/recherche.js"></script> 
   </script>

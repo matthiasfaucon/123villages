@@ -58,7 +58,7 @@
 
 </div>
 
-<div id="affichage" class="non-activeAffichage">affichage</div>
+<div id="affichage" class="non-activeAffichage">Résultat</div>
 
 <?php
 
@@ -171,7 +171,7 @@
         </div>
     </section>
 
-    <footer> <a>123Village.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+    <footer> <a>LaVieDuVillage.fr</a>  <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
 </body>
 <script src="../js/recherche.js"></script> 
 <script src="../js/animation-sidebar.js"></script>

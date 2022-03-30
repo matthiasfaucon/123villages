@@ -30,6 +30,10 @@
 
     <?php
 
+if(!isset($_GET['ville'])){
+  header('location:../index.php');
+}
+
     $presentation = $_GET['presentation'];
     $histoire = $_GET['histoire'];
     $ville = $_GET['ville'];

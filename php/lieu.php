@@ -244,9 +244,11 @@
       <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33">
             <defs>
                 <style>
-                    .cls-1 {
-                        fill: #fff;
-                        transform: rotate(90deg); 
+                    #Capa_1 {
+                      transform: rotate(269deg) scale(0.6);
+                        fill: #fff; 
+                     
+                         
                     }
                 </style>
             </defs>

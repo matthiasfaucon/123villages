@@ -135,7 +135,7 @@
 
       echo '<section id="presentation">';
 
-      echo "h1>Présentation</h1>";
+      echo "<h1>Présentation</h1>";
       echo '<div id="txt-card">';
 
       echo "<p>".$presentation."</p>";

@@ -113,10 +113,11 @@
 
 
             <?php
-
-            echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" . $n . "<br>";
+            echo "<div class='photoTexte'>";
+            echo "<img src='../images/photos/" . $donnees['nom'] . "' alt='image' id='photo'>" ."<div class='suppPhoto'>"."<p>".$n."-"."</p>";
             echo $donnees['nom'];
-            echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'><br>";
+            echo "<input type='checkbox' name='image[]' value='" . $donnees['nom'] . "'>";
+            echo "</div></div>";
 
             ?>
 

@@ -160,7 +160,9 @@
 
 
 
-    <script src="../js/animation-menu.js"></script>
+    <!-- <script src="../js/animation-menu.js"></script> -->
+    <!-- <script src="../js/membre-menu.js"></script> -->
+    <script src="../js/membre-departement-menu.js"></script>
 
 </body>
 <script>

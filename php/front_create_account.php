@@ -37,6 +37,7 @@
 </head>
 
 <body>
+    <a href="../index.php">
     <div id="arrow">
         <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 314.33">
             <defs>
@@ -51,7 +52,7 @@
         </svg>
         </svg>
     </div>
-
+    </a>
 
     <div id="peopleandcracc">
         <div id="people">

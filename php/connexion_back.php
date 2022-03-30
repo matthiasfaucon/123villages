@@ -9,6 +9,7 @@
     $_SESSION['mdp_verif'] = '';
     $_SESSION['email_exist'] = '';
     $_SESSION['no_email'] = '';
+    $_SESSION['inscr'] = '';
 
     $email = strtolower(htmlentities($_POST['email'], ENT_QUOTES));
     $mdp = htmlentities($_POST['password'], ENT_QUOTES);

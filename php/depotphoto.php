@@ -75,12 +75,12 @@
 
           <a href="verifphoto.php" class="menu__item_gestion_admindep">Espace validation photos</a>
           <a href="suppphoto.php" class="menu__item_gestion_admindep">Espace suppression photos</a>
-          <a class="menu__item_gestion_admindep">Espace validation texte</a>
+          <!--<a class="menu__item_gestion_admindep">Espace validation texte</a>
           <a class="menu__item_gestion_admindep">Espace création lieu</a>
           <a class="menu__item_gestion_admindep">Campagnes de mail</a>
           <a class="menu__item_gestion_admindep">mise à jour SiteMap</a>
           <a class="menu__item_gestion_admindep">Indexation</a>
-          <a class="menu__item_gestion_admindep">supervision du département</a>
+          <a class="menu__item_gestion_admindep">supervision du département</a>-->
         </div>
 
       <?php

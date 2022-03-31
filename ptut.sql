@@ -2,10 +2,8 @@
 -- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Hôte : 127.0.0.0
-=======
--- Généré le : mer. 30 mars 2022 à 13:47
->>>>>>> 761479e8739f991a7be2a5c940162f15c3ea9204
+-- Hôte : 127.0.0.1
+-- Généré le : jeu. 31 mars 2022 à 06:44
 -- Version du serveur :  10.4.18-MariaDB
 -- Version de PHP : 8.0.3
 
@@ -42,7 +40,8 @@ CREATE TABLE `agences` (
 --
 
 INSERT INTO `agences` (`id`, `nom`, `lat`, `lon`, `categorie`) VALUES
-(2, 'Château d\'Harcourt', '49.29068982', '1.01131950', '');
+(2, 'Elbeuf', '49.29068982', '1.01131950', ''),
+(3, 'Chateau d\'Harcourt', '49.17411775', '0.78677738', '');
 
 -- --------------------------------------------------------
 
@@ -55,10 +54,7 @@ CREATE TABLE `code_postaux` (
   `code_postal` int(255) NOT NULL,
   `nom_ville` varchar(255) NOT NULL,
   `departement_ville` varchar(255) NOT NULL,
-<<<<<<< HEAD
-=======
   `num_depart` int(2) NOT NULL,
->>>>>>> 761479e8739f991a7be2a5c940162f15c3ea9204
   `description_depart` text NOT NULL,
   `presentation_ville` text NOT NULL,
   `histoire_ville` text NOT NULL
@@ -68,17 +64,10 @@ CREATE TABLE `code_postaux` (
 -- Déchargement des données de la table `code_postaux`
 --
 
-<<<<<<< HEAD
-INSERT INTO `code_postaux` (`id`, `code_postal`, `nom_ville`, `departement_ville`, `description_depart`, `presentation_ville`, `histoire_ville`) VALUES
-(1, 76000, 'Rouen', 'Seine-maritime', '<p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>               Mais le département de Seine-Maritime, c\'est 745 communes !!!</br>               Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n\'oublions pas le petit patrimoine.</br>               Qu\'il s\'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>               Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>', '', ''),
-(2, 76500, 'Elbeuf', 'Seine-maritime', '<p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>               Mais le département de Seine-Maritime, c\'est 745 communes !!!</br>               Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n\'oublions pas le petit patrimoine.</br>               Qu\'il s\'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>               Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>', 'Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.', 'Après la guerre de 1870, un grand nombre d\'Alsaciens qui refusaient l\'annexion ont choisi Elbeuf pour s\'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l\'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français32. Paul Lévy écrit : « Des 4 000 Bischwillerois qui ont quitté leur ville natale entre 1869 et 1874 — dont 75 fabricants sur 96 et plus de 3 000 ouvriers sur 5 000 — plus de la moitié s\'est retrouvée à Elbeuf, où ils continuaient à former un groupement original au sein de la population autochtone. D\'abord beaucoup d\'entre eux étaient luthériens au milieu d\'une population catholique. Leur pasteur leur faisait un sermon en allemand tous les quinze jours et, l\'office terminé, s\'entretenait avec eux en dialecte. Car le dialecte a subsisté, parlé couramment chez tous les vieux, fidèlement conservé par beaucoup de jeunes33 » et il cite Delahache : « Je les ai entendus [en 1914], entre eux ou avec les patrons, et d\'entendre ce langage ici, dans une petite ville normande, à 500 km de l\'Alsace […] je me croyais là-bas, chez eux, chez moi […] Ils se sont longtemps mariés entre « pays », et cette tradition non plus n\'est pas perdue34 ». Parmi cette communauté d\'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog35. L\'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.'),
-(3, 27200, 'Vernon', 'Eure', '', 'Vernon est une commune française située dans le département de l\'Eure en région Normandie. Elle se trouve au carrefour des routes d\'Évreux à Beauvais, et de Paris à Rouen par la vallée de la Seine. Elle est proche de Giverny. Sa devise, Vernon semper viret, signifie « Vernon toujours vert ».', 'Vernon est une commune française située dans le département de l\'Eure en région Normandie. Elle se trouve au carrefour des routes d\'Évreux à Beauvais, et de Paris à Rouen par la vallée de la Seine. Elle est proche de Giverny. Sa devise, Vernon semper viret, signifie « Vernon toujours vert ».');
-=======
 INSERT INTO `code_postaux` (`id`, `code_postal`, `nom_ville`, `departement_ville`, `num_depart`, `description_depart`, `presentation_ville`, `histoire_ville`) VALUES
 (1, 76000, 'Rouen', 'Seine-maritime', 76, '<p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>               Mais le département de Seine-Maritime, c\'est 745 communes !!!</br>               Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n\'oublions pas le petit patrimoine.</br>               Qu\'il s\'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>               Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>', '', ''),
 (2, 76500, 'Elbeuf', 'Seine-maritime', 76, '<p>Bien sûr, tout le monde connaît les très grandes villes de Seine-Maritime (76) que sont <a>Rouen</a>, <a>Dieppe</a>, <a>Havre</a>...</br>               Mais le département de Seine-Maritime, c\'est 745 communes !!!</br>               Le patrimoine religieux y est remarquable : <a>églises</a>, <a>chapelles</a> et <a>calvaires</a>, mais n\'oublions pas le petit patrimoine.</br>               Qu\'il s\'agisse de <a>lavoirs</a>, de <a>colombiers</a>, de <a>moulins</a>... le 76 regorge de trésors à découvrir.</br>               Venez-le (re)-découvrir en flânant sur nos pages avant de partir en <a>promenades</a></p>', 'Le village de Elbeuf-sur-Seine (76500), est situé dans le département de Seine-Maritime (76). Voici un descriptif de ses monuments historiques, de son histoire, de ses services publics et de ses commerces.', 'Après la guerre de 1870, un grand nombre d\'Alsaciens qui refusaient l\'annexion ont choisi Elbeuf pour s\'y installer. Beaucoup de ces nouveaux habitants travaillaient dans l\'industrie textile en Alsace. Or les clauses douanières du traité de Francfort leur fermaient dorénavant le marché français. Paul Lévy écrit : « Des 4 000 Bischwillerois qui ont quitté leur ville natale entre 1869 et 1874 — dont 75 fabricants sur 96 et plus de 3 000 ouvriers sur 5 000 — plus de la moitié s\'est retrouvée à Elbeuf, où ils continuaient à former un groupement original au sein de la population autochtone. D\'abord beaucoup d\'entre eux étaient luthériens au milieu d\'une population catholique. Leur pasteur leur faisait un sermon en allemand tous les quinze jours et, l\'office terminé, s\'entretenait avec eux en dialecte. Car le dialecte a subsisté, parlé couramment chez tous les vieux, fidèlement conservé par beaucoup de jeunes » et il cite Delahache : « Je les ai entendus [en 1914], entre eux ou avec les patrons, et d\'entendre ce langage ici, dans une petite ville normande, à 500 km de l\'Alsace […] je me croyais là-bas, chez eux, chez moi […] Ils se sont longtemps mariés entre « pays », et cette tradition non plus n\'est pas perdue ». Parmi cette communauté d\'origine alsacienne se trouvaient les familles Blin, Fraenckel et Herzog. L\'écrivain André Maurois, de son vrai nom Émile Herzog, appartenait à cette dernière famille. Il est né à Elbeuf.'),
 (3, 27200, 'Vernon', 'Eure', 27, '', 'Vernon est une commune française située dans le département de l\'Eure en région Normandie. Elle se trouve au carrefour des routes d\'Évreux à Beauvais, et de Paris à Rouen par la vallée de la Seine. Elle est proche de Giverny. Sa devise, Vernon semper viret, signifie « Vernon toujours vert ».', 'Vernon est une commune française située dans le département de l\'Eure en région Normandie. Elle se trouve au carrefour des routes d\'Évreux à Beauvais, et de Paris à Rouen par la vallée de la Seine. Elle est proche de Giverny. Sa devise, Vernon semper viret, signifie « Vernon toujours vert ».');
->>>>>>> 761479e8739f991a7be2a5c940162f15c3ea9204
 
 -- --------------------------------------------------------
 
@@ -117,13 +106,6 @@ CREATE TABLE `pictures` (
   `validation` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `pictures`
---
-
-INSERT INTO `pictures` (`id`, `nom`, `description`, `adresse`, `lien`, `user`, `code`, `validation`) VALUES
-(20, 'image1648598064.jpg', 'description', '100 rue Victor Hugo', 'https:/www.machin.com', 'pro.bacup@gmail.com', '4593012', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -147,8 +129,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `Prenom`, `Nom`, `Detail`, `Mail`, `Lien`, `License`, `Pass`, `Pass2`) VALUES
-(29, 'Virgile', 'Duprez', NULL, 'pro.bacup@gmail.com', NULL, NULL, '$2y$10$KQymqWYgmBECvNmrPo96aeQ.4RQbhI5gpGwsWvljM.YZNOKbMDoHK', 'Admin'),
-(30, 'Virgile', 'Duprez', NULL, 'virgile.duprez@gmail.com', NULL, NULL, '$2y$10$zuCCVBfCX./daCwz7WEzlOw7iiQRjay3Ef.SjZ1oimJ./Hyv2/GEK', 'Admin');
+(41, 'Virgile', 'Duprez', NULL, 'admin@lavieduvillage.fr', NULL, NULL, '$2y$10$6UdJeY.8RBg.zONG8CpIv.DqcdmG7vRB8w3EBdDYPxslM7nsMiMDC', 'Admin'),
+(42, 'Virgile', 'Duprez', NULL, 'admin_depart@lavieduvillage.fr', NULL, NULL, '$2y$10$DZ8pM9fbKOphX5Ldo760k.UbTr8RYuVhk7dcklot3duh49nPWWh7O', 'Admin depart'),
+(43, 'Virgile', 'Duprez', NULL, 'membre@lavieduvillage.fr', NULL, NULL, '$2y$10$zT0Pt4fDIWjVAYUH7T1dUueeu3f92LgaqgHg2eH7.XKYqcutlOu0q', 'Membre');
 
 --
 -- Index pour les tables déchargées
@@ -192,7 +175,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `agences`
 --
 ALTER TABLE `agences`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT pour la table `code_postaux`
@@ -210,13 +193,13 @@ ALTER TABLE `departement`
 -- AUTO_INCREMENT pour la table `pictures`
 --
 ALTER TABLE `pictures`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

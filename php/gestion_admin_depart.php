@@ -116,7 +116,7 @@
             die('Erreur :' . $e->getMessage());
         }
 
-        $reponse = $bdd->query('SELECT prenom, nom, mail, pass2 from users where pass2 = "admin" OR pass2 = "membre"');
+        $reponse = $bdd->query('SELECT prenom, nom, mail, pass2 from users where pass2 = "admin" OR pass2="admin depart" OR pass2 = "membre"');
 
         while ($donnees = $reponse->fetch()) {
             echo "<div class='check'><p>".$donnees['nom'] . "/" . $donnees['prenom'] . "/" . $donnees['mail'] . "/" . $donnees["pass2"]."</p>";

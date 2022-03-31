@@ -278,7 +278,7 @@
     </div>
   </section>
 
-  <footer> <a href="../index.php">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a></footer> 
+  <footer> <a href="../index.php">LaVieDuVillage.fr</a> <a>Contact</a> <a href="php/legal.php">Légal</a> <p>Mis à jour le: 31/03/2022</p></footer> 
   </div>
   </section> 
   </section>  

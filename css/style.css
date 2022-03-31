@@ -494,6 +494,15 @@ color: #1D2026;
     align-content: center;
 }
 
+footer img{
+    width: 4%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
 .suppPhoto{
     display: flex;
     justify-content: flex-start;
